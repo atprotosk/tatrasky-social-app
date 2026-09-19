@@ -45,6 +45,7 @@
     "android:prod": "pnpm intl:build && expo run:android --variant release",
     "android:profile": "pnpm intl:build && BSKY_PROFILE=1 expo run:android --variant release",
     "ios": "bash scripts/runIos.sh",
+    "ios:prepare-testflight": "bash scripts/prepareIosTestflight.sh",
     "web": "expo start --web",
     "use-build-number": "./scripts/useBuildNumberEnv.sh",
     "use-build-number-with-bump": "./scripts/useBuildNumberEnvWithBump.sh",
