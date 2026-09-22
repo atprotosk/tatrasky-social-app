@@ -17,6 +17,7 @@ export enum Nux {
   DraftsAnnouncement = 'DraftsAnnouncement',
   GroupChatsAnnouncement = 'GroupChatsAnnouncement',
   InviteFriendsAnnouncement = 'InviteFriendsAnnouncement',
+  MuForYouFeedAnnouncement = 'MuForYouFeedAnnouncement',
 
   /*
    * Blocking announcements. New IDs are required for each new announcement.
@@ -87,6 +88,10 @@ export type AppNux = BaseNux<
       id: Nux.InviteFriendsAnnouncement
       data: undefined
     }
+  | {
+      id: Nux.MuForYouFeedAnnouncement
+      data: undefined
+    }
 >
 
 export const NuxSchemas: Record<Nux, zod.ZodObject<any> | undefined> = {
@@ -105,4 +110,5 @@ export const NuxSchemas: Record<Nux, zod.ZodObject<any> | undefined> = {
   [Nux.DraftsAnnouncement]: undefined,
   [Nux.GroupChatsAnnouncement]: undefined,
   [Nux.InviteFriendsAnnouncement]: undefined,
+  [Nux.MuForYouFeedAnnouncement]: undefined,
 }
