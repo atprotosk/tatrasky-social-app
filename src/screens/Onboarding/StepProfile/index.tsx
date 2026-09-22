@@ -15,8 +15,7 @@ import {
   launchImageLibraryAsync,
   UIImagePickerPreferredAssetRepresentationMode,
 } from 'expo-image-picker'
-import {useLingui} from '@lingui/react/macro'
-import {Trans} from '@lingui/react/macro'
+import {Trans, useLingui} from '@lingui/react/macro'
 
 import {IMAGE_SIZE_CONFIG_2K_1MB} from '#/lib/constants'
 import {usePhotoLibraryPermission} from '#/lib/hooks/usePermissions'
@@ -47,7 +46,7 @@ import {useSheetWrapper} from '#/components/Dialog/sheet-wrapper'
 import {CircleInfo_Stroke2_Corner0_Rounded} from '#/components/icons/CircleInfo'
 import {Text} from '#/components/Typography'
 import {useAnalytics} from '#/analytics'
-import {IS_NATIVE, IS_WEB} from '#/env'
+import {IS_ANDROID, IS_NATIVE, IS_WEB} from '#/env'
 import {type AvatarColor, avatarColors, type Emoji, emojiItems} from './types'
 
 export interface Avatar {
@@ -111,7 +110,7 @@ export function StepProfile() {
           mediaTypes: ['images'],
           quality: 1,
           ...opts,
-          legacy: true,
+          legacy: !IS_ANDROID,
           preferredAssetRepresentationMode:
             UIImagePickerPreferredAssetRepresentationMode.Automatic,
         }),
