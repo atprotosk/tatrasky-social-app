@@ -3,20 +3,27 @@ import {msg} from '@lingui/core/macro'
 import {useLingui} from '@lingui/react'
 
 import {useCameraPermission} from '#/lib/hooks/usePermissions'
+import {
+  requestPhotoSavePermission,
+  savePhotoToLibrary,
+} from '#/lib/media/photo-library'
 import {openCamera} from '#/lib/media/picker'
 import {logger} from '#/logger'
 import {createComposerImage} from '#/state/gallery'
 import {atoms as a, useTheme} from '#/alf'
 import {Button} from '#/components/Button'
 import {Camera_Stroke2_Corner0_Rounded as Camera} from '#/components/icons/Camera'
-import {IS_NATIVE, IS_WEB_MOBILE} from '#/env'
+import {IS_ANDROID, IS_NATIVE, IS_WEB_MOBILE} from '#/env'
 import {type OpenCameraBtnProps} from './OpenCameraBtn.shared'
 
 export function OpenCameraBtn({disabled, onAdd}: OpenCameraBtnProps) {
   const {_} = useLingui()
   const {requestCameraAccessIfNeeded} = useCameraPermission()
   const [mediaPermissionRes, requestMediaPermission] =
-    MediaLibrary.usePermissions({granularPermissions: ['photo']})
+    MediaLibrary.usePermissions({
+      granularPermissions: ['photo'],
+      get: !IS_ANDROID,
+    })
   const t = useTheme()
 
   const mediaGranted = mediaPermissionRes?.granted
@@ -32,7 +39,7 @@ export function OpenCameraBtn({disabled, onAdd}: OpenCameraBtnProps) {
       if (!(await requestCameraAccessIfNeeded())) {
         return
       }
-      if (!mediaGranted) {
+      if (!IS_ANDROID && !mediaGranted) {
         if (mediaCanAskAgain) {
           await requestMediaPermission()
         }
@@ -45,9 +52,16 @@ export function OpenCameraBtn({disabled, onAdd}: OpenCameraBtnProps) {
         return
       }
 
-      // If we don't have permissions it's fine, we just wont save it. The post itself will still have access to
-      // the image even without these permissions
-      if (mediaPermissionRes) {
+      if (IS_ANDROID) {
+        /* Saving a gallery copy must never prevent attaching the capture. */
+        try {
+          if (await requestPhotoSavePermission()) {
+            await savePhotoToLibrary(img.path)
+          }
+        } catch (error) {
+          logger.warn('Failed to save camera photo', {error})
+        }
+      } else if (mediaPermissionRes) {
         await MediaLibrary.createAssetAsync(img.path)
       }
 

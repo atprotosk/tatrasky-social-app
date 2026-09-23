@@ -183,10 +183,13 @@ export const VIDEO_SAVED_FEED = {
 }
 
 /**
- * Eurosky "fu feed" personalized feed generator. Intended to become the default
- * home feed for new users once interest-post-seeded personalization is validated
- * (see StepFinished onboarding). Publisher DID + rkey `fu` are fixed by the
- * feedgen deployment (feed1.eurosky.network).
+ * Eurosky "fu feed" personalized feed generator. Publisher DID + rkey `fu` are
+ * fixed by the feedgen deployment (feed1.eurosky.network).
+ *
+ * Saved and pinned first in server-side preferences during onboarding. Existing
+ * accounts can opt in via the Mu For You announcement. Personalization is seeded
+ * by liking one interest post per selected interest (see euroskyInterestPosts).
+ * The display name comes from the published generator, not a local override.
  */
 export const FU_FEED_URI =
   'at://did:plc:ooensn4mr5mhznzypvxelfa3/app.bsky.feed.generator/fu'
@@ -199,7 +202,7 @@ export const FU_SAVED_FEED = {
 export const RECOMMENDED_SAVED_FEEDS: Pick<
   app.bsky.actor.defs.SavedFeed,
   'type' | 'value' | 'pinned'
->[] = [DISCOVER_SAVED_FEED, TIMELINE_SAVED_FEED]
+>[] = [FU_SAVED_FEED, TIMELINE_SAVED_FEED]
 
 export const KNOWN_SHUTDOWN_FEEDS = [
   'at://did:plc:wqowuobffl66jv3kpsvo7ak4/app.bsky.feed.generator/the-algorithm', // for you by skygaze

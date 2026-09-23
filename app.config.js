@@ -220,6 +220,19 @@ module.exports = function (_config) {
         },
         googleServicesFile: GOOGLE_SERVICES_FILE,
         package: 'social.mu.app',
+        /*
+         * Uploads use the system picker; saves only write app-created media.
+         * Block permissions also contributed by native libraries/config plugins.
+         * Keep WRITE_EXTERNAL_STORAGE for saving on Android 10 and older.
+         */
+        blockedPermissions: [
+          'android.permission.READ_MEDIA_IMAGES',
+          'android.permission.READ_MEDIA_VIDEO',
+          'android.permission.READ_MEDIA_AUDIO',
+          'android.permission.READ_MEDIA_VISUAL_USER_SELECTED',
+          'android.permission.READ_EXTERNAL_STORAGE',
+          'android.permission.ACCESS_MEDIA_LOCATION',
+        ],
       },
       web: {
         // Eurosky fork: web-only display name -> drives the static
