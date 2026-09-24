@@ -87,8 +87,8 @@ export function usePreferencesQuery() {
          * session bundle was rebuilt.
          *
          * The subscriptions go on both services that hydrate moderated content.
-         * The Bluesky moderation DID is dropped so the globally redacted
-         * authority is not also listed unredacted.
+         * Global app labelers are dropped so the redacted authorities are not
+         * also listed unredacted.
          */
         applyLabelersToClient(appviewClient, labelerDids)
         applyLabelersToClient(chatClient, labelerDids)

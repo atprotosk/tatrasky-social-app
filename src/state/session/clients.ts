@@ -28,8 +28,8 @@ import {networkAwareFetch} from './network'
  * here: this client is the only producer of `atproto-accept-labelers` on an
  * appview request now that no agent sits underneath it. The account's own
  * subscriptions arrive separately, through `applyLabelersToClient` on the
- * instance, and that function filters out the Bluesky moderation DID so the
- * globally redacted authority is not also listed unredacted.
+ * instance, and that function filters out global app labelers so the redacted
+ * authorities are not also listed unredacted.
  *
  * No `fetch` option: a client built over a session uses that session's own
  * fetch, which is `networkAwareFetch` wrapped in the disposal kill switch.
