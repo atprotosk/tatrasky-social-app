@@ -84,7 +84,7 @@ export function configureAdditionalModerationAuthorities() {
 
   /*
    * Merge with whatever is already on the static rather than replacing it, so
-   * `switchToBskyAppLabeler`'s entry survives.
+   * the default app labelers survive.
    */
   const appLabelers = Array.from(
     new Set<string>([...Client.appLabelers, ...additionalLabelers]),

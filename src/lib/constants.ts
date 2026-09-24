@@ -17,6 +17,8 @@ export const BLUESKY_APPVIEW_DID = api.app.did
 export const BLUESKY_APPVIEW_SERVICE: Service = api.app.service
 export const BLUESKY_APPVIEW = api.app.url
 export const BLUESKY_PUBLIC_APPVIEW = api.app.urlPublic
+/** ozone.eurosky.social; its DID document resolves the labeler service endpoint. */
+export const EUROSKY_LABELER_DID = 'did:plc:h5cmg4t64mj4pxmqaiaoam7c'
 export const DEFAULT_SERVICE = BSKY_SERVICE
 export const HELP_DESK_URL = BRAND.links.helpDesk
 export const CHAT_SERVICE = BRAND.services.chat
