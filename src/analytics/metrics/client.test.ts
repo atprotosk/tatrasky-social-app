@@ -1,3 +1,5 @@
+import {onAppStateChange} from '#/lib/appState'
+import * as env from '#/env'
 import {MetricsClient} from './client'
 
 let appStateCallback: (state: string) => void
@@ -22,7 +24,8 @@ jest.mock('#/logger', () => ({
 
 jest.mock('#/env', () => ({
   METRICS_API_HOST: 'https://test.metrics.api',
-  IS_WEB: false,
+  IS_NATIVE: false,
+  IS_WEB: true,
   ENABLE_METRICS: true,
 }))
 
@@ -48,7 +51,45 @@ describe('MetricsClient', () => {
 
   afterEach(() => {
     jest.useRealTimers()
+    jest.restoreAllMocks()
     jest.clearAllMocks()
+  })
+
+  it.each([true, false])(
+    'does not start or send native metrics when ENABLE_METRICS is %s',
+    async enabled => {
+      jest.replaceProperty(env, 'IS_NATIVE', true)
+      jest.replaceProperty(env, 'IS_WEB', false)
+      jest.replaceProperty(env, 'ENABLE_METRICS', enabled)
+      const client = new MetricsClient<TestEvents>()
+      const start = jest.spyOn(client, 'start')
+      const timerCount = jest.getTimerCount()
+      client.maxBatchSize = 1
+
+      client.track('click', {button: 'submit'})
+      client.track('view', {screen: 'home'})
+      client.flush()
+      await jest.advanceTimersByTimeAsync(30_000)
+
+      expect(start).not.toHaveBeenCalled()
+      expect(onAppStateChange).not.toHaveBeenCalled()
+      expect(jest.getTimerCount()).toBe(timerCount)
+      expect(fetchMock).not.toHaveBeenCalled()
+    },
+  )
+
+  it('still respects the metrics opt-out on web', async () => {
+    jest.replaceProperty(env, 'ENABLE_METRICS', false)
+    const client = new MetricsClient<TestEvents>()
+    const start = jest.spyOn(client, 'start')
+
+    client.track('click', {button: 'submit'})
+    client.flush()
+    await jest.advanceTimersByTimeAsync(10_000)
+
+    expect(start).not.toHaveBeenCalled()
+    expect(onAppStateChange).not.toHaveBeenCalled()
+    expect(fetchMock).not.toHaveBeenCalled()
   })
 
   it('flushes events on interval', async () => {

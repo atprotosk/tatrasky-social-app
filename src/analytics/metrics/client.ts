@@ -53,7 +53,8 @@ export class MetricsClient<M extends Record<string, any>> {
     payload: M[E],
     metadata: Record<string, any> = {},
   ) {
-    if (!env.ENABLE_METRICS) return
+    // Native builds must not report product analytics, regardless of build env.
+    if (env.IS_NATIVE || !env.ENABLE_METRICS) return
     this.start()
 
     const e: Event<M> = {
