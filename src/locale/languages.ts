@@ -47,6 +47,7 @@ export enum AppLanguage {
   zh_CN = 'zh-Hans-CN',
   zh_HK = 'zh-Hant-HK',
   zh_TW = 'zh-Hant-TW',
+  sk = 'sk',
 }
 
 interface AppLanguageConfig {
@@ -100,6 +101,7 @@ export const APP_LANGUAGES: AppLanguageConfig[] = [
   {code2: AppLanguage.zh_CN, name: '简体中文 – Simplified Chinese'},
   {code2: AppLanguage.zh_TW, name: '繁體中文 – Traditional Chinese'},
   {code2: AppLanguage.zh_HK, name: '粵文 – Cantonese'},
+  {code2: AppLanguage.sk, name: 'slovenčina – Slovak'},
 ]
 
 // Pre-generated list using Intl.DisplayNames to localize the language name.
