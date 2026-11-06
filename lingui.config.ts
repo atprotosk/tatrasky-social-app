@@ -39,6 +39,7 @@ export default defineConfig({
     'pt-PT',
     'ro',
     'ru',
+    'sk',
     'sv',
     'th',
     'tr',

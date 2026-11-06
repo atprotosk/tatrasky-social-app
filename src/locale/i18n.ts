@@ -48,6 +48,7 @@ import {messages as messagesPt_BR} from '#/locale/locales/pt-BR/messages'
 import {messages as messagesPt_PT} from '#/locale/locales/pt-PT/messages'
 import {messages as messagesRo} from '#/locale/locales/ro/messages'
 import {messages as messagesRu} from '#/locale/locales/ru/messages'
+import {messages as messagesSk} from '#/locale/locales/sk/messages'
 import {messages as messagesSv} from '#/locale/locales/sv/messages'
 import {messages as messagesTh} from '#/locale/locales/th/messages'
 import {messages as messagesTr} from '#/locale/locales/tr/messages'
@@ -106,6 +107,16 @@ export async function dynamicActivate(locale: AppLanguage) {
         import('@formatjs/intl-pluralrules/locale-data/cs.js'),
         import('@formatjs/intl-numberformat/locale-data/cs.js'),
         import('@formatjs/intl-displaynames/locale-data/cs.js'),
+      ])
+      return dateLocale
+    }
+    case AppLanguage.sk: {
+      i18n.loadAndActivate({locale, messages: messagesSk})
+      const [dateLocale] = await Promise.all([
+        import('date-fns/locale/sk').then(m => m.sk),
+        import('@formatjs/intl-pluralrules/locale-data/sk.js'),
+        import('@formatjs/intl-numberformat/locale-data/sk.js'),
+        import('@formatjs/intl-displaynames/locale-data/sk.js'),
       ])
       return dateLocale
     }
