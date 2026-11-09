@@ -4,7 +4,7 @@
   //
   // Deploy: build the web bundle first (../../../pages_build.sh -> web-build/),
   // then `cd services/web/cloudflare && wrangler deploy`.
-  "name": "mu-web",
+  "name": "tatrasky-web",
   "main": "src/index.ts",
   "compatibility_date": "2026-06-01",
   "assets": {
