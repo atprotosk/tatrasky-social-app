@@ -508,7 +508,7 @@ msgstr "{displayName}"
 
 #: src/screens/SignupQueued.tsx:225
 msgid "{estimatedTimeHrs, plural, one {hour} other {hours}}"
-msgstr "{estimatedTimeHrs, plural, one {hodina} few {hodiny} many {hodín} other {hodín}"
+msgstr "{estimatedTimeHrs, plural, one {hodina} few {hodiny} many {hodín} other {hodín}}"
 
 #: src/screens/SignupQueued.tsx:231
 msgid "{estimatedTimeMins, plural, one {minute} other {minutes}}"
@@ -556,7 +556,7 @@ msgstr "{firstAuthorLink} a <0>{additionalAuthorsCount, plural, one {{formattedA
 
 #: src/view/com/notifications/NotificationFeedItem.tsx:371
 msgid "{firstAuthorLink} followed you"
-msgstr " {firstAuthorLink} vás sleduje"
+msgstr "Používateľ {firstAuthorLink} ťa začal sledovať"
 
 #: src/view/com/notifications/NotificationFeedItem.tsx:343
 msgid "{firstAuthorLink} followed you back"
@@ -568,7 +568,7 @@ msgstr "{firstAuthorLink} mal rád váš kanál"
 
 #: src/view/com/notifications/NotificationFeedItem.tsx:309
 msgid "{firstAuthorLink} liked your post"
-msgstr "Použivateľovi {firstAuthorLink}  sa páčil váś príspevok"
+msgstr "Použivateľovi {firstAuthorLink} sa páčil tvoj príspevok"
 
 #: src/view/com/notifications/NotificationFeedItem.tsx:500
 msgid "{firstAuthorLink} liked your repost"
@@ -833,7 +833,7 @@ msgstr "{userName} je dôveryhodný overovateľ"
 
 #: src/components/verification/VerificationsDialog.tsx:69
 msgid "{userName} is verified"
-msgstr "Používatrľ {userName} je overený"
+msgstr "Používateľ {userName} je overený"
 
 #. Possessive, meaning "the verifications of {userName}"
 #: src/components/verification/VerificationsDialog.tsx:71
@@ -1043,7 +1043,7 @@ msgstr "Vybraný príjemca nie je sledovaný odosielateľom."
 
 #: src/Navigation.tsx:507 src/screens/Settings/AboutSettings.tsx:85 src/screens/Settings/Settings.tsx:267 src/screens/Settings/Settings.tsx:270
 msgid "About"
-msgstr "O"
+msgstr "O aplikácii"
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:101
 msgid "Abusive or discriminatory behavior"
@@ -3162,7 +3162,7 @@ msgstr "Kopírovať odkaz"
 
 #: src/screens/ProfileList/components/MoreOptionsMenu.tsx:184 src/screens/ProfileList/components/MoreOptionsMenu.tsx:188
 msgid "Copy link to list"
-msgstr "Kopírovať odkaz do zoznamu"
+msgstr "Kopírovať odkaz od zoznamu"
 
 #: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:140 src/components/PostControls/ShareMenu/ShareMenuItems.tsx:143 src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:86 src/components/PostControls/ShareMenu/ShareMenuItems.web.tsx:89
 msgid "Copy link to post"
@@ -4206,7 +4206,7 @@ msgstr "Zadajte svoje heslo"
 
 #: src/screens/Login/index.tsx:144
 msgid "Enter your username and password"
-msgstr "Zadajte používateľské meno a heslo"
+msgstr "Zadaj svoje používateľské meno a heslo"
 
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoEmbedInnerNative.tsx:190
 msgid "Enters full screen"
@@ -5411,7 +5411,7 @@ msgstr "Skupinové čety sú k dispozícii len používateľom starším ako 18 
 #. placeholder {0}: convo.details.memberLimit
 #: src/screens/Messages/components/InviteLinkDialog.tsx:203
 msgid "Group chats can only have a maximum of {0, plural, other {# people}}."
-msgstr "Skupinové čety môžu mať maximálne {0, plural, one {# osobu}, few {# osoby}, other {# osôb}}."
+msgstr "Skupinové čety môžu mať maximálne {0, plural, one {# osobu} few {# osoby} other {# osôb}}."
 
 #: src/components/dialogs/SearchablePeopleList.tsx:561 src/components/dms/InitiateChatFlow.tsx:1048
 msgid "Group is locked"
@@ -6154,7 +6154,7 @@ msgstr "Pripojiť žiadosť zrušená."
 
 #: src/components/StarterPack/QrCode.tsx:64 src/view/shell/NavSignupCard.tsx:41
 msgid "Join the conversation"
-msgstr "Pripojte sa k rozhovoru"
+msgstr "Pripoj sa k rozhovoru"
 
 #: src/lib/interests.ts:63
 msgid "Journalism"
@@ -6554,7 +6554,7 @@ msgstr "Zoznamy"
 
 #: src/view/com/lists/MyLists.tsx:75
 msgid "Lists allow you to see content from your favorite people."
-msgstr "Zoznamy vám umožňujú vidieť obsah od ľudí, ktorých máte radi."
+msgstr "Zoznamy ti umožňujú vidieť obsah od ľudí, ktorých máš rád/rada."
 
 #: src/components/dms/BlockedByListDialog.tsx:38
 msgid "Lists blocking this user:"
@@ -9466,9 +9466,8 @@ msgid "Resend Verification Email"
 msgstr "Znovu odoslať overovací e-mail"
 
 #: src/screens/Settings/Settings.tsx:511 src/screens/Settings/Settings.tsx:513
-#, fuzzy
 msgid "Reset activity subscription nudge"
-msgstr "Resetovať predplatné aktivity"
+msgstr ""
 
 #: src/screens/Login/SetNewPasswordForm.tsx:113
 msgid "Reset code"
@@ -10747,7 +10746,7 @@ msgstr "Uložené ako súčasť zabezpečeného kódu na porovnávanie s ostatn�
 
 #: src/Navigation.tsx:332 src/screens/Settings/Settings.tsx:477
 msgid "Storybook"
-msgstr "Kniha príbehov"
+msgstr ""
 
 #: src/components/dialogs/nuxs/LiveNowBetaDialog.tsx:182
 msgid "Streaming on Twitch? Set your live status on Bluesky to add a badge to your avatar. Tapping it takes people straight to your stream."
@@ -10898,7 +10897,7 @@ msgstr "Systém"
 
 #: src/screens/Log.tsx:49 src/screens/Settings/AboutSettings.tsx:117 src/screens/Settings/AboutSettings.tsx:120 src/screens/Settings/Settings.tsx:462
 msgid "System log"
-msgstr "Systémový log"
+msgstr "Systémový záznam"
 
 #: src/components/dialogs/MutedWords.tsx:293
 msgid "Tags only"
@@ -15312,7 +15311,7 @@ msgstr "Zobraziť adresu služby pre {name}"
 
 #: src/screens/Settings/PetCompanionSettings.tsx:110 src/screens/Settings/PetCompanionSettings.tsx:115
 msgid "Show the companion"
-msgstr "Zobrazovovať spoločníka"
+msgstr "Zobrazovať miláčika"
 
 #: src/features/liveSports/components/ExploreLiveSportsWidget.tsx:79
 msgid "Show the rankings"

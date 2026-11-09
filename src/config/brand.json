@@ -1,7 +1,7 @@
 {
   "$schema": "./brand.schema.json",
   "$comment": "Single source of truth for brand identity (everything a rebrand edits, except the logo SVGs in assets/brand/ and the OAuth signing keypair in oauth.public-jwks.json). Consumed by the app via the typed adapters src/config/brand.ts (identity/links/services), brand-theme.ts (colors) and oauth.ts (oauth), and directly by the Node build scripts, app.config.js and the Cloudflare Workers. Field docs live in brand.schema.json.",
-  "name": "mu",
+  "name": "Tatrasky",
   "hosts": ["mu.social"],
   "socialHandle": "",
   "colors": {
@@ -180,31 +180,31 @@
         "primary_975": "#29071D"
       }
     },
-    "defaultAccent": "pink"
+    "defaultAccent": "blue"
   },
   "oauth": {
     "$comment": "scope = what NEW logins request (keep transitional-only so every PDS accepts it). declaredScope = superset advertised in client metadata (must cover step-ups like identity:handle AND any scope older cached bundles still request). See src/config/oauth.ts.",
-    "defaultBaseUrl": "https://mu.social",
-    "clientName": "mu",
+    "defaultBaseUrl": "https://tatrasky.sk",
+    "clientName": "Tatrasky",
     "scope": "atproto transition:generic transition:email transition:chat.bsky",
     "declaredScope": "atproto transition:generic transition:email transition:chat.bsky identity:handle account:email?action=manage account:status?action=manage",
     "handleResolver": "https://bsky.social",
-    "signupPdsHost": "https://eurosky.social"
+    "signupPdsHost": "https://pds.tatrasky.sk"
   },
   "links": {
-    "tos": "https://hello.mu.social/terms",
-    "privacy": "https://hello.mu.social/privacy",
-    "community": "https://hello.mu.social/guidelines",
-    "copyright": "https://hello.mu.social/copyright",
-    "support": "https://hello.mu.social/contact",
+    "tos": "",
+    "privacy": "",
+    "community": "",
+    "copyright": "",
+    "support": "mailto:tokolyb@gmail.com",
     "faq": "https://bsky.social/about/faq",
     "dataPrivacy": "https://blueskyweb.zendesk.com/hc/en-us/articles/15835264007693-Data-Privacy",
-    "helpDesk": "https://hello.mu.social/contact",
-    "supportRequest": "https://hello.mu.social/contact",
+    "helpDesk": "mailto:tokolyb@gmail.com",
+    "supportRequest": "mailto:tokolyb@gmail.com",
     "download": "https://bsky.app/download",
     "statusPage": "https://status.bsky.app/",
-    "donate": "https://whydonate.com/fundraising/the-next-era-of-social-media",
-    "feedback": "https://userinput.app/s/did:plc:ooensn4mr5mhznzypvxelfa3/3mnwmwn7sn22u"
+    "donate": "",
+    "feedback": "https://tally.so/r/jebAd9"
   },
   "services": {
     "pds": "https://bsky.social",
@@ -222,7 +222,8 @@
   },
   "verification": {
     "trustedVerifierListUris": [
-      "at://did:plc:ooensn4mr5mhznzypvxelfa3/app.bsky.graph.list/3mogaw2g4an23"
+      "at://did:plc:ooensn4mr5mhznzypvxelfa3/app.bsky.graph.list/3mogaw2g4an23",
+      "at://did:plc:en5rgjahxssboplp5v5bsx7f/app.bsky.graph.list/3mzvfvowak225"
     ],
     "includeBlueskyVerifications": true
   },
