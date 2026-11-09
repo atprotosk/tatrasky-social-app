@@ -2,7 +2,7 @@
   "$schema": "./brand.schema.json",
   "$comment": "Single source of truth for brand identity (everything a rebrand edits, except the logo SVGs in assets/brand/ and the OAuth signing keypair in oauth.public-jwks.json). Consumed by the app via the typed adapters src/config/brand.ts (identity/links/services), brand-theme.ts (colors) and oauth.ts (oauth), and directly by the Node build scripts, app.config.js and the Cloudflare Workers. Field docs live in brand.schema.json.",
   "name": "Tatrasky",
-  "hosts": ["mu.social"],
+  "hosts": ["main.dev.tatrasky.sk"],
   "socialHandle": "",
   "colors": {
     "neutral": {
