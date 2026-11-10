@@ -11,8 +11,8 @@ import {useLoggedOutView} from '#/state/shell/logged-out'
 import {LoggedOutLayout} from '#/view/com/util/layouts/LoggedOutLayout'
 import {ForgotPasswordForm} from '#/screens/Login/ForgotPasswordForm'
 import {LoginForm} from '#/screens/Login/LoginForm'
-// Eurosky fork: web uses the OAuth-primary sign-in (which can switch to a
-// fork-owned password form); native keeps the pristine upstream LoginForm.
+// Eurosky fork: web is OAuth-only; native keeps the pristine upstream
+// LoginForm (there's no native OAuth client yet).
 import {OAuthSignin} from '#/screens/Login/OAuthSignin'
 import {PasswordUpdatedForm} from '#/screens/Login/PasswordUpdatedForm'
 import {SetNewPasswordForm} from '#/screens/Login/SetNewPasswordForm'

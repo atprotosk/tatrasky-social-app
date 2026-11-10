@@ -8,7 +8,7 @@ import {type StatefulControl} from '#/components/dialogs/Context'
 import {useGlobalDialogsControlContext} from '#/components/dialogs/Context'
 import {useAccountEmailState} from '#/components/dialogs/EmailDialog/data/useAccountEmailState'
 import {Manage2FA} from '#/components/dialogs/EmailDialog/screens/Manage2FA'
-import {OAuthPasswordRequired} from '#/components/dialogs/EmailDialog/screens/OAuthPasswordRequired'
+import {OAuthAccountPage} from '#/components/dialogs/EmailDialog/screens/OAuthAccountPage'
 import {Update} from '#/components/dialogs/EmailDialog/screens/Update'
 import {VerificationReminder} from '#/components/dialogs/EmailDialog/screens/VerificationReminder'
 import {Verify} from '#/components/dialogs/EmailDialog/screens/Verify'
@@ -57,7 +57,7 @@ function Inner({control}: {control: StatefulControl<Screen>}) {
   switch (screen.id) {
     case ScreenID.Update: {
       return isOauthSession ? (
-        <OAuthPasswordRequired action="changeEmail" />
+        <OAuthAccountPage action="changeEmail" />
       ) : (
         <Update config={screen} showScreen={showScreen} />
       )
@@ -70,7 +70,7 @@ function Inner({control}: {control: StatefulControl<Screen>}) {
     }
     case ScreenID.Manage2FA: {
       return isOauthSession ? (
-        <OAuthPasswordRequired action="manageEmail2FA" />
+        <OAuthAccountPage action="manageEmail2FA" />
       ) : (
         <Manage2FA config={screen} showScreen={showScreen} />
       )

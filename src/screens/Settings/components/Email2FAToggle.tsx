@@ -1,7 +1,7 @@
-import {useCallback} from 'react'
 import {msg} from '@lingui/core/macro'
 import {useLingui} from '@lingui/react'
 
+import {useOpenPdsAccountPage} from '#/lib/hooks/useOpenPdsAccountPage'
 import {useSession} from '#/state/session'
 import {useDialogControl} from '#/components/Dialog'
 import {
@@ -17,11 +17,19 @@ export function Email2FAToggle() {
   const disableDialogControl = useDialogControl()
   const emailDialogControl = useEmailDialogControl()
 
-  const onToggle = useCallback(() => {
+  const pdsAccountPage = useOpenPdsAccountPage()
+  const isOauth = currentAccount?.isOauthSession === true
+
+  const onToggle = () => {
+    // OAuth sessions can't manage email 2FA; that happens on the PDS.
+    if (isOauth) {
+      pdsAccountPage.open()
+      return
+    }
     emailDialogControl.open({
       id: EmailDialogScreenID.Manage2FA,
     })
-  }, [emailDialogControl])
+  }
 
   return (
     <>

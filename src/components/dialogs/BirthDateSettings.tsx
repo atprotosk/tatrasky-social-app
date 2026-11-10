@@ -3,6 +3,7 @@ import {View} from 'react-native'
 import {Trans, useLingui} from '@lingui/react/macro'
 
 import {useCleanError} from '#/lib/hooks/useCleanError'
+import {useOpenPdsAccountPage} from '#/lib/hooks/useOpenPdsAccountPage'
 import {isAppPassword} from '#/lib/jwt'
 import {getAge, getDateAgo} from '#/lib/strings/time'
 import {logger} from '#/logger'
@@ -14,7 +15,7 @@ import {
   usePreferencesQuery,
   type UsePreferencesQueryResponse,
 } from '#/state/queries/preferences'
-import {useSession, useSessionApi} from '#/state/session'
+import {useSession} from '#/state/session'
 import {ErrorMessage} from '#/view/com/util/error/ErrorMessage'
 import {atoms as a, useTheme, web} from '#/alf'
 import {Admonition} from '#/components/Admonition'
@@ -38,13 +39,15 @@ export function BirthDateSettingsDialog({
   const isBirthdateUpdateAllowed = useIsBirthdateUpdateAllowed()
   const {currentAccount} = useSession()
   const isUsingAppPassword = isAppPassword(currentAccount?.accessJwt || '')
-  // Eurosky: OAuth sessions are non-privileged for the personalDetailsPref
-  // write (atproto PDS restriction), so the birthdate cannot be set from
-  // here. Show an honest message instead of the doomed editable form / the
-  // misleading "app password" server error. Age-assurance enforcement is
-  // unaffected - this only changes this dialog's UI.
+  /*
+   * Eurosky: OAuth sessions are non-privileged for the personalDetailsPref
+   * write (atproto PDS restriction), so the birthdate cannot be set from
+   * here. Point the user at their hosting provider's account page instead of
+   * the doomed editable form / the misleading "app password" server error.
+   * Age-assurance enforcement is unaffected - this only changes this dialog.
+   */
   const isOauthSession = currentAccount?.isOauthSession === true
-  const {logoutCurrentAccount} = useSessionApi()
+  const {host: pdsHost, open: openPdsAccountPage} = useOpenPdsAccountPage()
   const cleanError = useCleanError()
   const defaultErrorMessage = l`We were unable to load your birthdate preferences. Please try again.`
   const fetchErrorMessage = useMemo(() => {
@@ -92,23 +95,20 @@ export function BirthDateSettingsDialog({
               <View style={[a.gap_md]}>
                 <Admonition type="info">
                   <Trans>
-                    You're signed in via your hosting provider (OAuth). Setting
-                    your birthdate isn't supported for OAuth sign-ins. To set
-                    it, log out and sign in again with your account password
-                    (use "Sign in with password" on the sign-in screen), set
-                    your birthdate, then continue.
+                    Your birthdate can't be changed from here while you're
+                    signed in via your hosting provider ({pdsHost}). Open your
+                    account settings there to manage it.
                   </Trans>
                 </Admonition>
                 <Button
-                  testID="oauthBirthdateLogoutButton"
-                  label={l`Log out`}
-                  accessibilityHint={l`Logs out so you can sign in with your password`}
-                  variant="solid"
+                  testID="oauthBirthdateAccountPageButton"
+                  label={l`Open account settings`}
+                  accessibilityHint={l`Opens your hosting provider's account settings`}
                   color="primary"
                   size="large"
-                  onPress={() => logoutCurrentAccount('Settings')}>
+                  onPress={() => control.close(() => openPdsAccountPage())}>
                   <ButtonText>
-                    <Trans>Log out</Trans>
+                    <Trans>Open account settings</Trans>
                   </ButtonText>
                 </Button>
               </View>

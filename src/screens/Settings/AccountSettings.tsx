@@ -2,6 +2,7 @@ import {useEffect} from 'react'
 import {Trans, useLingui} from '@lingui/react/macro'
 import {type NativeStackScreenProps} from '@react-navigation/native-stack'
 
+import {useOpenPdsAccountPage} from '#/lib/hooks/useOpenPdsAccountPage'
 import {type CommonNavigatorParams} from '#/lib/routes/types'
 import {useProfileQuery} from '#/state/queries/profile'
 import {useSession} from '#/state/session'
@@ -47,6 +48,12 @@ export function AccountSettingsScreen({}: Props) {
   const exportCarControl = useDialogControl()
   const deactivateAccountControl = useDialogControl()
   const deleteAccountControl = useDialogControl()
+  /*
+   * OAuth sessions can't perform privileged operations like changing the
+   * email or birthdate, so send them to their hosting provider's account page.
+   */
+  const isOauth = currentAccount?.isOauthSession === true
+  const pdsAccountPage = useOpenPdsAccountPage()
 
   // mu fork: returning from a handle-scope step-up lands here (the callback
   // rewrites the path to /settings/account). Reopen the change-handle dialog so
@@ -126,9 +133,11 @@ export function AccountSettingsScreen({}: Props) {
           <SettingsList.PressableItem
             label={l`Update email`}
             onPress={() =>
-              emailDialogControl.open({
-                id: EmailDialogScreenID.Update,
-              })
+              isOauth
+                ? pdsAccountPage.open()
+                : emailDialogControl.open({
+                    id: EmailDialogScreenID.Update,
+                  })
             }>
             <SettingsList.ItemIcon icon={PencilIcon} />
             <SettingsList.ItemText>
@@ -163,7 +172,9 @@ export function AccountSettingsScreen({}: Props) {
             </SettingsList.ItemText>
             <SettingsList.BadgeButton
               label={l`Edit`}
-              onPress={() => birthdayControl.open()}
+              onPress={() =>
+                isOauth ? pdsAccountPage.open() : birthdayControl.open()
+              }
             />
           </SettingsList.Item>
           <AgeAssuranceAccountCard style={[a.px_xl, a.pt_xs, a.pb_md]} />

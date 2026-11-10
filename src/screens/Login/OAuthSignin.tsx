@@ -1,8 +1,6 @@
 import {useState} from 'react'
 import {View} from 'react-native'
-import {msg} from '@lingui/core/macro'
-import {useLingui} from '@lingui/react'
-import {Trans} from '@lingui/react/macro'
+import {Trans, useLingui} from '@lingui/react/macro'
 
 import {cleanError} from '#/lib/strings/errors'
 import {logger} from '#/logger'
@@ -17,7 +15,6 @@ import {Text} from '#/components/Typography'
 import {BRAND} from '#/config/brand'
 import {type com} from '#/lexicons'
 import {FormContainer} from './FormContainer'
-import {PasswordSignin} from './PasswordSignin'
 
 type ServiceDescription = com.atproto.server.describeServer.$OutputBody
 
@@ -36,36 +33,26 @@ type Props = {
 }
 
 /**
- * Eurosky fork: web sign-in entry. OAuth is primary; a "Sign in with
- * password" affordance switches to the fork-owned PasswordSignin (handle +
- * password + 2FA, PDS auto-resolved). Fork-owned so upstream
- * LoginForm.tsx stays pristine. Prop type matches upstream LoginForm so
+ * Eurosky fork: web sign-in entry. OAuth only - the user is sent to their
+ * hosting provider to sign in, and sensitive account operations later go to
+ * that provider's account page. Prop type matches upstream LoginForm so
  * screens/Login/index.tsx renders it with the same props on web.
  */
-export function OAuthSignin(props: Props) {
-  const {_} = useLingui()
-  const {error, initialHandle, setError, onPressBack} = props
-  const [mode, setMode] = useState<'oauth' | 'password'>('oauth')
+export function OAuthSignin({
+  error,
+  initialHandle,
+  setError,
+  onPressBack,
+}: Props) {
+  const {t: l} = useLingui()
   const [isProcessing, setIsProcessing] = useState(false)
   const [handle, setHandle] = useState(initialHandle)
-
-  if (mode === 'password') {
-    // Carry whatever handle was typed here over to the password form, and
-    // make Back return to the OAuth chooser.
-    return (
-      <PasswordSignin
-        {...props}
-        initialHandle={handle || initialHandle}
-        onPressBack={() => setMode('oauth')}
-      />
-    )
-  }
 
   const onPressSignIn = async () => {
     if (isProcessing) return
     const value = handle.trim().replace(/^@/, '')
     if (!value) {
-      setError(_(msg`Please enter your handle to sign in.`))
+      setError(l`Please enter your handle to sign in.`)
       return
     }
     setError('')
@@ -102,7 +89,7 @@ export function OAuthSignin(props: Props) {
           <TextField.Icon icon={At} />
           <TextField.Input
             testID="loginHandleInput"
-            label={_(msg`Account handle`)}
+            label={l`Account handle`}
             autoCapitalize="none"
             autoFocus
             autoCorrect={false}
@@ -114,9 +101,7 @@ export function OAuthSignin(props: Props) {
             onSubmitEditing={() => void onPressSignIn()}
             blurOnSubmit={false}
             editable={!isProcessing}
-            accessibilityHint={_(
-              msg`Enter the handle of the account you want to sign in with`,
-            )}
+            accessibilityHint={l`Enter the handle of the account you want to sign in with`}
           />
         </TextField.Root>
       </View>
@@ -132,8 +117,8 @@ export function OAuthSignin(props: Props) {
       <View style={[a.gap_sm]}>
         <Button
           testID="loginSignInButton"
-          label={_(msg`Sign in`)}
-          accessibilityHint={_(msg`Sign in with your handle via OAuth`)}
+          label={l`Sign in`}
+          accessibilityHint={l`Sign in with your handle via OAuth`}
           variant="solid"
           color="primary"
           size="large"
@@ -146,8 +131,8 @@ export function OAuthSignin(props: Props) {
         </Button>
         <Button
           testID="loginCreateAccountButton"
-          label={_(msg`Create a new account`)}
-          accessibilityHint={_(msg`Create a new ${BRAND.name} account`)}
+          label={l`Create a new account`}
+          accessibilityHint={l`Create a new ${BRAND.name} account`}
           variant="solid"
           color="secondary"
           size="large"
@@ -158,23 +143,8 @@ export function OAuthSignin(props: Props) {
           </ButtonText>
         </Button>
         <Button
-          testID="loginWithPasswordButton"
-          label={_(msg`Sign in with password`)}
-          accessibilityHint={_(
-            msg`Sign in with a username and password instead`,
-          )}
-          variant="ghost"
-          color="secondary"
-          size="large"
-          onPress={() => setMode('password')}
-          disabled={isProcessing}>
-          <ButtonText>
-            <Trans>Sign in with password</Trans>
-          </ButtonText>
-        </Button>
-        <Button
           testID="loginBackButton"
-          label={_(msg`Back`)}
+          label={l`Back`}
           variant="ghost"
           color="secondary"
           size="large"

@@ -12,11 +12,11 @@ import {Admonition} from '#/components/Admonition'
 import {Button, ButtonIcon, ButtonText} from '#/components/Button'
 import * as Dialog from '#/components/Dialog'
 import {type DialogControlProps} from '#/components/Dialog'
-import {VerifiedCheck} from '#/components/icons/VerifiedCheck'
 import {Loader} from '#/components/Loader'
 import * as ProfileCard from '#/components/ProfileCard'
 import * as Prompt from '#/components/Prompt'
 import * as Toast from '#/components/Toast'
+import {VerificationCheck} from '#/components/verification/VerificationCheck'
 import type * as bsky from '#/types/bsky'
 
 export function VerificationCreatePrompt({
@@ -47,7 +47,7 @@ export function VerificationCreatePrompt({
   return (
     <Prompt.Outer control={control}>
       <View style={[a.flex_row, a.align_center, a.gap_sm, a.pb_sm]}>
-        <VerifiedCheck width={18} />
+        <VerificationCheck width={18} />
         <Prompt.TitleText style={[a.pb_0]}>
           {_(msg`Verify this account?`)}
         </Prompt.TitleText>

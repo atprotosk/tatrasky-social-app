@@ -3,6 +3,7 @@ import {useLingui} from '@lingui/react'
 import {Trans} from '@lingui/react/macro'
 import {type NativeStackScreenProps} from '@react-navigation/native-stack'
 
+import {useOpenPdsAccountPage} from '#/lib/hooks/useOpenPdsAccountPage'
 import {type CommonNavigatorParams} from '#/lib/routes/types'
 import {useNotificationDeclarationQuery} from '#/state/queries/activity-subscriptions'
 import {useAppPasswordsQuery} from '#/state/queries/app-passwords'
@@ -31,8 +32,11 @@ type Props = NativeStackScreenProps<
 export function PrivacyAndSecuritySettingsScreen({}: Props) {
   const {_} = useLingui()
   const t = useTheme()
-  const {data: appPasswords} = useAppPasswordsQuery()
   const {currentAccount} = useSession()
+  // OAuth sessions can't manage app passwords; that happens on the PDS.
+  const isOauth = currentAccount?.isOauthSession === true
+  const pdsAccountPage = useOpenPdsAccountPage()
+  const {data: appPasswords} = useAppPasswordsQuery({enabled: !isOauth})
   const {
     data: notificationDeclaration,
     isPending,
@@ -70,19 +74,34 @@ export function PrivacyAndSecuritySettingsScreen({}: Props) {
             </SettingsList.ItemText>
             <Email2FAToggle />
           </SettingsList.Item>
-          <SettingsList.LinkItem
-            to="/settings/app-passwords"
-            label={_(msg`App passwords`)}>
-            <SettingsList.ItemIcon icon={KeyIcon} />
-            <SettingsList.ItemText>
-              <Trans>App passwords</Trans>
-            </SettingsList.ItemText>
-            {appPasswords && appPasswords.length > 0 && (
-              <SettingsList.BadgeText>
-                {appPasswords.length}
-              </SettingsList.BadgeText>
-            )}
-          </SettingsList.LinkItem>
+          {isOauth ? (
+            <SettingsList.PressableItem
+              label={_(msg`App passwords`)}
+              accessibilityHint={_(
+                msg`Opens your hosting provider's account settings`,
+              )}
+              onPress={pdsAccountPage.open}>
+              <SettingsList.ItemIcon icon={KeyIcon} />
+              <SettingsList.ItemText>
+                <Trans>App passwords</Trans>
+              </SettingsList.ItemText>
+              <SettingsList.Chevron />
+            </SettingsList.PressableItem>
+          ) : (
+            <SettingsList.LinkItem
+              to="/settings/app-passwords"
+              label={_(msg`App passwords`)}>
+              <SettingsList.ItemIcon icon={KeyIcon} />
+              <SettingsList.ItemText>
+                <Trans>App passwords</Trans>
+              </SettingsList.ItemText>
+              {appPasswords && appPasswords.length > 0 && (
+                <SettingsList.BadgeText>
+                  {appPasswords.length}
+                </SettingsList.BadgeText>
+              )}
+            </SettingsList.LinkItem>
+          )}
           <SettingsList.LinkItem
             label={_(
               msg`Settings for allowing others to be notified of your posts`,

@@ -113,7 +113,7 @@ import {type Events} from '#/analytics/metrics/types'
 import {IS_IOS, IS_NATIVE, IS_WEB} from '#/env'
 import {isFollowingV2HomeDotEnabled} from '#/features/followingV2/eligibility'
 import {useActorStatus} from '#/features/liveNow'
-import {NEWS_V2_ENABLED} from '#/features/newsFeed/config'
+import {NEWS_ENABLED, NEWS_V2_ENABLED} from '#/features/newsFeed/config'
 import {type app} from '#/lexicons'
 import {router} from '#/routes'
 import {getComposeButtonLayout} from './composeButtonLayout'
@@ -752,17 +752,19 @@ export function DesktopLeftNav({
               active: HomeFilledIcon,
             }}
           />
-          <NavItem
-            label={l`News`}
-            href={NEWS_V2_ENABLED ? '/news/explore' : '/news'}
-            navItem="news"
-            relatedRoutes={NEWS_V2_ENABLED ? NEWS_HUB_ROUTES : undefined}
-            minimal={leftNavMinimal}
-            icons={{
-              inactive: NewspaperIcon,
-              active: NewspaperFilledIcon,
-            }}
-          />
+          {NEWS_ENABLED && (
+            <NavItem
+              label={l`News`}
+              href={NEWS_V2_ENABLED ? '/news/explore' : '/news'}
+              navItem="news"
+              relatedRoutes={NEWS_V2_ENABLED ? NEWS_HUB_ROUTES : undefined}
+              minimal={leftNavMinimal}
+              icons={{
+                inactive: NewspaperIcon,
+                active: NewspaperFilledIcon,
+              }}
+            />
+          )}
           <NavItem
             label={l`Explore`}
             href="/search"

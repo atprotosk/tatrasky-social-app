@@ -1,6 +1,13 @@
 import {IS_DUTCH_API_CONFIGURED} from '#/features/news/dutch/config'
 
 /**
+ * Whether News appears in the app's navigation (left nav, drawer, keyboard
+ * shortcut). Off unless EXPO_PUBLIC_ENABLE_NEWS=true. The routes still exist,
+ * so a direct /news link keeps working for testing.
+ */
+export const NEWS_ENABLED = process.env.EXPO_PUBLIC_ENABLE_NEWS === 'true'
+
+/**
  * Whether the news hub (the news page shaped by interests, the frontpage
  * explore spread, the directory and the article page) replaces the original
  * news feed and newsrooms. The editorial frontpage layout and editor are

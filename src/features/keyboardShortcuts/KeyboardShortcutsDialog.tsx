@@ -5,6 +5,7 @@ import {atoms as a, useTheme, web} from '#/alf'
 import * as Dialog from '#/components/Dialog'
 import * as Toggle from '#/components/forms/Toggle'
 import {Text} from '#/components/Typography'
+import {NEWS_ENABLED} from '#/features/newsFeed/config'
 import {useKeyboardShortcutsPreference} from './preferences'
 
 export function KeyboardShortcutsDialog({
@@ -67,7 +68,7 @@ function KeyboardShortcutsDialogInner() {
 
         <ShortcutGroup title={l`Go to`}>
           <ShortcutRow shortcut="G H" label={l`Home`} />
-          <ShortcutRow shortcut="G W" label={l`News`} />
+          {NEWS_ENABLED && <ShortcutRow shortcut="G W" label={l`News`} />}
           <ShortcutRow shortcut="G E" label={l`Explore`} />
           <ShortcutRow shortcut="G N" label={l`Notifications`} />
           <ShortcutRow shortcut="G C" label={l`Chat`} />

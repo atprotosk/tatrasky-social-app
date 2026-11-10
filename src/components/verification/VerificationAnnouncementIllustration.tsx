@@ -5,9 +5,8 @@ import {Trans} from '@lingui/react/macro'
 import {atoms as a, useTheme} from '#/alf'
 import {ArrowRight_Stroke2_Corner0_Rounded as ArrowRight} from '#/components/icons/Arrow'
 import {Full as Logo} from '#/components/icons/Logo'
-import {VerifiedCheck} from '#/components/icons/VerifiedCheck'
-import {VerifierCheck} from '#/components/icons/VerifierCheck'
 import {Text} from '#/components/Typography'
+import {VerificationCheck} from '#/components/verification/VerificationCheck'
 import {BRAND} from '#/config/brand'
 
 const ICON_SIZE = 56
@@ -16,8 +15,9 @@ const ICON_SIZE = 56
  * mu fork: in-app replacement for the upstream
  * `initial_verification_announcement_1.png`, which baked in the Bluesky
  * butterfly and brand blue. Rendering it from the mu logo + the live
- * verification icons keeps it on-brand (pink primary_500) and theme-aware
- * (works on light/dark/dim, unlike the PNG's hard-coded light background).
+ * verification icons keeps it on-brand (accent primary_500 for the logo,
+ * fixed verification blue for the checks) and theme-aware (works on
+ * light/dark/dim, unlike the PNG's hard-coded light background).
  *
  * Steps mirror the original: brand selects trusted verifiers, who in turn
  * verify individual accounts.
@@ -54,13 +54,13 @@ export function VerificationAnnouncementIllustration() {
       <Arrow />
 
       <Step labelText={<Trans>Trusted Verifier</Trans>}>
-        <VerifierCheck width={ICON_SIZE} fill={t.palette.primary_500} />
+        <VerificationCheck verifier width={ICON_SIZE} />
       </Step>
 
       <Arrow />
 
       <Step labelText={<Trans>Verified Account</Trans>}>
-        <VerifiedCheck width={ICON_SIZE} fill={t.palette.primary_500} />
+        <VerificationCheck width={ICON_SIZE} />
       </Step>
     </View>
   )

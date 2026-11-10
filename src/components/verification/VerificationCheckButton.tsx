@@ -7,7 +7,10 @@ import {Button} from '#/components/Button'
 import {useDialogControl} from '#/components/Dialog'
 import {useFullVerificationState} from '#/components/verification'
 import {type FullVerificationState} from '#/components/verification'
-import {VerificationCheck} from '#/components/verification/VerificationCheck'
+import {
+  VERIFICATION_CHECK_COLOR,
+  VerificationCheck,
+} from '#/components/verification/VerificationCheck'
 import {VerificationsDialog} from '#/components/verification/VerificationsDialog'
 import {VerifierDialog} from '#/components/verification/VerifierDialog'
 import {useAnalytics} from '#/analytics'
@@ -134,7 +137,7 @@ function Badge({
                 verifiedByHidden
                   ? t.atoms.bg_contrast_100.backgroundColor
                   : state.profile.isVerified
-                    ? t.palette.primary_500
+                    ? VERIFICATION_CHECK_COLOR
                     : t.atoms.bg_contrast_100.backgroundColor
               }
               verifier={state.profile.role === 'verifier'}

@@ -8,10 +8,10 @@ import {useSession} from '#/state/session'
 import {atoms as a, useBreakpoints, useTheme, web} from '#/alf'
 import {Button, ButtonText} from '#/components/Button'
 import * as Dialog from '#/components/Dialog'
-import {VerifierCheck} from '#/components/icons/VerifierCheck'
 import {Text} from '#/components/Typography'
 import {type FullVerificationState} from '#/components/verification'
 import {VerificationAnnouncementIllustration} from '#/components/verification/VerificationAnnouncementIllustration'
+import {VerificationCheck} from '#/components/verification/VerificationCheck'
 import type * as bsky from '#/types/bsky'
 
 export {useDialogControl} from '#/components/Dialog'
@@ -85,7 +85,7 @@ function Inner({
             <Trans>
               Accounts with a scalloped check mark{' '}
               <RNText>
-                <VerifierCheck width={14} />
+                <VerificationCheck verifier width={14} />
               </RNText>{' '}
               are trusted verifiers. They can verify individual accounts.
             </Trans>

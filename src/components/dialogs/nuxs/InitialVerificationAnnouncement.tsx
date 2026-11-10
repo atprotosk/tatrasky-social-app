@@ -11,10 +11,10 @@ import {Button, ButtonText} from '#/components/Button'
 import * as Dialog from '#/components/Dialog'
 import {useNuxDialogContext} from '#/components/dialogs/nuxs'
 import {Sparkle_Stroke2_Corner0_Rounded as SparkleIcon} from '#/components/icons/Sparkle'
-import {VerifierCheck} from '#/components/icons/VerifierCheck'
 import {Link} from '#/components/Link'
 import {Span, Text} from '#/components/Typography'
 import {VerificationAnnouncementIllustration} from '#/components/verification/VerificationAnnouncementIllustration'
+import {VerificationCheck} from '#/components/verification/VerificationCheck'
 import {useAnalytics} from '#/analytics'
 import {IS_NATIVE} from '#/env'
 
@@ -116,7 +116,7 @@ export function InitialVerificationAnnouncement() {
 
           <View style={[a.gap_sm]}>
             <View style={[a.flex_row, a.align_center, a.gap_xs]}>
-              <VerifierCheck width={14} />
+              <VerificationCheck verifier width={14} />
               <Text style={[a.text_lg, a.font_semi_bold, a.leading_snug]}>
                 <Trans>Who can verify?</Trans>
               </Text>

@@ -7,9 +7,12 @@ import {usePdsClient} from '../session'
 const RQKEY_ROOT = 'app-passwords'
 export const RQKEY = () => [RQKEY_ROOT]
 
-export function useAppPasswordsQuery() {
+export function useAppPasswordsQuery({
+  enabled = true,
+}: {enabled?: boolean} = {}) {
   const client = usePdsClient()
   return useQuery({
+    enabled,
     staleTime: STALE.MINUTES.FIVE,
     queryKey: RQKEY(),
     queryFn: async () => {

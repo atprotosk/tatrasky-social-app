@@ -1,5 +1,5 @@
+import {pdsAccountLink} from '#/lib/pdsAccountLink'
 import {useSession} from '#/state/session'
-import {pdsAccountLink} from './pdsAccountLink'
 
 /**
  * Where an OAuth user deletes their account: the hosting provider's account

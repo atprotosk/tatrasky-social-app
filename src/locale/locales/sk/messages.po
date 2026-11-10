@@ -195,7 +195,7 @@ msgstr "{0, plural, one {1 další príspevok} few {# daľšie príspevky} many 
 #. placeholder {0}: profile.followersCount || 0
 #: src/components/ProfileHoverCard/index.web.tsx:452 src/screens/Profile/Header/Metrics.tsx:22
 msgid "{0, plural, one {follower} other {followers}}"
-msgstr "{0, plural, one {sledovateľ} few {sledovateľia} many {sledovateľov} other {sledovateľov}}"
+msgstr "{0, plural, one {follower} few {followers} many {followers} other {followers}}"
 
 #. placeholder {0}: profile.followsCount || 0
 #: src/components/ProfileHoverCard/index.web.tsx:456 src/screens/Profile/Header/Metrics.tsx:26
@@ -2189,7 +2189,7 @@ msgstr "Bloomscrolling booksky"
 
 #: src/components/dialogs/ServerInput.tsx:144 src/components/dialogs/ServerInput.tsx:146 src/screens/CustomFeed/components/CustomFeedHeader.tsx:522
 msgid "Bluesky"
-msgstr "Tatrasky"
+msgstr "Bluesky"
 
 #: src/screens/PostThread/components/ThreadItemAnchor.tsx:652
 msgid "Bluesky cannot confirm the authenticity of the claimed date."
@@ -2198,7 +2198,7 @@ msgstr "Tatrasky nemôže potvrdiť pravosť požadovaného dátumu."
 #: src/screens/Settings/AppIconSettings/useAppIconSets.ts:165
 msgctxt "Name of app icon variant"
 msgid "Bluesky Classic™"
-msgstr "Bluesky ClassicTM"
+msgstr "Bluesky Classic™"
 
 #: src/screens/ModerationInbox/components/AccountStatus.tsx:36
 msgid "Bluesky has taken action on your account or content for violating our community guidelines. Further violations will lead to stronger enforcement, including suspension."
@@ -15814,3 +15814,3232 @@ msgstr "Tvoje predplatné je aktívne"
 #: src/screens/Settings/DecorationsSettings.tsx:256
 msgid "Your subscription will not renew"
 msgstr "Tvoje predplatné sa neobnoví"
+
+#. placeholder {0}: record.text
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/PostSubjectPreview.tsx:95
+msgid "“{0}”"
+msgstr ""
+
+#. placeholder {0}: articles.length
+#: src/features/news/explore/components/StoryByline.tsx:161
+msgid "{0, plural, one {# more article on this} other {# more articles on this}}"
+msgstr ""
+
+#. placeholder {0}: stories.length
+#: src/features/news/explore/components/ExploreSectionFront.tsx:79
+msgid "{0, plural, one {# story across outlets} other {# stories across outlets}}"
+msgstr ""
+
+#. placeholder {0}: hidden.length
+#: src/screens/Settings/components/AccountFootprintDialog/index.tsx:396
+msgid "{0, plural, one {+ # more type} other {+ # more types}}"
+msgstr ""
+
+#. placeholder {0}: content.count
+#: src/components/NewPostsPill/index.tsx:169
+msgid "{0, plural, one {Load # new post} other {Load # new posts}}"
+msgstr ""
+
+#. placeholder {0}: policies.length
+#: src/screens/ModerationInbox/Notice.tsx:270
+msgid "{0, plural, one {Rule violated:} other {Rules violated:}}"
+msgstr ""
+
+#. placeholder {0}: followed.length
+#: src/features/news/article/ArticleSocialStack.tsx:45
+msgid "{0, plural, one {Shared by # connection} other {Shared by # connections}}"
+msgstr ""
+
+#. placeholder {0}: sharers.count
+#. placeholder {0}: unique.length
+#: src/features/news/article/ArticleSocialStack.tsx:51 src/features/news/explore/components/StoryByline.tsx:233
+msgid "{0, plural, one {Shared by # person} other {Shared by # people}}"
+msgstr ""
+
+#. placeholder {0}: sharers.count
+#: src/features/news/explore/components/StoryByline.tsx:229
+msgid "{0, plural, one {Shared by #+ people} other {Shared by #+ people}}"
+msgstr ""
+
+#. placeholder {0}: provider.name
+#: src/features/profileLinks/components/LinkFormDialog.tsx:376
+msgid "{0} is a recognized support link. It gets the green support button."
+msgstr ""
+
+#. placeholder {0}: BRAND.name
+#: src/ageAssurance/components/NoAccessScreen.tsx:180
+msgid "{0} isn't available in your region, which legally requires verified age assurance."
+msgstr ""
+
+#. placeholder {0}: i18n.number(more)
+#: src/features/frontpages/editorial/StarterPackPeople.tsx:116
+msgid "{0} more"
+msgstr ""
+
+#. placeholder {0}: BRAND.name
+#: src/features/frontpages/directory/index.tsx:125 src/features/news/explore/index.tsx:248 src/features/news/outlets/index.tsx:70 src/features/newsFeed/components/NewsFeedTab.tsx:53 src/Navigation.tsx:237 src/Navigation.tsx:248
+msgid "{0} News"
+msgstr ""
+
+#. placeholder {0}: BRAND.name
+#: src/features/frontpages/legacy/NewsroomScreen.tsx:114 src/features/newsFeed/legacy/NewsFeedRightRail.tsx:73 src/Navigation.tsx:238
+msgid "{0} Newsrooms"
+msgstr ""
+
+#. placeholder {0}: title.length
+#: src/features/profileLinks/components/LinkFormDialog.tsx:406
+msgid "{0} out of {MAX_TITLE_LENGTH} characters"
+msgstr ""
+
+#. placeholder {0}: tab.label
+#: src/screens/Notifications/components/TabPills.tsx:428
+msgid "{0} tab, selected"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:75
+msgid "{accountCount, plural, one {# account} other {# accounts}}"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:71
+msgid "{accountCount, plural, one {# account} other {# accounts}}, {feedCount, plural, one {# feed} other {# feeds}}"
+msgstr ""
+
+#: src/features/frontpages/editorial/Article.tsx:74
+msgid "{commentCount, plural, one {Open conversation (# comment)} other {Open conversation (# comments)}}"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/ListSubjectPreview.tsx:52
+msgid "{count, plural, one {# account} other {# accounts}}"
+msgstr ""
+
+#. Number of people you follow who also follow this account
+#: src/screens/Notifications/components/NotificationItem/Item/profile.tsx:353
+msgid "{count, plural, one {# mutual follower} other {# mutual followers}}"
+msgstr ""
+
+#. Short form of “mutual followers”: the number of people you follow who also follow this account
+#: src/screens/Notifications/components/NotificationItem/Item/profile.tsx:360
+msgid "{count, plural, one {# mutual} other {# mutuals}}"
+msgstr ""
+
+#: src/features/news/explore/components/ExploreDepartment.tsx:186
+msgid "{count, plural, one {# story} other {# stories}}"
+msgstr ""
+
+#: src/features/profileLinks/components/ProfileLinks.tsx:443
+msgid "{count, plural, one {Show # more link} other {Show # more links}}"
+msgstr "{count, plural, one {Zobraziť # link} few {Zobraziť # ďalšie linky} other {Zobraziť # ďalších linkov}}"
+
+#: src/features/followingV2/home/PrependPill.tsx:76
+msgid "{count, plural, one {Show # new post} other {Show # new posts}}"
+msgstr ""
+
+#: src/screens/ModerationInbox/Notice.tsx:425
+msgid "{detailsLength} of {MAX_REPORT_REASON_GRAPHEME_LENGTH} characters used"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:79
+msgid "{feedCount, plural, one {# feed} other {# feeds}}"
+msgstr ""
+
+#: src/features/news/explore/components/StoryByline.tsx:167
+msgid "{first} and {second} covered this too"
+msgstr ""
+
+#: src/features/news/explore/components/StoryByline.tsx:168
+msgid "{first} covered this too"
+msgstr ""
+
+#. How long ago a notification happened, e.g. "7m ago". The time is already abbreviated and translated.
+#: src/screens/Notifications/components/NotificationItem/Item/text.tsx:162
+msgid "{formatted} ago"
+msgstr ""
+
+#: src/components/moderation/BlockDialog.tsx:199
+msgid "{hiddenCount, plural, one {See # more} other {See # more}}"
+msgstr ""
+
+#: src/view/com/pager/TabBar.tsx:452 src/view/com/pager/TabBar.web.tsx:132
+msgid "{item}, unread"
+msgstr ""
+
+#: src/screens/ModerationInbox/Settings.tsx:138
+msgid "{label}. {description}"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:420
+msgid "{length, plural, one {Fixed: # spot} other {Fixed: # spots}}"
+msgstr ""
+
+#: src/features/frontpages/editorial/Article.tsx:66
+msgid "{likeCount, plural, one {View # like} other {View # likes}}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:127
+msgid "{name} and {others, plural, one {# other} other {# others}} followed you"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:486
+msgid "{name} and {others, plural, one {# other} other {# others}} liked your custom feed"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:88
+msgid "{name} and {others, plural, one {# other} other {# others}} liked your post"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:189
+msgid "{name} and {others, plural, one {# other} other {# others}} liked your repost"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:138
+msgid "{name} and {others, plural, one {# other} other {# others}} reposted your post"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:240
+msgid "{name} and {others, plural, one {# other} other {# others}} reposted your repost"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:126
+msgid "{name} and {secondName} followed you"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:484
+msgid "{name} and {secondName} liked your custom feed"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:86
+msgid "{name} and {secondName} liked your post"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:187
+msgid "{name} and {secondName} liked your repost"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:136
+msgid "{name} and {secondName} reposted your post"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:238
+msgid "{name} and {secondName} reposted your repost"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:196
+msgid "{name} followed you back"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:195
+msgid "{name} followed you back via starter pack {starterPackName}"
+msgstr ""
+
+#: src/features/frontpages/components/FrontpageLinkChip.tsx:82
+msgid "{name} Frontpage"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:352
+msgid "{name} liked {count} of your {count, plural, one {post} other {posts}}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:415
+msgid "{name} liked {count} of your {count, plural, one {repost} other {reposts}}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:490
+msgid "{name} liked your custom feed"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:92
+msgid "{name} liked your post"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:193
+msgid "{name} liked your repost"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:268
+msgid "{name} removed their verification from your account"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:383
+msgid "{name} reposted {count} of your {count, plural, one {post} other {posts}}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:447
+msgid "{name} reposted {count} of your {count, plural, one {repost} other {reposts}}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:142
+msgid "{name} reposted your post"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:244
+msgid "{name} reposted your repost"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:233
+msgid "{name} verified you"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:84
+msgid "{policyLabel} – {duration}"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:83
+msgid "{policyLabel} – {duration}, now expired"
+msgstr ""
+
+#: src/components/dialogs/NewskieDialog/utils.ts:32
+msgid "{profileName} joined Bluesky just now"
+msgstr ""
+
+#: src/components/dialogs/NewskieDialog/utils.ts:31
+msgid "{profileName} joined Bluesky using a Starter Pack just now"
+msgstr ""
+
+#: src/features/frontpages/editorial/Article.tsx:70
+msgid "{repostCount, plural, one {View # repost} other {View # reposts}}"
+msgstr ""
+
+#: src/screens/ModerationInbox/Notice.tsx:242
+msgid "{serviceName} removed your content for violating our <0>Community Guidelines</0>."
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:241
+msgid "{shown} of {length} filled – there are no more posts to fill it, so it collapses for readers."
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:342
+msgid "{spots} – drag to resize"
+msgstr ""
+
+#: src/features/frontpages/directory/index.tsx:258 src/features/newsFeed/components/interests/InterestEditor.tsx:552
+msgid "{stories, plural, one {# current story} other {# current stories}}"
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:483
+msgid "{title}, already pinned on the front page"
+msgstr ""
+
+#: src/features/news/explore/components/StoryByline.tsx:175
+msgid "{unnamed, plural, one {{first} and # more covered this} other {{first} and # more covered this}}"
+msgstr ""
+
+#: src/features/news/explore/components/StoryByline.tsx:171
+msgid "{unnamed, plural, one {{first}, {second} and # more covered this} other {{first}, {second} and # more covered this}}"
+msgstr ""
+
+#: src/screens/Settings/Settings.tsx:213 src/view/shell/Drawer.tsx:802
+msgid "{unreadCount, plural, one {# unread update} other {# unread updates}}"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:236
+msgid "{value, plural, one {# spot} other {# spots}}"
+msgstr ""
+
+#: src/components/Post/Embed/AtCard/index.tsx:160
+msgid "@{displayedHandle}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:152
+msgid "<0/> and <1/> followed you"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:499
+msgid "<0/> and <1/> liked your custom feed"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:96
+msgid "<0/> and <1/> liked your post"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:197
+msgid "<0/> and <1/> liked your repost"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:146
+msgid "<0/> and <1/> reposted your post"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:248
+msgid "<0/> and <1/> reposted your repost"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:157
+msgid "<0/> and <1>{others, plural, one {# other} other {# others}}</1> followed you"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:504
+msgid "<0/> and <1>{others, plural, one {# other} other {# others}}</1> liked your custom feed"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:101
+msgid "<0/> and <1>{others, plural, one {# other} other {# others}}</1> liked your post"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:202
+msgid "<0/> and <1>{others, plural, one {# other} other {# others}}</1> liked your repost"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:151
+msgid "<0/> and <1>{others, plural, one {# other} other {# others}}</1> reposted your post"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:253
+msgid "<0/> and <1>{others, plural, one {# other} other {# others}}</1> reposted your repost"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:79
+msgid "<0/> followed you"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:204
+msgid "<0/> followed you back! 🎉"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:358
+msgid "<0/> liked {count} of your {count, plural, one {post} other {posts}}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:421
+msgid "<0/> liked {count} of your {count, plural, one {repost} other {reposts}}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:512
+msgid "<0/> liked your custom feed"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:109
+msgid "<0/> liked your post"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:210
+msgid "<0/> liked your repost"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:275
+msgid "<0/> removed their verification from your account"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:389
+msgid "<0/> reposted {count} of your {count, plural, one {post} other {posts}}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:453
+msgid "<0/> reposted {count} of your {count, plural, one {repost} other {reposts}}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:159
+msgid "<0/> reposted your post"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:261
+msgid "<0/> reposted your repost"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:310
+msgid "<0/> signed up with your starter pack"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:240
+msgid "<0/> verified you"
+msgstr ""
+
+#: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:251
+msgid "<0>Tap here to update your approximate location via GPS.</0>"
+msgstr ""
+
+#: src/features/frontpages/editorial/index.tsx:274
+msgid "A carousel holds posts only, not feeds or starter packs."
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:409
+msgid "A fixed number of spots"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:48
+msgid "A horizontal strip of any content. Each item keeps its own width and height, and the strip is as tall as the tallest one."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:60 src/screens/ModerationInbox/components/util/noticeLabels.ts:78
+msgid "A label was added to your account"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:63 src/screens/ModerationInbox/components/util/noticeLabels.ts:81
+msgid "A label was added to your content"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:62 src/screens/ModerationInbox/components/util/noticeLabels.ts:80
+msgid "A label was added to your post"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:104
+msgid "A label was removed from your account"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:107
+msgid "A label was removed from your content"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:106
+msgid "A label was removed from your post"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:377
+msgid "A little more content than the first card."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/noticeLabels.ts:43
+msgid "A moderator reviewed your appeal and reversed the original decision."
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:254
+msgid "About what?"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:53
+msgid "Account {authorName}"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportActionLabel.ts:34
+msgid "Account restored"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/StatusSubjectPreview.tsx:51
+msgid "Account status"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportActionLabel.ts:30
+msgid "Account suspended"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportActionLabel.ts:32
+msgid "Account taken down"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/AccountSubjectPreview.tsx:40
+msgid "Account unavailable"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:53
+msgid "Account unknown"
+msgstr ""
+
+#: src/components/verification/VerifierDialog.tsx:85
+msgid "Accounts with a scalloped check mark <0><1/></0> are trusted verifiers. They can verify individual accounts."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportActionLabel.ts:46 src/screens/ModerationInbox/components/util/reportActionLabel.ts:51
+msgid "Action taken"
+msgstr ""
+
+#. placeholder {0}: nav.index
+#. placeholder {1}: nav.previous
+#. placeholder {2}: nav.events
+#: src/components/Gallery/Storybook.tsx:661
+msgid "Active index {0} (from {1}), {2} user navigation events"
+msgstr ""
+
+#: src/screens/Atmosphere/index.tsx:37
+msgid "Activity"
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:486
+msgid "Add {title}"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:167
+msgid "Add a banner to the profile to use it as the cover."
+msgstr ""
+
+#: src/features/profileLinks/components/LinkFormDialog.tsx:284 src/features/profileLinks/components/LinkFormDialog.tsx:304 src/features/profileLinks/components/ProfileLinksEditor.tsx:196
+msgid "Add a link"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:468
+msgid "Add a section here"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:154 src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:162
+msgid "Add an interest"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:135
+msgid "Add an interest for each slice of the news you follow, like tech from anywhere, or everything from Belgian outlets."
+msgstr ""
+
+#: src/features/muForYouFeed/index.tsx:85 src/features/muForYouFeed/index.tsx:91
+msgid "Add as first feed"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:541
+msgid "Add card"
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:74
+msgid "Add existing post, feed or starter pack here"
+msgstr ""
+
+#: src/features/profileLinks/components/LinkFormDialog.tsx:427 src/features/profileLinks/components/LinkFormDialog.tsx:446 src/features/profileLinks/components/ProfileLinksEditor.tsx:212
+msgid "Add link"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:475 src/features/frontpages/editorial/Section.tsx:586 src/features/frontpages/editorial/Section.tsx:596
+msgid "Add section"
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:245 src/features/frontpages/editorial/SlotPicker.tsx:249
+msgid "Add to front page"
+msgstr ""
+
+#: src/components/PostControls/PostMenu/PostMenuControlItems.tsx:159
+msgid "Added to saved posts"
+msgstr ""
+
+#. Tab label in Notifications that shows every notification. Space is tight, so keep it as short as possible.
+#: src/screens/Notifications/index.tsx:116
+msgctxt "notifications tab"
+msgid "All"
+msgstr ""
+
+#: src/features/news/explore/components/ExploreInterestPicker.tsx:101
+msgid "All of {name}"
+msgstr ""
+
+#: src/features/news/explore/components/ExploreLocationPicker.tsx:40
+msgid "All of the Netherlands"
+msgstr ""
+
+#: src/features/frontpages/FrontpageScreen.tsx:69 src/features/frontpages/FrontpageScreen.tsx:73
+msgid "All outlets"
+msgstr ""
+
+#: src/features/news/explore/components/ExploreSectionFront.tsx:91 src/features/newsFeed/components/interests/InterestEditor.tsx:267 src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:266 src/features/newsFeed/components/SetupTopics.tsx:51
+msgid "All topics"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:759
+msgid "An empty gallery takes up no space. A single item behaves like any other, without dragging or arrow key navigation to go anywhere."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/noticeLabels.ts:40
+msgid "Appeal approved"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/noticeLabels.ts:46
+msgid "Appeal denied"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/noticeLabels.ts:50
+msgid "Appeal resolved"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/noticeLabels.ts:36
+msgid "Appeal under review"
+msgstr ""
+
+#: src/components/OTAChannelNotice.tsx:224
+msgid "Apply"
+msgstr ""
+
+#: src/components/OTAChannelNotice.tsx:221
+msgid "Apply update from this channel"
+msgstr ""
+
+#: src/screens/Atmosphere/index.tsx:37
+msgid "Apps"
+msgstr ""
+
+#: src/screens/Atmosphere/components/FeaturedApps.tsx:15
+msgid "Apps on the Atmosphere"
+msgstr ""
+
+#: src/features/news/article/NewsArticleScreen.tsx:93 src/Navigation.tsx:271
+msgid "Article"
+msgstr ""
+
+#: src/Navigation.tsx:209 src/screens/Atmosphere/index.tsx:28 src/view/shell/desktop/LeftNav.tsx:788 src/view/shell/Drawer.tsx:571
+msgid "Atmosphere"
+msgstr ""
+
+#: src/screens/Atmosphere/AppsTab.tsx:34
+msgid "Audio"
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:524
+msgid "Automatic on the front page – pick to pin it here"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:441
+msgid "B"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:91 src/features/frontpages/editorial/Editor.tsx:96
+msgid "Back to editing"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:417
+msgid "Big (full width)"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/labels.ts:21
+msgid "Blocked lists"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/post.tsx:484
+msgid "Blocked post"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/labels.ts:18
+msgctxt "noun"
+msgid "Blocks"
+msgstr ""
+
+#: src/screens/Atmosphere/AppsTab.tsx:27
+msgid "Blogging"
+msgstr ""
+
+#: src/screens/Settings/AppearanceSettings.tsx:280
+msgid "Blue"
+msgstr ""
+
+#: src/screens/Atmosphere/components/AtmosphereNux.tsx:63
+msgid "Bluesky is part of a growing network of hundreds of social apps. Your account unlocks them all."
+msgstr ""
+
+#: src/features/news/outlets/index.tsx:124 src/features/news/outlets/index.tsx:126
+msgid "Browse every outlet"
+msgstr ""
+
+#: src/features/pixelEditor/Workspace.tsx:109
+msgid "Brush"
+msgstr ""
+
+#: src/features/pixelEditor/ColorPopover.tsx:170
+msgid "Brush size"
+msgstr ""
+
+#. placeholder {0}: drawing.brushSize
+#: src/features/pixelEditor/Workspace.tsx:202 src/features/pixelEditor/Workspace.tsx:206
+msgid "Brush size: {0} pixels"
+msgstr ""
+
+#: src/features/pixelEditor/ColorPopover.tsx:186
+msgid "Brush size: {value} pixels"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:414
+msgid "Buttons and text fields work without starting a drag. Type, select text with the arrow keys, and click. The last item uses the focus render function to make its own button the keyboard target, which Enter and Space should press."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:84
+msgid "By {authorName}"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/FeedSubjectPreview.tsx:48 src/screens/ModerationInbox/components/ReportSubjectPreview/ListSubjectPreview.tsx:55
+msgid "By {name}"
+msgstr ""
+
+#. Label for a cake icon beside a profile name, not a personal birthday.
+#: src/components/CakeDayBadge.tsx:22
+msgid "Cake day! Account creation anniversary."
+msgstr ""
+
+#: src/screens/ModerationInbox/Notice.tsx:430
+msgid "Cancel appeal"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:125
+msgid "Cancel editing"
+msgstr ""
+
+#. placeholder {0}: card.id
+#: src/components/Gallery/Storybook.tsx:644 src/components/Gallery/Storybook.tsx:649
+msgid "Card {0}"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:373
+msgid "Card {index}"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:279
+msgid "Cards and images of different sizes"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:725
+msgid "Cards in a constrained panel"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:271
+msgid "Cards of different widths and heights, an image, and a card wider than the gallery. The strip is as tall as the tallest card, and nothing is cropped or resized."
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:327
+msgid "Cards stretch to the tallest sibling. Shortening or removing the tall card should let the whole row shrink again."
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:742
+msgid "Cards that bleed to the container edges"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:630
+msgid "Cards that change"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:521
+msgid "Carousel"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:524
+msgid "Carousel – a row of posts that scrolls sideways"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:197
+msgid "Change languages"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:533
+msgid "Change the items from outside. Resizing, reordering, and revealing are not user navigation, so the event count should only go up when you swipe, drag, or use the arrow keys."
+msgstr ""
+
+#: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:192
+msgid "Change your content languages"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:531
+msgid "Changing content"
+msgstr ""
+
+#: src/screens/Settings/components/ChangePasswordDialog.tsx:185
+msgid "Changing your password will sign you out. You’ll need to sign in again with your new password."
+msgstr ""
+
+#: src/components/OTAChannelNotice.tsx:203 src/components/OTAChannelNotice.tsx:207
+msgid "Channel"
+msgstr ""
+
+#: src/components/OTAChannelNotice.tsx:120
+msgid "Check for OTA updates"
+msgstr ""
+
+#: src/components/OTAChannelNotice.tsx:127
+msgid "Check for updates"
+msgstr ""
+
+#: src/features/news/explore/components/ExploreLocationPicker.tsx:49 src/features/news/explore/components/ExploreLocationPicker.tsx:54
+msgid "Choose a location"
+msgstr ""
+
+#: src/features/news/explore/components/ExploreInterestPicker.tsx:66 src/features/news/explore/index.tsx:258
+msgid "Choose your news interests"
+msgstr ""
+
+#: src/screens/Search/components/SearchHistory.tsx:150
+msgctxt "action"
+msgid "Clear"
+msgstr ""
+
+#: src/screens/Search/components/SearchHistory.tsx:78
+msgctxt "action"
+msgid "Clear all"
+msgstr ""
+
+#: src/screens/Search/components/SearchHistory.tsx:71
+msgid "Clear all recent searches"
+msgstr ""
+
+#: src/screens/Search/components/SearchHistory.tsx:147
+msgid "Clear all recent searches?"
+msgstr ""
+
+#: src/features/pixelEditor/Workspace.tsx:266
+msgid "Clear drawing"
+msgstr ""
+
+#: src/features/news/explore/sections.ts:98
+msgid "Climate"
+msgstr ""
+
+#: src/features/pixelEditor/ColorPopover.tsx:231 src/features/pixelEditor/Workspace.tsx:171
+msgid "Close tool options"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/group.tsx:304
+msgid "Collapses list of users"
+msgstr ""
+
+#: src/features/pixelEditor/ColorPopover.tsx:99
+msgid "Color {swatch}"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportActionLabel.ts:40
+msgid "Communication sent"
+msgstr ""
+
+#: src/features/newsFeed/components/NewsFeedTab.tsx:66
+msgid "Configure"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:697
+msgid "Constrained and bleeding containers"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:48 src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:56
+msgid "Content"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:48
+msgid "Content by {authorName}"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportActionLabel.ts:26
+msgid "Content removed"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportActionLabel.ts:28
+msgid "Content restored"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/index.tsx:86
+msgid "Content unavailable"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:26
+msgid "Conversation with {authorName}"
+msgstr ""
+
+#: src/features/muForYouFeed/index.tsx:79
+msgid "Could not add the feed. Please try again."
+msgstr ""
+
+#: src/screens/Atmosphere/AppsTab.tsx:78 src/screens/Atmosphere/ExploreTab.tsx:51
+msgid "Could not load Atmosphere content. Please try again."
+msgstr ""
+
+#: src/features/frontpages/editorial/StarterPackHeader.tsx:135
+msgid "Couldn’t follow this starter pack. Try again."
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:366
+msgid "Couldn’t load items. Try again."
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/group.tsx:359
+msgid "Couldn’t load more accounts, please try again"
+msgstr ""
+
+#: src/features/followingV2/home/GapRow.tsx:58 src/features/followingV2/home/GapRow.tsx:83
+msgid "Couldn’t load more posts. Try again"
+msgstr ""
+
+#: src/features/frontpages/editorial/index.tsx:832
+msgid "Couldn’t load stories."
+msgstr ""
+
+#: src/features/news/explore/index.tsx:339
+msgid "Couldn’t load the news. Try again later."
+msgstr ""
+
+#: src/features/frontpages/editorial/index.tsx:628
+msgid "Couldn’t load the published front page."
+msgstr ""
+
+#: src/features/frontpages/FrontpageScreen.tsx:48 src/features/frontpages/PublicationScreen.tsx:49
+msgid "Couldn’t load this publication."
+msgstr ""
+
+#: src/features/frontpages/editorial/ResourceSlot.tsx:143
+msgid "Couldn’t load this slot."
+msgstr ""
+
+#: src/screens/Profile/Header/EditProfileDialog.tsx:186
+msgid "Couldn’t load your links. Please try again."
+msgstr "Nepodarilo sa načítať tvoje linky. Prosím, skús to znova."
+
+#: src/screens/Profile/Header/EditProfileDialog.tsx:536
+msgid "Couldn’t load your links. Retry"
+msgstr "Nepodarilo sa načítať tvoje linky. Skús to znova."
+
+#: src/features/frontpages/editorial/index.tsx:277
+msgid "Couldn’t place the item there. Choose another place."
+msgstr ""
+
+#: src/features/frontpages/editorial/index.tsx:294
+msgid "Couldn’t publish the front page. Your changes are still here. Try again."
+msgstr ""
+
+#: src/features/profileLinks/components/ProfileLinks.tsx:198
+msgid "Couldn’t save your links. Please try again."
+msgstr "Nepodarilo sa uložiť tvoje linky. Prosím, skús to znova."
+
+#: src/screens/Profile/Header/EditProfileDialog.tsx:309
+msgid "Couldn’t save your profile. Please try again."
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:424
+msgid "Counter"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:218
+msgid "Countries"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:457
+msgid "Counts how many times it was focused and pressed"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/FeedSubjectPreview.tsx:53 src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:90
+msgid "Created {createdAt}"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/ListSubjectPreview.tsx:58
+msgid "Created {date}"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportActionLabel.ts:44
+msgid "Credentials revoked"
+msgstr ""
+
+#: src/features/pixelEditor/ColorPopover.tsx:37
+msgid "Custom colors"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/labels.ts:14
+msgid "Custom feeds"
+msgstr ""
+
+#: src/screens/Settings/AppearanceSettings.tsx:279
+msgid "Cyan"
+msgstr ""
+
+#. placeholder {0}: pdsAccountLink.host
+#: src/screens/Settings/components/AccountFootprintDialog/index.tsx:231 src/screens/Settings/components/AccountFootprintDialog/index.tsx:240
+msgid "Deactivate on {0}"
+msgstr ""
+
+#: src/screens/Settings/components/AccountActionIntro.tsx:30 src/screens/Settings/components/DeactivateAccountDialog.tsx:113
+msgid "Deactivate your account"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/labels.ts:30
+msgid "Decoration settings"
+msgstr ""
+
+#. placeholder {0}: pdsAccountLink.host
+#: src/screens/Settings/components/AccountFootprintDialog/index.tsx:230 src/screens/Settings/components/AccountFootprintDialog/index.tsx:238
+msgid "Delete on {0}"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:130
+msgid "Delete this interest"
+msgstr ""
+
+#: src/screens/Settings/components/AccountActionIntro.tsx:28 src/screens/Settings/components/DeleteAccountDialog.tsx:322
+msgid "Delete your account"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/post.tsx:487
+msgid "Deleted post"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:547
+msgid "Description (optional)"
+msgstr ""
+
+#. placeholder {0}: record.description
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:103
+msgid "Description: “{0}”"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/FeedSubjectPreview.tsx:65 src/screens/ModerationInbox/components/ReportSubjectPreview/ListSubjectPreview.tsx:70
+msgid "Description: “{description}”"
+msgstr ""
+
+#: src/screens/Atmosphere/AppsTab.tsx:33
+msgid "Dev"
+msgstr ""
+
+#: src/features/news/explore/components/ExploreLeadBand.tsx:109
+msgid "Developing"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:24
+msgid "Direct message"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:23
+msgid "Direct message from {authorName}"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:125
+msgid "Discard changes"
+msgstr ""
+
+#: src/features/muForYouFeed/index.tsx:65
+msgid "Discover posts picked for you based on your interests. Add Mu’s personalized feed as your first pinned feed?"
+msgstr ""
+
+#: src/screens/Atmosphere/components/AtmosphereNux.tsx:57
+msgid "Discover the Atmosphere"
+msgstr ""
+
+#: src/screens/Atmosphere/components/AtmosphereNux.tsx:70
+msgid "Dismiss Discover the Atmosphere banner"
+msgstr ""
+
+#: src/features/frontpages/editorial/FillMenu.tsx:62 src/features/frontpages/editorial/FillMenu.tsx:90 src/features/frontpages/editorial/FillMenu.tsx:91
+msgid "Don’t fill"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:117
+msgid "Drag stories to arrange the front page, then publish."
+msgstr ""
+
+#: src/features/pixelEditor/ColorPicker.tsx:65
+msgid "Drag to choose a color, or use arrow keys and Space."
+msgstr ""
+
+#: src/features/pixelEditor/ColorPicker.tsx:116
+msgid "Drag to choose a hue, or use arrow keys and Space."
+msgstr ""
+
+#: src/features/pixelEditor/Workspace.tsx:149
+msgid "Drag to draw. Pinch with two fingers to zoom and move. Tap with two fingers to undo, or three to redo. Use plus, minus, and zero for keyboard zoom."
+msgstr ""
+
+#: src/features/frontpages/editorial/SortableStories/index.web.tsx:401
+msgid "Drag to reorder {title}"
+msgstr ""
+
+#: src/features/frontpages/editorial/SortableStories/index.web.tsx:278
+msgid "Drag to reorder. You can also use the arrow keys, Home, or End while this handle is focused. Press Escape to cancel a drag."
+msgstr ""
+
+#: src/features/pixelEditor/Workspace.tsx:221 src/features/pixelEditor/Workspace.tsx:225
+msgid "Drawing color"
+msgstr ""
+
+#: src/features/frontpages/editorial/SortableStories/index.web.tsx:383
+msgid "Drop here"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:447
+msgid "Drop stories here, add one with +, or choose what fills it."
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:537
+msgid "e.g. Politics"
+msgstr ""
+
+#: src/features/profileLinks/components/LinkFormDialog.tsx:394
+msgid "e.g. Portfolio"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:132
+msgid "Each one is a tab"
+msgstr ""
+
+#: src/screens/Notifications/components/PageList.tsx:580
+msgctxt "Notifications section header"
+msgid "Earlier"
+msgstr ""
+
+#. placeholder {0}: linkLabel(item.link)
+#: src/features/profileLinks/components/ProfileLinksEditor.tsx:105
+msgid "Edit {0}"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:241
+msgid "Edit {title}"
+msgstr ""
+
+#: src/features/frontpages/editorial/index.tsx:549 src/features/frontpages/editorial/index.tsx:563
+msgid "Edit front page"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:91
+msgid "Edit interest"
+msgstr ""
+
+#: src/features/profileLinks/components/LinkFormDialog.tsx:284 src/features/profileLinks/components/LinkFormDialog.tsx:304 src/features/profileLinks/components/ProfileLinks.tsx:224
+msgid "Edit link"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:586
+msgid "Edit section"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:165
+msgid "Edit section {name}"
+msgstr ""
+
+#: src/features/frontpages/directory/index.tsx:100
+msgid "Elsewhere"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:757
+msgid "Empty and single"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:766
+msgid "Empty gallery"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:656
+msgid "End"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:655
+msgid "End card"
+msgstr ""
+
+#: src/screens/Login/LoginForm.tsx:437
+msgid "Enter the code from your email or authenticator app"
+msgstr ""
+
+#: src/screens/Login/LoginForm.tsx:440
+msgid "Enter the sign in code from your email or authenticator app."
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:356
+msgid "Equal-height cards"
+msgstr ""
+
+#: src/features/pixelEditor/Workspace.tsx:110
+msgid "Eraser"
+msgstr ""
+
+#: src/features/news/explore/sections.ts:30
+msgid "Europe"
+msgstr ""
+
+#: src/screens/Atmosphere/AppsTab.tsx:35
+msgid "Events"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:337
+msgid "Every outlet is in. Untick some, and the stories of the ones left come first."
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:335
+msgid "Every outlet is in. Untick the ones you do not want."
+msgstr ""
+
+#: src/features/news/explore/useInterestTitle.ts:35 src/features/newsFeed/components/interests/InterestEditor.tsx:223 src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:262
+msgid "Everywhere"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/group.tsx:305
+msgid "Expands list of users"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/index.tsx:392
+msgid "Expands the list of record types"
+msgstr ""
+
+#: src/state/queries/moderation-inbox.ts:346
+msgid "Failed to mark as read. Please try again."
+msgstr ""
+
+#: src/screens/ModerationInbox/Notice.tsx:386
+msgid "Failed to submit appeal. Please try again."
+msgstr ""
+
+#: src/screens/Atmosphere/components/FeaturedArticles.tsx:23 src/screens/Atmosphere/components/FeaturedArticles.tsx:26
+msgid "Featured articles"
+msgstr ""
+
+#: src/screens/Atmosphere/components/FeaturedLivestreams.tsx:23 src/screens/Atmosphere/components/FeaturedLivestreams.tsx:26
+msgid "Featured livestreams"
+msgstr ""
+
+#: src/features/news/outlets/components/FeaturedOutletsBand.tsx:30
+msgid "Featured outlets"
+msgstr ""
+
+#: src/screens/Atmosphere/components/FeaturedPhotos.tsx:19 src/screens/Atmosphere/components/FeaturedPhotos.tsx:22
+msgid "Featured photos"
+msgstr ""
+
+#: src/screens/Atmosphere/components/FeaturedPublications.tsx:23 src/screens/Atmosphere/components/FeaturedPublications.tsx:26
+msgid "Featured publications"
+msgstr ""
+
+#. placeholder {0}: sanitizeDisplayName(feedName)
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/FeedSubjectPreview.tsx:45
+msgid "Feed “{0}”"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:42
+msgid "Feed by {authorName}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/media.tsx:225
+msgid "Feed by {handle}"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:254
+msgid "Fewer spots"
+msgstr ""
+
+#: src/features/pixelEditor/Workspace.tsx:111
+msgid "Fill drawing area"
+msgstr ""
+
+#. placeholder {0}: name(uri)
+#: src/features/frontpages/editorial/FillMenu.tsx:108
+msgid "Fill with posts from {0}"
+msgstr ""
+
+#: src/features/frontpages/editorial/FillMenu.tsx:95
+msgid "Fill with your posts"
+msgstr ""
+
+#: src/features/frontpages/editorial/FillMenu.tsx:68 src/features/frontpages/editorial/FillMenu.tsx:73
+msgid "Fill with: {label}"
+msgstr ""
+
+#: src/features/frontpages/editorial/FillMenu.tsx:83
+msgid "Fill: {label}"
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:309 src/features/frontpages/editorial/SlotPicker.tsx:310
+msgid "Filter loaded items"
+msgstr ""
+
+#: src/screens/Notifications/components/PageList.tsx:636 src/screens/Notifications/components/PageList.tsx:641
+msgid "Find friends"
+msgstr ""
+
+#: src/screens/Notifications/components/PageList.tsx:630
+msgid "Find some friends to start getting notifications!"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:419
+msgid "Fixed number of spots"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:450 src/components/Gallery/Storybook.tsx:456 src/components/Gallery/Storybook.tsx:478
+msgid "Focus target"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:483
+msgid "Focused {focusCount} times"
+msgstr ""
+
+#. Heading of the Followers tab of notifications, above the list of people who followed you
+#: src/screens/Notifications/components/NotificationItem/kinds/follower.tsx:51
+msgctxt "Notifications section header"
+msgid "Followed you"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/profile.tsx:214
+msgid "Following {name}"
+msgstr ""
+
+#. Tab label in Notifications that shows people who followed you. Space is tight, so keep it as short as possible.
+#: src/screens/Notifications/index.tsx:143
+msgctxt "notifications tab"
+msgid "Follows"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/labels.ts:17
+msgctxt "noun"
+msgid "Follows"
+msgstr ""
+
+#: src/screens/ModerationInbox/Notice.tsx:304
+msgid "For more information about our appeals and redress process, please see our <0>Terms of Service</0>."
+msgstr ""
+
+#. A story filled in from a feed, which cannot be pinned because another account posted it
+#: src/features/frontpages/editorial/Editor.tsx:320
+msgid "From a feed"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:332
+msgid "From which outlets?"
+msgstr ""
+
+#: src/features/frontpages/directory/index.tsx:87
+msgid "From your interests"
+msgstr ""
+
+#: src/features/frontpages/editorial/index.tsx:287
+msgid "Front page published"
+msgstr ""
+
+#: src/features/frontpages/components/FrontpageLinkChip.tsx:84 src/screens/Profile/Header/ProfileHeaderStandard.tsx:360
+msgid "Frontpage"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:45
+msgid "Gallery"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:442
+msgid "Gallery text field"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:774
+msgid "Gallery with one item"
+msgstr ""
+
+#: src/screens/Atmosphere/AppsTab.tsx:30
+msgid "Games"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/post.tsx:78 src/screens/Notifications/components/NotificationItem/Item/profile.tsx:640 src/screens/Notifications/components/NotificationItem/Item/text.tsx:113
+msgid "Go to {name}’s profile"
+msgstr ""
+
+#: src/screens/Settings/AppearanceSettings.tsx:277
+msgid "Green"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:148
+msgid "Grey stories fill sections automatically with the newest posts. Pin or drag one to keep it in place."
+msgstr ""
+
+#: src/features/pixelEditor/ColorPicker.tsx:162
+msgid "Hex color"
+msgstr ""
+
+#. Shown in place of the text of a post that is hidden by the viewer’s moderation settings
+#: src/screens/Notifications/components/NotificationItem/Item/post.tsx:213
+msgid "Hidden post"
+msgstr ""
+
+#: src/features/news/explore/components/StoryCard.tsx:212
+msgid "Hide the rest of the coverage of this story"
+msgstr ""
+
+#: src/screens/Atmosphere/components/AtmosphereNux.tsx:71
+msgid "Hides this banner from the Explore tab"
+msgstr ""
+
+#: src/features/pixelEditor/ColorPicker.tsx:115
+msgid "Hue"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/index.tsx:287
+msgid "If this page doesn’t open, your hosting provider can deactivate your account for you."
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/index.tsx:282
+msgid "If this page doesn’t open, your hosting provider can delete your account for you."
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:154
+msgid "Image content"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:162
+msgid "Image frames in different shapes"
+msgstr ""
+
+#. In a notification about a mention or quote, the post is a reply to another person’s post. {subject} is that person’s name, followed by a preview of their post
+#: src/screens/Notifications/components/NotificationItem/Item/post.tsx:269
+msgid "in reply to <0>{subject}</0>: {previewNode}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/post.tsx:173
+msgid "in reply to a blocked post"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/post.tsx:178
+msgid "in reply to a deleted post"
+msgstr ""
+
+#. In a notification about a mention or quote, the post is a reply to the viewer’s own post. Followed by a preview of that post
+#: src/screens/Notifications/components/NotificationItem/Item/post.tsx:265
+msgid "in reply to you: {previewNode}"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:375
+msgid "Include every outlet"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:427
+msgid "Increment counter"
+msgstr ""
+
+#: src/screens/Settings/AppearanceSettings.tsx:281
+msgid "Indigo"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:404
+msgid "Infinite"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:404
+msgid "Infinite (last section only)"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:400
+msgid "Infinite: every post its source has"
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:493
+msgid "Inserts this item at the selected position"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:412
+msgid "Interactive children"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:422
+msgid "Interactive items"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:637
+msgid "Intro"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:636
+msgid "Intro card"
+msgstr ""
+
+#: src/features/news/explore/sections.ts:150
+msgid "Investigations"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/AccountSubjectPreview.tsx:35
+msgid "Joined {createdAt}"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:142
+msgid "Keep this interest"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportActionLabel.ts:36
+msgid "Label applied"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportActionLabel.ts:38
+msgid "Label removed"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:64 src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:108
+msgid "Label: {labelName}"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/labels.ts:26
+msgid "Labeler"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:170
+msgid "Landscape frame"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:361
+msgid "Latest posts"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:385
+msgid "Leave out every outlet"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:357
+msgid "Leave out the stories the others covered alone."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/noticeLabels.ts:87
+msgid "Limited profile"
+msgstr ""
+
+#: src/features/profileLinks/components/LinkFormDialog.tsx:331 src/features/profileLinks/components/LinkFormDialog.tsx:337
+msgid "Link"
+msgstr ""
+
+#: src/features/profileLinks/components/LinkPreviewSheet.tsx:61
+msgid "Link copied"
+msgstr ""
+
+#: src/features/profileLinks/components/LinkPreviewSheet.tsx:68
+msgid "Link details"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/aggregate.tsx:69
+msgid "Link to {domain}"
+msgstr ""
+
+#: src/features/profileLinks/components/ProfileLinksEditor.tsx:123 src/screens/Profile/Header/EditProfileDialog.tsx:529
+msgid "Links"
+msgstr "Linky"
+
+#: src/features/profileLinks/components/LinkFormDialog.tsx:307
+msgid "Links show as buttons under your bio. Links to support sites like Ko-fi or Patreon show as a green button. <0>View all support sites</0>"
+msgstr "Linky sa ukážu ako tlačítka pod tvojím popisom. Linky na stránky pre darovanie ako Ko-fi alebo Patreon sa ukážu ako zelené tlačidlo. <0>Zobraziť všetky podporované darovacie stránky</0>"
+
+#: src/features/profileLinks/components/SupportedSitesDialog.tsx:45
+msgid "Links to these sites show as a green support button."
+msgstr "Linky na tieto stránky sa zobrazia ako zelené tlačidlo."
+
+#. placeholder {0}: sanitizeDisplayName(listName)
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/ListSubjectPreview.tsx:44
+msgid "List “{0}”"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:40
+msgid "List by {authorName}"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/labels.ts:20
+msgid "List members"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/ListSubjectPreview.tsx:64
+msgid "List unavailable"
+msgstr ""
+
+#: src/screens/Atmosphere/components/LivestreamCard.tsx:148
+msgid "Live"
+msgstr ""
+
+#. placeholder {0}: url.hostname
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/StatusSubjectPreview.tsx:58
+msgid "Live link: “{0}”"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/StatusSubjectPreview.tsx:53 src/screens/Settings/components/AccountFootprintDialog/labels.ts:25
+msgid "Live status"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:38
+msgid "Livestream"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:38
+msgid "Livestream by {authorName}"
+msgstr ""
+
+#: src/view/screens/Storybook/NewPostsPill.tsx:140
+msgid "Load new posts from the people you follow"
+msgstr ""
+
+#: src/screens/ModerationInbox/Notice.tsx:175 src/screens/ModerationInbox/Notice.tsx:184
+msgid "Load older actions"
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:371 src/features/frontpages/editorial/SlotPicker.tsx:383
+msgid "Load older items"
+msgstr ""
+
+#: src/screens/Atmosphere/AppsTab.tsx:95 src/screens/Atmosphere/ExploreTab.tsx:68
+msgid "Loading Atmosphere content"
+msgstr ""
+
+#: src/features/followingV2/home/GapRow.tsx:56
+msgid "Loading more posts"
+msgstr ""
+
+#: src/screens/ModerationInbox/Settings.tsx:173
+msgid "Loading notification settings"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/index.tsx:128
+msgid "Loading your account data…"
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:380
+msgid "Loading…"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/profile.tsx:554
+msgid "Loads more people into this list"
+msgstr ""
+
+#: src/features/followingV2/home/GapRow.tsx:61
+msgid "Loads the posts missing between here and the posts below"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:441
+msgid "M"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:712
+msgid "Make narrow"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:586
+msgid "Make the first card taller or shorter"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:596
+msgid "Make the first card wider or narrower"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:706
+msgid "Make the panel narrow"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:706
+msgid "Make the panel wide"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:712
+msgid "Make wide"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:287
+msgid "Medium"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:416
+msgid "Medium (⅔ width)"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:286
+msgid "Medium card"
+msgstr ""
+
+#: src/components/dms/getAddGroupMembersErrorMessage.ts:12
+msgid "Members could not be added because one of the selected accounts has blocked you."
+msgstr ""
+
+#: src/components/dms/getAddGroupMembersErrorMessage.ts:10
+msgid "Members could not be added because you have blocked one of the selected accounts."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/ChatSubjectPreview.tsx:26
+msgid "Message content is not included in this report."
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:269
+msgid "Mixed content and sizes"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/noticeLabels.ts:32
+msgid "Moderation notice"
+msgstr ""
+
+#: src/features/news/article/NewsArticleRightRail.tsx:99
+msgid "More from {name}"
+msgstr ""
+
+#: src/features/news/article/NewsArticleRightRail.tsx:99
+msgid "More from this outlet"
+msgstr ""
+
+#: src/features/news/explore/components/ExploreSectionFront.tsx:125
+msgid "More in {name}"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:264
+msgid "More spots"
+msgstr ""
+
+#: src/features/frontpages/editorial/index.tsx:810 src/features/frontpages/editorial/index.tsx:816 src/features/news/explore/sections.ts:177
+msgid "More stories"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:185
+msgid "Move {name} down"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:175
+msgid "Move {name} up"
+msgstr ""
+
+#: src/features/pixelEditor/Workspace.tsx:117
+msgid "Move canvas"
+msgstr ""
+
+#: src/features/profileLinks/components/ProfileLinksEditor.tsx:86
+msgid "Move earlier"
+msgstr ""
+
+#: src/features/profileLinks/components/ProfileLinksEditor.tsx:87
+msgid "Move later"
+msgstr ""
+
+#: src/features/frontpages/editorial/SortableStories/index.web.tsx:144
+msgid "Moved {title}."
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:204
+msgid "Mu app icon with no ratio on record"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:191
+msgid "Mu splash artwork"
+msgstr ""
+
+#: src/features/news/explore/components/ExploreInterestPicker.tsx:105 src/features/news/explore/components/ExploreInterestPicker.tsx:111
+msgid "Narrow {name} down"
+msgstr ""
+
+#. A short label offering newly arrived notifications.
+#: src/components/NewPostsPill/index.tsx:241
+msgctxt "new content pill"
+msgid "New"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:567
+msgid "New {count, plural, one {post} other {posts}} from {name}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:595
+msgid "New {count, plural, one {post} other {posts}} from <0/>"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:91
+msgid "New interest"
+msgstr ""
+
+#: src/components/NewPostsPill/index.tsx:236
+msgid "New posts"
+msgstr ""
+
+#: src/view/screens/Storybook/NewPostsPill.tsx:139
+msgid "New posts are ready to load from the people you follow"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:561
+msgid "New posts from {name} and {others, plural, one {# other} other {# others}}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:559
+msgid "New posts from {name} and {secondName}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:579
+msgid "New posts from <0/> and <1/>"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:584
+msgid "New posts from <0/> and <1>{others, plural, one {# other} other {# others}}</1>"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:566
+msgid "New reply from {name}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:591
+msgid "New reply from <0/>"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/labels.ts:29
+msgid "News feed settings"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:119 src/Navigation.tsx:228
+msgid "News preferences"
+msgstr ""
+
+#: src/screens/ModerationInbox/index.tsx:371
+msgid "No actions against you"
+msgstr ""
+
+#: src/screens/ModerationInbox/index.tsx:372
+msgid "No actions match this filter"
+msgstr ""
+
+#: src/screens/Atmosphere/AppsTab.tsx:139
+msgid "No apps in this category yet."
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:426
+msgid "No current stories on these topics"
+msgstr ""
+
+#: src/features/news/outlets/index.tsx:94
+msgid "No featured outlets right now."
+msgstr ""
+
+#: src/screens/Notifications/components/PageList.tsx:670
+msgid "No followers to show yet"
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:345
+msgid "No items found."
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/profile.tsx:211
+msgid "No longer following {name}"
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:344
+msgid "No matches in the loaded items."
+msgstr ""
+
+#: src/features/frontpages/editorial/StarterPackHeader.tsx:130
+msgid "No new accounts to follow."
+msgstr ""
+
+#: src/features/news/explore/index.tsx:343
+msgid "No news feeds are reachable right now."
+msgstr ""
+
+#: src/features/news/explore/index.tsx:345
+msgid "No news from here right now."
+msgstr ""
+
+#: src/screens/Notifications/components/PageList.tsx:667
+msgid "No notifications from people you follow yet"
+msgstr ""
+
+#: src/screens/Notifications/components/PageList.tsx:619 src/screens/Notifications/components/PageList.tsx:664
+msgid "No notifications yet"
+msgstr ""
+
+#. Empty state under a news article, where its discussion goes
+#: src/features/news/article/NewsArticleScreen.tsx:129
+msgid "No one in the network has posted about this yet."
+msgstr ""
+
+#: src/features/frontpages/directory/index.tsx:145
+msgid "No outlets are available right now."
+msgstr ""
+
+#: src/features/frontpages/editorial/StarterPackPeople.tsx:135
+msgid "No people to show."
+msgstr ""
+
+#: src/screens/Notifications/components/ActivityEmptyMessage.tsx:48
+msgid "No posts here yet. Click the {bell} bell icon on someone’s profile to keep up with their activity."
+msgstr ""
+
+#: src/screens/Notifications/components/ActivityEmptyMessage.tsx:53
+msgid "No posts here yet. Tap the {bell} bell icon on someone’s profile to keep up with their activity."
+msgstr ""
+
+#: src/features/frontpages/editorial/LatestPosts.tsx:88
+msgid "No posts to show."
+msgstr ""
+
+#: src/features/news/outlets/components/OutletArticlesCard.tsx:104
+msgid "No recent articles."
+msgstr ""
+
+#: src/features/frontpages/PublicationScreen.tsx:149
+msgid "No recent posts from this publication."
+msgstr ""
+
+#: src/screens/Notifications/components/PageList.tsx:673
+msgid "No replies to show yet"
+msgstr ""
+
+#: src/screens/ModerationInbox/index.tsx:236
+msgid "No reports match this filter"
+msgstr ""
+
+#: src/features/frontpages/editorial/index.tsx:798
+msgid "No stories yet."
+msgstr ""
+
+#: src/features/trendingWidget/Sync.native.tsx:40
+msgid "No trending topics are available right now."
+msgstr ""
+
+#: src/features/news/explore/index.tsx:341
+msgid "Nothing matches this interest right now."
+msgstr ""
+
+#: src/screens/Settings/NotificationSettings/index.tsx:128
+msgid "Notification Settings"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:675
+msgid "One"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:777
+msgid "Only"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:776
+msgid "Only card"
+msgstr ""
+
+#: src/features/profileLinks/components/LinkFormDialog.tsx:271
+msgid "Only secure links can be added. Use a link that starts with https://."
+msgstr "Len zabezpečené odkazy môžu byť pridané. Použi odkaz ktorý začína s https://."
+
+#: src/features/newsFeed/components/SetupTopics.tsx:140
+msgid "Only show news in these"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:347 src/features/newsFeed/components/interests/InterestEditor.tsx:353
+msgid "Only show these outlets"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:177
+msgid "Only stories in {languageNames} show, as set for the rest of the app."
+msgstr ""
+
+#. placeholder {0}: app.title
+#. placeholder {0}: article.title
+#. placeholder {0}: linkLabel(link)
+#: src/features/profileLinks/components/LinkPill.tsx:87 src/screens/Atmosphere/components/AppCard.tsx:41 src/screens/Atmosphere/components/ArticleCard.tsx:45 src/screens/Atmosphere/components/PhotoCard.tsx:46
+msgid "Open {0}"
+msgstr ""
+
+#: src/features/frontpages/directory/index.tsx:269
+msgid "Open {name}"
+msgstr ""
+
+#: src/features/news/outlets/components/FeaturedOutletCard.tsx:34 src/features/news/outlets/components/OutletArticlesCard.tsx:53 src/features/news/outlets/components/OutletArticlesCard.tsx:121
+msgid "Open {name}’s front page"
+msgstr ""
+
+#: src/features/frontpages/components/FrontpageMasthead.tsx:47
+msgid "Open {site}"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/AccountSubjectPreview.tsx:58
+msgid "Open account"
+msgstr ""
+
+#. placeholder {0}: banner.title
+#: src/screens/Atmosphere/components/AnnouncementBanner.tsx:52
+msgid "Open announcement: {0}"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/index.tsx:43
+msgid "Open content"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/FeedSubjectPreview.tsx:84
+msgid "Open feed"
+msgstr ""
+
+#: src/features/news/outlets/components/OutletArticlesCard.tsx:123
+msgid "Open front page"
+msgstr ""
+
+#: src/features/profileLinks/components/LinkPreviewSheet.tsx:84 src/features/profileLinks/components/LinkPreviewSheet.tsx:90
+msgid "Open link"
+msgstr "Otvoriť link"
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/ListSubjectPreview.tsx:89
+msgid "Open list"
+msgstr ""
+
+#. placeholder {0}: livestream.title
+#: src/screens/Atmosphere/components/LivestreamCard.tsx:65
+msgid "Open livestream: {0}"
+msgstr ""
+
+#. placeholder {0}: livestream.title
+#: src/screens/Atmosphere/components/LivestreamCard.tsx:64
+msgid "Open livestream: {0}, live"
+msgstr ""
+
+#. placeholder {0}: livestream.title
+#. placeholder {1}: livestream.activeCount
+#: src/screens/Atmosphere/components/LivestreamCard.tsx:57
+msgid "Open livestream: {0}, live with {1, plural, one {# viewer} other {# viewers}}"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:242
+msgid "Open spots stay empty while this section doesn’t fill."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:120
+msgid "Open starter pack"
+msgstr ""
+
+#: src/features/news/article/ArticleHeader.tsx:121 src/features/news/explore/components/StoryByline.tsx:67 src/features/newsFeed/components/NewsFeedRightRail.tsx:128
+msgid "Open the {name} frontpage"
+msgstr ""
+
+#: src/features/news/article/ArticleHeader.tsx:155
+msgid "Open the article"
+msgstr ""
+
+#: src/features/news/article/NewsArticleRightRail.tsx:137
+msgid "Open the frontpage"
+msgstr ""
+
+#. placeholder {0}: getLinkHost(link.url)
+#. placeholder {0}: link.url
+#: src/features/profileLinks/components/LinkPreviewSheet.tsx:85 src/features/profileLinks/components/ProfileLinks.tsx:243
+msgid "Opens {0} outside Bluesky"
+msgstr ""
+
+#: src/features/frontpages/editorial/Article.tsx:159
+msgid "Opens the article"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:242
+msgid "Opens the interest’s places, topics and outlets"
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:270
+msgid "Or end the section here: the stories below move into a new section."
+msgstr ""
+
+#: src/components/OTAChannelNotice.tsx:84
+msgid "OTA channel"
+msgstr ""
+
+#. Heading over other news outlets’ articles about the same story
+#: src/features/news/article/ArticleCoverage.tsx:55
+msgid "Other coverage"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:406 src/Navigation.tsx:257 src/Navigation.tsx:264
+msgid "Outlets"
+msgstr ""
+
+#: src/features/news/hub/NewsHubTabs.tsx:29
+msgctxt "News outlets tab"
+msgid "Outlets"
+msgstr ""
+
+#: src/features/newsFeed/components/NewsFeedRightRail.tsx:86
+msgid "Outlets from the sources in your news feed"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:739
+msgid "Padded container"
+msgstr ""
+
+#: src/features/pixelEditor/ColorPopover.tsx:137
+msgid "Paint a color to add it here."
+msgstr ""
+
+#: src/screens/Settings/components/ChangePasswordDialog.tsx:143
+msgid "Password successfully reset. Please sign in with your new password."
+msgstr ""
+
+#. Tab label in Notifications that shows only notifications from accounts you follow. Space is tight, so keep it as short as possible, ideally one or two words.
+#: src/screens/Notifications/index.tsx:125
+msgctxt "notifications tab"
+msgid "People I follow"
+msgstr ""
+
+#: src/screens/Atmosphere/AppsTab.tsx:28
+msgid "Photo"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/index.tsx:176
+msgid "Photos & videos"
+msgstr ""
+
+#: src/features/pixelEditor/Workspace.tsx:114
+msgid "Pick a color from the canvas"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:255
+msgid "Pick nothing for every topic."
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:209
+msgid "Pick nothing for news from everywhere."
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:342
+msgid "Pin"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:329 src/features/frontpages/editorial/SlotPicker.tsx:485
+msgid "Pin {title} here"
+msgstr ""
+
+#: src/screens/Settings/AppearanceSettings.tsx:283
+msgid "Pink"
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:522
+msgid "Pinned on the front page"
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:492
+msgid "Pins this automatic story at the selected position"
+msgstr ""
+
+#: src/features/pixelEditor/Workspace.tsx:148
+msgid "Pixel drawing canvas"
+msgstr ""
+
+#: src/screens/Signup/state.ts:313 src/screens/Signup/StepInfo/index.tsx:173
+msgid "Please enter your date of birth."
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:164
+msgid "Portrait frame"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:156
+msgid "Portrait, square, and landscape frames as plain children. The frames, not the gallery, decide the sizes."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:36
+msgid "Post"
+msgstr ""
+
+#. Tab label in Notifications that shows new posts from accounts you get activity notifications for. Space is tight, so keep it as short as possible.
+#: src/screens/Notifications/index.tsx:152
+msgctxt "notifications tab"
+msgid "Post alerts"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:36
+msgid "Post by {authorName}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/post.tsx:544
+msgid "Post by {name}"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/PostSubjectPreview.tsx:147
+msgid "Post unavailable"
+msgstr ""
+
+#. Shown in place of the text of a post that has no text, only images, video, a link or a quoted post
+#: src/screens/Notifications/components/NotificationItem/Item/post.tsx:219
+msgid "Post with media"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/labels.ts:12
+msgctxt "noun"
+msgid "Posts"
+msgstr ""
+
+#: src/features/frontpages/PublicationScreen.tsx:85
+msgid "Posts are unavailable for this account."
+msgstr ""
+
+#: src/features/news/explore/components/ExploreInterestPicker.tsx:70 src/features/news/explore/index.tsx:263
+msgid "Preferences"
+msgstr ""
+
+#: src/features/pixelEditor/ColorPopover.tsx:36
+msgid "Preset colors"
+msgstr ""
+
+#: src/features/pixelEditor/ColorPopover.tsx:36
+msgid "Presets"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:488
+msgid "Pressed {pressCount} times"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:85
+msgid "Preview – this is how readers see the page."
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:81
+msgid "Preview – this is how readers will see the page once you publish."
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:136
+msgid "Preview the front page as readers will see it"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:243
+msgid "Production image adapter"
+msgstr ""
+
+#: src/features/inviteFriends/InviteFriendsDialogInner.tsx:122
+msgid "Profile link copied"
+msgstr ""
+
+#: src/features/newsFeed/components/SetupTopics.tsx:117
+msgid "Provinces of the Netherlands"
+msgstr ""
+
+#: src/features/frontpages/PublicationScreen.tsx:81
+msgid "publication"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:55 src/features/frontpages/editorial/Editor.tsx:61
+msgid "Publish changes"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:61
+msgid "Publishing…"
+msgstr ""
+
+#: src/screens/Settings/AppearanceSettings.tsx:282
+msgid "Purple"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/labels.ts:16
+msgid "Quote settings"
+msgstr ""
+
+#: src/screens/ModerationInbox/Notice.tsx:309
+msgid "Read our Terms of Service"
+msgstr ""
+
+#: src/features/pixelEditor/ColorPopover.tsx:38
+msgid "Recent"
+msgstr ""
+
+#: src/features/pixelEditor/ColorPopover.tsx:38
+msgid "Recently used colors"
+msgstr ""
+
+#: src/features/pixelEditor/Workspace.tsx:258
+msgid "Redo"
+msgstr ""
+
+#. Pill on the notifications list, shown when there are new notifications to load.
+#: src/screens/Notifications/components/RefreshPill.tsx:101
+msgid "Refresh"
+msgstr ""
+
+#: src/screens/Profile/Header/EditProfileDialog.tsx:550 src/screens/Profile/Header/EditProfileDialog.tsx:554
+msgid "Reload links and discard link changes"
+msgstr "Obnoviť linky a zahodiť zmeny"
+
+#: src/screens/ModerationInbox/Notice.tsx:495 src/screens/ModerationInbox/Notice.tsx:504
+msgid "Reload notice"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:180 src/features/frontpages/editorial/Editor.tsx:185
+msgid "Reload published version"
+msgstr ""
+
+#. placeholder {0}: article.title
+#: src/features/frontpages/editorial/Editor.tsx:241
+msgid "Remove {0} from the front page"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:196
+msgid "Remove {name}"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:572
+msgid "Remove first"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:566
+msgid "Remove first card"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:562
+msgid "Remove last"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:556
+msgid "Remove last card"
+msgstr ""
+
+#: src/features/profileLinks/components/LinkFormDialog.tsx:454 src/features/profileLinks/components/LinkFormDialog.tsx:459
+msgid "Remove link"
+msgstr "Odstrániť link"
+
+#: src/screens/ModerationInbox/components/util/noticeLabels.ts:91
+msgid "Removed post"
+msgstr ""
+
+#. placeholder {0}: item.label
+#: src/features/profileLinks/components/SortablePills/index.web.tsx:355
+msgid "Reorder {0}"
+msgstr ""
+
+#. In a notification, someone replied to another person’s post. {subject} is that person’s name, followed by a preview of their post
+#: src/screens/Notifications/components/NotificationItem/Item/post.tsx:258
+msgid "replied to <0>{subject}</0>: {previewNode}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/post.tsx:171
+msgid "replied to a blocked post"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/post.tsx:176
+msgid "replied to a deleted post"
+msgstr ""
+
+#. In a notification, someone replied to the viewer’s own post. Followed by a preview of that post
+#: src/screens/Notifications/components/NotificationItem/Item/post.tsx:254
+msgid "replied to you: {previewNode}"
+msgstr ""
+
+#. Tab label in Notifications that shows replies, quotes and mentions. Space is tight, so keep it as short as possible.
+#: src/screens/Notifications/index.tsx:134
+msgctxt "notifications tab"
+msgid "Replies"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/labels.ts:15
+msgid "Reply settings"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/PostSubjectPreview.tsx:89
+msgid "Reply to {parentName}"
+msgstr ""
+
+#: src/features/profileLinks/components/ReportLinkDialog.tsx:111
+msgid "Report {label}"
+msgstr ""
+
+#: src/features/profileLinks/components/ReportLinkDialog.tsx:95 src/features/profileLinks/components/ReportLinkDialog.tsx:98 src/view/com/profile/ProfileMenu.tsx:547 src/view/com/profile/ProfileMenu.tsx:550
+msgid "Report a link"
+msgstr "Nahlásiť link"
+
+#: src/features/profileLinks/components/LinkPreviewSheet.tsx:108 src/features/profileLinks/components/LinkPreviewSheet.tsx:114
+msgid "Report link"
+msgstr "Nahlásiť link"
+
+#: src/screens/ModerationInbox/components/util/reportActionLabel.ts:59
+msgid "Report resolved"
+msgstr ""
+
+#: src/components/moderation/ReportDialog/copy.ts:42
+msgid "Report this link"
+msgstr "Nahlásiť tento link"
+
+#: src/screens/ModerationInbox/components/util/reportActionLabel.ts:42
+msgid "Reporting restricted"
+msgstr ""
+
+#: src/components/PostControls/PostMenu/PostMenuControlItems.tsx:83
+msgctxt "Toast after undoing a repost"
+msgid "Repost removed"
+msgstr ""
+
+#: src/components/PostControls/PostMenu/PostMenuControlItems.tsx:97
+msgctxt "Toast after reposting"
+msgid "Reposted"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/labels.ts:13
+msgctxt "noun"
+msgid "Reposts"
+msgstr ""
+
+#: src/screens/Profile/Header/EditProfileDialog.tsx:533
+msgid "Retry loading links"
+msgstr "Skúsiť znova načítať linky"
+
+#: src/features/frontpages/editorial/StarterPackPeople.tsx:125 src/features/frontpages/editorial/StarterPackPeople.tsx:130
+msgid "Retry loading people"
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:353 src/features/frontpages/editorial/SlotPicker.tsx:360
+msgid "Retry loading pinned feeds"
+msgstr ""
+
+#: src/features/frontpages/editorial/LatestPosts.tsx:61 src/features/frontpages/editorial/LatestPosts.tsx:66
+msgid "Retry loading posts"
+msgstr ""
+
+#: src/features/pixelEditor/Workspace.tsx:172
+msgid "Return to the canvas without drawing"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:624
+msgid "Reveal last"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:616
+msgid "Reveal the last card"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:582
+msgid "Reverse"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:576
+msgid "Reverse the order"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportActionLabel.ts:20
+msgid "Reviewed, no action taken"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:441
+msgid "S"
+msgstr ""
+
+#: src/features/pixelEditor/ColorPicker.tsx:64
+msgid "Saturation and brightness"
+msgstr ""
+
+#: src/features/profileLinks/components/LinkFormDialog.tsx:424 src/features/profileLinks/components/LinkFormDialog.tsx:442
+msgid "Save anyway"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:596
+msgid "Save section"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:552
+msgid "Section description"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:506
+msgid "Section layout"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:279
+msgid "Section length: drag down for more spots, up for fewer"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:536
+msgid "Section title"
+msgstr ""
+
+#: src/features/news/outlets/components/FeaturedOutletsBand.tsx:36
+msgid "See all"
+msgstr ""
+
+#: src/features/news/outlets/components/FeaturedOutletsBand.tsx:34
+msgid "See all featured outlets"
+msgstr ""
+
+#: src/features/newsFeed/components/NewsFeedRightRail.tsx:102 src/features/newsFeed/components/NewsFeedRightRail.tsx:107
+msgid "See all outlets"
+msgstr ""
+
+#: src/features/news/article/NewsArticleRightRail.tsx:139
+msgid "See the frontpage"
+msgstr ""
+
+#: src/screens/Settings/components/AccountActionIntro.tsx:43
+msgid "See what will be deleted"
+msgstr ""
+
+#: src/screens/Settings/components/AccountActionIntro.tsx:44
+msgid "See what will be hidden"
+msgstr ""
+
+#. placeholder {0}: tab.label
+#: src/screens/Notifications/components/TabPills.tsx:428
+msgid "Select {0} tab"
+msgstr ""
+
+#: src/features/pixelEditor/ColorPopover.tsx:100
+msgid "Select drawing color"
+msgstr ""
+
+#: src/features/newsFeed/components/SetupTopics.tsx:82
+msgid "Select the regions, languages and topics you care about."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/StatusSubjectPreview.tsx:49
+msgid "Set {createdAt}"
+msgstr ""
+
+#: src/features/profileLinks/components/LinkFormDialog.tsx:269
+msgid "Short links can’t be added. Use the full link instead."
+msgstr "Skrátené linky nemôžu byť pridané. Použi celý odkaz."
+
+#. placeholder {0}: hidden.length
+#: src/screens/Settings/components/AccountFootprintDialog/index.tsx:391
+msgid "Show {0} more record types"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:156 src/features/frontpages/editorial/Editor.tsx:162
+msgid "Show cover photo at the top"
+msgstr ""
+
+#: src/features/news/explore/components/ExploreSectionChips.tsx:39 src/features/news/explore/components/ExploreSectionFront.tsx:85
+msgid "Show every topic"
+msgstr ""
+
+#: src/features/profileLinks/components/ProfileLinks.tsx:258
+msgid "Show link details"
+msgstr "Zobraziť detaily o linku"
+
+#: src/features/followingV2/home/GapRow.tsx:59 src/features/followingV2/home/GapRow.tsx:85
+msgid "Show more posts"
+msgstr ""
+
+#. placeholder {0}: i18n._(section.label)
+#: src/features/news/explore/components/ExploreSectionChips.tsx:47
+msgid "Show only {0}"
+msgstr ""
+
+#: src/features/news/explore/components/ExploreDepartment.tsx:170
+msgid "Show only {name}"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:606
+msgid "Show or hide the intro card"
+msgstr ""
+
+#: src/features/news/explore/components/StoryCard.tsx:213
+msgid "Show the rest of the coverage of this story"
+msgstr ""
+
+#. placeholder {0}: tab.label
+#: src/screens/Atmosphere/AppsTab.tsx:126
+msgid "Shows {0} apps"
+msgstr ""
+
+#. placeholder {0}: tab.label
+#: src/screens/Notifications/components/TabPills.tsx:431
+msgid "Shows {0} notifications"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:305
+msgid "Sizes: 100×80, 220×160, 140×240, 180×120, and a wide card of {wideCardSize}×100, which is the gallery width of {galleryWidth} plus 80."
+msgstr ""
+
+#. placeholder {0}: labels[size]
+#: src/features/frontpages/editorial/Editor.tsx:424 src/features/frontpages/editorial/Editor.tsx:429
+msgid "Slot size: {0}"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:284 src/features/frontpages/editorial/Editor.tsx:415
+msgid "Small"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:282
+msgid "Small card"
+msgstr ""
+
+#: src/screens/Atmosphere/AppsTab.tsx:32
+msgid "Social"
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:277
+msgid "Split into a new section here"
+msgstr ""
+
+#: src/features/frontpages/editorial/SlotPicker.tsx:282
+msgid "Split into new section"
+msgstr ""
+
+#: src/features/news/explore/sections.ts:145
+msgid "Sport"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:377 src/features/frontpages/editorial/Section.tsx:382 src/features/frontpages/editorial/Section.tsx:392
+msgid "Spots: {label}"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:167
+msgid "Square frame"
+msgstr ""
+
+#: src/features/frontpages/editorial/index.tsx:196
+msgid "Starter pack"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:60
+msgid "Starter Pack “{name}”"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:45
+msgid "Starter Pack “{starterPackName}”"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/profile.tsx:445
+msgid "Starter pack by {handle}"
+msgstr ""
+
+#. placeholder {0}: labels[value]
+#: src/features/frontpages/editorial/Editor.tsx:364 src/features/frontpages/editorial/Editor.tsx:369
+msgid "Starter pack display: {0}"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:97
+msgid "Starter pack unavailable"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/StatusSubjectPreview.tsx:44
+msgid "Status by {name}"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportSubjectPreview/StatusSubjectPreview.tsx:75
+msgid "Status unavailable"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:513
+msgid "Stories"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:516
+msgid "Stories – posts, feeds and starter packs in the grid"
+msgstr ""
+
+#: src/features/frontpages/editorial/index.tsx:622
+msgid "Stories are unavailable for this account."
+msgstr ""
+
+#: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:182
+msgid "Stories in every language show, as set for the rest of the app."
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:325
+msgid "Stretching cards"
+msgstr ""
+
+#. placeholder {0}: provider.name
+#: src/features/profileLinks/components/LinkFormDialog.tsx:394
+msgid "Support on {0}"
+msgstr ""
+
+#. placeholder {0}: provider.name
+#: src/features/profileLinks/components/LinkPill.tsx:118
+msgctxt "Creator support button, e.g. Support on Ko-fi"
+msgid "Support on {0}"
+msgstr ""
+
+#: src/features/profileLinks/components/SupportedSitesDialog.tsx:39 src/features/profileLinks/components/SupportedSitesDialog.tsx:42
+msgid "Supported sites"
+msgstr ""
+
+#: src/components/OTAChannelNotice.tsx:139
+msgid "Switch channel"
+msgstr ""
+
+#: src/components/OTAChannelNotice.tsx:135 src/components/OTAChannelNotice.tsx:195 src/components/OTAChannelNotice.tsx:199
+msgid "Switch OTA channel"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:292
+msgid "Tall"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:592
+msgid "Tall / short"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:290
+msgid "Tall card"
+msgstr ""
+
+#: src/components/dialogs/DeviceLocationRequestDialog.tsx:110
+msgid "Tap below to allow Bluesky to access your approximate location via GPS. We will then use that data to more accurately determine the content and features available in your region."
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:433
+msgid "Tapped {count} times"
+msgstr ""
+
+#: src/screens/Settings/AppearanceSettings.tsx:278
+msgid "Teal"
+msgstr ""
+
+#: src/features/news/explore/sections.ts:79
+msgid "Technology"
+msgstr ""
+
+#: src/screens/ModerationInbox/Notice.tsx:484
+msgid "Tell us why you believe this decision was a mistake. We will review your appeal along with the original content."
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:438
+msgid "Text field"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:495
+msgid "Text: “{text}”"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportActionSummary.tsx:117
+msgid "Thanks for helping keep Bluesky safe. This post violated our <0>Community Guidelines</0>."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportActionSummary.tsx:130
+msgid "Thanks for helping keep Bluesky safe. We reviewed your report and took action. Read our <0>Community Guidelines</0>."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportActionSummary.tsx:47
+msgid "Thanks for your report. We’ll look into it and take action in accordance with our <0>Community Guidelines</0>."
+msgstr ""
+
+#: src/features/profileLinks/components/LinkFormDialog.tsx:265
+msgid "That doesn’t look like a link. Try something like yoursite.com."
+msgstr "Toto nevyzerá ako link. Skús niečo ako tvojastranka.sk."
+
+#: src/screens/ModerationInbox/components/ReportActionSummary.tsx:61
+msgid "The account you reported has been restored after another review. You can mute or block it if you’d rather not see its content. Read our <0>Community Guidelines</0>."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/noticeLabels.ts:55
+msgid "The action against your account was reversed"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/noticeLabels.ts:56
+msgid "The action against your content was reversed"
+msgstr ""
+
+#: src/screens/ModerationInbox/Notice.tsx:337 src/screens/ModerationInbox/Notice.tsx:377
+msgid "The appeal window has closed."
+msgstr ""
+
+#: src/screens/Atmosphere/ActivityTab.tsx:34
+msgid "The Atmosphere is the open network Bluesky is built on. When people you follow are active on the Atmosphere, you can see it here."
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:245
+msgid "The carousel used for post images. Tap an image to open the lightbox, change images, and close it: it should land on the right thumbnail. The first and last images are cropped, and the third learns its size when it loads."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportActionSummary.tsx:75
+msgid "The content you reported has been restored after another review. If you’d rather not see it, you can mute or block the account. Read our <0>Community Guidelines</0>."
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:699
+msgid "The gallery fills whatever width it has. Inside a bleed ancestor, the first and last items line up with the padded content while the rest run to the outer edge."
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:600
+msgid "The outlets could not be loaded."
+msgstr ""
+
+#: src/features/newsFeed/components/NewsFeedRightRail.tsx:88
+msgid "The outlets with the most stories right now"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:771
+msgid "The two lines above should touch."
+msgstr ""
+
+#: src/features/frontpages/FrontpageScreen.tsx:65
+msgid "There is no frontpage here."
+msgstr ""
+
+#: src/components/dms/components/GroupChatProfileCard.tsx:34 src/components/dms/InitiateChatFlow.tsx:1145
+msgid "This account has blocked you and can’t be added."
+msgstr ""
+
+#. placeholder {0}: currentChannel ?? defaultChannel
+#: src/components/OTAChannelNotice.tsx:87
+msgid "This app is receiving updates from <0>{0}</0>."
+msgstr ""
+
+#: src/screens/Search/components/SearchHistory.tsx:148
+msgid "This can’t be undone, and all of your recent searches will be removed."
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:381
+msgid "This card has enough text to wrap over many lines. Its siblings should stretch to match its height without stretching any images or imposing a fixed height. When this text disappears, all of the cards should shrink again."
+msgstr ""
+
+#: src/screens/ModerationInbox/Notice.tsx:383
+msgid "This content could not be appealed. Please reload the notice and try again."
+msgstr ""
+
+#: src/features/frontpages/editorial/index.tsx:293
+msgid "This front page changed in another editor. Reload the published version before editing again."
+msgstr ""
+
+#: src/features/profileLinks/components/LinkFormDialog.tsx:267
+msgid "This link can’t be added. It goes to a site that’s blocked on Bluesky."
+msgstr "Tento link nemôže byť pridaný. Ide na stránku ktorá je zablokovaná."
+
+#: src/screens/ModerationInbox/Notice.tsx:380
+msgid "This subject can no longer be appealed."
+msgstr ""
+
+#: src/screens/ModerationInbox/Notice.tsx:374
+msgid "This subject has already been appealed."
+msgstr ""
+
+#: src/screens/Settings/components/AccountActionWarning.tsx:30
+msgid "This will deactivate your Atmosphere account and remove access to all apps you use with it."
+msgstr ""
+
+#: src/screens/Settings/components/AccountActionWarning.tsx:25
+msgid "This will delete your Atmosphere account and remove access to all apps you use with it."
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:681
+msgid "Three"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:531 src/features/profileLinks/components/LinkFormDialog.tsx:387
+msgid "Title (optional)"
+msgstr ""
+
+#: src/screens/Notifications/components/PageList.tsx:579
+msgctxt "Notifications section header"
+msgid "Today"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:612
+msgid "Toggle intro"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:334 src/components/Gallery/Storybook.tsx:340
+msgid "Toggle tall content"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:344 src/components/Gallery/Storybook.tsx:350
+msgid "Toggle tallest card"
+msgstr ""
+
+#: src/features/trendingWidget/Sync.native.tsx:46
+msgid "Trending on Bluesky"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:119
+msgid "Try arranging the front page. Changes won’t be saved."
+msgstr ""
+
+#: src/features/muForYouFeed/index.tsx:57 src/features/muForYouFeed/index.tsx:62
+msgid "Try Mu’s For You feed"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:678
+msgid "Two"
+msgstr ""
+
+#: src/screens/ModerationInbox/Report.tsx:186
+msgid "Unknown report reason"
+msgstr ""
+
+#: src/features/frontpages/editorial/Editor.tsx:285
+msgid "Unpin {title} so it fills automatically"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:132
+msgid "Untitled carousel"
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:132
+msgid "Untitled section"
+msgstr ""
+
+#: src/screens/Signup/StepHandle/index.tsx:200
+msgid "Username is available"
+msgstr ""
+
+#: src/screens/Atmosphere/AppsTab.tsx:36
+msgid "Utils"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/labels.ts:23
+msgid "Verifications"
+msgstr ""
+
+#. When someone followed you through a starter pack, e.g. “via starter pack [icon] Science Pack”
+#: src/screens/Notifications/components/NotificationItem/Item/profile.tsx:392
+msgid "via starter pack <0/> <1>{name}</1>"
+msgstr ""
+
+#: src/features/news/article/ArticleHeader.tsx:220
+msgid "View"
+msgstr ""
+
+#: src/features/frontpages/editorial/index.tsx:517
+msgid "View {masthead}’s profile"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/Item/aggregate.tsx:127
+msgid "View all"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:135
+msgid "View all followers"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:609
+msgid "View all new posts"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:610
+msgid "View all new posts from {name}"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:356
+msgid "View all posts {name} liked"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:387
+msgid "View all posts {name} reposted"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:419
+msgid "View all reposts {name} liked"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:451
+msgid "View all reposts {name} reposted"
+msgstr ""
+
+#: src/features/profileLinks/components/LinkFormDialog.tsx:311
+msgid "View all support sites"
+msgstr ""
+
+#: src/features/news/article/ArticleHeader.tsx:215
+msgid "View the article"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:51
+msgid "Violates Community Guideline: {policyLabel}"
+msgstr ""
+
+#. placeholder {0}: view.title
+#. placeholder {1}: provider.name
+#: src/components/Post/Embed/AtCard/index.tsx:61
+msgid "Visit {0} on {1}"
+msgstr ""
+
+#: src/features/news/article/ArticleHeader.tsx:146
+msgid "Visit frontpage"
+msgstr ""
+
+#. placeholder {0}: provider.name
+#: src/components/Post/Embed/AtCard/index.tsx:62
+msgid "Visit site on {0}"
+msgstr ""
+
+#. placeholder {0}: sanitizeDisplayName( profile.displayName || profile.handle, moderation.ui('displayName'), )
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:351
+msgid "Visit the {0} frontpage"
+msgstr ""
+
+#: src/features/frontpages/components/FrontpageLinkChip.tsx:59 src/features/news/article/ArticleHeader.tsx:141
+msgid "Visit the {name} frontpage"
+msgstr ""
+
+#: src/features/frontpages/components/FrontpageLinkChip.tsx:59
+msgid "Visit this frontpage"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/index.tsx:135
+msgid "We couldn’t load your account data. Please try again."
+msgstr ""
+
+#: src/features/profileLinks/components/LinkFormDialog.tsx:275
+msgid "We couldn’t reach this link. Check it, or save anyway."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/noticeLabels.ts:47
+msgid "We reviewed your appeal and are keeping our original decision in place."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/noticeLabels.ts:33
+msgid "We reviewed your appeal. The current status of your content or account is shown below."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportActionSummary.tsx:103
+msgid "We reviewed your report and found that this doesn’t break our rules. Read our <0>Community Guidelines</0>."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportActionSummary.tsx:89
+msgid "We reviewed your report and found that this doesn’t break our rules. You can mute or block the account if you’d rather not see the post. Read our <0>Community Guidelines</0>."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:55
+msgid "We sent you an email about your account"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/AccountStatus.tsx:43
+msgid "We’ve taken action on your account for violating our Community Guidelines, and strikes have been added to your record. More violations will lead to stronger enforcement, including suspension."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/AccountStatus.tsx:37
+msgid "We’ve taken action on your account for violating our Community Guidelines. Your record now carries enough strikes that another violation could lead to permanent suspension."
+msgstr ""
+
+#: src/features/frontpages/editorial/Section.tsx:553
+msgid "What this section covers"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/index.tsx:98 src/screens/Settings/components/AccountFootprintDialog/index.tsx:104
+msgid "What will be deleted"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/index.tsx:98 src/screens/Settings/components/AccountFootprintDialog/index.tsx:106
+msgid "What will be hidden"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:208
+msgid "Where from?"
+msgstr ""
+
+#: src/features/profileLinks/components/ReportLinkDialog.tsx:101
+msgid "Which link do you want to report?"
+msgstr ""
+
+#: src/components/moderation/ReportDialog/copy.ts:43
+msgid "Why should this link be reviewed?"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:300
+msgid "Wide"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:602
+msgid "Wide / narrow"
+msgstr ""
+
+#: src/components/Gallery/Storybook.tsx:298
+msgid "Wide card"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/InterestEditor.tsx:399
+msgid "With no outlets ticked, this interest shows nothing."
+msgstr ""
+
+#: src/features/news/explore/components/ExploreLocationPicker.tsx:39 src/features/news/explore/components/ExploreLocationPicker.tsx:56 src/features/news/explore/sections.ts:155
+msgid "World"
+msgstr ""
+
+#: src/screens/Settings/AppearanceSettings.tsx:276
+msgid "Yellow"
+msgstr ""
+
+#: src/screens/ModerationInbox/Notice.tsx:299
+msgid "You can appeal once per decision. A different moderator will review the appeal."
+msgstr ""
+
+#: src/features/frontpages/editorial/index.tsx:276
+msgid "You can pin up to 100 items, with up to 60 slots in a section."
+msgstr ""
+
+#: src/features/profileLinks/components/LinkFormDialog.tsx:322
+msgid "You can remove this existing link, but adding or editing links isn’t available for this account."
+msgstr "Môžeš odstrániť tento existujúci link, ale pridávanie a upravovanie linkov nie je na tvojom účte dostupné."
+
+#: src/features/profileLinks/components/ProfileLinksEditor.tsx:145
+msgid "You can save up to 10 links. Remove a link before saving."
+msgstr "Môžeš uložiť až 10 linkov. Odstráň link pred uložením."
+
+#: src/screens/ModerationInbox/Notice.tsx:294
+msgid "You can submit one account appeal at a time. A different moderator will review the appeal."
+msgstr ""
+
+#: src/components/dms/components/GroupChatProfileCard.tsx:32 src/components/dms/InitiateChatFlow.tsx:1143
+msgid "You have blocked this account and can’t add them."
+msgstr ""
+
+#: src/screens/ModerationInbox/index.tsx:235
+msgid "You haven’t reported anything yet"
+msgstr ""
+
+#: src/components/dialogs/NewskieDialog/utils.ts:27
+msgid "You joined Bluesky just now"
+msgstr ""
+
+#: src/components/dialogs/NewskieDialog/utils.ts:26
+msgid "You joined Bluesky using a Starter Pack just now"
+msgstr ""
+
+#. placeholder {0}: state.profileLimit
+#. placeholder {1}: state.profileLimit
+#: src/screens/StarterPack/Wizard/State.tsx:78
+msgid "You may only add up to {0, plural, other {{1} profiles}}"
+msgstr ""
+
+#. placeholder {0}: BRAND.name
+#: src/ageAssurance/components/NoAccessScreen.tsx:161
+msgid "You must be at least 13 years old to use {0}."
+msgstr ""
+
+#: src/features/profileLinks/components/LinkFormDialog.tsx:273
+msgid "You’ve already added this link."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:95
+msgid "Your ability to submit reports was restricted"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:99
+msgid "Your account credentials were revoked"
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/index.tsx:219
+msgid "Your account doesn’t have any records yet."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/AccountStatus.tsx:34
+msgid "Your account has strikes against it"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:67 src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:91 src/screens/ModerationInbox/components/util/noticeLabels.ts:73
+msgid "Your account was suspended"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/noticeLabels.ts:65
+msgid "Your account was temporarily suspended for {hours, plural, one {# hour} other {# hours}}"
+msgstr ""
+
+#: src/screens/ModerationInbox/Notice.tsx:237
+msgid "Your appeal has been submitted and is awaiting review."
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/index.tsx:116
+msgid "Your Atmosphere account holds data for every app you’ve used with it. Deactivating hides all of this in every app until you sign back in. Nothing is deleted."
+msgstr ""
+
+#: src/screens/Settings/components/AccountFootprintDialog/index.tsx:111
+msgid "Your Atmosphere account holds data for every app you’ve used with it. Deleting it permanently removes all of this."
+msgstr ""
+
+#: src/screens/Atmosphere/ActivityTab.tsx:25
+msgid "Your Atmosphere is quiet"
+msgstr ""
+
+#: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:355
+msgid "Your contact <0/> is on Bluesky"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/noticeLabels.ts:95
+msgid "Your content"
+msgstr ""
+
+#: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:174
+msgid "Your content languages"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:49 src/screens/ModerationInbox/components/util/noticeLabels.ts:75
+msgid "Your content was removed"
+msgstr ""
+
+#. placeholder {0}: BRAND.name
+#: src/ageAssurance/components/NoAccessScreen.tsx:170
+msgid "Your declared age is below the minimum required to use {0} in your region."
+msgstr ""
+
+#: src/features/profileLinks/components/ProfileLinksEditor.tsx:152
+msgid "Your existing link is kept, but it’s blocked by the link safety service. Edit or remove it to update your links."
+msgstr "Tvoj existujúci link zostáva, ale je blokovaný bezpečnostnou službou. Uprav alebo odstráň ho ak chceš uložiť svoje linky."
+
+#: src/features/profileLinks/components/ProfileLinksEditor.tsx:160
+msgid "Your existing link is kept. Update it to a supported secure link, or remove another link if your list is full."
+msgstr ""
+
+#: src/features/profileLinks/components/ProfileLinks.tsx:197
+msgid "Your links changed in another app. Please try again."
+msgstr "Tvoje linky sa zmenili v inej aplikácii. Prosím, skús to znova."
+
+#: src/screens/Profile/Header/EditProfileDialog.tsx:307
+msgid "Your links changed in another app. Reload your links to continue."
+msgstr "Tvoje linky sa zmenili v inej aplikácii. Najprv obnov svoje linky a môžeš pokračovať."
+
+#: src/features/muForYouFeed/index.tsx:71
+msgid "Your other feeds will stay as they are. This change syncs with your account, and you can unpin or reorder the feed anytime."
+msgstr ""
+
+#: src/screens/Profile/Header/EditProfileDialog.tsx:547
+msgid "Your other profile changes will be kept."
+msgstr ""
+
+#: src/features/newsFeed/components/NewsFeedRightRail.tsx:81
+msgid "Your outlets"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/util/noticeLabels.ts:94
+msgid "Your post"
+msgstr ""
+
+#: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:49 src/screens/ModerationInbox/components/util/noticeLabels.ts:75
+msgid "Your post was removed"
+msgstr ""
+
+#: src/features/frontpages/editorial/FillMenu.tsx:64 src/features/frontpages/editorial/FillMenu.tsx:97
+msgid "Your posts"
+msgstr ""
+
+#: src/screens/Settings/components/DeactivateAccountDialog.tsx:117
+msgid "Your profile, posts, and everything else in your Atmosphere account will be hidden in every app. You can reactivate your account at any time by logging in."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/ReportActionSummary.tsx:144
+msgid "Your report has been resolved. Read our <0>Community Guidelines</0>."
+msgstr ""
+
+#: src/features/newsFeed/components/SetupDone.tsx:22
+msgid "Your selections are saved privately to your account. Only you can see them."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/AccountStatus.tsx:56
+msgid "Your standing doesn’t restrict your account right now, and strikes come off your record over time."
+msgstr ""
+
+#: src/screens/ModerationInbox/components/AccountStatus.tsx:51
+msgid "Your standing may restrict certain features on your account. Strikes come off your record over time."
+msgstr ""

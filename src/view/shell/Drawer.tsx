@@ -79,7 +79,7 @@ import {BRAND} from '#/config/brand'
 import {IS_NATIVE, IS_WEB} from '#/env'
 import {InviteFriendsDialog} from '#/features/inviteFriends'
 import {useActorStatus} from '#/features/liveNow'
-import {NEWS_V2_ENABLED} from '#/features/newsFeed/config'
+import {NEWS_ENABLED, NEWS_V2_ENABLED} from '#/features/newsFeed/config'
 
 const iconWidth = 26
 type SecondarySidebarTab =
@@ -412,7 +412,7 @@ let DrawerContent = ({}: React.PropsWithoutRef<{}>): React.ReactNode => {
           <>
             <SearchMenuItem isActive={isAtSearch} onPress={onPressSearch} />
             <HomeMenuItem isActive={isAtHome} onPress={onPressHome} />
-            <NewsMenuItem onPress={onPressNews} />
+            {NEWS_ENABLED && <NewsMenuItem onPress={onPressNews} />}
             <ChatMenuItem isActive={isAtMessages} onPress={onPressMessages} />
             <NotificationsMenuItem
               isActive={isAtNotifications}

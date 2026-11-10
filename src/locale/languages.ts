@@ -50,6 +50,16 @@ export enum AppLanguage {
   sk = 'sk',
 }
 
+/**
+ * Tatrasky fork: the only app languages we actively translate and support.
+ * The other upstream locales stay in the codebase to keep upstream merges
+ * clean, but are hidden from the picker and never activated.
+ */
+export const ENABLED_APP_LANGUAGES: ReadonlySet<AppLanguage> = new Set([
+  AppLanguage.en,
+  AppLanguage.sk,
+])
+
 interface AppLanguageConfig {
   code2: AppLanguage
   name: string
@@ -102,7 +112,7 @@ export const APP_LANGUAGES: AppLanguageConfig[] = [
   {code2: AppLanguage.zh_TW, name: '繁體中文 – Traditional Chinese'},
   {code2: AppLanguage.zh_HK, name: '粵文 – Cantonese'},
   {code2: AppLanguage.sk, name: 'slovenčina – Slovak'},
-]
+].filter(l => ENABLED_APP_LANGUAGES.has(l.code2))
 
 // Pre-generated list using Intl.DisplayNames to localize the language name.
 export const LANGUAGES: Language[] = [

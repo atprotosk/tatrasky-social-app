@@ -52,7 +52,6 @@ import {PersonPlus_Filled_Stroke2_Corner0_Rounded as PersonPlusIcon} from '#/com
 import {PlusLarge_Stroke2_Corner0_Rounded as PlusIcon} from '#/components/icons/Plus'
 import {Repost_Stroke2_Corner3_Rounded as RepostIcon} from '#/components/icons/Repost'
 import {Tote as StarterPackIcon} from '#/components/icons/Tote'
-import {VerifiedCheck} from '#/components/icons/VerifiedCheck'
 import {InlineLinkText, Link} from '#/components/Link'
 import * as MediaPreview from '#/components/MediaPreview'
 import {ProfileBadges} from '#/components/ProfileBadges'
@@ -65,6 +64,7 @@ import {
 import {SubtleHover} from '#/components/SubtleHover'
 import * as Toast from '#/components/Toast'
 import {Text} from '#/components/Typography'
+import {VerificationCheck} from '#/components/verification/VerificationCheck'
 import {useAnalytics} from '#/analytics'
 import {IS_WEB} from '#/env'
 import {app, chat} from '#/lexicons'
@@ -447,7 +447,7 @@ let NotificationFeedItem = ({
     ) : (
       <Trans>{firstAuthorLink} verified you</Trans>
     )
-    icon = <VerifiedCheck size="xl" />
+    icon = <VerificationCheck size="xl" />
   } else if (item.type === 'unverified') {
     a11yLabel = hasMultipleAuthors
       ? l`${firstAuthorName} and ${plural(additionalAuthorsCount, {
@@ -472,7 +472,7 @@ let NotificationFeedItem = ({
         {firstAuthorLink} removed their verification from your account
       </Trans>
     )
-    icon = <VerifiedCheck size="xl" fill={t.palette.contrast_500} />
+    icon = <VerificationCheck size="xl" fill={t.palette.contrast_500} />
   } else if (item.type === 'like-via-repost') {
     a11yLabel = hasMultipleAuthors
       ? l`${firstAuthorName} and ${plural(additionalAuthorsCount, {

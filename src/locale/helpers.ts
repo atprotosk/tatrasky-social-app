@@ -6,6 +6,7 @@ import {app} from '#/lexicons'
 import * as bsky from '#/types/bsky'
 import {
   AppLanguage,
+  ENABLED_APP_LANGUAGES,
   type Language,
   LANGUAGES_MAP_CODE2,
   LANGUAGES_MAP_CODE3,
@@ -185,7 +186,13 @@ export function getTranslatorLinkLibreTranslate(
  * remove, or we re-migrate their storage.
  */
 export function sanitizeAppLanguageSetting(appLanguage: string): AppLanguage {
-  const langs = appLanguage.split(',').filter(Boolean)
+  const langs = appLanguage
+    .split(',')
+    .filter(Boolean)
+    // Tatrasky fork: disabled app languages fall through to English
+    .filter(lang =>
+      ENABLED_APP_LANGUAGES.has(fixLegacyLanguageCode(lang) as AppLanguage),
+    )
 
   for (const lang of langs) {
     switch (fixLegacyLanguageCode(lang)) {
@@ -311,10 +318,9 @@ export function fixLegacyLanguageCode(code: string | null): string | null {
  * If no match, returns `en`.
  */
 export function findSupportedAppLanguage(languageTags: (string | undefined)[]) {
-  const supported = new Set(Object.values(AppLanguage))
   for (const tag of languageTags) {
     if (!tag) continue
-    if (supported.has(tag as AppLanguage)) {
+    if (ENABLED_APP_LANGUAGES.has(tag as AppLanguage)) {
       return tag
     }
   }
