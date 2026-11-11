@@ -71,7 +71,7 @@ msgstr "(invalid chat invite link)"
 msgid "(message sent before you joined)"
 msgstr "(message sent before you joined)"
 
-#: src/screens/Settings/AccountSettings.tsx:91
+#: src/screens/Settings/AccountSettings.tsx:98
 msgid "(no email)"
 msgstr ""
 
@@ -1485,7 +1485,6 @@ msgid "24 hours"
 msgstr ""
 
 #: src/screens/Login/LoginForm.tsx:421
-#: src/screens/Login/PasswordSignin.tsx:271
 msgid "2FA Confirmation"
 msgstr ""
 
@@ -1689,10 +1688,9 @@ msgid "Accessibility Settings"
 msgstr ""
 
 #: src/Navigation.tsx:565
-#: src/screens/Login/PasswordSignin.tsx:186
 #: src/screens/ModerationInbox/components/hooks/useSubjectPreviewProfile.ts:22
 #: src/screens/ModerationInbox/components/hooks/useSubjectPreviewProfile.ts:23
-#: src/screens/Settings/AccountSettings.tsx:71
+#: src/screens/Settings/AccountSettings.tsx:78
 #: src/screens/Settings/Settings.tsx:194
 #: src/screens/Settings/Settings.tsx:197
 msgid "Account"
@@ -1715,8 +1713,8 @@ msgctxt "toast"
 msgid "Account followed"
 msgstr ""
 
-#: src/screens/Login/OAuthSignin.tsx:99
-#: src/screens/Login/OAuthSignin.tsx:105
+#: src/screens/Login/OAuthSignin.tsx:86
+#: src/screens/Login/OAuthSignin.tsx:92
 msgid "Account handle"
 msgstr "Account handle"
 
@@ -2290,7 +2288,7 @@ msgid "Allow location access"
 msgstr ""
 
 #: src/screens/Settings/ActivityPrivacySettings.tsx:53
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:95
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:114
 msgid "Allow others to be notified of your posts"
 msgstr ""
 
@@ -2563,7 +2561,7 @@ msgstr "Anyone can request to join"
 
 #: src/screens/Settings/ActivityPrivacySettings.tsx:112
 #: src/screens/Settings/ActivityPrivacySettings.tsx:117
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:166
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:185
 msgid "Anyone who follows me"
 msgstr ""
 
@@ -2608,8 +2606,10 @@ msgstr "App password names can only contain letters, numbers, spaces, hyphens, a
 msgid "App password names must be at least 4 characters long"
 msgstr ""
 
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:75
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:78
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:79
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:86
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:93
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:96
 msgid "App passwords"
 msgstr ""
 
@@ -2861,7 +2861,7 @@ msgstr "AT Protocol FAQ"
 
 #: src/Navigation.tsx:209
 #: src/screens/Atmosphere/index.tsx:28
-#: src/view/shell/desktop/LeftNav.tsx:788
+#: src/view/shell/desktop/LeftNav.tsx:790
 #: src/view/shell/Drawer.tsx:571
 msgid "Atmosphere"
 msgstr "Atmosphere"
@@ -2891,8 +2891,8 @@ msgstr "Automatic"
 msgid "Automatic on the front page – pick to pin it here"
 msgstr "Automatic on the front page – pick to pin it here"
 
-#: src/screens/Settings/AccountSettings.tsx:172
-#: src/screens/Settings/AccountSettings.tsx:175
+#: src/screens/Settings/AccountSettings.tsx:183
+#: src/screens/Settings/AccountSettings.tsx:186
 msgid "Automation label"
 msgstr "Automation label"
 
@@ -2939,10 +2939,8 @@ msgstr "B"
 #: src/screens/Login/ForgotPasswordForm.tsx:128
 #: src/screens/Login/LoginForm.tsx:488
 #: src/screens/Login/LoginForm.tsx:493
-#: src/screens/Login/OAuthSignin.tsx:177
-#: src/screens/Login/OAuthSignin.tsx:184
-#: src/screens/Login/PasswordSignin.tsx:312
-#: src/screens/Login/PasswordSignin.tsx:317
+#: src/screens/Login/OAuthSignin.tsx:147
+#: src/screens/Login/OAuthSignin.tsx:154
 #: src/screens/Login/SetNewPasswordForm.tsx:136
 #: src/screens/Login/SetNewPasswordForm.tsx:142
 #: src/screens/Messages/components/ChatDisabled.tsx:161
@@ -3049,7 +3047,7 @@ msgstr "Big (full width)"
 msgid "Birthdate"
 msgstr ""
 
-#: src/screens/Settings/AccountSettings.tsx:162
+#: src/screens/Settings/AccountSettings.tsx:171
 msgid "Birthday"
 msgstr ""
 
@@ -3657,7 +3655,7 @@ msgid "cats dogs"
 msgstr "cats dogs"
 
 #: src/components/Post/Translated/index.tsx:436
-#: src/screens/Settings/components/Email2FAToggle.tsx:31
+#: src/screens/Settings/components/Email2FAToggle.tsx:39
 msgid "Change"
 msgstr ""
 
@@ -3722,6 +3720,10 @@ msgstr "Change the source language"
 msgid "Change your content languages"
 msgstr "Change your content languages"
 
+#: src/components/dialogs/EmailDialog/screens/OAuthAccountPage.tsx:29
+msgid "Change your email with your hosting provider"
+msgstr "Change your email with your hosting provider"
+
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:68
 msgid "Change your password"
 msgstr ""
@@ -3756,11 +3758,11 @@ msgstr "Changing your password will sign you out. You’ll need to sign in again
 msgid "Channel"
 msgstr "Channel"
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:73
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:74
 #: src/lib/hooks/useNotificationHandler.ts:161
 #: src/Navigation.tsx:660
 #: src/view/shell/bottom-bar/BottomBar.tsx:245
-#: src/view/shell/desktop/LeftNav.tsx:800
+#: src/view/shell/desktop/LeftNav.tsx:802
 #: src/view/shell/Drawer.tsx:622
 msgid "Chat"
 msgstr ""
@@ -3882,10 +3884,6 @@ msgstr "Check for updates"
 #: src/screens/SignupQueued.tsx:88
 msgid "Check my status"
 msgstr ""
-
-#: src/screens/Login/PasswordSignin.tsx:300
-msgid "Check your email for a sign in code and enter it here."
-msgstr "Check your email for a sign in code and enter it here."
 
 #: src/screens/Settings/NetworkServicesSettings/AppViewTransfer/index.tsx:427
 #: src/screens/Settings/NetworkServicesSettings/AppViewTransfer/index.tsx:644
@@ -4058,7 +4056,7 @@ msgstr "Clear GIF search"
 msgid "Clear image cache"
 msgstr ""
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:61
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:62
 msgid "Clear post selection"
 msgstr "Clear post selection"
 
@@ -4328,7 +4326,7 @@ msgstr ""
 msgid "Complete the challenge"
 msgstr ""
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:59
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:60
 msgid "Compose a new post"
 msgstr "Compose a new post"
 
@@ -4386,7 +4384,6 @@ msgid "Confirm your age"
 msgstr "Confirm your age"
 
 #: src/components/dialogs/EmailDialog/components/TokenField.tsx:71
-#: src/screens/Login/PasswordSignin.tsx:277
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:196
 #: src/screens/Settings/components/DeleteAccountDialog.tsx:372
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:153
@@ -4956,10 +4953,6 @@ msgstr "Couldn’t place the item there. Choose another place."
 msgid "Couldn’t publish the front page. Your changes are still here. Try again."
 msgstr "Couldn’t publish the front page. Your changes are still here. Try again."
 
-#: src/screens/Login/PasswordSignin.tsx:135
-msgid "Couldn't reach the server for that account. Check your Internet connection and try again."
-msgstr "Couldn't reach the server for that account. Check your Internet connection and try again."
-
 #: src/features/profileLinks/components/ProfileLinks.tsx:198
 msgid "Couldn’t save your links. Please try again."
 msgstr "Couldn’t save your links. Please try again."
@@ -5016,12 +5009,12 @@ msgid "Create a list from this Starter Pack"
 msgstr "Create a list from this Starter Pack"
 
 #. placeholder {0}: BRAND.name
-#: src/screens/Login/OAuthSignin.tsx:150
+#: src/screens/Login/OAuthSignin.tsx:135
 msgid "Create a new {0} account"
 msgstr "Create a new {0} account"
 
-#: src/screens/Login/OAuthSignin.tsx:149
-#: src/screens/Login/OAuthSignin.tsx:157
+#: src/screens/Login/OAuthSignin.tsx:134
+#: src/screens/Login/OAuthSignin.tsx:142
 msgid "Create a new account"
 msgstr "Create a new account"
 
@@ -5265,8 +5258,8 @@ msgstr "Dawn"
 msgid "Day"
 msgstr "Day"
 
-#: src/screens/Settings/AccountSettings.tsx:194
-#: src/screens/Settings/AccountSettings.tsx:199
+#: src/screens/Settings/AccountSettings.tsx:205
+#: src/screens/Settings/AccountSettings.tsx:210
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:249
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:258
 msgid "Deactivate account"
@@ -5318,8 +5311,8 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: src/screens/Settings/AccountSettings.tsx:204
-#: src/screens/Settings/AccountSettings.tsx:209
+#: src/screens/Settings/AccountSettings.tsx:215
+#: src/screens/Settings/AccountSettings.tsx:220
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:249
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:256
 msgid "Delete account"
@@ -5973,7 +5966,7 @@ msgid "Eating disorders"
 msgstr ""
 
 #: src/screens/Messages/components/EditTextButton.tsx:52
-#: src/screens/Settings/AccountSettings.tsx:165
+#: src/screens/Settings/AccountSettings.tsx:174
 #: src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:250
 #: src/screens/StarterPack/StarterPackScreen.tsx:612
 #: src/screens/StarterPack/Wizard/index.tsx:325
@@ -6154,7 +6147,7 @@ msgstr ""
 msgid "Elsewhere"
 msgstr "Elsewhere"
 
-#: src/screens/Settings/AccountSettings.tsx:86
+#: src/screens/Settings/AccountSettings.tsx:93
 #: src/screens/Signup/StepInfo/index.tsx:237
 msgid "Email"
 msgstr ""
@@ -6164,9 +6157,13 @@ msgctxt "toast"
 msgid "Email 2FA disabled"
 msgstr ""
 
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:66
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:70
 msgid "Email 2FA enabled"
 msgstr ""
+
+#: src/components/dialogs/EmailDialog/screens/OAuthAccountPage.tsx:41
+msgid "Email 2FA is managed by your hosting provider ({host}). Open your account settings there to turn it on or off."
+msgstr "Email 2FA is managed by your hosting provider ({host}). Open your account settings there to turn it on or off."
 
 #: src/screens/Login/ForgotPasswordForm.tsx:94
 msgid "Email address"
@@ -6221,7 +6218,7 @@ msgstr "Empty gallery"
 
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Enable.tsx:101
 #: src/components/dialogs/EmailDialog/screens/Manage2FA/Enable.tsx:108
-#: src/screens/Settings/components/Email2FAToggle.tsx:31
+#: src/screens/Settings/components/Email2FAToggle.tsx:39
 msgid "Enable"
 msgstr ""
 
@@ -6247,8 +6244,8 @@ msgstr ""
 msgid "Enable external media"
 msgstr ""
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:100
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:104
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:101
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:105
 #: src/features/keyboardShortcuts/SettingsSection.web.tsx:28
 #: src/features/keyboardShortcuts/SettingsSection.web.tsx:34
 msgid "Enable keyboard shortcuts"
@@ -6355,7 +6352,7 @@ msgstr ""
 msgid "Enter the email you used to create your account. We'll send you a \"reset code\" so you can set a new password."
 msgstr ""
 
-#: src/screens/Login/OAuthSignin.tsx:118
+#: src/screens/Login/OAuthSignin.tsx:104
 msgid "Enter the handle of the account you want to sign in with"
 msgstr "Enter the handle of the account you want to sign in with"
 
@@ -6376,12 +6373,7 @@ msgstr ""
 msgid "Enter your email address"
 msgstr ""
 
-#: src/screens/Login/PasswordSignin.tsx:212
-msgid "Enter your handle, e.g. name.bsky.social"
-msgstr "Enter your handle, e.g. name.bsky.social"
-
 #: src/screens/Login/LoginForm.tsx:381
-#: src/screens/Login/PasswordSignin.tsx:237
 #: src/screens/Settings/components/DeleteAccountDialog.tsx:417
 msgid "Enter your password"
 msgstr ""
@@ -6419,7 +6411,7 @@ msgstr ""
 msgid "Error loading post"
 msgstr ""
 
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:157
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:176
 msgid "Error loading preference"
 msgstr ""
 
@@ -6596,11 +6588,11 @@ msgstr ""
 msgid "Explicit sexual images."
 msgstr ""
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:71
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:72
 #: src/Navigation.tsx:1034
 #: src/screens/Atmosphere/index.tsx:37
 #: src/screens/Search/Shell.tsx:564
-#: src/view/shell/desktop/LeftNav.tsx:767
+#: src/view/shell/desktop/LeftNav.tsx:769
 #: src/view/shell/Drawer.tsx:550
 msgid "Explore"
 msgstr ""
@@ -6620,8 +6612,8 @@ msgstr "Explore the newsrooms of our featured publishers"
 msgid "Export my chat data"
 msgstr "Export my chat data"
 
-#: src/screens/Settings/AccountSettings.tsx:185
-#: src/screens/Settings/AccountSettings.tsx:189
+#: src/screens/Settings/AccountSettings.tsx:196
+#: src/screens/Settings/AccountSettings.tsx:200
 msgid "Export my data"
 msgstr ""
 
@@ -7090,7 +7082,7 @@ msgid "Feedback sent to feed operator"
 msgstr ""
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:240
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:74
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:75
 #: src/Navigation.tsx:696
 #: src/screens/Atmosphere/AppsTab.tsx:31
 #: src/screens/SavedFeeds.tsx:112
@@ -7099,7 +7091,7 @@ msgstr ""
 #: src/screens/StarterPack/StarterPackScreen.tsx:191
 #: src/view/screens/Feeds.tsx:505
 #: src/view/screens/Profile.tsx:274
-#: src/view/shell/desktop/LeftNav.tsx:812
+#: src/view/shell/desktop/LeftNav.tsx:814
 #: src/view/shell/Drawer.tsx:684
 msgid "Feeds"
 msgstr ""
@@ -7304,7 +7296,7 @@ msgstr "Focus {name}"
 msgid "Focus code input"
 msgstr ""
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:58
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:59
 msgid "Focus search"
 msgstr "Focus search"
 
@@ -7577,13 +7569,8 @@ msgstr ""
 
 #: src/screens/Login/LoginForm.tsx:406
 #: src/screens/Login/LoginForm.tsx:413
-#: src/screens/Login/PasswordSignin.tsx:251
 msgid "Forgot password?"
 msgstr ""
-
-#: src/screens/Login/PasswordSignin.tsx:261
-msgid "Forgot?"
-msgstr "Forgot?"
 
 #: src/features/petCompanion/species/fox/catalog.ts:33
 msgid "Fox"
@@ -7664,7 +7651,7 @@ msgstr "Games"
 msgid "GD"
 msgstr "GD"
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:56
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:57
 msgid "General"
 msgstr "General"
 
@@ -7880,7 +7867,7 @@ msgstr ""
 msgid "Go live for"
 msgstr ""
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:68
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:69
 msgid "Go to"
 msgstr "Go to"
 
@@ -8079,9 +8066,8 @@ msgstr ""
 msgid "Half way there!"
 msgstr ""
 
-#: src/screens/Login/PasswordSignin.tsx:194
-#: src/screens/Settings/AccountSettings.tsx:150
-#: src/screens/Settings/AccountSettings.tsx:155
+#: src/screens/Settings/AccountSettings.tsx:159
+#: src/screens/Settings/AccountSettings.tsx:164
 msgid "Handle"
 msgstr ""
 
@@ -8318,7 +8304,7 @@ msgstr "Hides the invite friends promo banner"
 msgid "Hides this banner from the Explore tab"
 msgstr "Hides this banner from the Explore tab"
 
-#: src/components/dialogs/BirthDateSettings.tsx:84
+#: src/components/dialogs/BirthDateSettings.tsx:87
 msgid "Hmm, it looks like you're signed in with an <0>App Password</0>. To set your birthdate, you'll need to sign in with your main account password, or ask whomever controls this account to do so."
 msgstr ""
 
@@ -8362,7 +8348,7 @@ msgstr ""
 msgid "Hold up! We’re gradually giving access to video, and you’re still waiting in line. Check back soon!"
 msgstr ""
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:69
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:70
 #: src/Navigation.tsx:1029
 #: src/Navigation.tsx:1050
 #: src/view/shell/bottom-bar/BottomBar.tsx:199
@@ -8716,7 +8702,6 @@ msgid "Include video timestamp ({videoTimestamp})"
 msgstr "Include video timestamp ({videoTimestamp})"
 
 #: src/screens/Login/LoginForm.tsx:160
-#: src/screens/Login/PasswordSignin.tsx:164
 msgid "Incorrect username or password"
 msgstr ""
 
@@ -8743,10 +8728,6 @@ msgstr "Infinite: every post its source has"
 #: src/screens/Login/SetNewPasswordForm.tsx:128
 msgid "Input new password"
 msgstr ""
-
-#: src/screens/Login/PasswordSignin.tsx:292
-msgid "Input the code which has been emailed to you"
-msgstr "Input the code which has been emailed to you"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:493
 msgid "Inserts this item at the selected position"
@@ -8806,7 +8787,6 @@ msgid "Introducing saved posts AKA bookmarks"
 msgstr ""
 
 #: src/screens/Login/LoginForm.tsx:151
-#: src/screens/Login/PasswordSignin.tsx:155
 #: src/screens/Settings/components/DisableEmail2FADialog.tsx:80
 msgid "Invalid 2FA confirmation code."
 msgstr ""
@@ -9010,8 +8990,8 @@ msgstr "Keep this interest"
 msgid "Keep this page open while the transfer is running."
 msgstr "Keep this page open while the transfer is running."
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:38
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:47
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:39
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:48
 #: src/features/keyboardShortcuts/SettingsSection.web.tsx:24
 msgid "Keyboard shortcuts"
 msgstr "Keyboard shortcuts"
@@ -9199,8 +9179,8 @@ msgctxt "english-only-resource"
 msgid "Learn more about verification on Bluesky"
 msgstr ""
 
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:131
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:134
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:150
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:153
 msgid "Learn more about what is public on Bluesky."
 msgstr ""
 
@@ -9342,7 +9322,7 @@ msgstr ""
 msgid "Like 10 posts to train the Discover feed"
 msgstr ""
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:90
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:91
 msgid "Like or unlike the selected post"
 msgstr "Like or unlike the selected post"
 
@@ -9563,13 +9543,13 @@ msgctxt "toast"
 msgid "List unmuted"
 msgstr ""
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:75
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:76
 #: src/Navigation.tsx:214
 #: src/screens/Settings/components/AccountFootprintDialog/labels.ts:19
 #: src/view/screens/Lists.tsx:60
 #: src/view/screens/Profile.tsx:268
 #: src/view/screens/Profile.tsx:276
-#: src/view/shell/desktop/LeftNav.tsx:820
+#: src/view/shell/desktop/LeftNav.tsx:822
 #: src/view/shell/Drawer.tsx:699
 msgid "Lists"
 msgstr ""
@@ -9747,21 +9727,9 @@ msgstr "Locked"
 msgid "Log"
 msgstr ""
 
-#: src/components/dialogs/BirthDateSettings.tsx:104
-#: src/components/dialogs/BirthDateSettings.tsx:111
-#: src/components/dialogs/EmailDialog/screens/OAuthPasswordRequired.tsx:53
-#: src/components/dialogs/EmailDialog/screens/OAuthPasswordRequired.tsx:62
-msgid "Log out"
-msgstr "Log out"
-
 #: src/components/AccountList.tsx:183
 msgid "Logged out"
 msgstr ""
-
-#: src/components/dialogs/BirthDateSettings.tsx:105
-#: src/components/dialogs/EmailDialog/screens/OAuthPasswordRequired.tsx:54
-msgid "Logs out so you can sign in with your password"
-msgstr "Logs out so you can sign in with your password"
 
 #. placeholder {0}: isCashtag ? tag : `#${tag}`
 #: src/components/RichTextTag.tsx:55
@@ -9824,6 +9792,10 @@ msgstr "Make the panel wide"
 #: src/components/Gallery/Storybook.tsx:712
 msgid "Make wide"
 msgstr "Make wide"
+
+#: src/components/dialogs/EmailDialog/screens/OAuthAccountPage.tsx:31
+msgid "Manage email 2FA with your hosting provider"
+msgstr "Manage email 2FA with your hosting provider"
 
 #: src/screens/Settings/ContentAndMediaSettings.tsx:62
 #: src/screens/Settings/ContentAndMediaSettings.tsx:65
@@ -10361,8 +10333,8 @@ msgstr ""
 msgid "Mutual group chats"
 msgstr "Mutual group chats"
 
-#: src/components/dialogs/BirthDateSettings.tsx:62
-#: src/components/dialogs/BirthDateSettings.tsx:66
+#: src/components/dialogs/BirthDateSettings.tsx:65
+#: src/components/dialogs/BirthDateSettings.tsx:69
 msgid "My birthdate"
 msgstr "My birthdate"
 
@@ -10391,7 +10363,7 @@ msgstr "Narrow {name} down"
 msgid "Nature"
 msgstr ""
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:50
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:51
 msgid "Navigate and interact without taking your hands off the keyboard."
 msgstr "Navigate and interact without taking your hands off the keyboard."
 
@@ -10637,7 +10609,7 @@ msgid "Newest replies first"
 msgstr ""
 
 #: src/features/frontpages/legacy/NewsroomScreen.tsx:128
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:70
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:71
 #: src/features/news/hub/NewsHubTabs.tsx:23
 #: src/features/newsFeed/components/SetupHeader.tsx:34
 #: src/features/newsFeed/legacy/NewsFeedTab.tsx:38
@@ -10645,7 +10617,7 @@ msgstr ""
 #: src/lib/interests.ts:74
 #: src/Navigation.tsx:221
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:269
-#: src/view/shell/desktop/LeftNav.tsx:756
+#: src/view/shell/desktop/LeftNav.tsx:757
 #: src/view/shell/Drawer.tsx:713
 msgid "News"
 msgstr ""
@@ -10886,7 +10858,7 @@ msgstr ""
 
 #: src/screens/Settings/ActivityPrivacySettings.tsx:130
 #: src/screens/Settings/ActivityPrivacySettings.tsx:135
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:163
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:182
 msgctxt "enable for"
 msgid "No one"
 msgstr ""
@@ -11134,7 +11106,7 @@ msgstr ""
 msgid "Note about sharing"
 msgstr ""
 
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:121
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:140
 msgid "Note: Bluesky is part of the Atmosphere, an open public network. These settings ask other apps and websites to limit your visibility, but they can choose not to. Your public content may still appear elsewhere."
 msgstr "Note: Bluesky is part of the Atmosphere, an open public network. These settings ask other apps and websites to limit your visibility, but they can choose not to. Your public content may still appear elsewhere."
 
@@ -11181,7 +11153,7 @@ msgstr "Notification Settings"
 msgid "Notification sounds"
 msgstr ""
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:72
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:73
 #: src/Navigation.tsx:686
 #: src/Navigation.tsx:1039
 #: src/screens/Messages/Settings.tsx:255
@@ -11192,7 +11164,7 @@ msgstr ""
 #: src/screens/Settings/Settings.tsx:230
 #: src/view/screens/Notifications.tsx:128
 #: src/view/shell/bottom-bar/BottomBar.tsx:282
-#: src/view/shell/desktop/LeftNav.tsx:778
+#: src/view/shell/desktop/LeftNav.tsx:780
 #: src/view/shell/Drawer.tsx:649
 msgid "Notifications"
 msgstr ""
@@ -11211,7 +11183,7 @@ msgid "Number should be a mobile number"
 msgstr ""
 
 #: src/lib/moderation/useLabelBehaviorDescription.ts:14
-#: src/screens/Settings/AccountSettings.tsx:179
+#: src/screens/Settings/AccountSettings.tsx:190
 #: src/screens/Settings/NotificationSettings/components/SettingPreview.tsx:34
 msgid "Off"
 msgstr ""
@@ -11253,7 +11225,7 @@ msgstr ""
 msgid "on"
 msgstr "on"
 
-#: src/screens/Settings/AccountSettings.tsx:179
+#: src/screens/Settings/AccountSettings.tsx:190
 msgid "On"
 msgstr "On"
 
@@ -11346,7 +11318,7 @@ msgstr "Only followers can join this group chat."
 
 #: src/screens/Settings/ActivityPrivacySettings.tsx:121
 #: src/screens/Settings/ActivityPrivacySettings.tsx:126
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:161
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:180
 msgid "Only followers who I follow"
 msgstr ""
 
@@ -11454,6 +11426,13 @@ msgstr "Open {site}"
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/AccountSubjectPreview.tsx:58
 msgid "Open account"
 msgstr "Open account"
+
+#: src/components/dialogs/BirthDateSettings.tsx:105
+#: src/components/dialogs/BirthDateSettings.tsx:111
+#: src/components/dialogs/EmailDialog/screens/OAuthAccountPage.tsx:53
+#: src/components/dialogs/EmailDialog/screens/OAuthAccountPage.tsx:61
+msgid "Open account settings"
+msgstr "Open account settings"
 
 #: src/screens/Search/components/AdvancedSearchDialog/index.tsx:66
 msgid "Open advanced search options"
@@ -11639,7 +11618,7 @@ msgstr "Open settings"
 msgid "Open share menu"
 msgstr ""
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:93
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:94
 msgid "Open sharing options"
 msgstr "Open sharing options"
 
@@ -11685,11 +11664,11 @@ msgstr "Open the discussion thread"
 msgid "Open the frontpage"
 msgstr "Open the frontpage"
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:85
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:86
 msgid "Open the selected post"
 msgstr "Open the selected post"
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:86
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:87
 msgid "Open the selected post’s image"
 msgstr "Open the selected post’s image"
 
@@ -11756,7 +11735,7 @@ msgstr ""
 msgid "Opens captions and alt text dialog"
 msgstr ""
 
-#: src/screens/Settings/AccountSettings.tsx:151
+#: src/screens/Settings/AccountSettings.tsx:160
 msgid "Opens change handle dialog"
 msgstr ""
 
@@ -11806,10 +11785,6 @@ msgstr ""
 msgid "Opens live status dialog"
 msgstr ""
 
-#: src/screens/Login/PasswordSignin.tsx:252
-msgid "Opens password reset form"
-msgstr "Opens password reset form"
-
 #: src/view/com/composer/select-language/PostLanguageSelect.tsx:198
 msgid "Opens post language settings"
 msgstr ""
@@ -11854,6 +11829,12 @@ msgstr ""
 #: src/view/com/util/UserAvatar.tsx:640
 msgid "Opens this profile"
 msgstr ""
+
+#: src/components/dialogs/BirthDateSettings.tsx:106
+#: src/components/dialogs/EmailDialog/screens/OAuthAccountPage.tsx:54
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:81
+msgid "Opens your hosting provider's account settings"
+msgstr "Opens your hosting provider's account settings"
 
 #: src/screens/StarterPack/StarterPackScreen.tsx:786
 msgid "Opt out"
@@ -12045,9 +12026,8 @@ msgstr "Party GIFs"
 
 #: src/screens/Login/LoginForm.tsx:361
 #: src/screens/Login/LoginForm.tsx:367
-#: src/screens/Login/PasswordSignin.tsx:222
-#: src/screens/Settings/AccountSettings.tsx:141
-#: src/screens/Settings/AccountSettings.tsx:145
+#: src/screens/Settings/AccountSettings.tsx:150
+#: src/screens/Settings/AccountSettings.tsx:154
 #: src/screens/Settings/components/DeleteAccountDialog.tsx:412
 #: src/screens/Signup/StepInfo/index.tsx:272
 msgid "Password"
@@ -12432,11 +12412,7 @@ msgstr "Please enter your date of birth."
 msgid "Please enter your email."
 msgstr ""
 
-#: src/screens/Login/PasswordSignin.tsx:92
-msgid "Please enter your handle"
-msgstr "Please enter your handle"
-
-#: src/screens/Login/OAuthSignin.tsx:68
+#: src/screens/Login/OAuthSignin.tsx:55
 msgid "Please enter your handle to sign in."
 msgstr "Please enter your handle to sign in."
 
@@ -12449,7 +12425,6 @@ msgid "Please enter your new email address."
 msgstr ""
 
 #: src/screens/Login/LoginForm.tsx:192
-#: src/screens/Login/PasswordSignin.tsx:97
 msgid "Please enter your password"
 msgstr ""
 
@@ -12809,7 +12784,7 @@ msgstr ""
 #: src/Navigation.tsx:581
 #: src/Navigation.tsx:589
 #: src/screens/Settings/ActivityPrivacySettings.tsx:41
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:48
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:52
 msgid "Privacy and Security"
 msgstr ""
 
@@ -12856,10 +12831,10 @@ msgstr "Production image adapter"
 msgid "profile"
 msgstr ""
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:77
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:78
 #: src/screens/Settings/components/AccountFootprintDialog/labels.ts:24
 #: src/view/shell/bottom-bar/BottomBar.tsx:325
-#: src/view/shell/desktop/LeftNav.tsx:836
+#: src/view/shell/desktop/LeftNav.tsx:838
 #: src/view/shell/Drawer.tsx:115
 #: src/view/shell/Drawer.tsx:764
 msgid "Profile"
@@ -12926,7 +12901,7 @@ msgstr "publication"
 msgid "Publish changes"
 msgstr "Publish changes"
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:64
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:65
 msgid "Publish from the composer"
 msgstr "Publish from the composer"
 
@@ -13209,7 +13184,7 @@ msgstr "Redo"
 msgid "Refresh"
 msgstr "Refresh"
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:60
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:61
 msgid "Refresh the current feed"
 msgstr "Refresh the current feed"
 
@@ -13674,7 +13649,7 @@ msgstr "Reply to {parentName}"
 msgid "Reply to the discussion thread"
 msgstr "Reply to the discussion thread"
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:87
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:88
 msgid "Reply to the selected post"
 msgstr "Reply to the selected post"
 
@@ -13838,7 +13813,7 @@ msgstr ""
 msgid "Repost or quote post"
 msgstr ""
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:92
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:93
 msgid "Repost or undo repost"
 msgstr "Repost or undo repost"
 
@@ -14141,7 +14116,7 @@ msgstr ""
 msgid "Return to the canvas without drawing"
 msgstr "Return to the canvas without drawing"
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:82
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:83
 msgid "Return to the previous feed"
 msgstr "Return to the previous feed"
 
@@ -14313,12 +14288,12 @@ msgstr ""
 msgid "Save to my feeds"
 msgstr ""
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:76
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:77
 #: src/screens/Settings/DecorationsSettings.tsx:82
 msgid "Saved"
 msgstr "Saved"
 
-#: src/view/shell/desktop/LeftNav.tsx:828
+#: src/view/shell/desktop/LeftNav.tsx:830
 #: src/view/shell/Drawer.tsx:739
 msgctxt "link to bookmarks screen"
 msgid "Saved"
@@ -14790,11 +14765,11 @@ msgstr ""
 msgid "Select the {emojiName} emoji as your avatar"
 msgstr ""
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:83
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:84
 msgid "Select the next post"
 msgstr "Select the next post"
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:84
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:85
 msgid "Select the previous post"
 msgstr "Select the previous post"
 
@@ -14850,7 +14825,7 @@ msgid "Select your preferred notification channels"
 msgstr ""
 
 #: src/features/keyboardShortcuts/index.web.tsx:148
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:81
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:82
 msgid "Selected post"
 msgstr "Selected post"
 
@@ -14991,10 +14966,10 @@ msgstr ""
 msgid "Sets the app accent color"
 msgstr "Sets the app accent color"
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:78
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:79
 #: src/Navigation.tsx:332
 #: src/screens/Settings/Settings.tsx:119
-#: src/view/shell/desktop/LeftNav.tsx:844
+#: src/view/shell/desktop/LeftNav.tsx:846
 #: src/view/shell/Drawer.tsx:798
 msgid "Settings"
 msgstr ""
@@ -15003,7 +14978,7 @@ msgstr ""
 msgid "Settings for activity from others"
 msgstr ""
 
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:88
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:107
 msgid "Settings for allowing others to be notified of your posts"
 msgstr ""
 
@@ -15284,7 +15259,7 @@ msgstr "Show fewer reporters"
 msgid "Show group chat updates"
 msgstr "Show group chat updates"
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:57
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:58
 msgid "Show keyboard shortcuts"
 msgstr "Show keyboard shortcuts"
 
@@ -15453,12 +15428,9 @@ msgstr "Shows the service address"
 #: src/screens/Login/LoginForm.tsx:271
 #: src/screens/Login/LoginForm.tsx:531
 #: src/screens/Login/LoginForm.tsx:537
-#: src/screens/Login/OAuthSignin.tsx:96
-#: src/screens/Login/OAuthSignin.tsx:135
-#: src/screens/Login/OAuthSignin.tsx:143
-#: src/screens/Login/PasswordSignin.tsx:183
-#: src/screens/Login/PasswordSignin.tsx:323
-#: src/screens/Login/PasswordSignin.tsx:329
+#: src/screens/Login/OAuthSignin.tsx:83
+#: src/screens/Login/OAuthSignin.tsx:120
+#: src/screens/Login/OAuthSignin.tsx:128
 #: src/screens/Messages/JoinRequest.tsx:294
 #: src/screens/Messages/JoinRequest.tsx:300
 #: src/screens/Search/SearchResults.tsx:399
@@ -15514,26 +15486,9 @@ msgstr "Sign in to request access to this group chat."
 msgid "Sign in to view post"
 msgstr ""
 
-#: src/screens/Login/OAuthSignin.tsx:164
-msgid "Sign in with a username and password instead"
-msgstr "Sign in with a username and password instead"
-
-#: src/screens/Login/OAuthSignin.tsx:162
-#: src/screens/Login/OAuthSignin.tsx:172
-msgid "Sign in with password"
-msgstr "Sign in with password"
-
-#: src/screens/Login/OAuthSignin.tsx:136
+#: src/screens/Login/OAuthSignin.tsx:121
 msgid "Sign in with your handle via OAuth"
 msgstr "Sign in with your handle via OAuth"
-
-#: src/components/dialogs/EmailDialog/screens/OAuthPasswordRequired.tsx:25
-msgid "Sign in with your password to change your email"
-msgstr "Sign in with your password to change your email"
-
-#: src/components/dialogs/EmailDialog/screens/OAuthPasswordRequired.tsx:27
-msgid "Sign in with your password to manage email 2FA"
-msgstr "Sign in with your password to manage email 2FA"
 
 #: src/ageAssurance/components/DataUnavailableScreen.tsx:22
 #: src/screens/Settings/Settings.tsx:321
@@ -15571,10 +15526,6 @@ msgstr ""
 #: src/screens/Login/ChooseAccountForm.tsx:54
 msgid "Signed in as @{0}"
 msgstr ""
-
-#: src/screens/Login/PasswordSignin.tsx:324
-msgid "Signs in with your password"
-msgstr "Signs in with your password"
 
 #: src/screens/Search/components/AdvancedSearchDialog/index.tsx:299
 #: src/screens/Search/components/AdvancedSearchDialog/index.tsx:302
@@ -16990,7 +16941,7 @@ msgstr ""
 msgid "This content is not viewable without a Bluesky account."
 msgstr ""
 
-#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:109
+#: src/features/keyboardShortcuts/KeyboardShortcutsDialog.tsx:110
 msgid "This controls app shortcuts only. Standard keyboard behavior in forms, menus, and dialogs remains available."
 msgstr "This controls app shortcuts only. Standard keyboard behavior in forms, menus, and dialogs remains available."
 
@@ -17070,7 +17021,7 @@ msgstr ""
 msgid "This image could not be used. Try a different format like .jpg or .png."
 msgstr "This image could not be used. Try a different format like .jpg or .png."
 
-#: src/components/dialogs/BirthDateSettings.tsx:70
+#: src/components/dialogs/BirthDateSettings.tsx:73
 msgid "This information is private and not shared with other users."
 msgstr ""
 
@@ -17658,7 +17609,7 @@ msgstr "Twilight"
 msgid "Two"
 msgstr "Two"
 
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:68
+#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:72
 msgid "Two-factor authentication (2FA)"
 msgstr ""
 
@@ -17683,7 +17634,6 @@ msgstr ""
 #: src/screens/Login/ForgotPasswordForm.tsx:70
 #: src/screens/Login/index.tsx:104
 #: src/screens/Login/LoginForm.tsx:164
-#: src/screens/Login/PasswordSignin.tsx:169
 #: src/screens/Login/SetNewPasswordForm.tsx:82
 #: src/screens/Signup/index.tsx:89
 msgid "Unable to contact your service. Please check your Internet connection."
@@ -18047,8 +17997,8 @@ msgstr "Update {0} in Lists"
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:293
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:304
-#: src/screens/Settings/AccountSettings.tsx:127
-#: src/screens/Settings/AccountSettings.tsx:135
+#: src/screens/Settings/AccountSettings.tsx:134
+#: src/screens/Settings/AccountSettings.tsx:144
 msgid "Update email"
 msgstr ""
 
@@ -18372,8 +18322,8 @@ msgid "Verify your age"
 msgstr ""
 
 #: src/components/dialogs/EmailDialog/screens/Verify.tsx:221
-#: src/screens/Settings/AccountSettings.tsx:101
-#: src/screens/Settings/AccountSettings.tsx:121
+#: src/screens/Settings/AccountSettings.tsx:108
+#: src/screens/Settings/AccountSettings.tsx:128
 msgid "Verify your email"
 msgstr ""
 
@@ -18681,7 +18631,7 @@ msgstr "View the invite link for this group chat"
 msgid "View the labeling service provided by @{0}"
 msgstr ""
 
-#: src/components/verification/VerificationCheckButton.tsx:103
+#: src/components/verification/VerificationCheckButton.tsx:106
 msgid "View this user's verifications"
 msgstr ""
 
@@ -18718,7 +18668,7 @@ msgstr ""
 msgid "View your muted accounts"
 msgstr ""
 
-#: src/components/verification/VerificationCheckButton.tsx:102
+#: src/components/verification/VerificationCheckButton.tsx:105
 msgid "View your verifications"
 msgstr ""
 
@@ -18833,10 +18783,6 @@ msgstr "We could not connect to the service that provides this custom feed. It m
 #: src/view/com/feeds/MissingFeed.tsx:147
 msgid "We could not find this list. It was probably deleted."
 msgstr ""
-
-#: src/screens/Login/PasswordSignin.tsx:145
-msgid "We couldn't find an account with that handle. Double-check it and try again."
-msgstr "We couldn't find an account with that handle. Double-check it and try again."
 
 #: src/screens/Login/LoginForm.tsx:344
 msgid "We couldn't find an account with that username. Please check that you've typed it correctly, or <0>set your hosting provider manually</0>."
@@ -18962,7 +18908,7 @@ msgstr ""
 msgid "We were unable to load the age assurance configuration for your region, probably due to a network error. Some content and features may be unavailable temporarily. Please try again later."
 msgstr ""
 
-#: src/components/dialogs/BirthDateSettings.tsx:49
+#: src/components/dialogs/BirthDateSettings.tsx:52
 msgid "We were unable to load your birthdate preferences. Please try again."
 msgstr ""
 
@@ -19834,7 +19780,7 @@ msgstr "You won’t be able to rejoin unless you’re invited."
 msgid "You: {message}"
 msgstr "You: {message}"
 
-#: src/screens/Login/OAuthSignin.tsx:125
+#: src/screens/Login/OAuthSignin.tsx:110
 msgid "You'll be sent to your account's hosting provider to sign in securely."
 msgstr "You'll be sent to your account's hosting provider to sign in securely."
 
@@ -19887,18 +19833,6 @@ msgstr "You’re in control"
 #: src/screens/SignupQueued.tsx:145
 msgid "You're in line"
 msgstr ""
-
-#: src/components/dialogs/EmailDialog/screens/OAuthPasswordRequired.tsx:32
-msgid "You're signed in via your hosting provider (OAuth). Changing your email address isn't supported for OAuth sign-ins. Log out, choose “Sign in with password” on the sign-in screen, and use your main account password."
-msgstr "You're signed in via your hosting provider (OAuth). Changing your email address isn't supported for OAuth sign-ins. Log out, choose “Sign in with password” on the sign-in screen, and use your main account password."
-
-#: src/components/dialogs/EmailDialog/screens/OAuthPasswordRequired.tsx:39
-msgid "You're signed in via your hosting provider (OAuth). Managing email 2FA isn't supported for OAuth sign-ins. Log out, choose “Sign in with password” on the sign-in screen, and use your main account password."
-msgstr "You're signed in via your hosting provider (OAuth). Managing email 2FA isn't supported for OAuth sign-ins. Log out, choose “Sign in with password” on the sign-in screen, and use your main account password."
-
-#: src/components/dialogs/BirthDateSettings.tsx:94
-msgid "You're signed in via your hosting provider (OAuth). Setting your birthdate isn't supported for OAuth sign-ins. To set it, log out and sign in again with your account password (use \"Sign in with password\" on the sign-in screen), set your birthdate, then continue."
-msgstr "You're signed in via your hosting provider (OAuth). Setting your birthdate isn't supported for OAuth sign-ins. To set it, log out and sign in again with your account password (use \"Sign in with password\" on the sign-in screen), set your birthdate, then continue."
 
 #: src/screens/Deactivated.tsx:88
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:92
@@ -20059,6 +19993,10 @@ msgstr "Your Atmosphere is quiet"
 msgid "Your birth date"
 msgstr ""
 
+#: src/components/dialogs/BirthDateSettings.tsx:97
+msgid "Your birthdate can't be changed from here while you're signed in via your hosting provider ({pdsHost}). Open your account settings there to manage it."
+msgstr "Your birthdate can't be changed from here while you're signed in via your hosting provider ({pdsHost}). Open your account settings there to manage it."
+
 #: src/screens/Messages/components/ChatDisabled.tsx:45
 msgid "Your chats have been disabled"
 msgstr ""
@@ -20123,6 +20061,10 @@ msgstr "Your decorations will remain active until the end of your paid period."
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:266
 msgid "Your email"
 msgstr ""
+
+#: src/components/dialogs/EmailDialog/screens/OAuthAccountPage.tsx:36
+msgid "Your email address is managed by your hosting provider ({host}). Open your account settings there to change it."
+msgstr "Your email address is managed by your hosting provider ({host}). Open your account settings there to change it."
 
 #: src/screens/Login/ForgotPasswordForm.tsx:51
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:82
@@ -20328,7 +20270,7 @@ msgstr "Your selections are saved privately to your account. Only you can see th
 msgid "Your server does not support changing your handle from this app."
 msgstr "Your server does not support changing your handle from this app."
 
-#: src/screens/Settings/AccountSettings.tsx:59
+#: src/screens/Settings/AccountSettings.tsx:66
 msgid "Your session is upgraded. You can now change your handle."
 msgstr "Your session is upgraded. You can now change your handle."
 
