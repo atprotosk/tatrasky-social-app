@@ -1636,7 +1636,7 @@ msgstr "Pozvánkový odkaz umožňuje ľuďom pripojiť sa k tomuto skupinovému
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:241
 msgid "An issue not included in these options"
-msgstr ""
+msgstr "Problém, ktorý nie je v týchto možnostiach"
 
 #: src/components/dms/dialogs/NewChatDialog.tsx:52 src/components/dms/dialogs/ShareViaChatDialog.tsx:67
 msgid "An issue occurred starting the chat, please try again."
@@ -9467,7 +9467,7 @@ msgstr "Znovu odoslať overovací e-mail"
 
 #: src/screens/Settings/Settings.tsx:511 src/screens/Settings/Settings.tsx:513
 msgid "Reset activity subscription nudge"
-msgstr ""
+msgstr "Obnoviť pripomienku odberu aktivity"
 
 #: src/screens/Login/SetNewPasswordForm.tsx:113
 msgid "Reset code"
@@ -10494,7 +10494,7 @@ msgstr "Preskočiť na ďalší krok"
 
 #: src/components/images/Gallery/index.tsx:443
 msgid "slide"
-msgstr ""
+msgstr "snímka"
 
 #: src/screens/Settings/AppearanceSettings.tsx:150
 msgid "Smaller"
@@ -10746,7 +10746,7 @@ msgstr "Uložené ako súčasť zabezpečeného kódu na porovnávanie s ostatn�
 
 #: src/Navigation.tsx:332 src/screens/Settings/Settings.tsx:477
 msgid "Storybook"
-msgstr ""
+msgstr "Storybook"
 
 #: src/components/dialogs/nuxs/LiveNowBetaDialog.tsx:182
 msgid "Streaming on Twitch? Set your live status on Bluesky to add a badge to your avatar. Tapping it takes people straight to your stream."
@@ -15094,7 +15094,7 @@ msgstr "Odstrániť {displayName} zo štartovacieho balíčka"
 
 #: src/features/newsFeed/NewsFeedScreen.tsx:115
 msgid "Remove your news feed?"
-msgstr ""
+msgstr "Odstrániť tvoj spravodajský kanál?"
 
 #: src/components/dialogs/StarterPackDialog.tsx:284
 msgid "Removed from starter pack"
@@ -15789,7 +15789,7 @@ msgstr "Tvoj ďalší fakturačný dátum je {paidUntil}."
 
 #: src/features/newsrooms/components/NewsroomRightRail.tsx:328
 msgid "Your personalized feed of stories from across your sources."
-msgstr ""
+msgstr "Tvoj personalizovaný kanál príbehov zo všetkých tvojich zdrojov."
 
 #: src/view/com/composer/Composer.tsx:1097
 msgid "Your post was updated"
@@ -15818,113 +15818,113 @@ msgstr "Tvoje predplatné sa neobnoví"
 #. placeholder {0}: record.text
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/PostSubjectPreview.tsx:95
 msgid "“{0}”"
-msgstr ""
+msgstr "„{0}“"
 
 #. placeholder {0}: articles.length
 #: src/features/news/explore/components/StoryByline.tsx:161
 msgid "{0, plural, one {# more article on this} other {# more articles on this}}"
-msgstr ""
+msgstr "{0, plural, one {# ďalší článok o tom} few {# ďalšie články o tom} many {# ďalšieho článku o tom} other {# ďalších článkov o tom}}"
 
 #. placeholder {0}: stories.length
 #: src/features/news/explore/components/ExploreSectionFront.tsx:79
 msgid "{0, plural, one {# story across outlets} other {# stories across outlets}}"
-msgstr ""
+msgstr "{0, plural, one {# príbeh naprieč médiami} few {# príbehy naprieč médiami} many {# príbehu naprieč médiami} other {# príbehov naprieč médiami}}"
 
 #. placeholder {0}: hidden.length
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:396
 msgid "{0, plural, one {+ # more type} other {+ # more types}}"
-msgstr ""
+msgstr "{0, plural, one {+ # ďalší typ} few {+ # ďalšie typy} many {+ # ďalšieho typu} other {+ # ďalších typov}}"
 
 #. placeholder {0}: content.count
 #: src/components/NewPostsPill/index.tsx:169
 msgid "{0, plural, one {Load # new post} other {Load # new posts}}"
-msgstr ""
+msgstr "{0, plural, one {Načítať # nový príspevok} few {Načítať # nové príspevky} many {Načítať # nového príspevku} other {Načítať # nových príspevkov}}"
 
 #. placeholder {0}: policies.length
 #: src/screens/ModerationInbox/Notice.tsx:270
 msgid "{0, plural, one {Rule violated:} other {Rules violated:}}"
-msgstr ""
+msgstr "{0, plural, one {Porušené pravidlo:} few {Porušené pravidlá:} many {Porušených pravidiel:} other {Porušené pravidlá:}}"
 
 #. placeholder {0}: followed.length
 #: src/features/news/article/ArticleSocialStack.tsx:45
 msgid "{0, plural, one {Shared by # connection} other {Shared by # connections}}"
-msgstr ""
+msgstr "{0, plural, one {Zdieľa # tvoj kontakt} few {Zdieľajú # tvoje kontakty} many {Zdieľa # tvojho kontaktu} other {Zdieľa # tvojich kontaktov}}"
 
 #. placeholder {0}: sharers.count
 #. placeholder {0}: unique.length
 #: src/features/news/article/ArticleSocialStack.tsx:51 src/features/news/explore/components/StoryByline.tsx:233
 msgid "{0, plural, one {Shared by # person} other {Shared by # people}}"
-msgstr ""
+msgstr "{0, plural, one {Zdieľa # človek} few {Zdieľajú # ľudia} many {Zdieľa # človeka} other {Zdieľa # ľudí}}"
 
 #. placeholder {0}: sharers.count
 #: src/features/news/explore/components/StoryByline.tsx:229
 msgid "{0, plural, one {Shared by #+ people} other {Shared by #+ people}}"
-msgstr ""
+msgstr "{0, plural, one {Zdieľa #+ ľudí} few {Zdieľa #+ ľudí} many {Zdieľa #+ ľudí} other {Zdieľa #+ ľudí}}"
 
 #. placeholder {0}: provider.name
 #: src/features/profileLinks/components/LinkFormDialog.tsx:376
 msgid "{0} is a recognized support link. It gets the green support button."
-msgstr ""
+msgstr "{0} je rozpoznaný odkaz na podporu. Dostane zelené tlačidlo podpory."
 
 #. placeholder {0}: BRAND.name
 #: src/ageAssurance/components/NoAccessScreen.tsx:180
 msgid "{0} isn't available in your region, which legally requires verified age assurance."
-msgstr ""
+msgstr "{0} nie je dostupné v tvojom regióne, kde zákon vyžaduje overenie veku."
 
 #. placeholder {0}: i18n.number(more)
 #: src/features/frontpages/editorial/StarterPackPeople.tsx:116
 msgid "{0} more"
-msgstr ""
+msgstr "{0} ďalších"
 
 #. placeholder {0}: BRAND.name
 #: src/features/frontpages/directory/index.tsx:125 src/features/news/explore/index.tsx:248 src/features/news/outlets/index.tsx:70 src/features/newsFeed/components/NewsFeedTab.tsx:53 src/Navigation.tsx:237 src/Navigation.tsx:248
 msgid "{0} News"
-msgstr ""
+msgstr "Správy {0}"
 
 #. placeholder {0}: BRAND.name
 #: src/features/frontpages/legacy/NewsroomScreen.tsx:114 src/features/newsFeed/legacy/NewsFeedRightRail.tsx:73 src/Navigation.tsx:238
 msgid "{0} Newsrooms"
-msgstr ""
+msgstr "Redakcie {0}"
 
 #. placeholder {0}: title.length
 #: src/features/profileLinks/components/LinkFormDialog.tsx:406
 msgid "{0} out of {MAX_TITLE_LENGTH} characters"
-msgstr ""
+msgstr "{0} z {MAX_TITLE_LENGTH} znakov"
 
 #. placeholder {0}: tab.label
 #: src/screens/Notifications/components/TabPills.tsx:428
 msgid "{0} tab, selected"
-msgstr ""
+msgstr "Karta {0}, vybraná"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:75
 msgid "{accountCount, plural, one {# account} other {# accounts}}"
-msgstr ""
+msgstr "{accountCount, plural, one {# účet} few {# účty} many {# účtu} other {# účtov}}"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:71
 msgid "{accountCount, plural, one {# account} other {# accounts}}, {feedCount, plural, one {# feed} other {# feeds}}"
-msgstr ""
+msgstr "{accountCount, plural, one {# účet} few {# účty} many {# účtu} other {# účtov}}, {feedCount, plural, one {# kanál} few {# kanály} many {# kanála} other {# kanálov}}"
 
 #: src/features/frontpages/editorial/Article.tsx:74
 msgid "{commentCount, plural, one {Open conversation (# comment)} other {Open conversation (# comments)}}"
-msgstr ""
+msgstr "{commentCount, plural, one {Otvoriť konverzáciu (# komentár)} few {Otvoriť konverzáciu (# komentáre)} many {Otvoriť konverzáciu (# komentára)} other {Otvoriť konverzáciu (# komentárov)}}"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/ListSubjectPreview.tsx:52
 msgid "{count, plural, one {# account} other {# accounts}}"
-msgstr ""
+msgstr "{count, plural, one {# účet} few {# účty} many {# účtu} other {# účtov}}"
 
 #. Number of people you follow who also follow this account
 #: src/screens/Notifications/components/NotificationItem/Item/profile.tsx:353
 msgid "{count, plural, one {# mutual follower} other {# mutual followers}}"
-msgstr ""
+msgstr "{count, plural, one {# spoločný sledovateľ} few {# spoloční sledovatelia} many {# spoločného sledovateľa} other {# spoločných sledovateľov}}"
 
 #. Short form of “mutual followers”: the number of people you follow who also follow this account
 #: src/screens/Notifications/components/NotificationItem/Item/profile.tsx:360
 msgid "{count, plural, one {# mutual} other {# mutuals}}"
-msgstr ""
+msgstr "{count, plural, one {# spoločný} few {# spoloční} many {# spoločného} other {# spoločných}}"
 
 #: src/features/news/explore/components/ExploreDepartment.tsx:186
 msgid "{count, plural, one {# story} other {# stories}}"
-msgstr ""
+msgstr "{count, plural, one {# príbeh} few {# príbehy} many {# príbehu} other {# príbehov}}"
 
 #: src/features/profileLinks/components/ProfileLinks.tsx:443
 msgid "{count, plural, one {Show # more link} other {Show # more links}}"
@@ -15932,823 +15932,823 @@ msgstr "{count, plural, one {Zobraziť # link} few {Zobraziť # ďalšie linky} 
 
 #: src/features/followingV2/home/PrependPill.tsx:76
 msgid "{count, plural, one {Show # new post} other {Show # new posts}}"
-msgstr ""
+msgstr "{count, plural, one {Zobraziť # nový príspevok} few {Zobraziť # nové príspevky} many {Zobraziť # nového príspevku} other {Zobraziť # nových príspevkov}}"
 
 #: src/screens/ModerationInbox/Notice.tsx:425
 msgid "{detailsLength} of {MAX_REPORT_REASON_GRAPHEME_LENGTH} characters used"
-msgstr ""
+msgstr "Použité znaky: {detailsLength} z {MAX_REPORT_REASON_GRAPHEME_LENGTH}"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:79
 msgid "{feedCount, plural, one {# feed} other {# feeds}}"
-msgstr ""
+msgstr "{feedCount, plural, one {# kanál} few {# kanály} many {# kanála} other {# kanálov}}"
 
 #: src/features/news/explore/components/StoryByline.tsx:167
 msgid "{first} and {second} covered this too"
-msgstr ""
+msgstr "{first} a {second} o tom tiež informovali"
 
 #: src/features/news/explore/components/StoryByline.tsx:168
 msgid "{first} covered this too"
-msgstr ""
+msgstr "{first} o tom tiež informoval/a"
 
 #. How long ago a notification happened, e.g. "7m ago". The time is already abbreviated and translated.
 #: src/screens/Notifications/components/NotificationItem/Item/text.tsx:162
 msgid "{formatted} ago"
-msgstr ""
+msgstr "pred {formatted}"
 
 #: src/components/moderation/BlockDialog.tsx:199
 msgid "{hiddenCount, plural, one {See # more} other {See # more}}"
-msgstr ""
+msgstr "{hiddenCount, plural, one {Zobraziť # ďalší} few {Zobraziť # ďalšie} many {Zobraziť # ďalšieho} other {Zobraziť # ďalších}}"
 
 #: src/view/com/pager/TabBar.tsx:452 src/view/com/pager/TabBar.web.tsx:132
 msgid "{item}, unread"
-msgstr ""
+msgstr "{item}, neprečítané"
 
 #: src/screens/ModerationInbox/Settings.tsx:138
 msgid "{label}. {description}"
-msgstr ""
+msgstr "{label}. {description}"
 
 #: src/features/frontpages/editorial/Section.tsx:420
 msgid "{length, plural, one {Fixed: # spot} other {Fixed: # spots}}"
-msgstr ""
+msgstr "{length, plural, one {Pevné: # miesto} few {Pevné: # miesta} many {Pevné: # miesta} other {Pevné: # miest}}"
 
 #: src/features/frontpages/editorial/Article.tsx:66
 msgid "{likeCount, plural, one {View # like} other {View # likes}}"
-msgstr ""
+msgstr "{likeCount, plural, one {Zobraziť # lajk} few {Zobraziť # lajky} many {Zobraziť # lajku} other {Zobraziť # lajkov}}"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:127
 msgid "{name} and {others, plural, one {# other} other {# others}} followed you"
-msgstr ""
+msgstr "{name} a {others, plural, one {# ďalší} few {# ďalší} many {# ďalších} other {# ďalších}} ťa začali sledovať"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:486
 msgid "{name} and {others, plural, one {# other} other {# others}} liked your custom feed"
-msgstr ""
+msgstr "{name} a {others, plural, one {# ďalší} few {# ďalší} many {# ďalších} other {# ďalších}} lajkli tvoj vlastný kanál"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:88
 msgid "{name} and {others, plural, one {# other} other {# others}} liked your post"
-msgstr ""
+msgstr "{name} a {others, plural, one {# ďalší} few {# ďalší} many {# ďalších} other {# ďalších}} lajkli tvoj príspevok"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:189
 msgid "{name} and {others, plural, one {# other} other {# others}} liked your repost"
-msgstr ""
+msgstr "{name} a {others, plural, one {# ďalší} few {# ďalší} many {# ďalších} other {# ďalších}} lajkli tvoj repost"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:138
 msgid "{name} and {others, plural, one {# other} other {# others}} reposted your post"
-msgstr ""
+msgstr "{name} a {others, plural, one {# ďalší} few {# ďalší} many {# ďalších} other {# ďalších}} repostli tvoj príspevok"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:240
 msgid "{name} and {others, plural, one {# other} other {# others}} reposted your repost"
-msgstr ""
+msgstr "{name} a {others, plural, one {# ďalší} few {# ďalší} many {# ďalších} other {# ďalších}} repostli tvoj repost"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:126
 msgid "{name} and {secondName} followed you"
-msgstr ""
+msgstr "{name} a {secondName} ťa začali sledovať"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:484
 msgid "{name} and {secondName} liked your custom feed"
-msgstr ""
+msgstr "{name} a {secondName} lajkli tvoj vlastný kanál"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:86
 msgid "{name} and {secondName} liked your post"
-msgstr ""
+msgstr "{name} a {secondName} lajkli tvoj príspevok"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:187
 msgid "{name} and {secondName} liked your repost"
-msgstr ""
+msgstr "{name} a {secondName} lajkli tvoj repost"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:136
 msgid "{name} and {secondName} reposted your post"
-msgstr ""
+msgstr "{name} a {secondName} repostli tvoj príspevok"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:238
 msgid "{name} and {secondName} reposted your repost"
-msgstr ""
+msgstr "{name} a {secondName} repostli tvoj repost"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:196
 msgid "{name} followed you back"
-msgstr ""
+msgstr "{name} ťa začal/a sledovať späť"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:195
 msgid "{name} followed you back via starter pack {starterPackName}"
-msgstr ""
+msgstr "{name} ťa začal/a sledovať späť cez štartovací balíček {starterPackName}"
 
 #: src/features/frontpages/components/FrontpageLinkChip.tsx:82
 msgid "{name} Frontpage"
-msgstr ""
+msgstr "{name} Frontpage"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:352
 msgid "{name} liked {count} of your {count, plural, one {post} other {posts}}"
-msgstr ""
+msgstr "{name} lajkol/a {count} z tvojich príspevkov"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:415
 msgid "{name} liked {count} of your {count, plural, one {repost} other {reposts}}"
-msgstr ""
+msgstr "{name} lajkol/a {count} z tvojich repostov"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:490
 msgid "{name} liked your custom feed"
-msgstr ""
+msgstr "{name} lajkol/a tvoj vlastný kanál"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:92
 msgid "{name} liked your post"
-msgstr ""
+msgstr "{name} lajkol/a tvoj príspevok"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:193
 msgid "{name} liked your repost"
-msgstr ""
+msgstr "{name} lajkol/a tvoj repost"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:268
 msgid "{name} removed their verification from your account"
-msgstr ""
+msgstr "{name} zrušil/a overenie tvojho účtu"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:383
 msgid "{name} reposted {count} of your {count, plural, one {post} other {posts}}"
-msgstr ""
+msgstr "{name} repostol/a {count} z tvojich príspevkov"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:447
 msgid "{name} reposted {count} of your {count, plural, one {repost} other {reposts}}"
-msgstr ""
+msgstr "{name} repostol/a {count} z tvojich repostov"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:142
 msgid "{name} reposted your post"
-msgstr ""
+msgstr "{name} repostol/a tvoj príspevok"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:244
 msgid "{name} reposted your repost"
-msgstr ""
+msgstr "{name} repostol/a tvoj repost"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:233
 msgid "{name} verified you"
-msgstr ""
+msgstr "{name} ťa overil/a"
 
 #: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:84
 msgid "{policyLabel} – {duration}"
-msgstr ""
+msgstr "{policyLabel} – {duration}"
 
 #: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:83
 msgid "{policyLabel} – {duration}, now expired"
-msgstr ""
+msgstr "{policyLabel} – {duration}, už vypršalo"
 
 #: src/components/dialogs/NewskieDialog/utils.ts:32
 msgid "{profileName} joined Bluesky just now"
-msgstr ""
+msgstr "{profileName} sa práve pripojil/a k Tatrasky"
 
 #: src/components/dialogs/NewskieDialog/utils.ts:31
 msgid "{profileName} joined Bluesky using a Starter Pack just now"
-msgstr ""
+msgstr "{profileName} sa práve pripojil/a k Tatrasky pomocou štartovacieho balíčka"
 
 #: src/features/frontpages/editorial/Article.tsx:70
 msgid "{repostCount, plural, one {View # repost} other {View # reposts}}"
-msgstr ""
+msgstr "{repostCount, plural, one {Zobraziť # repost} few {Zobraziť # reposty} many {Zobraziť # repostu} other {Zobraziť # repostov}}"
 
 #: src/screens/ModerationInbox/Notice.tsx:242
 msgid "{serviceName} removed your content for violating our <0>Community Guidelines</0>."
-msgstr ""
+msgstr "{serviceName} odstránil tvoj obsah za porušenie našich <0>Pravidiel komunity</0>."
 
 #: src/features/frontpages/editorial/Section.tsx:241
 msgid "{shown} of {length} filled – there are no more posts to fill it, so it collapses for readers."
-msgstr ""
+msgstr "Vyplnených {shown} z {length} – nie sú ďalšie príspevky na vyplnenie, takže sa pre čitateľov zbalí."
 
 #: src/features/frontpages/editorial/Section.tsx:342
 msgid "{spots} – drag to resize"
-msgstr ""
+msgstr "{spots} – ťahaním zmeníš veľkosť"
 
 #: src/features/frontpages/directory/index.tsx:258 src/features/newsFeed/components/interests/InterestEditor.tsx:552
 msgid "{stories, plural, one {# current story} other {# current stories}}"
-msgstr ""
+msgstr "{stories, plural, one {# aktuálny príbeh} few {# aktuálne príbehy} many {# aktuálneho príbehu} other {# aktuálnych príbehov}}"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:483
 msgid "{title}, already pinned on the front page"
-msgstr ""
+msgstr "{title}, už pripnuté na titulnej strane"
 
 #: src/features/news/explore/components/StoryByline.tsx:175
 msgid "{unnamed, plural, one {{first} and # more covered this} other {{first} and # more covered this}}"
-msgstr ""
+msgstr "{unnamed, plural, one {{first} a # ďalší o tom tiež informovali} few {{first} a # ďalší o tom tiež informovali} many {{first} a # ďalších o tom tiež informovalo} other {{first} a # ďalších o tom tiež informovalo}}"
 
 #: src/features/news/explore/components/StoryByline.tsx:171
 msgid "{unnamed, plural, one {{first}, {second} and # more covered this} other {{first}, {second} and # more covered this}}"
-msgstr ""
+msgstr "{unnamed, plural, one {{first}, {second} a # ďalší o tom tiež informovali} few {{first}, {second} a # ďalší o tom tiež informovali} many {{first}, {second} a # ďalších o tom tiež informovalo} other {{first}, {second} a # ďalších o tom tiež informovalo}}"
 
 #: src/screens/Settings/Settings.tsx:213 src/view/shell/Drawer.tsx:802
 msgid "{unreadCount, plural, one {# unread update} other {# unread updates}}"
-msgstr ""
+msgstr "{unreadCount, plural, one {# neprečítaná aktualizácia} few {# neprečítané aktualizácie} many {# neprečítanej aktualizácie} other {# neprečítaných aktualizácií}}"
 
 #: src/features/frontpages/editorial/Section.tsx:236
 msgid "{value, plural, one {# spot} other {# spots}}"
-msgstr ""
+msgstr "{value, plural, one {# miesto} few {# miesta} many {# miesta} other {# miest}}"
 
 #: src/components/Post/Embed/AtCard/index.tsx:160
 msgid "@{displayedHandle}"
-msgstr ""
+msgstr "@{displayedHandle}"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:152
 msgid "<0/> and <1/> followed you"
-msgstr ""
+msgstr "<0/> a <1/> ťa začali sledovať"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:499
 msgid "<0/> and <1/> liked your custom feed"
-msgstr ""
+msgstr "<0/> a <1/> lajkli tvoj vlastný kanál"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:96
 msgid "<0/> and <1/> liked your post"
-msgstr ""
+msgstr "<0/> a <1/> lajkli tvoj príspevok"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:197
 msgid "<0/> and <1/> liked your repost"
-msgstr ""
+msgstr "<0/> a <1/> lajkli tvoj repost"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:146
 msgid "<0/> and <1/> reposted your post"
-msgstr ""
+msgstr "<0/> a <1/> repostli tvoj príspevok"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:248
 msgid "<0/> and <1/> reposted your repost"
-msgstr ""
+msgstr "<0/> a <1/> repostli tvoj repost"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:157
 msgid "<0/> and <1>{others, plural, one {# other} other {# others}}</1> followed you"
-msgstr ""
+msgstr "<0/> a <1>{others, plural, one {# ďalší} few {# ďalší} many {# ďalších} other {# ďalších}}</1> ťa začali sledovať"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:504
 msgid "<0/> and <1>{others, plural, one {# other} other {# others}}</1> liked your custom feed"
-msgstr ""
+msgstr "<0/> a <1>{others, plural, one {# ďalší} few {# ďalší} many {# ďalších} other {# ďalších}}</1> lajkli tvoj vlastný kanál"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:101
 msgid "<0/> and <1>{others, plural, one {# other} other {# others}}</1> liked your post"
-msgstr ""
+msgstr "<0/> a <1>{others, plural, one {# ďalší} few {# ďalší} many {# ďalších} other {# ďalších}}</1> lajkli tvoj príspevok"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:202
 msgid "<0/> and <1>{others, plural, one {# other} other {# others}}</1> liked your repost"
-msgstr ""
+msgstr "<0/> a <1>{others, plural, one {# ďalší} few {# ďalší} many {# ďalších} other {# ďalších}}</1> lajkli tvoj repost"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:151
 msgid "<0/> and <1>{others, plural, one {# other} other {# others}}</1> reposted your post"
-msgstr ""
+msgstr "<0/> a <1>{others, plural, one {# ďalší} few {# ďalší} many {# ďalších} other {# ďalších}}</1> repostli tvoj príspevok"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:253
 msgid "<0/> and <1>{others, plural, one {# other} other {# others}}</1> reposted your repost"
-msgstr ""
+msgstr "<0/> a <1>{others, plural, one {# ďalší} few {# ďalší} many {# ďalších} other {# ďalších}}</1> repostli tvoj repost"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:79
 msgid "<0/> followed you"
-msgstr ""
+msgstr "<0/> ťa začal/a sledovať"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:204
 msgid "<0/> followed you back! 🎉"
-msgstr ""
+msgstr "<0/> ťa začal/a sledovať späť! 🎉"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:358
 msgid "<0/> liked {count} of your {count, plural, one {post} other {posts}}"
-msgstr ""
+msgstr "<0/> lajkol/a {count} z tvojich príspevkov"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:421
 msgid "<0/> liked {count} of your {count, plural, one {repost} other {reposts}}"
-msgstr ""
+msgstr "<0/> lajkol/a {count} z tvojich repostov"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:512
 msgid "<0/> liked your custom feed"
-msgstr ""
+msgstr "<0/> lajkol/a tvoj vlastný kanál"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:109
 msgid "<0/> liked your post"
-msgstr ""
+msgstr "<0/> lajkol/a tvoj príspevok"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:210
 msgid "<0/> liked your repost"
-msgstr ""
+msgstr "<0/> lajkol/a tvoj repost"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:275
 msgid "<0/> removed their verification from your account"
-msgstr ""
+msgstr "<0/> zrušil/a overenie tvojho účtu"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:389
 msgid "<0/> reposted {count} of your {count, plural, one {post} other {posts}}"
-msgstr ""
+msgstr "<0/> repostol/a {count} z tvojich príspevkov"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:453
 msgid "<0/> reposted {count} of your {count, plural, one {repost} other {reposts}}"
-msgstr ""
+msgstr "<0/> repostol/a {count} z tvojich repostov"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:159
 msgid "<0/> reposted your post"
-msgstr ""
+msgstr "<0/> repostol/a tvoj príspevok"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:261
 msgid "<0/> reposted your repost"
-msgstr ""
+msgstr "<0/> repostol/a tvoj repost"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:310
 msgid "<0/> signed up with your starter pack"
-msgstr ""
+msgstr "<0/> sa zaregistroval/a cez tvoj štartovací balíček"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:240
 msgid "<0/> verified you"
-msgstr ""
+msgstr "<0/> ťa overil/a"
 
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:251
 msgid "<0>Tap here to update your approximate location via GPS.</0>"
-msgstr ""
+msgstr "<0>Klepnutím sem aktualizuješ svoju približnú polohu cez GPS.</0>"
 
 #: src/features/frontpages/editorial/index.tsx:274
 msgid "A carousel holds posts only, not feeds or starter packs."
-msgstr ""
+msgstr "Karusel obsahuje iba príspevky, nie kanály ani štartovacie balíčky."
 
 #: src/features/frontpages/editorial/Section.tsx:409
 msgid "A fixed number of spots"
-msgstr ""
+msgstr "Pevný počet miest"
 
 #: src/components/Gallery/Storybook.tsx:48
 msgid "A horizontal strip of any content. Each item keeps its own width and height, and the strip is as tall as the tallest one."
-msgstr ""
+msgstr "Vodorovný pás s ľubovoľným obsahom. Každá položka si zachová svoju šírku a výšku a pás je taký vysoký ako najvyššia z nich."
 
 #: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:60 src/screens/ModerationInbox/components/util/noticeLabels.ts:78
 msgid "A label was added to your account"
-msgstr ""
+msgstr "K tvojmu účtu bol pridaný štítok"
 
 #: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:63 src/screens/ModerationInbox/components/util/noticeLabels.ts:81
 msgid "A label was added to your content"
-msgstr ""
+msgstr "K tvojmu obsahu bol pridaný štítok"
 
 #: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:62 src/screens/ModerationInbox/components/util/noticeLabels.ts:80
 msgid "A label was added to your post"
-msgstr ""
+msgstr "K tvojmu príspevku bol pridaný štítok"
 
 #: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:104
 msgid "A label was removed from your account"
-msgstr ""
+msgstr "Z tvojho účtu bol odstránený štítok"
 
 #: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:107
 msgid "A label was removed from your content"
-msgstr ""
+msgstr "Z tvojho obsahu bol odstránený štítok"
 
 #: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:106
 msgid "A label was removed from your post"
-msgstr ""
+msgstr "Z tvojho príspevku bol odstránený štítok"
 
 #: src/components/Gallery/Storybook.tsx:377
 msgid "A little more content than the first card."
-msgstr ""
+msgstr "O niečo viac obsahu ako v prvej karte."
 
 #: src/screens/ModerationInbox/components/util/noticeLabels.ts:43
 msgid "A moderator reviewed your appeal and reversed the original decision."
-msgstr ""
+msgstr "Moderátor posúdil tvoje odvolanie a zmenil pôvodné rozhodnutie."
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:254
 msgid "About what?"
-msgstr ""
+msgstr "O čom?"
 
 #: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:53
 msgid "Account {authorName}"
-msgstr ""
+msgstr "Účet {authorName}"
 
 #: src/screens/ModerationInbox/components/util/reportActionLabel.ts:34
 msgid "Account restored"
-msgstr ""
+msgstr "Účet bol obnovený"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/StatusSubjectPreview.tsx:51
 msgid "Account status"
-msgstr ""
+msgstr "Stav účtu"
 
 #: src/screens/ModerationInbox/components/util/reportActionLabel.ts:30
 msgid "Account suspended"
-msgstr ""
+msgstr "Účet bol pozastavený"
 
 #: src/screens/ModerationInbox/components/util/reportActionLabel.ts:32
 msgid "Account taken down"
-msgstr ""
+msgstr "Účet bol odstránený"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/AccountSubjectPreview.tsx:40
 msgid "Account unavailable"
-msgstr ""
+msgstr "Účet je nedostupný"
 
 #: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:53
 msgid "Account unknown"
-msgstr ""
+msgstr "Neznámy účet"
 
 #: src/components/verification/VerifierDialog.tsx:85
 msgid "Accounts with a scalloped check mark <0><1/></0> are trusted verifiers. They can verify individual accounts."
-msgstr ""
+msgstr "Účty s ozubenou fajkou <0><1/></0> sú dôveryhodní overovatelia. Môžu overovať jednotlivé účty."
 
 #: src/screens/ModerationInbox/components/util/reportActionLabel.ts:46 src/screens/ModerationInbox/components/util/reportActionLabel.ts:51
 msgid "Action taken"
-msgstr ""
+msgstr "Prijaté opatrenie"
 
 #. placeholder {0}: nav.index
 #. placeholder {1}: nav.previous
 #. placeholder {2}: nav.events
 #: src/components/Gallery/Storybook.tsx:661
 msgid "Active index {0} (from {1}), {2} user navigation events"
-msgstr ""
+msgstr "Aktívny index {0} (z {1}), {2} navigačných udalostí používateľa"
 
 #: src/screens/Atmosphere/index.tsx:37
 msgid "Activity"
-msgstr ""
+msgstr "Aktivita"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:486
 msgid "Add {title}"
-msgstr ""
+msgstr "Pridať {title}"
 
 #: src/features/frontpages/editorial/Editor.tsx:167
 msgid "Add a banner to the profile to use it as the cover."
-msgstr ""
+msgstr "Pridaj do profilu banner, aby sa dal použiť ako titulný obrázok."
 
 #: src/features/profileLinks/components/LinkFormDialog.tsx:284 src/features/profileLinks/components/LinkFormDialog.tsx:304 src/features/profileLinks/components/ProfileLinksEditor.tsx:196
 msgid "Add a link"
-msgstr ""
+msgstr "Pridať odkaz"
 
 #: src/features/frontpages/editorial/Section.tsx:468
 msgid "Add a section here"
-msgstr ""
+msgstr "Pridaj sem sekciu"
 
 #: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:154 src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:162
 msgid "Add an interest"
-msgstr ""
+msgstr "Pridať záujem"
 
 #: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:135
 msgid "Add an interest for each slice of the news you follow, like tech from anywhere, or everything from Belgian outlets."
-msgstr ""
+msgstr "Pridaj záujem pre každý výsek správ, ktoré sleduješ, napríklad technológie odkiaľkoľvek alebo všetko z belgických médií."
 
 #: src/features/muForYouFeed/index.tsx:85 src/features/muForYouFeed/index.tsx:91
 msgid "Add as first feed"
-msgstr ""
+msgstr "Pridať ako prvý kanál"
 
 #: src/components/Gallery/Storybook.tsx:541
 msgid "Add card"
-msgstr ""
+msgstr "Pridať kartu"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:74
 msgid "Add existing post, feed or starter pack here"
-msgstr ""
+msgstr "Pridaj sem existujúci príspevok, kanál alebo štartovací balíček"
 
 #: src/features/profileLinks/components/LinkFormDialog.tsx:427 src/features/profileLinks/components/LinkFormDialog.tsx:446 src/features/profileLinks/components/ProfileLinksEditor.tsx:212
 msgid "Add link"
-msgstr ""
+msgstr "Pridať odkaz"
 
 #: src/features/frontpages/editorial/Section.tsx:475 src/features/frontpages/editorial/Section.tsx:586 src/features/frontpages/editorial/Section.tsx:596
 msgid "Add section"
-msgstr ""
+msgstr "Pridať sekciu"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:245 src/features/frontpages/editorial/SlotPicker.tsx:249
 msgid "Add to front page"
-msgstr ""
+msgstr "Pridať na titulnú stranu"
 
 #: src/components/PostControls/PostMenu/PostMenuControlItems.tsx:159
 msgid "Added to saved posts"
-msgstr ""
+msgstr "Pridané do uložených príspevkov"
 
 #. Tab label in Notifications that shows every notification. Space is tight, so keep it as short as possible.
 #: src/screens/Notifications/index.tsx:116
 msgctxt "notifications tab"
 msgid "All"
-msgstr ""
+msgstr "Všetko"
 
 #: src/features/news/explore/components/ExploreInterestPicker.tsx:101
 msgid "All of {name}"
-msgstr ""
+msgstr "Všetko od {name}"
 
 #: src/features/news/explore/components/ExploreLocationPicker.tsx:40
 msgid "All of the Netherlands"
-msgstr ""
+msgstr "Celé Holandsko"
 
 #: src/features/frontpages/FrontpageScreen.tsx:69 src/features/frontpages/FrontpageScreen.tsx:73
 msgid "All outlets"
-msgstr ""
+msgstr "Všetky médiá"
 
 #: src/features/news/explore/components/ExploreSectionFront.tsx:91 src/features/newsFeed/components/interests/InterestEditor.tsx:267 src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:266 src/features/newsFeed/components/SetupTopics.tsx:51
 msgid "All topics"
-msgstr ""
+msgstr "Všetky témy"
 
 #: src/components/Gallery/Storybook.tsx:759
 msgid "An empty gallery takes up no space. A single item behaves like any other, without dragging or arrow key navigation to go anywhere."
-msgstr ""
+msgstr "Prázdna galéria nezaberá žiadne miesto. Jedna položka sa správa ako každá iná, bez presúvania a bez navigácie šípkami."
 
 #: src/screens/ModerationInbox/components/util/noticeLabels.ts:40
 msgid "Appeal approved"
-msgstr ""
+msgstr "Odvolanie schválené"
 
 #: src/screens/ModerationInbox/components/util/noticeLabels.ts:46
 msgid "Appeal denied"
-msgstr ""
+msgstr "Odvolanie zamietnuté"
 
 #: src/screens/ModerationInbox/components/util/noticeLabels.ts:50
 msgid "Appeal resolved"
-msgstr ""
+msgstr "Odvolanie vyriešené"
 
 #: src/screens/ModerationInbox/components/util/noticeLabels.ts:36
 msgid "Appeal under review"
-msgstr ""
+msgstr "Odvolanie sa posudzuje"
 
 #: src/components/OTAChannelNotice.tsx:224
 msgid "Apply"
-msgstr ""
+msgstr "Použiť"
 
 #: src/components/OTAChannelNotice.tsx:221
 msgid "Apply update from this channel"
-msgstr ""
+msgstr "Použiť aktualizáciu z tohto kanála"
 
 #: src/screens/Atmosphere/index.tsx:37
 msgid "Apps"
-msgstr ""
+msgstr "Aplikácie"
 
 #: src/screens/Atmosphere/components/FeaturedApps.tsx:15
 msgid "Apps on the Atmosphere"
-msgstr ""
+msgstr "Aplikácie v Atmosphere"
 
 #: src/features/news/article/NewsArticleScreen.tsx:93 src/Navigation.tsx:271
 msgid "Article"
-msgstr ""
+msgstr "Článok"
 
 #: src/Navigation.tsx:209 src/screens/Atmosphere/index.tsx:28 src/view/shell/desktop/LeftNav.tsx:788 src/view/shell/Drawer.tsx:571
 msgid "Atmosphere"
-msgstr ""
+msgstr "Atmosphere"
 
 #: src/screens/Atmosphere/AppsTab.tsx:34
 msgid "Audio"
-msgstr ""
+msgstr "Zvuk"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:524
 msgid "Automatic on the front page – pick to pin it here"
-msgstr ""
+msgstr "Automaticky na titulnej strane – vyber, ak ho chceš pripnúť sem"
 
 #: src/features/frontpages/editorial/Editor.tsx:441
 msgid "B"
-msgstr ""
+msgstr "B"
 
 #: src/features/frontpages/editorial/Editor.tsx:91 src/features/frontpages/editorial/Editor.tsx:96
 msgid "Back to editing"
-msgstr ""
+msgstr "Späť na úpravy"
 
 #: src/features/frontpages/editorial/Editor.tsx:417
 msgid "Big (full width)"
-msgstr ""
+msgstr "Veľké (celá šírka)"
 
 #: src/screens/Settings/components/AccountFootprintDialog/labels.ts:21
 msgid "Blocked lists"
-msgstr ""
+msgstr "Zablokované zoznamy"
 
 #: src/screens/Notifications/components/NotificationItem/Item/post.tsx:484
 msgid "Blocked post"
-msgstr ""
+msgstr "Zablokovaný príspevok"
 
 #: src/screens/Settings/components/AccountFootprintDialog/labels.ts:18
 msgctxt "noun"
 msgid "Blocks"
-msgstr ""
+msgstr "Blokovania"
 
 #: src/screens/Atmosphere/AppsTab.tsx:27
 msgid "Blogging"
-msgstr ""
+msgstr "Blogovanie"
 
 #: src/screens/Settings/AppearanceSettings.tsx:280
 msgid "Blue"
-msgstr ""
+msgstr "Modrá"
 
 #: src/screens/Atmosphere/components/AtmosphereNux.tsx:63
 msgid "Bluesky is part of a growing network of hundreds of social apps. Your account unlocks them all."
-msgstr ""
+msgstr "Tatrasky je súčasťou rastúcej siete stoviek sociálnych aplikácií. Tvoj účet ti odomkne všetky."
 
 #: src/features/news/outlets/index.tsx:124 src/features/news/outlets/index.tsx:126
 msgid "Browse every outlet"
-msgstr ""
+msgstr "Prehliadať všetky médiá"
 
 #: src/features/pixelEditor/Workspace.tsx:109
 msgid "Brush"
-msgstr ""
+msgstr "Štetec"
 
 #: src/features/pixelEditor/ColorPopover.tsx:170
 msgid "Brush size"
-msgstr ""
+msgstr "Veľkosť štetca"
 
 #. placeholder {0}: drawing.brushSize
 #: src/features/pixelEditor/Workspace.tsx:202 src/features/pixelEditor/Workspace.tsx:206
 msgid "Brush size: {0} pixels"
-msgstr ""
+msgstr "Veľkosť štetca: {0} px"
 
 #: src/features/pixelEditor/ColorPopover.tsx:186
 msgid "Brush size: {value} pixels"
-msgstr ""
+msgstr "Veľkosť štetca: {value} px"
 
 #: src/components/Gallery/Storybook.tsx:414
 msgid "Buttons and text fields work without starting a drag. Type, select text with the arrow keys, and click. The last item uses the focus render function to make its own button the keyboard target, which Enter and Space should press."
-msgstr ""
+msgstr "Tlačidlá a textové polia fungujú bez spustenia presúvania. Píš, vyberaj text šípkami a klikaj. Posledná položka používa funkciu zamerania, aby sa jej vlastné tlačidlo stalo cieľom klávesnice, ktoré by mali stlačiť Enter a medzerník."
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:84
 msgid "By {authorName}"
-msgstr ""
+msgstr "Od {authorName}"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/FeedSubjectPreview.tsx:48 src/screens/ModerationInbox/components/ReportSubjectPreview/ListSubjectPreview.tsx:55
 msgid "By {name}"
-msgstr ""
+msgstr "Od {name}"
 
 #. Label for a cake icon beside a profile name, not a personal birthday.
 #: src/components/CakeDayBadge.tsx:22
 msgid "Cake day! Account creation anniversary."
-msgstr ""
+msgstr "Deň torty! Výročie vytvorenia účtu."
 
 #: src/screens/ModerationInbox/Notice.tsx:430
 msgid "Cancel appeal"
-msgstr ""
+msgstr "Zrušiť odvolanie"
 
 #: src/features/frontpages/editorial/Editor.tsx:125
 msgid "Cancel editing"
-msgstr ""
+msgstr "Zrušiť úpravy"
 
 #. placeholder {0}: card.id
 #: src/components/Gallery/Storybook.tsx:644 src/components/Gallery/Storybook.tsx:649
 msgid "Card {0}"
-msgstr ""
+msgstr "Karta {0}"
 
 #: src/components/Gallery/Storybook.tsx:373
 msgid "Card {index}"
-msgstr ""
+msgstr "Karta {index}"
 
 #: src/components/Gallery/Storybook.tsx:279
 msgid "Cards and images of different sizes"
-msgstr ""
+msgstr "Karty a obrázky rôznych veľkostí"
 
 #: src/components/Gallery/Storybook.tsx:725
 msgid "Cards in a constrained panel"
-msgstr ""
+msgstr "Karty v obmedzenom paneli"
 
 #: src/components/Gallery/Storybook.tsx:271
 msgid "Cards of different widths and heights, an image, and a card wider than the gallery. The strip is as tall as the tallest card, and nothing is cropped or resized."
-msgstr ""
+msgstr "Karty rôznych šírok a výšok, obrázok a karta širšia ako galéria. Pás je taký vysoký ako najvyššia karta a nič sa neorezáva ani nemení veľkosť."
 
 #: src/components/Gallery/Storybook.tsx:327
 msgid "Cards stretch to the tallest sibling. Shortening or removing the tall card should let the whole row shrink again."
-msgstr ""
+msgstr "Karty sa natiahnu na výšku najvyššej susednej karty. Skrátenie alebo odstránenie vysokej karty by malo celý riadok opäť zmenšiť."
 
 #: src/components/Gallery/Storybook.tsx:742
 msgid "Cards that bleed to the container edges"
-msgstr ""
+msgstr "Karty siahajúce až po okraje kontajnera"
 
 #: src/components/Gallery/Storybook.tsx:630
 msgid "Cards that change"
-msgstr ""
+msgstr "Meniace sa karty"
 
 #: src/features/frontpages/editorial/Section.tsx:521
 msgid "Carousel"
-msgstr ""
+msgstr "Karusel"
 
 #: src/features/frontpages/editorial/Section.tsx:524
 msgid "Carousel – a row of posts that scrolls sideways"
-msgstr ""
+msgstr "Karusel – rad príspevkov, ktorý sa posúva do strany"
 
 #: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:197
 msgid "Change languages"
-msgstr ""
+msgstr "Zmeniť jazyky"
 
 #: src/components/Gallery/Storybook.tsx:533
 msgid "Change the items from outside. Resizing, reordering, and revealing are not user navigation, so the event count should only go up when you swipe, drag, or use the arrow keys."
-msgstr ""
+msgstr "Zmeň položky zvonku. Zmena veľkosti, preusporiadanie a odhalenie nie sú navigáciou používateľa, takže počet udalostí by mal stúpnuť iba pri potiahnutí, presunutí alebo použití šípok."
 
 #: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:192
 msgid "Change your content languages"
-msgstr ""
+msgstr "Zmeniť jazyky tvojho obsahu"
 
 #: src/components/Gallery/Storybook.tsx:531
 msgid "Changing content"
-msgstr ""
+msgstr "Obsah sa mení"
 
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:185
 msgid "Changing your password will sign you out. You’ll need to sign in again with your new password."
-msgstr ""
+msgstr "Zmena hesla ťa odhlási. Budeš sa musieť prihlásiť znova s novým heslom."
 
 #: src/components/OTAChannelNotice.tsx:203 src/components/OTAChannelNotice.tsx:207
 msgid "Channel"
-msgstr ""
+msgstr "Kanál"
 
 #: src/components/OTAChannelNotice.tsx:120
 msgid "Check for OTA updates"
-msgstr ""
+msgstr "Skontrolovať OTA aktualizácie"
 
 #: src/components/OTAChannelNotice.tsx:127
 msgid "Check for updates"
-msgstr ""
+msgstr "Skontrolovať aktualizácie"
 
 #: src/features/news/explore/components/ExploreLocationPicker.tsx:49 src/features/news/explore/components/ExploreLocationPicker.tsx:54
 msgid "Choose a location"
-msgstr ""
+msgstr "Vybrať polohu"
 
 #: src/features/news/explore/components/ExploreInterestPicker.tsx:66 src/features/news/explore/index.tsx:258
 msgid "Choose your news interests"
-msgstr ""
+msgstr "Vyber si svoje spravodajské záujmy"
 
 #: src/screens/Search/components/SearchHistory.tsx:150
 msgctxt "action"
 msgid "Clear"
-msgstr ""
+msgstr "Vymazať"
 
 #: src/screens/Search/components/SearchHistory.tsx:78
 msgctxt "action"
 msgid "Clear all"
-msgstr ""
+msgstr "Vymazať všetko"
 
 #: src/screens/Search/components/SearchHistory.tsx:71
 msgid "Clear all recent searches"
-msgstr ""
+msgstr "Vymazať všetky nedávne vyhľadávania"
 
 #: src/screens/Search/components/SearchHistory.tsx:147
 msgid "Clear all recent searches?"
-msgstr ""
+msgstr "Vymazať všetky nedávne vyhľadávania?"
 
 #: src/features/pixelEditor/Workspace.tsx:266
 msgid "Clear drawing"
-msgstr ""
+msgstr "Vymazať kresbu"
 
 #: src/features/news/explore/sections.ts:98
 msgid "Climate"
-msgstr ""
+msgstr "Klíma"
 
 #: src/features/pixelEditor/ColorPopover.tsx:231 src/features/pixelEditor/Workspace.tsx:171
 msgid "Close tool options"
-msgstr ""
+msgstr "Zavrieť možnosti nástroja"
 
 #: src/screens/Notifications/components/NotificationItem/Item/group.tsx:304
 msgid "Collapses list of users"
-msgstr ""
+msgstr "Zbalí zoznam používateľov"
 
 #: src/features/pixelEditor/ColorPopover.tsx:99
 msgid "Color {swatch}"
-msgstr ""
+msgstr "Farba {swatch}"
 
 #: src/screens/ModerationInbox/components/util/reportActionLabel.ts:40
 msgid "Communication sent"
-msgstr ""
+msgstr "Správa odoslaná"
 
 #: src/features/newsFeed/components/NewsFeedTab.tsx:66
 msgid "Configure"
-msgstr ""
+msgstr "Nastaviť"
 
 #: src/components/Gallery/Storybook.tsx:697
 msgid "Constrained and bleeding containers"
-msgstr ""
+msgstr "Obmedzené a presahujúce kontajnery"
 
 #: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:48 src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:56
 msgid "Content"
-msgstr ""
+msgstr "Obsah"
 
 #: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:48
 msgid "Content by {authorName}"
-msgstr ""
+msgstr "Obsah od {authorName}"
 
 #: src/screens/ModerationInbox/components/util/reportActionLabel.ts:26
 msgid "Content removed"
-msgstr ""
+msgstr "Obsah odstránený"
 
 #: src/screens/ModerationInbox/components/util/reportActionLabel.ts:28
 msgid "Content restored"
-msgstr ""
+msgstr "Obsah obnovený"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/index.tsx:86
 msgid "Content unavailable"
-msgstr ""
+msgstr "Obsah je nedostupný"
 
 #: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:26
 msgid "Conversation with {authorName}"
-msgstr ""
+msgstr "Konverzácia s {authorName}"
 
 #: src/features/muForYouFeed/index.tsx:79
 msgid "Could not add the feed. Please try again."
-msgstr ""
+msgstr "Kanál sa nepodarilo pridať. Skús to znova."
 
 #: src/screens/Atmosphere/AppsTab.tsx:78 src/screens/Atmosphere/ExploreTab.tsx:51
 msgid "Could not load Atmosphere content. Please try again."
-msgstr ""
+msgstr "Nepodarilo sa načítať obsah z Atmosphere. Skús to znova."
 
 #: src/features/frontpages/editorial/StarterPackHeader.tsx:135
 msgid "Couldn’t follow this starter pack. Try again."
-msgstr ""
+msgstr "Nepodarilo sa začať sledovať tento štartovací balíček. Skús to znova."
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:366
 msgid "Couldn’t load items. Try again."
-msgstr ""
+msgstr "Položky sa nepodarilo načítať. Skús to znova."
 
 #: src/screens/Notifications/components/NotificationItem/Item/group.tsx:359
 msgid "Couldn’t load more accounts, please try again"
-msgstr ""
+msgstr "Nepodarilo sa načítať ďalšie účty, skús to znova"
 
 #: src/features/followingV2/home/GapRow.tsx:58 src/features/followingV2/home/GapRow.tsx:83
 msgid "Couldn’t load more posts. Try again"
-msgstr ""
+msgstr "Nepodarilo sa načítať ďalšie príspevky. Skús to znova"
 
 #: src/features/frontpages/editorial/index.tsx:832
 msgid "Couldn’t load stories."
-msgstr ""
+msgstr "Príbehy sa nepodarilo načítať."
 
 #: src/features/news/explore/index.tsx:339
 msgid "Couldn’t load the news. Try again later."
-msgstr ""
+msgstr "Správy sa nepodarilo načítať. Skús to neskôr."
 
 #: src/features/frontpages/editorial/index.tsx:628
 msgid "Couldn’t load the published front page."
-msgstr ""
+msgstr "Zverejnenú titulnú stranu sa nepodarilo načítať."
 
 #: src/features/frontpages/FrontpageScreen.tsx:48 src/features/frontpages/PublicationScreen.tsx:49
 msgid "Couldn’t load this publication."
-msgstr ""
+msgstr "Túto publikáciu sa nepodarilo načítať."
 
 #: src/features/frontpages/editorial/ResourceSlot.tsx:143
 msgid "Couldn’t load this slot."
-msgstr ""
+msgstr "Toto miesto sa nepodarilo načítať."
 
 #: src/screens/Profile/Header/EditProfileDialog.tsx:186
 msgid "Couldn’t load your links. Please try again."
@@ -16760,11 +16760,11 @@ msgstr "Nepodarilo sa načítať tvoje linky. Skús to znova."
 
 #: src/features/frontpages/editorial/index.tsx:277
 msgid "Couldn’t place the item there. Choose another place."
-msgstr ""
+msgstr "Položku sa nepodarilo umiestniť na toto miesto. Vyber iné miesto."
 
 #: src/features/frontpages/editorial/index.tsx:294
 msgid "Couldn’t publish the front page. Your changes are still here. Try again."
-msgstr ""
+msgstr "Titulnú stranu sa nepodarilo zverejniť. Tvoje zmeny tu zostávajú. Skús to znova."
 
 #: src/features/profileLinks/components/ProfileLinks.tsx:198
 msgid "Couldn’t save your links. Please try again."
@@ -16772,595 +16772,595 @@ msgstr "Nepodarilo sa uložiť tvoje linky. Prosím, skús to znova."
 
 #: src/screens/Profile/Header/EditProfileDialog.tsx:309
 msgid "Couldn’t save your profile. Please try again."
-msgstr ""
+msgstr "Tvoj profil sa nepodarilo uložiť. Skús to znova."
 
 #: src/components/Gallery/Storybook.tsx:424
 msgid "Counter"
-msgstr ""
+msgstr "Počítadlo"
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:218
 msgid "Countries"
-msgstr ""
+msgstr "Krajiny"
 
 #: src/components/Gallery/Storybook.tsx:457
 msgid "Counts how many times it was focused and pressed"
-msgstr ""
+msgstr "Počíta, koľkokrát bolo zamerané a stlačené"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/FeedSubjectPreview.tsx:53 src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:90
 msgid "Created {createdAt}"
-msgstr ""
+msgstr "Vytvorené {createdAt}"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/ListSubjectPreview.tsx:58
 msgid "Created {date}"
-msgstr ""
+msgstr "Vytvorené {date}"
 
 #: src/screens/ModerationInbox/components/util/reportActionLabel.ts:44
 msgid "Credentials revoked"
-msgstr ""
+msgstr "Prihlasovacie údaje zrušené"
 
 #: src/features/pixelEditor/ColorPopover.tsx:37
 msgid "Custom colors"
-msgstr ""
+msgstr "Vlastné farby"
 
 #: src/screens/Settings/components/AccountFootprintDialog/labels.ts:14
 msgid "Custom feeds"
-msgstr ""
+msgstr "Vlastné kanály"
 
 #: src/screens/Settings/AppearanceSettings.tsx:279
 msgid "Cyan"
-msgstr ""
+msgstr "Azúrová"
 
 #. placeholder {0}: pdsAccountLink.host
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:231 src/screens/Settings/components/AccountFootprintDialog/index.tsx:240
 msgid "Deactivate on {0}"
-msgstr ""
+msgstr "Deaktivovať na {0}"
 
 #: src/screens/Settings/components/AccountActionIntro.tsx:30 src/screens/Settings/components/DeactivateAccountDialog.tsx:113
 msgid "Deactivate your account"
-msgstr ""
+msgstr "Deaktivovať tvoj účet"
 
 #: src/screens/Settings/components/AccountFootprintDialog/labels.ts:30
 msgid "Decoration settings"
-msgstr ""
+msgstr "Nastavenia dekorácie"
 
 #. placeholder {0}: pdsAccountLink.host
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:230 src/screens/Settings/components/AccountFootprintDialog/index.tsx:238
 msgid "Delete on {0}"
-msgstr ""
+msgstr "Odstrániť na {0}"
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:130
 msgid "Delete this interest"
-msgstr ""
+msgstr "Odstrániť tento záujem"
 
 #: src/screens/Settings/components/AccountActionIntro.tsx:28 src/screens/Settings/components/DeleteAccountDialog.tsx:322
 msgid "Delete your account"
-msgstr ""
+msgstr "Odstrániť tvoj účet"
 
 #: src/screens/Notifications/components/NotificationItem/Item/post.tsx:487
 msgid "Deleted post"
-msgstr ""
+msgstr "Odstránený príspevok"
 
 #: src/features/frontpages/editorial/Section.tsx:547
 msgid "Description (optional)"
-msgstr ""
+msgstr "Popis (voliteľné)"
 
 #. placeholder {0}: record.description
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:103
 msgid "Description: “{0}”"
-msgstr ""
+msgstr "Popis: „{0}“"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/FeedSubjectPreview.tsx:65 src/screens/ModerationInbox/components/ReportSubjectPreview/ListSubjectPreview.tsx:70
 msgid "Description: “{description}”"
-msgstr ""
+msgstr "Popis: „{description}“"
 
 #: src/screens/Atmosphere/AppsTab.tsx:33
 msgid "Dev"
-msgstr ""
+msgstr "Vývoj"
 
 #: src/features/news/explore/components/ExploreLeadBand.tsx:109
 msgid "Developing"
-msgstr ""
+msgstr "Vo vývoji"
 
 #: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:24
 msgid "Direct message"
-msgstr ""
+msgstr "Priama správa"
 
 #: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:23
 msgid "Direct message from {authorName}"
-msgstr ""
+msgstr "Priama správa od {authorName}"
 
 #: src/features/frontpages/editorial/Editor.tsx:125
 msgid "Discard changes"
-msgstr ""
+msgstr "Zahodiť zmeny"
 
 #: src/features/muForYouFeed/index.tsx:65
 msgid "Discover posts picked for you based on your interests. Add Mu’s personalized feed as your first pinned feed?"
-msgstr ""
+msgstr "Objavuj príspevky vybrané podľa tvojich záujmov. Pridať personalizovaný kanál Mu ako tvoj prvý pripnutý kanál?"
 
 #: src/screens/Atmosphere/components/AtmosphereNux.tsx:57
 msgid "Discover the Atmosphere"
-msgstr ""
+msgstr "Objav Atmosphere"
 
 #: src/screens/Atmosphere/components/AtmosphereNux.tsx:70
 msgid "Dismiss Discover the Atmosphere banner"
-msgstr ""
+msgstr "Zavrieť banner Objav Atmosphere"
 
 #: src/features/frontpages/editorial/FillMenu.tsx:62 src/features/frontpages/editorial/FillMenu.tsx:90 src/features/frontpages/editorial/FillMenu.tsx:91
 msgid "Don’t fill"
-msgstr ""
+msgstr "Nevypĺňať"
 
 #: src/features/frontpages/editorial/Editor.tsx:117
 msgid "Drag stories to arrange the front page, then publish."
-msgstr ""
+msgstr "Presúvaním príbehov usporiadaj titulnú stranu a potom ju zverejni."
 
 #: src/features/pixelEditor/ColorPicker.tsx:65
 msgid "Drag to choose a color, or use arrow keys and Space."
-msgstr ""
+msgstr "Ťahaním vyber farbu alebo použi šípky a medzerník."
 
 #: src/features/pixelEditor/ColorPicker.tsx:116
 msgid "Drag to choose a hue, or use arrow keys and Space."
-msgstr ""
+msgstr "Ťahaním vyber odtieň alebo použi šípky a medzerník."
 
 #: src/features/pixelEditor/Workspace.tsx:149
 msgid "Drag to draw. Pinch with two fingers to zoom and move. Tap with two fingers to undo, or three to redo. Use plus, minus, and zero for keyboard zoom."
-msgstr ""
+msgstr "Ťahaním kresli. Dvoma prstami priblížiš a posunieš. Klepnutím dvoma prstami vrátiš späť, tromi znova urobíš. Na priblíženie klávesnicou použi plus, mínus a nulu."
 
 #: src/features/frontpages/editorial/SortableStories/index.web.tsx:401
 msgid "Drag to reorder {title}"
-msgstr ""
+msgstr "Presunúť {title} a zmeniť poradie"
 
 #: src/features/frontpages/editorial/SortableStories/index.web.tsx:278
 msgid "Drag to reorder. You can also use the arrow keys, Home, or End while this handle is focused. Press Escape to cancel a drag."
-msgstr ""
+msgstr "Ťahaním zmeníš poradie. Môžeš tiež použiť šípky, Home alebo End, kým je tento úchyt zameraný. Stlačením Escape zrušíš presúvanie."
 
 #: src/features/pixelEditor/Workspace.tsx:221 src/features/pixelEditor/Workspace.tsx:225
 msgid "Drawing color"
-msgstr ""
+msgstr "Farba kresby"
 
 #: src/features/frontpages/editorial/SortableStories/index.web.tsx:383
 msgid "Drop here"
-msgstr ""
+msgstr "Pustiť sem"
 
 #: src/features/frontpages/editorial/Section.tsx:447
 msgid "Drop stories here, add one with +, or choose what fills it."
-msgstr ""
+msgstr "Pusti sem príbehy, pridaj jeden cez +, alebo vyber, čo ju vyplní."
 
 #: src/features/frontpages/editorial/Section.tsx:537
 msgid "e.g. Politics"
-msgstr ""
+msgstr "napr. Politika"
 
 #: src/features/profileLinks/components/LinkFormDialog.tsx:394
 msgid "e.g. Portfolio"
-msgstr ""
+msgstr "napr. Portfólio"
 
 #: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:132
 msgid "Each one is a tab"
-msgstr ""
+msgstr "Každý je jedna karta"
 
 #: src/screens/Notifications/components/PageList.tsx:580
 msgctxt "Notifications section header"
 msgid "Earlier"
-msgstr ""
+msgstr "Skôr"
 
 #. placeholder {0}: linkLabel(item.link)
 #: src/features/profileLinks/components/ProfileLinksEditor.tsx:105
 msgid "Edit {0}"
-msgstr ""
+msgstr "Upraviť {0}"
 
 #: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:241
 msgid "Edit {title}"
-msgstr ""
+msgstr "Upraviť {title}"
 
 #: src/features/frontpages/editorial/index.tsx:549 src/features/frontpages/editorial/index.tsx:563
 msgid "Edit front page"
-msgstr ""
+msgstr "Upraviť titulnú stranu"
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:91
 msgid "Edit interest"
-msgstr ""
+msgstr "Upraviť záujem"
 
 #: src/features/profileLinks/components/LinkFormDialog.tsx:284 src/features/profileLinks/components/LinkFormDialog.tsx:304 src/features/profileLinks/components/ProfileLinks.tsx:224
 msgid "Edit link"
-msgstr ""
+msgstr "Upraviť odkaz"
 
 #: src/features/frontpages/editorial/Section.tsx:586
 msgid "Edit section"
-msgstr ""
+msgstr "Upraviť sekciu"
 
 #: src/features/frontpages/editorial/Section.tsx:165
 msgid "Edit section {name}"
-msgstr ""
+msgstr "Upraviť sekciu {name}"
 
 #: src/features/frontpages/directory/index.tsx:100
 msgid "Elsewhere"
-msgstr ""
+msgstr "Inde"
 
 #: src/components/Gallery/Storybook.tsx:757
 msgid "Empty and single"
-msgstr ""
+msgstr "Prázdne a jedna položka"
 
 #: src/components/Gallery/Storybook.tsx:766
 msgid "Empty gallery"
-msgstr ""
+msgstr "Prázdna galéria"
 
 #: src/components/Gallery/Storybook.tsx:656
 msgid "End"
-msgstr ""
+msgstr "Koniec"
 
 #: src/components/Gallery/Storybook.tsx:655
 msgid "End card"
-msgstr ""
+msgstr "Záverečná karta"
 
 #: src/screens/Login/LoginForm.tsx:437
 msgid "Enter the code from your email or authenticator app"
-msgstr ""
+msgstr "Zadaj kód z e-mailu alebo z overovacej aplikácie"
 
 #: src/screens/Login/LoginForm.tsx:440
 msgid "Enter the sign in code from your email or authenticator app."
-msgstr ""
+msgstr "Zadaj prihlasovací kód z e-mailu alebo z overovacej aplikácie."
 
 #: src/components/Gallery/Storybook.tsx:356
 msgid "Equal-height cards"
-msgstr ""
+msgstr "Karty rovnakej výšky"
 
 #: src/features/pixelEditor/Workspace.tsx:110
 msgid "Eraser"
-msgstr ""
+msgstr "Guma"
 
 #: src/features/news/explore/sections.ts:30
 msgid "Europe"
-msgstr ""
+msgstr "Európa"
 
 #: src/screens/Atmosphere/AppsTab.tsx:35
 msgid "Events"
-msgstr ""
+msgstr "Udalosti"
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:337
 msgid "Every outlet is in. Untick some, and the stories of the ones left come first."
-msgstr ""
+msgstr "Všetky médiá sú zahrnuté. Odškrtni niektoré a príbehy ostatných sa zobrazia ako prvé."
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:335
 msgid "Every outlet is in. Untick the ones you do not want."
-msgstr ""
+msgstr "Všetky médiá sú zahrnuté. Odškrtni tie, ktoré nechceš."
 
 #: src/features/news/explore/useInterestTitle.ts:35 src/features/newsFeed/components/interests/InterestEditor.tsx:223 src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:262
 msgid "Everywhere"
-msgstr ""
+msgstr "Všade"
 
 #: src/screens/Notifications/components/NotificationItem/Item/group.tsx:305
 msgid "Expands list of users"
-msgstr ""
+msgstr "Rozbalí zoznam používateľov"
 
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:392
 msgid "Expands the list of record types"
-msgstr ""
+msgstr "Rozbalí zoznam typov záznamov"
 
 #: src/state/queries/moderation-inbox.ts:346
 msgid "Failed to mark as read. Please try again."
-msgstr ""
+msgstr "Nepodarilo sa označiť ako prečítané. Skús to znova."
 
 #: src/screens/ModerationInbox/Notice.tsx:386
 msgid "Failed to submit appeal. Please try again."
-msgstr ""
+msgstr "Odvolanie sa nepodarilo odoslať. Skús to znova."
 
 #: src/screens/Atmosphere/components/FeaturedArticles.tsx:23 src/screens/Atmosphere/components/FeaturedArticles.tsx:26
 msgid "Featured articles"
-msgstr ""
+msgstr "Odporúčané články"
 
 #: src/screens/Atmosphere/components/FeaturedLivestreams.tsx:23 src/screens/Atmosphere/components/FeaturedLivestreams.tsx:26
 msgid "Featured livestreams"
-msgstr ""
+msgstr "Odporúčané živé vysielania"
 
 #: src/features/news/outlets/components/FeaturedOutletsBand.tsx:30
 msgid "Featured outlets"
-msgstr ""
+msgstr "Odporúčané médiá"
 
 #: src/screens/Atmosphere/components/FeaturedPhotos.tsx:19 src/screens/Atmosphere/components/FeaturedPhotos.tsx:22
 msgid "Featured photos"
-msgstr ""
+msgstr "Odporúčané fotky"
 
 #: src/screens/Atmosphere/components/FeaturedPublications.tsx:23 src/screens/Atmosphere/components/FeaturedPublications.tsx:26
 msgid "Featured publications"
-msgstr ""
+msgstr "Odporúčané publikácie"
 
 #. placeholder {0}: sanitizeDisplayName(feedName)
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/FeedSubjectPreview.tsx:45
 msgid "Feed “{0}”"
-msgstr ""
+msgstr "Kanál „{0}“"
 
 #: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:42
 msgid "Feed by {authorName}"
-msgstr ""
+msgstr "Kanál od {authorName}"
 
 #: src/screens/Notifications/components/NotificationItem/Item/media.tsx:225
 msgid "Feed by {handle}"
-msgstr ""
+msgstr "Kanál od {handle}"
 
 #: src/features/frontpages/editorial/Section.tsx:254
 msgid "Fewer spots"
-msgstr ""
+msgstr "Menej miest"
 
 #: src/features/pixelEditor/Workspace.tsx:111
 msgid "Fill drawing area"
-msgstr ""
+msgstr "Vyplniť oblasť kreslenia"
 
 #. placeholder {0}: name(uri)
 #: src/features/frontpages/editorial/FillMenu.tsx:108
 msgid "Fill with posts from {0}"
-msgstr ""
+msgstr "Vyplniť príspevkami od {0}"
 
 #: src/features/frontpages/editorial/FillMenu.tsx:95
 msgid "Fill with your posts"
-msgstr ""
+msgstr "Vyplniť tvojimi príspevkami"
 
 #: src/features/frontpages/editorial/FillMenu.tsx:68 src/features/frontpages/editorial/FillMenu.tsx:73
 msgid "Fill with: {label}"
-msgstr ""
+msgstr "Vyplniť: {label}"
 
 #: src/features/frontpages/editorial/FillMenu.tsx:83
 msgid "Fill: {label}"
-msgstr ""
+msgstr "Vyplnenie: {label}"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:309 src/features/frontpages/editorial/SlotPicker.tsx:310
 msgid "Filter loaded items"
-msgstr ""
+msgstr "Filtrovať načítané položky"
 
 #: src/screens/Notifications/components/PageList.tsx:636 src/screens/Notifications/components/PageList.tsx:641
 msgid "Find friends"
-msgstr ""
+msgstr "Nájdi priateľov"
 
 #: src/screens/Notifications/components/PageList.tsx:630
 msgid "Find some friends to start getting notifications!"
-msgstr ""
+msgstr "Nájdi si priateľov, aby si začal/a dostávať upozornenia!"
 
 #: src/features/frontpages/editorial/Section.tsx:419
 msgid "Fixed number of spots"
-msgstr ""
+msgstr "Pevný počet miest"
 
 #: src/components/Gallery/Storybook.tsx:450 src/components/Gallery/Storybook.tsx:456 src/components/Gallery/Storybook.tsx:478
 msgid "Focus target"
-msgstr ""
+msgstr "Cieľ zamerania"
 
 #: src/components/Gallery/Storybook.tsx:483
 msgid "Focused {focusCount} times"
-msgstr ""
+msgstr "Zamerané {focusCount}-krát"
 
 #. Heading of the Followers tab of notifications, above the list of people who followed you
 #: src/screens/Notifications/components/NotificationItem/kinds/follower.tsx:51
 msgctxt "Notifications section header"
 msgid "Followed you"
-msgstr ""
+msgstr "Začali ťa sledovať"
 
 #: src/screens/Notifications/components/NotificationItem/Item/profile.tsx:214
 msgid "Following {name}"
-msgstr ""
+msgstr "Sleduješ {name}"
 
 #. Tab label in Notifications that shows people who followed you. Space is tight, so keep it as short as possible.
 #: src/screens/Notifications/index.tsx:143
 msgctxt "notifications tab"
 msgid "Follows"
-msgstr ""
+msgstr "Sledovania"
 
 #: src/screens/Settings/components/AccountFootprintDialog/labels.ts:17
 msgctxt "noun"
 msgid "Follows"
-msgstr ""
+msgstr "Sledovania"
 
 #: src/screens/ModerationInbox/Notice.tsx:304
 msgid "For more information about our appeals and redress process, please see our <0>Terms of Service</0>."
-msgstr ""
+msgstr "Viac informácií o našom procese odvolaní a nápravy nájdeš v našich <0>Podmienkach používania</0>."
 
 #. A story filled in from a feed, which cannot be pinned because another account posted it
 #: src/features/frontpages/editorial/Editor.tsx:320
 msgid "From a feed"
-msgstr ""
+msgstr "Z kanála"
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:332
 msgid "From which outlets?"
-msgstr ""
+msgstr "Z ktorých médií?"
 
 #: src/features/frontpages/directory/index.tsx:87
 msgid "From your interests"
-msgstr ""
+msgstr "Podľa tvojich záujmov"
 
 #: src/features/frontpages/editorial/index.tsx:287
 msgid "Front page published"
-msgstr ""
+msgstr "Titulná strana zverejnená"
 
 #: src/features/frontpages/components/FrontpageLinkChip.tsx:84 src/screens/Profile/Header/ProfileHeaderStandard.tsx:360
 msgid "Frontpage"
-msgstr ""
+msgstr "Frontpage"
 
 #: src/components/Gallery/Storybook.tsx:45
 msgid "Gallery"
-msgstr ""
+msgstr "Galéria"
 
 #: src/components/Gallery/Storybook.tsx:442
 msgid "Gallery text field"
-msgstr ""
+msgstr "Textové pole galérie"
 
 #: src/components/Gallery/Storybook.tsx:774
 msgid "Gallery with one item"
-msgstr ""
+msgstr "Galéria s jednou položkou"
 
 #: src/screens/Atmosphere/AppsTab.tsx:30
 msgid "Games"
-msgstr ""
+msgstr "Hry"
 
 #: src/screens/Notifications/components/NotificationItem/Item/post.tsx:78 src/screens/Notifications/components/NotificationItem/Item/profile.tsx:640 src/screens/Notifications/components/NotificationItem/Item/text.tsx:113
 msgid "Go to {name}’s profile"
-msgstr ""
+msgstr "Prejsť na profil používateľa {name}"
 
 #: src/screens/Settings/AppearanceSettings.tsx:277
 msgid "Green"
-msgstr ""
+msgstr "Zelená"
 
 #: src/features/frontpages/editorial/Editor.tsx:148
 msgid "Grey stories fill sections automatically with the newest posts. Pin or drag one to keep it in place."
-msgstr ""
+msgstr "Sivé príbehy vypĺňajú sekcie automaticky najnovšími príspevkami. Pripni alebo presuň jeden, aby zostal na mieste."
 
 #: src/features/pixelEditor/ColorPicker.tsx:162
 msgid "Hex color"
-msgstr ""
+msgstr "Hex farba"
 
 #. Shown in place of the text of a post that is hidden by the viewer’s moderation settings
 #: src/screens/Notifications/components/NotificationItem/Item/post.tsx:213
 msgid "Hidden post"
-msgstr ""
+msgstr "Skrytý príspevok"
 
 #: src/features/news/explore/components/StoryCard.tsx:212
 msgid "Hide the rest of the coverage of this story"
-msgstr ""
+msgstr "Skryť zvyšok spravodajstva o tomto príbehu"
 
 #: src/screens/Atmosphere/components/AtmosphereNux.tsx:71
 msgid "Hides this banner from the Explore tab"
-msgstr ""
+msgstr "Skryje tento banner z karty Preskúmať"
 
 #: src/features/pixelEditor/ColorPicker.tsx:115
 msgid "Hue"
-msgstr ""
+msgstr "Odtieň"
 
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:287
 msgid "If this page doesn’t open, your hosting provider can deactivate your account for you."
-msgstr ""
+msgstr "Ak sa táto stránka neotvorí, tvoj poskytovateľ hostingu môže tvoj účet deaktivovať za teba."
 
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:282
 msgid "If this page doesn’t open, your hosting provider can delete your account for you."
-msgstr ""
+msgstr "Ak sa táto stránka neotvorí, tvoj poskytovateľ hostingu môže tvoj účet odstrániť za teba."
 
 #: src/components/Gallery/Storybook.tsx:154
 msgid "Image content"
-msgstr ""
+msgstr "Obrázkový obsah"
 
 #: src/components/Gallery/Storybook.tsx:162
 msgid "Image frames in different shapes"
-msgstr ""
+msgstr "Rámy obrázkov rôznych tvarov"
 
 #. In a notification about a mention or quote, the post is a reply to another person’s post. {subject} is that person’s name, followed by a preview of their post
 #: src/screens/Notifications/components/NotificationItem/Item/post.tsx:269
 msgid "in reply to <0>{subject}</0>: {previewNode}"
-msgstr ""
+msgstr "ako odpoveď používateľovi <0>{subject}</0>: {previewNode}"
 
 #: src/screens/Notifications/components/NotificationItem/Item/post.tsx:173
 msgid "in reply to a blocked post"
-msgstr ""
+msgstr "ako odpoveď na zablokovaný príspevok"
 
 #: src/screens/Notifications/components/NotificationItem/Item/post.tsx:178
 msgid "in reply to a deleted post"
-msgstr ""
+msgstr "ako odpoveď na odstránený príspevok"
 
 #. In a notification about a mention or quote, the post is a reply to the viewer’s own post. Followed by a preview of that post
 #: src/screens/Notifications/components/NotificationItem/Item/post.tsx:265
 msgid "in reply to you: {previewNode}"
-msgstr ""
+msgstr "ako odpoveď tebe: {previewNode}"
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:375
 msgid "Include every outlet"
-msgstr ""
+msgstr "Zahrnúť všetky médiá"
 
 #: src/components/Gallery/Storybook.tsx:427
 msgid "Increment counter"
-msgstr ""
+msgstr "Zvýšiť počítadlo"
 
 #: src/screens/Settings/AppearanceSettings.tsx:281
 msgid "Indigo"
-msgstr ""
+msgstr "Indigová"
 
 #: src/features/frontpages/editorial/Section.tsx:404
 msgid "Infinite"
-msgstr ""
+msgstr "Nekonečné"
 
 #: src/features/frontpages/editorial/Section.tsx:404
 msgid "Infinite (last section only)"
-msgstr ""
+msgstr "Nekonečné (iba posledná sekcia)"
 
 #: src/features/frontpages/editorial/Section.tsx:400
 msgid "Infinite: every post its source has"
-msgstr ""
+msgstr "Nekonečné: každý príspevok zo zdroja"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:493
 msgid "Inserts this item at the selected position"
-msgstr ""
+msgstr "Vloží túto položku na vybranú pozíciu"
 
 #: src/components/Gallery/Storybook.tsx:412
 msgid "Interactive children"
-msgstr ""
+msgstr "Interaktívne podpoložky"
 
 #: src/components/Gallery/Storybook.tsx:422
 msgid "Interactive items"
-msgstr ""
+msgstr "Interaktívne položky"
 
 #: src/components/Gallery/Storybook.tsx:637
 msgid "Intro"
-msgstr ""
+msgstr "Úvod"
 
 #: src/components/Gallery/Storybook.tsx:636
 msgid "Intro card"
-msgstr ""
+msgstr "Úvodná karta"
 
 #: src/features/news/explore/sections.ts:150
 msgid "Investigations"
-msgstr ""
+msgstr "Vyšetrovania"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/AccountSubjectPreview.tsx:35
 msgid "Joined {createdAt}"
-msgstr ""
+msgstr "Pripojil/a sa {createdAt}"
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:142
 msgid "Keep this interest"
-msgstr ""
+msgstr "Ponechať tento záujem"
 
 #: src/screens/ModerationInbox/components/util/reportActionLabel.ts:36
 msgid "Label applied"
-msgstr ""
+msgstr "Štítok pridaný"
 
 #: src/screens/ModerationInbox/components/util/reportActionLabel.ts:38
 msgid "Label removed"
-msgstr ""
+msgstr "Štítok odstránený"
 
 #: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:64 src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:108
 msgid "Label: {labelName}"
-msgstr ""
+msgstr "Štítok: {labelName}"
 
 #: src/screens/Settings/components/AccountFootprintDialog/labels.ts:26
 msgid "Labeler"
-msgstr ""
+msgstr "Označovateľ"
 
 #: src/components/Gallery/Storybook.tsx:170
 msgid "Landscape frame"
-msgstr ""
+msgstr "Rám na šírku"
 
 #: src/features/frontpages/editorial/Editor.tsx:361
 msgid "Latest posts"
-msgstr ""
+msgstr "Najnovšie príspevky"
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:385
 msgid "Leave out every outlet"
-msgstr ""
+msgstr "Vynechať všetky médiá"
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:357
 msgid "Leave out the stories the others covered alone."
-msgstr ""
+msgstr "Vynechať príbehy, o ktorých informovali iba ostatní."
 
 #: src/screens/ModerationInbox/components/util/noticeLabels.ts:87
 msgid "Limited profile"
-msgstr ""
+msgstr "Obmedzený profil"
 
 #: src/features/profileLinks/components/LinkFormDialog.tsx:331 src/features/profileLinks/components/LinkFormDialog.tsx:337
 msgid "Link"
-msgstr ""
+msgstr "Odkaz"
 
 #: src/features/profileLinks/components/LinkPreviewSheet.tsx:61
 msgid "Link copied"
-msgstr ""
+msgstr "Odkaz skopírovaný"
 
 #: src/features/profileLinks/components/LinkPreviewSheet.tsx:68
 msgid "Link details"
-msgstr ""
+msgstr "Podrobnosti odkazu"
 
 #: src/screens/Notifications/components/NotificationItem/Item/aggregate.tsx:69
 msgid "Link to {domain}"
-msgstr ""
+msgstr "Odkaz na {domain}"
 
 #: src/features/profileLinks/components/ProfileLinksEditor.tsx:123 src/screens/Profile/Header/EditProfileDialog.tsx:529
 msgid "Links"
@@ -17377,379 +17377,379 @@ msgstr "Linky na tieto stránky sa zobrazia ako zelené tlačidlo."
 #. placeholder {0}: sanitizeDisplayName(listName)
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/ListSubjectPreview.tsx:44
 msgid "List “{0}”"
-msgstr ""
+msgstr "Zoznam „{0}“"
 
 #: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:40
 msgid "List by {authorName}"
-msgstr ""
+msgstr "Zoznam od {authorName}"
 
 #: src/screens/Settings/components/AccountFootprintDialog/labels.ts:20
 msgid "List members"
-msgstr ""
+msgstr "Členovia zoznamu"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/ListSubjectPreview.tsx:64
 msgid "List unavailable"
-msgstr ""
+msgstr "Zoznam je nedostupný"
 
 #: src/screens/Atmosphere/components/LivestreamCard.tsx:148
 msgid "Live"
-msgstr ""
+msgstr "Naživo"
 
 #. placeholder {0}: url.hostname
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/StatusSubjectPreview.tsx:58
 msgid "Live link: “{0}”"
-msgstr ""
+msgstr "Živý odkaz: „{0}“"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/StatusSubjectPreview.tsx:53 src/screens/Settings/components/AccountFootprintDialog/labels.ts:25
 msgid "Live status"
-msgstr ""
+msgstr "Stav naživo"
 
 #: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:38
 msgid "Livestream"
-msgstr ""
+msgstr "Živé vysielanie"
 
 #: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:38
 msgid "Livestream by {authorName}"
-msgstr ""
+msgstr "Živé vysielanie od {authorName}"
 
 #: src/view/screens/Storybook/NewPostsPill.tsx:140
 msgid "Load new posts from the people you follow"
-msgstr ""
+msgstr "Načítať nové príspevky od ľudí, ktorých sleduješ"
 
 #: src/screens/ModerationInbox/Notice.tsx:175 src/screens/ModerationInbox/Notice.tsx:184
 msgid "Load older actions"
-msgstr ""
+msgstr "Načítať staršie akcie"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:371 src/features/frontpages/editorial/SlotPicker.tsx:383
 msgid "Load older items"
-msgstr ""
+msgstr "Načítať staršie položky"
 
 #: src/screens/Atmosphere/AppsTab.tsx:95 src/screens/Atmosphere/ExploreTab.tsx:68
 msgid "Loading Atmosphere content"
-msgstr ""
+msgstr "Načítava sa obsah z Atmosphere"
 
 #: src/features/followingV2/home/GapRow.tsx:56
 msgid "Loading more posts"
-msgstr ""
+msgstr "Načítavajú sa ďalšie príspevky"
 
 #: src/screens/ModerationInbox/Settings.tsx:173
 msgid "Loading notification settings"
-msgstr ""
+msgstr "Načítavajú sa nastavenia upozornení"
 
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:128
 msgid "Loading your account data…"
-msgstr ""
+msgstr "Načítavajú sa údaje tvojho účtu…"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:380
 msgid "Loading…"
-msgstr ""
+msgstr "Načítava sa…"
 
 #: src/screens/Notifications/components/NotificationItem/Item/profile.tsx:554
 msgid "Loads more people into this list"
-msgstr ""
+msgstr "Načíta do tohto zoznamu ďalších ľudí"
 
 #: src/features/followingV2/home/GapRow.tsx:61
 msgid "Loads the posts missing between here and the posts below"
-msgstr ""
+msgstr "Načíta príspevky chýbajúce medzi týmto miestom a príspevkami nižšie"
 
 #: src/features/frontpages/editorial/Editor.tsx:441
 msgid "M"
-msgstr ""
+msgstr "M"
 
 #: src/components/Gallery/Storybook.tsx:712
 msgid "Make narrow"
-msgstr ""
+msgstr "Zúžiť"
 
 #: src/components/Gallery/Storybook.tsx:586
 msgid "Make the first card taller or shorter"
-msgstr ""
+msgstr "Zväčši alebo zmenši výšku prvej karty"
 
 #: src/components/Gallery/Storybook.tsx:596
 msgid "Make the first card wider or narrower"
-msgstr ""
+msgstr "Zväčši alebo zmenši šírku prvej karty"
 
 #: src/components/Gallery/Storybook.tsx:706
 msgid "Make the panel narrow"
-msgstr ""
+msgstr "Zúžiť panel"
 
 #: src/components/Gallery/Storybook.tsx:706
 msgid "Make the panel wide"
-msgstr ""
+msgstr "Rozšíriť panel"
 
 #: src/components/Gallery/Storybook.tsx:712
 msgid "Make wide"
-msgstr ""
+msgstr "Rozšíriť"
 
 #: src/components/Gallery/Storybook.tsx:287
 msgid "Medium"
-msgstr ""
+msgstr "Stredné"
 
 #: src/features/frontpages/editorial/Editor.tsx:416
 msgid "Medium (⅔ width)"
-msgstr ""
+msgstr "Stredné (⅔ šírky)"
 
 #: src/components/Gallery/Storybook.tsx:286
 msgid "Medium card"
-msgstr ""
+msgstr "Stredná karta"
 
 #: src/components/dms/getAddGroupMembersErrorMessage.ts:12
 msgid "Members could not be added because one of the selected accounts has blocked you."
-msgstr ""
+msgstr "Členov sa nepodarilo pridať, pretože jeden z vybraných účtov ťa zablokoval."
 
 #: src/components/dms/getAddGroupMembersErrorMessage.ts:10
 msgid "Members could not be added because you have blocked one of the selected accounts."
-msgstr ""
+msgstr "Členov sa nepodarilo pridať, pretože si zablokoval/a jeden z vybraných účtov."
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/ChatSubjectPreview.tsx:26
 msgid "Message content is not included in this report."
-msgstr ""
+msgstr "Obsah správy nie je súčasťou tohto nahlásenia."
 
 #: src/components/Gallery/Storybook.tsx:269
 msgid "Mixed content and sizes"
-msgstr ""
+msgstr "Zmiešaný obsah a veľkosti"
 
 #: src/screens/ModerationInbox/components/util/noticeLabels.ts:32
 msgid "Moderation notice"
-msgstr ""
+msgstr "Oznámenie moderácie"
 
 #: src/features/news/article/NewsArticleRightRail.tsx:99
 msgid "More from {name}"
-msgstr ""
+msgstr "Viac od {name}"
 
 #: src/features/news/article/NewsArticleRightRail.tsx:99
 msgid "More from this outlet"
-msgstr ""
+msgstr "Viac z tohto média"
 
 #: src/features/news/explore/components/ExploreSectionFront.tsx:125
 msgid "More in {name}"
-msgstr ""
+msgstr "Viac v {name}"
 
 #: src/features/frontpages/editorial/Section.tsx:264
 msgid "More spots"
-msgstr ""
+msgstr "Viac miest"
 
 #: src/features/frontpages/editorial/index.tsx:810 src/features/frontpages/editorial/index.tsx:816 src/features/news/explore/sections.ts:177
 msgid "More stories"
-msgstr ""
+msgstr "Viac príbehov"
 
 #: src/features/frontpages/editorial/Section.tsx:185
 msgid "Move {name} down"
-msgstr ""
+msgstr "Posunúť {name} nižšie"
 
 #: src/features/frontpages/editorial/Section.tsx:175
 msgid "Move {name} up"
-msgstr ""
+msgstr "Posunúť {name} vyššie"
 
 #: src/features/pixelEditor/Workspace.tsx:117
 msgid "Move canvas"
-msgstr ""
+msgstr "Posunúť plátno"
 
 #: src/features/profileLinks/components/ProfileLinksEditor.tsx:86
 msgid "Move earlier"
-msgstr ""
+msgstr "Posunúť skôr"
 
 #: src/features/profileLinks/components/ProfileLinksEditor.tsx:87
 msgid "Move later"
-msgstr ""
+msgstr "Posunúť neskôr"
 
 #: src/features/frontpages/editorial/SortableStories/index.web.tsx:144
 msgid "Moved {title}."
-msgstr ""
+msgstr "Presunuté: {title}."
 
 #: src/components/Gallery/Storybook.tsx:204
 msgid "Mu app icon with no ratio on record"
-msgstr ""
+msgstr "Ikona aplikácie Mu bez pomeru v zázname"
 
 #: src/components/Gallery/Storybook.tsx:191
 msgid "Mu splash artwork"
-msgstr ""
+msgstr "Úvodná grafika Mu"
 
 #: src/features/news/explore/components/ExploreInterestPicker.tsx:105 src/features/news/explore/components/ExploreInterestPicker.tsx:111
 msgid "Narrow {name} down"
-msgstr ""
+msgstr "Zúžiť {name}"
 
 #. A short label offering newly arrived notifications.
 #: src/components/NewPostsPill/index.tsx:241
 msgctxt "new content pill"
 msgid "New"
-msgstr ""
+msgstr "Nové"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:567
 msgid "New {count, plural, one {post} other {posts}} from {name}"
-msgstr ""
+msgstr "{count, plural, one {Nový príspevok} few {Nové príspevky} many {Nových príspevkov} other {Nových príspevkov}} od {name}"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:595
 msgid "New {count, plural, one {post} other {posts}} from <0/>"
-msgstr ""
+msgstr "{count, plural, one {Nový príspevok} few {Nové príspevky} many {Nových príspevkov} other {Nových príspevkov}} od <0/>"
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:91
 msgid "New interest"
-msgstr ""
+msgstr "Nový záujem"
 
 #: src/components/NewPostsPill/index.tsx:236
 msgid "New posts"
-msgstr ""
+msgstr "Nové príspevky"
 
 #: src/view/screens/Storybook/NewPostsPill.tsx:139
 msgid "New posts are ready to load from the people you follow"
-msgstr ""
+msgstr "Nové príspevky od ľudí, ktorých sleduješ, sú pripravené na načítanie"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:561
 msgid "New posts from {name} and {others, plural, one {# other} other {# others}}"
-msgstr ""
+msgstr "Nové príspevky od {name} a {others, plural, one {# ďalšieho} few {# ďalších} many {# ďalších} other {# ďalších}}"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:559
 msgid "New posts from {name} and {secondName}"
-msgstr ""
+msgstr "Nové príspevky od {name} a {secondName}"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:579
 msgid "New posts from <0/> and <1/>"
-msgstr ""
+msgstr "Nové príspevky od <0/> a <1/>"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:584
 msgid "New posts from <0/> and <1>{others, plural, one {# other} other {# others}}</1>"
-msgstr ""
+msgstr "Nové príspevky od <0/> a <1>{others, plural, one {# ďalšieho} few {# ďalších} many {# ďalších} other {# ďalších}}</1>"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:566
 msgid "New reply from {name}"
-msgstr ""
+msgstr "Nová odpoveď od {name}"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:591
 msgid "New reply from <0/>"
-msgstr ""
+msgstr "Nová odpoveď od <0/>"
 
 #: src/screens/Settings/components/AccountFootprintDialog/labels.ts:29
 msgid "News feed settings"
-msgstr ""
+msgstr "Nastavenia spravodajského kanála"
 
 #: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:119 src/Navigation.tsx:228
 msgid "News preferences"
-msgstr ""
+msgstr "Preferencie správ"
 
 #: src/screens/ModerationInbox/index.tsx:371
 msgid "No actions against you"
-msgstr ""
+msgstr "Žiadne opatrenia voči tebe"
 
 #: src/screens/ModerationInbox/index.tsx:372
 msgid "No actions match this filter"
-msgstr ""
+msgstr "Tomuto filtru nezodpovedajú žiadne akcie"
 
 #: src/screens/Atmosphere/AppsTab.tsx:139
 msgid "No apps in this category yet."
-msgstr ""
+msgstr "V tejto kategórii zatiaľ nie sú žiadne aplikácie."
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:426
 msgid "No current stories on these topics"
-msgstr ""
+msgstr "Žiadne aktuálne príbehy k týmto témam"
 
 #: src/features/news/outlets/index.tsx:94
 msgid "No featured outlets right now."
-msgstr ""
+msgstr "Momentálne nie sú žiadne odporúčané médiá."
 
 #: src/screens/Notifications/components/PageList.tsx:670
 msgid "No followers to show yet"
-msgstr ""
+msgstr "Zatiaľ niet sledovateľov na zobrazenie"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:345
 msgid "No items found."
-msgstr ""
+msgstr "Nenašli sa žiadne položky."
 
 #: src/screens/Notifications/components/NotificationItem/Item/profile.tsx:211
 msgid "No longer following {name}"
-msgstr ""
+msgstr "Už nesleduješ {name}"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:344
 msgid "No matches in the loaded items."
-msgstr ""
+msgstr "V načítaných položkách nie sú žiadne zhody."
 
 #: src/features/frontpages/editorial/StarterPackHeader.tsx:130
 msgid "No new accounts to follow."
-msgstr ""
+msgstr "Žiadne nové účty na sledovanie."
 
 #: src/features/news/explore/index.tsx:343
 msgid "No news feeds are reachable right now."
-msgstr ""
+msgstr "Momentálne nie je dostupný žiadny spravodajský kanál."
 
 #: src/features/news/explore/index.tsx:345
 msgid "No news from here right now."
-msgstr ""
+msgstr "Odtiaľto momentálne nie sú žiadne správy."
 
 #: src/screens/Notifications/components/PageList.tsx:667
 msgid "No notifications from people you follow yet"
-msgstr ""
+msgstr "Zatiaľ žiadne upozornenia od ľudí, ktorých sleduješ"
 
 #: src/screens/Notifications/components/PageList.tsx:619 src/screens/Notifications/components/PageList.tsx:664
 msgid "No notifications yet"
-msgstr ""
+msgstr "Zatiaľ žiadne upozornenia"
 
 #. Empty state under a news article, where its discussion goes
 #: src/features/news/article/NewsArticleScreen.tsx:129
 msgid "No one in the network has posted about this yet."
-msgstr ""
+msgstr "Nikto v sieti o tom zatiaľ nepísal."
 
 #: src/features/frontpages/directory/index.tsx:145
 msgid "No outlets are available right now."
-msgstr ""
+msgstr "Momentálne nie sú dostupné žiadne médiá."
 
 #: src/features/frontpages/editorial/StarterPackPeople.tsx:135
 msgid "No people to show."
-msgstr ""
+msgstr "Nie sú žiadni ľudia na zobrazenie."
 
 #: src/screens/Notifications/components/ActivityEmptyMessage.tsx:48
 msgid "No posts here yet. Click the {bell} bell icon on someone’s profile to keep up with their activity."
-msgstr ""
+msgstr "Zatiaľ tu nie sú žiadne príspevky. Klikni na ikonu zvončeka {bell} na profile niekoho, aby si sledoval/a jeho aktivitu."
 
 #: src/screens/Notifications/components/ActivityEmptyMessage.tsx:53
 msgid "No posts here yet. Tap the {bell} bell icon on someone’s profile to keep up with their activity."
-msgstr ""
+msgstr "Zatiaľ tu nie sú žiadne príspevky. Klepni na ikonu zvončeka {bell} na profile niekoho, aby si sledoval/a jeho aktivitu."
 
 #: src/features/frontpages/editorial/LatestPosts.tsx:88
 msgid "No posts to show."
-msgstr ""
+msgstr "Nie sú žiadne príspevky na zobrazenie."
 
 #: src/features/news/outlets/components/OutletArticlesCard.tsx:104
 msgid "No recent articles."
-msgstr ""
+msgstr "Žiadne nedávne články."
 
 #: src/features/frontpages/PublicationScreen.tsx:149
 msgid "No recent posts from this publication."
-msgstr ""
+msgstr "Žiadne nedávne príspevky z tejto publikácie."
 
 #: src/screens/Notifications/components/PageList.tsx:673
 msgid "No replies to show yet"
-msgstr ""
+msgstr "Zatiaľ žiadne odpovede na zobrazenie"
 
 #: src/screens/ModerationInbox/index.tsx:236
 msgid "No reports match this filter"
-msgstr ""
+msgstr "Tomuto filtru nezodpovedajú žiadne nahlásenia"
 
 #: src/features/frontpages/editorial/index.tsx:798
 msgid "No stories yet."
-msgstr ""
+msgstr "Zatiaľ žiadne príbehy."
 
 #: src/features/trendingWidget/Sync.native.tsx:40
 msgid "No trending topics are available right now."
-msgstr ""
+msgstr "Momentálne nie sú dostupné žiadne trendové témy."
 
 #: src/features/news/explore/index.tsx:341
 msgid "Nothing matches this interest right now."
-msgstr ""
+msgstr "Tomuto záujmu momentálne nič nezodpovedá."
 
 #: src/screens/Settings/NotificationSettings/index.tsx:128
 msgid "Notification Settings"
-msgstr ""
+msgstr "Nastavenia upozornení"
 
 #: src/components/Gallery/Storybook.tsx:675
 msgid "One"
-msgstr ""
+msgstr "Jeden"
 
 #: src/components/Gallery/Storybook.tsx:777
 msgid "Only"
-msgstr ""
+msgstr "Iba"
 
 #: src/components/Gallery/Storybook.tsx:776
 msgid "Only card"
-msgstr ""
+msgstr "Jediná karta"
 
 #: src/features/profileLinks/components/LinkFormDialog.tsx:271
 msgid "Only secure links can be added. Use a link that starts with https://."
@@ -17757,55 +17757,55 @@ msgstr "Len zabezpečené odkazy môžu byť pridané. Použi odkaz ktorý zač�
 
 #: src/features/newsFeed/components/SetupTopics.tsx:140
 msgid "Only show news in these"
-msgstr ""
+msgstr "Zobrazovať správy iba v týchto"
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:347 src/features/newsFeed/components/interests/InterestEditor.tsx:353
 msgid "Only show these outlets"
-msgstr ""
+msgstr "Zobrazovať iba tieto médiá"
 
 #: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:177
 msgid "Only stories in {languageNames} show, as set for the rest of the app."
-msgstr ""
+msgstr "Zobrazujú sa iba príbehy v jazykoch {languageNames}, podľa nastavenia zvyšku aplikácie."
 
 #. placeholder {0}: app.title
 #. placeholder {0}: article.title
 #. placeholder {0}: linkLabel(link)
 #: src/features/profileLinks/components/LinkPill.tsx:87 src/screens/Atmosphere/components/AppCard.tsx:41 src/screens/Atmosphere/components/ArticleCard.tsx:45 src/screens/Atmosphere/components/PhotoCard.tsx:46
 msgid "Open {0}"
-msgstr ""
+msgstr "Otvoriť {0}"
 
 #: src/features/frontpages/directory/index.tsx:269
 msgid "Open {name}"
-msgstr ""
+msgstr "Otvoriť {name}"
 
 #: src/features/news/outlets/components/FeaturedOutletCard.tsx:34 src/features/news/outlets/components/OutletArticlesCard.tsx:53 src/features/news/outlets/components/OutletArticlesCard.tsx:121
 msgid "Open {name}’s front page"
-msgstr ""
+msgstr "Otvoriť titulnú stranu {name}"
 
 #: src/features/frontpages/components/FrontpageMasthead.tsx:47
 msgid "Open {site}"
-msgstr ""
+msgstr "Otvoriť {site}"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/AccountSubjectPreview.tsx:58
 msgid "Open account"
-msgstr ""
+msgstr "Otvoriť účet"
 
 #. placeholder {0}: banner.title
 #: src/screens/Atmosphere/components/AnnouncementBanner.tsx:52
 msgid "Open announcement: {0}"
-msgstr ""
+msgstr "Otvoriť oznámenie: {0}"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/index.tsx:43
 msgid "Open content"
-msgstr ""
+msgstr "Otvoriť obsah"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/FeedSubjectPreview.tsx:84
 msgid "Open feed"
-msgstr ""
+msgstr "Otvoriť kanál"
 
 #: src/features/news/outlets/components/OutletArticlesCard.tsx:123
 msgid "Open front page"
-msgstr ""
+msgstr "Otvoriť titulnú stranu"
 
 #: src/features/profileLinks/components/LinkPreviewSheet.tsx:84 src/features/profileLinks/components/LinkPreviewSheet.tsx:90
 msgid "Open link"
@@ -17813,274 +17813,274 @@ msgstr "Otvoriť link"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/ListSubjectPreview.tsx:89
 msgid "Open list"
-msgstr ""
+msgstr "Otvoriť zoznam"
 
 #. placeholder {0}: livestream.title
 #: src/screens/Atmosphere/components/LivestreamCard.tsx:65
 msgid "Open livestream: {0}"
-msgstr ""
+msgstr "Otvoriť živé vysielanie: {0}"
 
 #. placeholder {0}: livestream.title
 #: src/screens/Atmosphere/components/LivestreamCard.tsx:64
 msgid "Open livestream: {0}, live"
-msgstr ""
+msgstr "Otvoriť živé vysielanie: {0}, naživo"
 
 #. placeholder {0}: livestream.title
 #. placeholder {1}: livestream.activeCount
 #: src/screens/Atmosphere/components/LivestreamCard.tsx:57
 msgid "Open livestream: {0}, live with {1, plural, one {# viewer} other {# viewers}}"
-msgstr ""
+msgstr "Otvoriť živé vysielanie: {0}, naživo {1, plural, one {s # divákom} few {s # divákmi} many {s # divákmi} other {s # divákmi}}"
 
 #: src/features/frontpages/editorial/Section.tsx:242
 msgid "Open spots stay empty while this section doesn’t fill."
-msgstr ""
+msgstr "Otvorené miesta zostanú prázdne, kým sa táto sekcia nevypĺňa."
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:120
 msgid "Open starter pack"
-msgstr ""
+msgstr "Otvoriť štartovací balíček"
 
 #: src/features/news/article/ArticleHeader.tsx:121 src/features/news/explore/components/StoryByline.tsx:67 src/features/newsFeed/components/NewsFeedRightRail.tsx:128
 msgid "Open the {name} frontpage"
-msgstr ""
+msgstr "Otvoriť frontpage {name}"
 
 #: src/features/news/article/ArticleHeader.tsx:155
 msgid "Open the article"
-msgstr ""
+msgstr "Otvoriť článok"
 
 #: src/features/news/article/NewsArticleRightRail.tsx:137
 msgid "Open the frontpage"
-msgstr ""
+msgstr "Otvoriť frontpage"
 
 #. placeholder {0}: getLinkHost(link.url)
 #. placeholder {0}: link.url
 #: src/features/profileLinks/components/LinkPreviewSheet.tsx:85 src/features/profileLinks/components/ProfileLinks.tsx:243
 msgid "Opens {0} outside Bluesky"
-msgstr ""
+msgstr "Otvorí {0} mimo Tatrasky"
 
 #: src/features/frontpages/editorial/Article.tsx:159
 msgid "Opens the article"
-msgstr ""
+msgstr "Otvorí článok"
 
 #: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:242
 msgid "Opens the interest’s places, topics and outlets"
-msgstr ""
+msgstr "Otvorí miesta, témy a médiá tohto záujmu"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:270
 msgid "Or end the section here: the stories below move into a new section."
-msgstr ""
+msgstr "Alebo tu ukonči sekciu: príbehy nižšie sa presunú do novej sekcie."
 
 #: src/components/OTAChannelNotice.tsx:84
 msgid "OTA channel"
-msgstr ""
+msgstr "OTA kanál"
 
 #. Heading over other news outlets’ articles about the same story
 #: src/features/news/article/ArticleCoverage.tsx:55
 msgid "Other coverage"
-msgstr ""
+msgstr "Ďalšie spravodajstvo"
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:406 src/Navigation.tsx:257 src/Navigation.tsx:264
 msgid "Outlets"
-msgstr ""
+msgstr "Médiá"
 
 #: src/features/news/hub/NewsHubTabs.tsx:29
 msgctxt "News outlets tab"
 msgid "Outlets"
-msgstr ""
+msgstr "Médiá"
 
 #: src/features/newsFeed/components/NewsFeedRightRail.tsx:86
 msgid "Outlets from the sources in your news feed"
-msgstr ""
+msgstr "Médiá zo zdrojov v tvojom spravodajskom kanáli"
 
 #: src/components/Gallery/Storybook.tsx:739
 msgid "Padded container"
-msgstr ""
+msgstr "Kontajner s odsadením"
 
 #: src/features/pixelEditor/ColorPopover.tsx:137
 msgid "Paint a color to add it here."
-msgstr ""
+msgstr "Namaľuj farbu, aby sa pridala sem."
 
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:143
 msgid "Password successfully reset. Please sign in with your new password."
-msgstr ""
+msgstr "Heslo bolo úspešne obnovené. Prihlás sa novým heslom."
 
 #. Tab label in Notifications that shows only notifications from accounts you follow. Space is tight, so keep it as short as possible, ideally one or two words.
 #: src/screens/Notifications/index.tsx:125
 msgctxt "notifications tab"
 msgid "People I follow"
-msgstr ""
+msgstr "Koho sledujem"
 
 #: src/screens/Atmosphere/AppsTab.tsx:28
 msgid "Photo"
-msgstr ""
+msgstr "Fotka"
 
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:176
 msgid "Photos & videos"
-msgstr ""
+msgstr "Fotky a videá"
 
 #: src/features/pixelEditor/Workspace.tsx:114
 msgid "Pick a color from the canvas"
-msgstr ""
+msgstr "Vyber farbu z plátna"
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:255
 msgid "Pick nothing for every topic."
-msgstr ""
+msgstr "Ak nevyberieš nič, zobrazia sa všetky témy."
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:209
 msgid "Pick nothing for news from everywhere."
-msgstr ""
+msgstr "Ak nevyberieš nič, zobrazia sa správy odkiaľkoľvek."
 
 #: src/features/frontpages/editorial/Editor.tsx:342
 msgid "Pin"
-msgstr ""
+msgstr "Pripnúť"
 
 #: src/features/frontpages/editorial/Editor.tsx:329 src/features/frontpages/editorial/SlotPicker.tsx:485
 msgid "Pin {title} here"
-msgstr ""
+msgstr "Pripnúť {title} sem"
 
 #: src/screens/Settings/AppearanceSettings.tsx:283
 msgid "Pink"
-msgstr ""
+msgstr "Ružová"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:522
 msgid "Pinned on the front page"
-msgstr ""
+msgstr "Pripnuté na titulnej strane"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:492
 msgid "Pins this automatic story at the selected position"
-msgstr ""
+msgstr "Pripne tento automatický príbeh na vybranú pozíciu"
 
 #: src/features/pixelEditor/Workspace.tsx:148
 msgid "Pixel drawing canvas"
-msgstr ""
+msgstr "Pixelové kresliace plátno"
 
 #: src/screens/Signup/state.ts:313 src/screens/Signup/StepInfo/index.tsx:173
 msgid "Please enter your date of birth."
-msgstr ""
+msgstr "Zadaj svoj dátum narodenia."
 
 #: src/components/Gallery/Storybook.tsx:164
 msgid "Portrait frame"
-msgstr ""
+msgstr "Rám na výšku"
 
 #: src/components/Gallery/Storybook.tsx:156
 msgid "Portrait, square, and landscape frames as plain children. The frames, not the gallery, decide the sizes."
-msgstr ""
+msgstr "Rámy na výšku, štvorcové a na šírku ako obyčajné podpoložky. Veľkosti určujú rámy, nie galéria."
 
 #: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:36
 msgid "Post"
-msgstr ""
+msgstr "Príspevok"
 
 #. Tab label in Notifications that shows new posts from accounts you get activity notifications for. Space is tight, so keep it as short as possible.
 #: src/screens/Notifications/index.tsx:152
 msgctxt "notifications tab"
 msgid "Post alerts"
-msgstr ""
+msgstr "Upozornenia na príspevky"
 
 #: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:36
 msgid "Post by {authorName}"
-msgstr ""
+msgstr "Príspevok od {authorName}"
 
 #: src/screens/Notifications/components/NotificationItem/Item/post.tsx:544
 msgid "Post by {name}"
-msgstr ""
+msgstr "Príspevok od {name}"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/PostSubjectPreview.tsx:147
 msgid "Post unavailable"
-msgstr ""
+msgstr "Príspevok je nedostupný"
 
 #. Shown in place of the text of a post that has no text, only images, video, a link or a quoted post
 #: src/screens/Notifications/components/NotificationItem/Item/post.tsx:219
 msgid "Post with media"
-msgstr ""
+msgstr "Príspevok s médiami"
 
 #: src/screens/Settings/components/AccountFootprintDialog/labels.ts:12
 msgctxt "noun"
 msgid "Posts"
-msgstr ""
+msgstr "Príspevky"
 
 #: src/features/frontpages/PublicationScreen.tsx:85
 msgid "Posts are unavailable for this account."
-msgstr ""
+msgstr "Príspevky nie sú pre tento účet dostupné."
 
 #: src/features/news/explore/components/ExploreInterestPicker.tsx:70 src/features/news/explore/index.tsx:263
 msgid "Preferences"
-msgstr ""
+msgstr "Preferencie"
 
 #: src/features/pixelEditor/ColorPopover.tsx:36
 msgid "Preset colors"
-msgstr ""
+msgstr "Predvolené farby"
 
 #: src/features/pixelEditor/ColorPopover.tsx:36
 msgid "Presets"
-msgstr ""
+msgstr "Predvoľby"
 
 #: src/components/Gallery/Storybook.tsx:488
 msgid "Pressed {pressCount} times"
-msgstr ""
+msgstr "Stlačené {pressCount}-krát"
 
 #: src/features/frontpages/editorial/Editor.tsx:85
 msgid "Preview – this is how readers see the page."
-msgstr ""
+msgstr "Náhľad – takto stránku uvidia čitatelia."
 
 #: src/features/frontpages/editorial/Editor.tsx:81
 msgid "Preview – this is how readers will see the page once you publish."
-msgstr ""
+msgstr "Náhľad – takto stránku uvidia čitatelia po zverejnení."
 
 #: src/features/frontpages/editorial/Editor.tsx:136
 msgid "Preview the front page as readers will see it"
-msgstr ""
+msgstr "Zobraziť náhľad titulnej strany tak, ako ju uvidia čitatelia"
 
 #: src/components/Gallery/Storybook.tsx:243
 msgid "Production image adapter"
-msgstr ""
+msgstr "Produkčný adaptér obrázkov"
 
 #: src/features/inviteFriends/InviteFriendsDialogInner.tsx:122
 msgid "Profile link copied"
-msgstr ""
+msgstr "Odkaz na profil skopírovaný"
 
 #: src/features/newsFeed/components/SetupTopics.tsx:117
 msgid "Provinces of the Netherlands"
-msgstr ""
+msgstr "Provincie Holandska"
 
 #: src/features/frontpages/PublicationScreen.tsx:81
 msgid "publication"
-msgstr ""
+msgstr "publikácia"
 
 #: src/features/frontpages/editorial/Editor.tsx:55 src/features/frontpages/editorial/Editor.tsx:61
 msgid "Publish changes"
-msgstr ""
+msgstr "Zverejniť zmeny"
 
 #: src/features/frontpages/editorial/Editor.tsx:61
 msgid "Publishing…"
-msgstr ""
+msgstr "Zverejňuje sa…"
 
 #: src/screens/Settings/AppearanceSettings.tsx:282
 msgid "Purple"
-msgstr ""
+msgstr "Fialová"
 
 #: src/screens/Settings/components/AccountFootprintDialog/labels.ts:16
 msgid "Quote settings"
-msgstr ""
+msgstr "Nastavenia citovania"
 
 #: src/screens/ModerationInbox/Notice.tsx:309
 msgid "Read our Terms of Service"
-msgstr ""
+msgstr "Prečítaj si naše Podmienky používania"
 
 #: src/features/pixelEditor/ColorPopover.tsx:38
 msgid "Recent"
-msgstr ""
+msgstr "Nedávne"
 
 #: src/features/pixelEditor/ColorPopover.tsx:38
 msgid "Recently used colors"
-msgstr ""
+msgstr "Nedávno použité farby"
 
 #: src/features/pixelEditor/Workspace.tsx:258
 msgid "Redo"
-msgstr ""
+msgstr "Znova"
 
 #. Pill on the notifications list, shown when there are new notifications to load.
 #: src/screens/Notifications/components/RefreshPill.tsx:101
 msgid "Refresh"
-msgstr ""
+msgstr "Obnoviť"
 
 #: src/screens/Profile/Header/EditProfileDialog.tsx:550 src/screens/Profile/Header/EditProfileDialog.tsx:554
 msgid "Reload links and discard link changes"
@@ -18088,36 +18088,36 @@ msgstr "Obnoviť linky a zahodiť zmeny"
 
 #: src/screens/ModerationInbox/Notice.tsx:495 src/screens/ModerationInbox/Notice.tsx:504
 msgid "Reload notice"
-msgstr ""
+msgstr "Oznámenie o opätovnom načítaní"
 
 #: src/features/frontpages/editorial/Editor.tsx:180 src/features/frontpages/editorial/Editor.tsx:185
 msgid "Reload published version"
-msgstr ""
+msgstr "Znova načítať zverejnenú verziu"
 
 #. placeholder {0}: article.title
 #: src/features/frontpages/editorial/Editor.tsx:241
 msgid "Remove {0} from the front page"
-msgstr ""
+msgstr "Odstrániť {0} z titulnej strany"
 
 #: src/features/frontpages/editorial/Section.tsx:196
 msgid "Remove {name}"
-msgstr ""
+msgstr "Odstrániť {name}"
 
 #: src/components/Gallery/Storybook.tsx:572
 msgid "Remove first"
-msgstr ""
+msgstr "Odstrániť prvú"
 
 #: src/components/Gallery/Storybook.tsx:566
 msgid "Remove first card"
-msgstr ""
+msgstr "Odstrániť prvú kartu"
 
 #: src/components/Gallery/Storybook.tsx:562
 msgid "Remove last"
-msgstr ""
+msgstr "Odstrániť poslednú"
 
 #: src/components/Gallery/Storybook.tsx:556
 msgid "Remove last card"
-msgstr ""
+msgstr "Odstrániť poslednú kartu"
 
 #: src/features/profileLinks/components/LinkFormDialog.tsx:454 src/features/profileLinks/components/LinkFormDialog.tsx:459
 msgid "Remove link"
@@ -18125,48 +18125,48 @@ msgstr "Odstrániť link"
 
 #: src/screens/ModerationInbox/components/util/noticeLabels.ts:91
 msgid "Removed post"
-msgstr ""
+msgstr "Odstránený príspevok"
 
 #. placeholder {0}: item.label
 #: src/features/profileLinks/components/SortablePills/index.web.tsx:355
 msgid "Reorder {0}"
-msgstr ""
+msgstr "Zmeniť poradie {0}"
 
 #. In a notification, someone replied to another person’s post. {subject} is that person’s name, followed by a preview of their post
 #: src/screens/Notifications/components/NotificationItem/Item/post.tsx:258
 msgid "replied to <0>{subject}</0>: {previewNode}"
-msgstr ""
+msgstr "odpovedal/a používateľovi <0>{subject}</0>: {previewNode}"
 
 #: src/screens/Notifications/components/NotificationItem/Item/post.tsx:171
 msgid "replied to a blocked post"
-msgstr ""
+msgstr "odpovedal/a na zablokovaný príspevok"
 
 #: src/screens/Notifications/components/NotificationItem/Item/post.tsx:176
 msgid "replied to a deleted post"
-msgstr ""
+msgstr "odpovedal/a na odstránený príspevok"
 
 #. In a notification, someone replied to the viewer’s own post. Followed by a preview of that post
 #: src/screens/Notifications/components/NotificationItem/Item/post.tsx:254
 msgid "replied to you: {previewNode}"
-msgstr ""
+msgstr "odpovedal/a ti: {previewNode}"
 
 #. Tab label in Notifications that shows replies, quotes and mentions. Space is tight, so keep it as short as possible.
 #: src/screens/Notifications/index.tsx:134
 msgctxt "notifications tab"
 msgid "Replies"
-msgstr ""
+msgstr "Odpovede"
 
 #: src/screens/Settings/components/AccountFootprintDialog/labels.ts:15
 msgid "Reply settings"
-msgstr ""
+msgstr "Nastavenia odpovedí"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/PostSubjectPreview.tsx:89
 msgid "Reply to {parentName}"
-msgstr ""
+msgstr "Odpovedať používateľovi {parentName}"
 
 #: src/features/profileLinks/components/ReportLinkDialog.tsx:111
 msgid "Report {label}"
-msgstr ""
+msgstr "Nahlásiť {label}"
 
 #: src/features/profileLinks/components/ReportLinkDialog.tsx:95 src/features/profileLinks/components/ReportLinkDialog.tsx:98 src/view/com/profile/ProfileMenu.tsx:547 src/view/com/profile/ProfileMenu.tsx:550
 msgid "Report a link"
@@ -18178,7 +18178,7 @@ msgstr "Nahlásiť link"
 
 #: src/screens/ModerationInbox/components/util/reportActionLabel.ts:59
 msgid "Report resolved"
-msgstr ""
+msgstr "Nahlásenie vyriešené"
 
 #: src/components/moderation/ReportDialog/copy.ts:42
 msgid "Report this link"
@@ -18186,22 +18186,22 @@ msgstr "Nahlásiť tento link"
 
 #: src/screens/ModerationInbox/components/util/reportActionLabel.ts:42
 msgid "Reporting restricted"
-msgstr ""
+msgstr "Nahlasovanie obmedzené"
 
 #: src/components/PostControls/PostMenu/PostMenuControlItems.tsx:83
 msgctxt "Toast after undoing a repost"
 msgid "Repost removed"
-msgstr ""
+msgstr "Repost odstránený"
 
 #: src/components/PostControls/PostMenu/PostMenuControlItems.tsx:97
 msgctxt "Toast after reposting"
 msgid "Reposted"
-msgstr ""
+msgstr "Repostnuté"
 
 #: src/screens/Settings/components/AccountFootprintDialog/labels.ts:13
 msgctxt "noun"
 msgid "Reposts"
-msgstr ""
+msgstr "Reposty"
 
 #: src/screens/Profile/Header/EditProfileDialog.tsx:533
 msgid "Retry loading links"
@@ -18209,112 +18209,112 @@ msgstr "Skúsiť znova načítať linky"
 
 #: src/features/frontpages/editorial/StarterPackPeople.tsx:125 src/features/frontpages/editorial/StarterPackPeople.tsx:130
 msgid "Retry loading people"
-msgstr ""
+msgstr "Skúsiť znova načítať ľudí"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:353 src/features/frontpages/editorial/SlotPicker.tsx:360
 msgid "Retry loading pinned feeds"
-msgstr ""
+msgstr "Skúsiť znova načítať pripnuté kanály"
 
 #: src/features/frontpages/editorial/LatestPosts.tsx:61 src/features/frontpages/editorial/LatestPosts.tsx:66
 msgid "Retry loading posts"
-msgstr ""
+msgstr "Skúsiť znova načítať príspevky"
 
 #: src/features/pixelEditor/Workspace.tsx:172
 msgid "Return to the canvas without drawing"
-msgstr ""
+msgstr "Vrátiť sa na plátno bez kreslenia"
 
 #: src/components/Gallery/Storybook.tsx:624
 msgid "Reveal last"
-msgstr ""
+msgstr "Odhaliť poslednú"
 
 #: src/components/Gallery/Storybook.tsx:616
 msgid "Reveal the last card"
-msgstr ""
+msgstr "Odhaliť poslednú kartu"
 
 #: src/components/Gallery/Storybook.tsx:582
 msgid "Reverse"
-msgstr ""
+msgstr "Obrátiť"
 
 #: src/components/Gallery/Storybook.tsx:576
 msgid "Reverse the order"
-msgstr ""
+msgstr "Obrátiť poradie"
 
 #: src/screens/ModerationInbox/components/util/reportActionLabel.ts:20
 msgid "Reviewed, no action taken"
-msgstr ""
+msgstr "Posúdené, bez opatrenia"
 
 #: src/features/frontpages/editorial/Editor.tsx:441
 msgid "S"
-msgstr ""
+msgstr "S"
 
 #: src/features/pixelEditor/ColorPicker.tsx:64
 msgid "Saturation and brightness"
-msgstr ""
+msgstr "Sýtosť a jas"
 
 #: src/features/profileLinks/components/LinkFormDialog.tsx:424 src/features/profileLinks/components/LinkFormDialog.tsx:442
 msgid "Save anyway"
-msgstr ""
+msgstr "Aj tak uložiť"
 
 #: src/features/frontpages/editorial/Section.tsx:596
 msgid "Save section"
-msgstr ""
+msgstr "Uložiť sekciu"
 
 #: src/features/frontpages/editorial/Section.tsx:552
 msgid "Section description"
-msgstr ""
+msgstr "Popis sekcie"
 
 #: src/features/frontpages/editorial/Section.tsx:506
 msgid "Section layout"
-msgstr ""
+msgstr "Rozloženie sekcie"
 
 #: src/features/frontpages/editorial/Section.tsx:279
 msgid "Section length: drag down for more spots, up for fewer"
-msgstr ""
+msgstr "Dĺžka sekcie: ťahaním nadol viac miest, nahor menej"
 
 #: src/features/frontpages/editorial/Section.tsx:536
 msgid "Section title"
-msgstr ""
+msgstr "Názov sekcie"
 
 #: src/features/news/outlets/components/FeaturedOutletsBand.tsx:36
 msgid "See all"
-msgstr ""
+msgstr "Zobraziť všetko"
 
 #: src/features/news/outlets/components/FeaturedOutletsBand.tsx:34
 msgid "See all featured outlets"
-msgstr ""
+msgstr "Zobraziť všetky odporúčané médiá"
 
 #: src/features/newsFeed/components/NewsFeedRightRail.tsx:102 src/features/newsFeed/components/NewsFeedRightRail.tsx:107
 msgid "See all outlets"
-msgstr ""
+msgstr "Zobraziť všetky médiá"
 
 #: src/features/news/article/NewsArticleRightRail.tsx:139
 msgid "See the frontpage"
-msgstr ""
+msgstr "Zobraziť frontpage"
 
 #: src/screens/Settings/components/AccountActionIntro.tsx:43
 msgid "See what will be deleted"
-msgstr ""
+msgstr "Zobraziť, čo bude odstránené"
 
 #: src/screens/Settings/components/AccountActionIntro.tsx:44
 msgid "See what will be hidden"
-msgstr ""
+msgstr "Zobraziť, čo bude skryté"
 
 #. placeholder {0}: tab.label
 #: src/screens/Notifications/components/TabPills.tsx:428
 msgid "Select {0} tab"
-msgstr ""
+msgstr "Vybrať kartu {0}"
 
 #: src/features/pixelEditor/ColorPopover.tsx:100
 msgid "Select drawing color"
-msgstr ""
+msgstr "Vybrať farbu kresby"
 
 #: src/features/newsFeed/components/SetupTopics.tsx:82
 msgid "Select the regions, languages and topics you care about."
-msgstr ""
+msgstr "Vyber regióny, jazyky a témy, ktoré ťa zaujímajú."
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/StatusSubjectPreview.tsx:49
 msgid "Set {createdAt}"
-msgstr ""
+msgstr "Nastavené {createdAt}"
 
 #: src/features/profileLinks/components/LinkFormDialog.tsx:269
 msgid "Short links can’t be added. Use the full link instead."
@@ -18323,15 +18323,15 @@ msgstr "Skrátené linky nemôžu byť pridané. Použi celý odkaz."
 #. placeholder {0}: hidden.length
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:391
 msgid "Show {0} more record types"
-msgstr ""
+msgstr "Zobraziť {0} ďalších typov záznamov"
 
 #: src/features/frontpages/editorial/Editor.tsx:156 src/features/frontpages/editorial/Editor.tsx:162
 msgid "Show cover photo at the top"
-msgstr ""
+msgstr "Zobraziť titulnú fotku navrchu"
 
 #: src/features/news/explore/components/ExploreSectionChips.tsx:39 src/features/news/explore/components/ExploreSectionFront.tsx:85
 msgid "Show every topic"
-msgstr ""
+msgstr "Zobraziť každú tému"
 
 #: src/features/profileLinks/components/ProfileLinks.tsx:258
 msgid "Show link details"
@@ -18339,203 +18339,203 @@ msgstr "Zobraziť detaily o linku"
 
 #: src/features/followingV2/home/GapRow.tsx:59 src/features/followingV2/home/GapRow.tsx:85
 msgid "Show more posts"
-msgstr ""
+msgstr "Zobraziť viac príspevkov"
 
 #. placeholder {0}: i18n._(section.label)
 #: src/features/news/explore/components/ExploreSectionChips.tsx:47
 msgid "Show only {0}"
-msgstr ""
+msgstr "Zobraziť iba {0}"
 
 #: src/features/news/explore/components/ExploreDepartment.tsx:170
 msgid "Show only {name}"
-msgstr ""
+msgstr "Zobraziť iba {name}"
 
 #: src/components/Gallery/Storybook.tsx:606
 msgid "Show or hide the intro card"
-msgstr ""
+msgstr "Zobraziť alebo skryť úvodnú kartu"
 
 #: src/features/news/explore/components/StoryCard.tsx:213
 msgid "Show the rest of the coverage of this story"
-msgstr ""
+msgstr "Zobraziť zvyšok spravodajstva o tomto príbehu"
 
 #. placeholder {0}: tab.label
 #: src/screens/Atmosphere/AppsTab.tsx:126
 msgid "Shows {0} apps"
-msgstr ""
+msgstr "Zobrazí aplikácie: {0}"
 
 #. placeholder {0}: tab.label
 #: src/screens/Notifications/components/TabPills.tsx:431
 msgid "Shows {0} notifications"
-msgstr ""
+msgstr "Zobrazí upozornenia: {0}"
 
 #: src/components/Gallery/Storybook.tsx:305
 msgid "Sizes: 100×80, 220×160, 140×240, 180×120, and a wide card of {wideCardSize}×100, which is the gallery width of {galleryWidth} plus 80."
-msgstr ""
+msgstr "Veľkosti: 100×80, 220×160, 140×240, 180×120 a široká karta {wideCardSize}×100, čo je šírka galérie {galleryWidth} plus 80."
 
 #. placeholder {0}: labels[size]
 #: src/features/frontpages/editorial/Editor.tsx:424 src/features/frontpages/editorial/Editor.tsx:429
 msgid "Slot size: {0}"
-msgstr ""
+msgstr "Veľkosť miesta: {0}"
 
 #: src/components/Gallery/Storybook.tsx:284 src/features/frontpages/editorial/Editor.tsx:415
 msgid "Small"
-msgstr ""
+msgstr "Malé"
 
 #: src/components/Gallery/Storybook.tsx:282
 msgid "Small card"
-msgstr ""
+msgstr "Malá karta"
 
 #: src/screens/Atmosphere/AppsTab.tsx:32
 msgid "Social"
-msgstr ""
+msgstr "Sociálne"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:277
 msgid "Split into a new section here"
-msgstr ""
+msgstr "Rozdeliť tu na novú sekciu"
 
 #: src/features/frontpages/editorial/SlotPicker.tsx:282
 msgid "Split into new section"
-msgstr ""
+msgstr "Rozdeliť na novú sekciu"
 
 #: src/features/news/explore/sections.ts:145
 msgid "Sport"
-msgstr ""
+msgstr "Šport"
 
 #: src/features/frontpages/editorial/Section.tsx:377 src/features/frontpages/editorial/Section.tsx:382 src/features/frontpages/editorial/Section.tsx:392
 msgid "Spots: {label}"
-msgstr ""
+msgstr "Miesta: {label}"
 
 #: src/components/Gallery/Storybook.tsx:167
 msgid "Square frame"
-msgstr ""
+msgstr "Štvorcový rám"
 
 #: src/features/frontpages/editorial/index.tsx:196
 msgid "Starter pack"
-msgstr ""
+msgstr "Štartovací balíček"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:60
 msgid "Starter Pack “{name}”"
-msgstr ""
+msgstr "Štartovací balíček „{name}“"
 
 #: src/screens/ModerationInbox/components/util/reportSubjectLabel.ts:45
 msgid "Starter Pack “{starterPackName}”"
-msgstr ""
+msgstr "Štartovací balíček „{starterPackName}“"
 
 #: src/screens/Notifications/components/NotificationItem/Item/profile.tsx:445
 msgid "Starter pack by {handle}"
-msgstr ""
+msgstr "Štartovací balíček od {handle}"
 
 #. placeholder {0}: labels[value]
 #: src/features/frontpages/editorial/Editor.tsx:364 src/features/frontpages/editorial/Editor.tsx:369
 msgid "Starter pack display: {0}"
-msgstr ""
+msgstr "Zobrazenie štartovacieho balíčka: {0}"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/StarterPackSubjectPreview.tsx:97
 msgid "Starter pack unavailable"
-msgstr ""
+msgstr "Štartovací balíček je nedostupný"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/StatusSubjectPreview.tsx:44
 msgid "Status by {name}"
-msgstr ""
+msgstr "Stav od {name}"
 
 #: src/screens/ModerationInbox/components/ReportSubjectPreview/StatusSubjectPreview.tsx:75
 msgid "Status unavailable"
-msgstr ""
+msgstr "Stav je nedostupný"
 
 #: src/features/frontpages/editorial/Section.tsx:513
 msgid "Stories"
-msgstr ""
+msgstr "Príbehy"
 
 #: src/features/frontpages/editorial/Section.tsx:516
 msgid "Stories – posts, feeds and starter packs in the grid"
-msgstr ""
+msgstr "Príbehy – príspevky, kanály a štartovacie balíčky v mriežke"
 
 #: src/features/frontpages/editorial/index.tsx:622
 msgid "Stories are unavailable for this account."
-msgstr ""
+msgstr "Príbehy nie sú pre tento účet dostupné."
 
 #: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:182
 msgid "Stories in every language show, as set for the rest of the app."
-msgstr ""
+msgstr "Zobrazujú sa príbehy vo všetkých jazykoch, podľa nastavenia zvyšku aplikácie."
 
 #: src/components/Gallery/Storybook.tsx:325
 msgid "Stretching cards"
-msgstr ""
+msgstr "Naťahovanie kariet"
 
 #. placeholder {0}: provider.name
 #: src/features/profileLinks/components/LinkFormDialog.tsx:394
 msgid "Support on {0}"
-msgstr ""
+msgstr "Podporiť na {0}"
 
 #. placeholder {0}: provider.name
 #: src/features/profileLinks/components/LinkPill.tsx:118
 msgctxt "Creator support button, e.g. Support on Ko-fi"
 msgid "Support on {0}"
-msgstr ""
+msgstr "Podporiť na {0}"
 
 #: src/features/profileLinks/components/SupportedSitesDialog.tsx:39 src/features/profileLinks/components/SupportedSitesDialog.tsx:42
 msgid "Supported sites"
-msgstr ""
+msgstr "Podporované stránky"
 
 #: src/components/OTAChannelNotice.tsx:139
 msgid "Switch channel"
-msgstr ""
+msgstr "Prepnúť kanál"
 
 #: src/components/OTAChannelNotice.tsx:135 src/components/OTAChannelNotice.tsx:195 src/components/OTAChannelNotice.tsx:199
 msgid "Switch OTA channel"
-msgstr ""
+msgstr "Prepnúť OTA kanál"
 
 #: src/components/Gallery/Storybook.tsx:292
 msgid "Tall"
-msgstr ""
+msgstr "Vysoké"
 
 #: src/components/Gallery/Storybook.tsx:592
 msgid "Tall / short"
-msgstr ""
+msgstr "Vysoké / nízke"
 
 #: src/components/Gallery/Storybook.tsx:290
 msgid "Tall card"
-msgstr ""
+msgstr "Vysoká karta"
 
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:110
 msgid "Tap below to allow Bluesky to access your approximate location via GPS. We will then use that data to more accurately determine the content and features available in your region."
-msgstr ""
+msgstr "Klepnutím nižšie povolíš Tatrasky prístup k tvojej približnej polohe cez GPS. Tieto údaje potom použijeme na presnejšie určenie obsahu a funkcií dostupných v tvojom regióne."
 
 #: src/components/Gallery/Storybook.tsx:433
 msgid "Tapped {count} times"
-msgstr ""
+msgstr "Klepnuté {count}-krát"
 
 #: src/screens/Settings/AppearanceSettings.tsx:278
 msgid "Teal"
-msgstr ""
+msgstr "Tyrkysová"
 
 #: src/features/news/explore/sections.ts:79
 msgid "Technology"
-msgstr ""
+msgstr "Technológie"
 
 #: src/screens/ModerationInbox/Notice.tsx:484
 msgid "Tell us why you believe this decision was a mistake. We will review your appeal along with the original content."
-msgstr ""
+msgstr "Napíš nám, prečo si myslíš, že toto rozhodnutie bolo chybné. Tvoje odvolanie posúdime spolu s pôvodným obsahom."
 
 #: src/components/Gallery/Storybook.tsx:438
 msgid "Text field"
-msgstr ""
+msgstr "Textové pole"
 
 #: src/components/Gallery/Storybook.tsx:495
 msgid "Text: “{text}”"
-msgstr ""
+msgstr "Text: „{text}“"
 
 #: src/screens/ModerationInbox/components/ReportActionSummary.tsx:117
 msgid "Thanks for helping keep Bluesky safe. This post violated our <0>Community Guidelines</0>."
-msgstr ""
+msgstr "Ďakujeme, že pomáhaš udržiavať Tatrasky bezpečné. Tento príspevok porušil naše <0>Pravidlá komunity</0>."
 
 #: src/screens/ModerationInbox/components/ReportActionSummary.tsx:130
 msgid "Thanks for helping keep Bluesky safe. We reviewed your report and took action. Read our <0>Community Guidelines</0>."
-msgstr ""
+msgstr "Ďakujeme, že pomáhaš udržiavať Tatrasky bezpečné. Tvoje nahlásenie sme posúdili a prijali sme opatrenie. Prečítaj si naše <0>Pravidlá komunity</0>."
 
 #: src/screens/ModerationInbox/components/ReportActionSummary.tsx:47
 msgid "Thanks for your report. We’ll look into it and take action in accordance with our <0>Community Guidelines</0>."
-msgstr ""
+msgstr "Ďakujeme za tvoje nahlásenie. Pozrieme sa na to a prijmeme opatrenie v súlade s našimi <0>Pravidlami komunity</0>."
 
 #: src/features/profileLinks/components/LinkFormDialog.tsx:265
 msgid "That doesn’t look like a link. Try something like yoursite.com."
@@ -18543,76 +18543,76 @@ msgstr "Toto nevyzerá ako link. Skús niečo ako tvojastranka.sk."
 
 #: src/screens/ModerationInbox/components/ReportActionSummary.tsx:61
 msgid "The account you reported has been restored after another review. You can mute or block it if you’d rather not see its content. Read our <0>Community Guidelines</0>."
-msgstr ""
+msgstr "Účet, ktorý si nahlásil/a, bol po ďalšom posúdení obnovený. Ak nechceš vidieť jeho obsah, môžeš ho stlmiť alebo zablokovať. Prečítaj si naše <0>Pravidlá komunity</0>."
 
 #: src/screens/ModerationInbox/components/util/noticeLabels.ts:55
 msgid "The action against your account was reversed"
-msgstr ""
+msgstr "Opatrenie voči tvojmu účtu bolo zrušené"
 
 #: src/screens/ModerationInbox/components/util/noticeLabels.ts:56
 msgid "The action against your content was reversed"
-msgstr ""
+msgstr "Opatrenie voči tvojmu obsahu bolo zrušené"
 
 #: src/screens/ModerationInbox/Notice.tsx:337 src/screens/ModerationInbox/Notice.tsx:377
 msgid "The appeal window has closed."
-msgstr ""
+msgstr "Lehota na odvolanie uplynula."
 
 #: src/screens/Atmosphere/ActivityTab.tsx:34
 msgid "The Atmosphere is the open network Bluesky is built on. When people you follow are active on the Atmosphere, you can see it here."
-msgstr ""
+msgstr "Atmosphere je otvorená sieť, na ktorej je Tatrasky postavené. Keď sú ľudia, ktorých sleduješ, aktívni v Atmosphere, uvidíš to tu."
 
 #: src/components/Gallery/Storybook.tsx:245
 msgid "The carousel used for post images. Tap an image to open the lightbox, change images, and close it: it should land on the right thumbnail. The first and last images are cropped, and the third learns its size when it loads."
-msgstr ""
+msgstr "Karusel používaný pre obrázky príspevkov. Klepni na obrázok, aby si otvoril/a lightbox, menil/a obrázky a zavrel/a ho: mal by pristáť na správnom náhľade. Prvý a posledný obrázok sú orezané a tretí zistí svoju veľkosť po načítaní."
 
 #: src/screens/ModerationInbox/components/ReportActionSummary.tsx:75
 msgid "The content you reported has been restored after another review. If you’d rather not see it, you can mute or block the account. Read our <0>Community Guidelines</0>."
-msgstr ""
+msgstr "Obsah, ktorý si nahlásil/a, bol po ďalšom posúdení obnovený. Ak ho nechceš vidieť, môžeš účet stlmiť alebo zablokovať. Prečítaj si naše <0>Pravidlá komunity</0>."
 
 #: src/components/Gallery/Storybook.tsx:699
 msgid "The gallery fills whatever width it has. Inside a bleed ancestor, the first and last items line up with the padded content while the rest run to the outer edge."
-msgstr ""
+msgstr "Galéria vyplní akúkoľvek dostupnú šírku. V predkovi s presahom sa prvá a posledná položka zarovnajú s obsahom s odsadením, kým ostatné siahajú až k vonkajšiemu okraju."
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:600
 msgid "The outlets could not be loaded."
-msgstr ""
+msgstr "Médiá sa nepodarilo načítať."
 
 #: src/features/newsFeed/components/NewsFeedRightRail.tsx:88
 msgid "The outlets with the most stories right now"
-msgstr ""
+msgstr "Médiá s najväčším počtom príbehov práve teraz"
 
 #: src/components/Gallery/Storybook.tsx:771
 msgid "The two lines above should touch."
-msgstr ""
+msgstr "Dva riadky vyššie by sa mali dotýkať."
 
 #: src/features/frontpages/FrontpageScreen.tsx:65
 msgid "There is no frontpage here."
-msgstr ""
+msgstr "Nie je tu žiadna frontpage."
 
 #: src/components/dms/components/GroupChatProfileCard.tsx:34 src/components/dms/InitiateChatFlow.tsx:1145
 msgid "This account has blocked you and can’t be added."
-msgstr ""
+msgstr "Tento účet ťa zablokoval a nemožno ho pridať."
 
 #. placeholder {0}: currentChannel ?? defaultChannel
 #: src/components/OTAChannelNotice.tsx:87
 msgid "This app is receiving updates from <0>{0}</0>."
-msgstr ""
+msgstr "Táto aplikácia dostáva aktualizácie z <0>{0}</0>."
 
 #: src/screens/Search/components/SearchHistory.tsx:148
 msgid "This can’t be undone, and all of your recent searches will be removed."
-msgstr ""
+msgstr "Toto sa nedá vrátiť späť a všetky tvoje nedávne vyhľadávania budú odstránené."
 
 #: src/components/Gallery/Storybook.tsx:381
 msgid "This card has enough text to wrap over many lines. Its siblings should stretch to match its height without stretching any images or imposing a fixed height. When this text disappears, all of the cards should shrink again."
-msgstr ""
+msgstr "Táto karta má dosť textu na zalomenie do viacerých riadkov. Jej susedia by sa mali natiahnuť na jej výšku bez naťahovania obrázkov alebo pevnej výšky. Keď tento text zmizne, všetky karty by sa mali opäť zmenšiť."
 
 #: src/screens/ModerationInbox/Notice.tsx:383
 msgid "This content could not be appealed. Please reload the notice and try again."
-msgstr ""
+msgstr "Tento obsah nebolo možné napadnúť odvolaním. Znova načítaj oznámenie a skús to znova."
 
 #: src/features/frontpages/editorial/index.tsx:293
 msgid "This front page changed in another editor. Reload the published version before editing again."
-msgstr ""
+msgstr "Táto titulná strana bola zmenená v inom editore. Pred ďalšími úpravami znova načítaj zverejnenú verziu."
 
 #: src/features/profileLinks/components/LinkFormDialog.tsx:267
 msgid "This link can’t be added. It goes to a site that’s blocked on Bluesky."
@@ -18620,265 +18620,265 @@ msgstr "Tento link nemôže byť pridaný. Ide na stránku ktorá je zablokovan�
 
 #: src/screens/ModerationInbox/Notice.tsx:380
 msgid "This subject can no longer be appealed."
-msgstr ""
+msgstr "Toto rozhodnutie sa už nedá napadnúť odvolaním."
 
 #: src/screens/ModerationInbox/Notice.tsx:374
 msgid "This subject has already been appealed."
-msgstr ""
+msgstr "Voči tomuto rozhodnutiu už bolo podané odvolanie."
 
 #: src/screens/Settings/components/AccountActionWarning.tsx:30
 msgid "This will deactivate your Atmosphere account and remove access to all apps you use with it."
-msgstr ""
+msgstr "Tým sa deaktivuje tvoj účet Atmosphere a zruší sa prístup do všetkých aplikácií, ktoré s ním používaš."
 
 #: src/screens/Settings/components/AccountActionWarning.tsx:25
 msgid "This will delete your Atmosphere account and remove access to all apps you use with it."
-msgstr ""
+msgstr "Tým sa odstráni tvoj účet Atmosphere a zruší sa prístup do všetkých aplikácií, ktoré s ním používaš."
 
 #: src/components/Gallery/Storybook.tsx:681
 msgid "Three"
-msgstr ""
+msgstr "Tri"
 
 #: src/features/frontpages/editorial/Section.tsx:531 src/features/profileLinks/components/LinkFormDialog.tsx:387
 msgid "Title (optional)"
-msgstr ""
+msgstr "Názov (voliteľné)"
 
 #: src/screens/Notifications/components/PageList.tsx:579
 msgctxt "Notifications section header"
 msgid "Today"
-msgstr ""
+msgstr "Dnes"
 
 #: src/components/Gallery/Storybook.tsx:612
 msgid "Toggle intro"
-msgstr ""
+msgstr "Prepnúť úvod"
 
 #: src/components/Gallery/Storybook.tsx:334 src/components/Gallery/Storybook.tsx:340
 msgid "Toggle tall content"
-msgstr ""
+msgstr "Prepnúť vysoký obsah"
 
 #: src/components/Gallery/Storybook.tsx:344 src/components/Gallery/Storybook.tsx:350
 msgid "Toggle tallest card"
-msgstr ""
+msgstr "Prepnúť najvyššiu kartu"
 
 #: src/features/trendingWidget/Sync.native.tsx:46
 msgid "Trending on Bluesky"
-msgstr ""
+msgstr "Trendy na Tatrasky"
 
 #: src/features/frontpages/editorial/Editor.tsx:119
 msgid "Try arranging the front page. Changes won’t be saved."
-msgstr ""
+msgstr "Skús usporiadať titulnú stranu. Zmeny sa neuložia."
 
 #: src/features/muForYouFeed/index.tsx:57 src/features/muForYouFeed/index.tsx:62
 msgid "Try Mu’s For You feed"
-msgstr ""
+msgstr "Vyskúšaj kanál Pre teba od Mu"
 
 #: src/components/Gallery/Storybook.tsx:678
 msgid "Two"
-msgstr ""
+msgstr "Dva"
 
 #: src/screens/ModerationInbox/Report.tsx:186
 msgid "Unknown report reason"
-msgstr ""
+msgstr "Neznámy dôvod nahlásenia"
 
 #: src/features/frontpages/editorial/Editor.tsx:285
 msgid "Unpin {title} so it fills automatically"
-msgstr ""
+msgstr "Odpnúť {title}, aby sa vypĺňal automaticky"
 
 #: src/features/frontpages/editorial/Section.tsx:132
 msgid "Untitled carousel"
-msgstr ""
+msgstr "Karusel bez názvu"
 
 #: src/features/frontpages/editorial/Section.tsx:132
 msgid "Untitled section"
-msgstr ""
+msgstr "Sekcia bez názvu"
 
 #: src/screens/Signup/StepHandle/index.tsx:200
 msgid "Username is available"
-msgstr ""
+msgstr "Používateľské meno je dostupné"
 
 #: src/screens/Atmosphere/AppsTab.tsx:36
 msgid "Utils"
-msgstr ""
+msgstr "Nástroje"
 
 #: src/screens/Settings/components/AccountFootprintDialog/labels.ts:23
 msgid "Verifications"
-msgstr ""
+msgstr "Overenia"
 
 #. When someone followed you through a starter pack, e.g. “via starter pack [icon] Science Pack”
 #: src/screens/Notifications/components/NotificationItem/Item/profile.tsx:392
 msgid "via starter pack <0/> <1>{name}</1>"
-msgstr ""
+msgstr "cez štartovací balíček <0/> <1>{name}</1>"
 
 #: src/features/news/article/ArticleHeader.tsx:220
 msgid "View"
-msgstr ""
+msgstr "Zobraziť"
 
 #: src/features/frontpages/editorial/index.tsx:517
 msgid "View {masthead}’s profile"
-msgstr ""
+msgstr "Zobraziť profil {masthead}"
 
 #: src/screens/Notifications/components/NotificationItem/Item/aggregate.tsx:127
 msgid "View all"
-msgstr ""
+msgstr "Zobraziť všetko"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:135
 msgid "View all followers"
-msgstr ""
+msgstr "Zobraziť všetkých sledovateľov"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:609
 msgid "View all new posts"
-msgstr ""
+msgstr "Zobraziť všetky nové príspevky"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:610
 msgid "View all new posts from {name}"
-msgstr ""
+msgstr "Zobraziť všetky nové príspevky od {name}"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:356
 msgid "View all posts {name} liked"
-msgstr ""
+msgstr "Zobraziť všetky príspevky, ktoré {name} lajkol/a"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:387
 msgid "View all posts {name} reposted"
-msgstr ""
+msgstr "Zobraziť všetky príspevky, ktoré {name} repostol/a"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:419
 msgid "View all reposts {name} liked"
-msgstr ""
+msgstr "Zobraziť všetky reposty, ktoré {name} lajkol/a"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/aggregate.tsx:451
 msgid "View all reposts {name} reposted"
-msgstr ""
+msgstr "Zobraziť všetky reposty, ktoré {name} repostol/a"
 
 #: src/features/profileLinks/components/LinkFormDialog.tsx:311
 msgid "View all support sites"
-msgstr ""
+msgstr "Zobraziť všetky stránky na podporu"
 
 #: src/features/news/article/ArticleHeader.tsx:215
 msgid "View the article"
-msgstr ""
+msgstr "Zobraziť článok"
 
 #: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:51
 msgid "Violates Community Guideline: {policyLabel}"
-msgstr ""
+msgstr "Porušuje Pravidlá komunity: {policyLabel}"
 
 #. placeholder {0}: view.title
 #. placeholder {1}: provider.name
 #: src/components/Post/Embed/AtCard/index.tsx:61
 msgid "Visit {0} on {1}"
-msgstr ""
+msgstr "Navštíviť {0} na {1}"
 
 #: src/features/news/article/ArticleHeader.tsx:146
 msgid "Visit frontpage"
-msgstr ""
+msgstr "Navštíviť frontpage"
 
 #. placeholder {0}: provider.name
 #: src/components/Post/Embed/AtCard/index.tsx:62
 msgid "Visit site on {0}"
-msgstr ""
+msgstr "Navštíviť stránku na {0}"
 
 #. placeholder {0}: sanitizeDisplayName( profile.displayName || profile.handle, moderation.ui('displayName'), )
 #: src/screens/Profile/Header/ProfileHeaderStandard.tsx:351
 msgid "Visit the {0} frontpage"
-msgstr ""
+msgstr "Navštíviť frontpage {0}"
 
 #: src/features/frontpages/components/FrontpageLinkChip.tsx:59 src/features/news/article/ArticleHeader.tsx:141
 msgid "Visit the {name} frontpage"
-msgstr ""
+msgstr "Navštíviť frontpage {name}"
 
 #: src/features/frontpages/components/FrontpageLinkChip.tsx:59
 msgid "Visit this frontpage"
-msgstr ""
+msgstr "Navštíviť túto frontpage"
 
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:135
 msgid "We couldn’t load your account data. Please try again."
-msgstr ""
+msgstr "Nepodarilo sa nám načítať údaje tvojho účtu. Skús to znova."
 
 #: src/features/profileLinks/components/LinkFormDialog.tsx:275
 msgid "We couldn’t reach this link. Check it, or save anyway."
-msgstr ""
+msgstr "Tento odkaz sa nám nepodarilo otvoriť. Skontroluj ho alebo ho aj tak ulož."
 
 #: src/screens/ModerationInbox/components/util/noticeLabels.ts:47
 msgid "We reviewed your appeal and are keeping our original decision in place."
-msgstr ""
+msgstr "Posúdili sme tvoje odvolanie a ponechávame pôvodné rozhodnutie v platnosti."
 
 #: src/screens/ModerationInbox/components/util/noticeLabels.ts:33
 msgid "We reviewed your appeal. The current status of your content or account is shown below."
-msgstr ""
+msgstr "Posúdili sme tvoje odvolanie. Aktuálny stav tvojho obsahu alebo účtu je uvedený nižšie."
 
 #: src/screens/ModerationInbox/components/ReportActionSummary.tsx:103
 msgid "We reviewed your report and found that this doesn’t break our rules. Read our <0>Community Guidelines</0>."
-msgstr ""
+msgstr "Tvoje nahlásenie sme posúdili a zistili sme, že toto neporušuje naše pravidlá. Prečítaj si naše <0>Pravidlá komunity</0>."
 
 #: src/screens/ModerationInbox/components/ReportActionSummary.tsx:89
 msgid "We reviewed your report and found that this doesn’t break our rules. You can mute or block the account if you’d rather not see the post. Read our <0>Community Guidelines</0>."
-msgstr ""
+msgstr "Tvoje nahlásenie sme posúdili a zistili sme, že toto neporušuje naše pravidlá. Ak nechceš vidieť tento príspevok, môžeš účet stlmiť alebo zablokovať. Prečítaj si naše <0>Pravidlá komunity</0>."
 
 #: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:55
 msgid "We sent you an email about your account"
-msgstr ""
+msgstr "Poslali sme ti e-mail o tvojom účte"
 
 #: src/screens/ModerationInbox/components/AccountStatus.tsx:43
 msgid "We’ve taken action on your account for violating our Community Guidelines, and strikes have been added to your record. More violations will lead to stronger enforcement, including suspension."
-msgstr ""
+msgstr "Prijali sme opatrenie voči tvojmu účtu za porušenie našich Pravidiel komunity a do tvojho záznamu sme pridali tresty. Ďalšie porušenia povedú k prísnejším opatreniam vrátane pozastavenia."
 
 #: src/screens/ModerationInbox/components/AccountStatus.tsx:37
 msgid "We’ve taken action on your account for violating our Community Guidelines. Your record now carries enough strikes that another violation could lead to permanent suspension."
-msgstr ""
+msgstr "Prijali sme opatrenie voči tvojmu účtu za porušenie našich Pravidiel komunity. Tvoj záznam teraz obsahuje dosť trestov na to, aby ďalšie porušenie mohlo viesť k trvalému pozastaveniu."
 
 #: src/features/frontpages/editorial/Section.tsx:553
 msgid "What this section covers"
-msgstr ""
+msgstr "Čo táto sekcia pokrýva"
 
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:98 src/screens/Settings/components/AccountFootprintDialog/index.tsx:104
 msgid "What will be deleted"
-msgstr ""
+msgstr "Čo bude odstránené"
 
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:98 src/screens/Settings/components/AccountFootprintDialog/index.tsx:106
 msgid "What will be hidden"
-msgstr ""
+msgstr "Čo bude skryté"
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:208
 msgid "Where from?"
-msgstr ""
+msgstr "Odkiaľ?"
 
 #: src/features/profileLinks/components/ReportLinkDialog.tsx:101
 msgid "Which link do you want to report?"
-msgstr ""
+msgstr "Ktorý odkaz chceš nahlásiť?"
 
 #: src/components/moderation/ReportDialog/copy.ts:43
 msgid "Why should this link be reviewed?"
-msgstr ""
+msgstr "Prečo by sa mal tento odkaz posúdiť?"
 
 #: src/components/Gallery/Storybook.tsx:300
 msgid "Wide"
-msgstr ""
+msgstr "Široké"
 
 #: src/components/Gallery/Storybook.tsx:602
 msgid "Wide / narrow"
-msgstr ""
+msgstr "Široké / úzke"
 
 #: src/components/Gallery/Storybook.tsx:298
 msgid "Wide card"
-msgstr ""
+msgstr "Široká karta"
 
 #: src/features/newsFeed/components/interests/InterestEditor.tsx:399
 msgid "With no outlets ticked, this interest shows nothing."
-msgstr ""
+msgstr "Ak nie je zaškrtnuté žiadne médium, tento záujem nezobrazí nič."
 
 #: src/features/news/explore/components/ExploreLocationPicker.tsx:39 src/features/news/explore/components/ExploreLocationPicker.tsx:56 src/features/news/explore/sections.ts:155
 msgid "World"
-msgstr ""
+msgstr "Svet"
 
 #: src/screens/Settings/AppearanceSettings.tsx:276
 msgid "Yellow"
-msgstr ""
+msgstr "Žltá"
 
 #: src/screens/ModerationInbox/Notice.tsx:299
 msgid "You can appeal once per decision. A different moderator will review the appeal."
-msgstr ""
+msgstr "Proti každému rozhodnutiu sa môžeš odvolať raz. Odvolanie posúdi iný moderátor."
 
 #: src/features/frontpages/editorial/index.tsx:276
 msgid "You can pin up to 100 items, with up to 60 slots in a section."
-msgstr ""
+msgstr "Môžeš pripnúť až 100 položiek, najviac 60 miest v jednej sekcii."
 
 #: src/features/profileLinks/components/LinkFormDialog.tsx:322
 msgid "You can remove this existing link, but adding or editing links isn’t available for this account."
@@ -18890,99 +18890,99 @@ msgstr "Môžeš uložiť až 10 linkov. Odstráň link pred uložením."
 
 #: src/screens/ModerationInbox/Notice.tsx:294
 msgid "You can submit one account appeal at a time. A different moderator will review the appeal."
-msgstr ""
+msgstr "Naraz môžeš podať jedno odvolanie voči účtu. Odvolanie posúdi iný moderátor."
 
 #: src/components/dms/components/GroupChatProfileCard.tsx:32 src/components/dms/InitiateChatFlow.tsx:1143
 msgid "You have blocked this account and can’t add them."
-msgstr ""
+msgstr "Tento účet si zablokoval/a a nemôžeš ho pridať."
 
 #: src/screens/ModerationInbox/index.tsx:235
 msgid "You haven’t reported anything yet"
-msgstr ""
+msgstr "Zatiaľ si nič nenahlásil/a"
 
 #: src/components/dialogs/NewskieDialog/utils.ts:27
 msgid "You joined Bluesky just now"
-msgstr ""
+msgstr "Práve si sa pripojil/a k Tatrasky"
 
 #: src/components/dialogs/NewskieDialog/utils.ts:26
 msgid "You joined Bluesky using a Starter Pack just now"
-msgstr ""
+msgstr "Práve si sa pripojil/a k Tatrasky pomocou štartovacieho balíčka"
 
 #. placeholder {0}: state.profileLimit
 #. placeholder {1}: state.profileLimit
 #: src/screens/StarterPack/Wizard/State.tsx:78
 msgid "You may only add up to {0, plural, other {{1} profiles}}"
-msgstr ""
+msgstr "Môžeš pridať najviac {0, plural, other {{1} profilov}}"
 
 #. placeholder {0}: BRAND.name
 #: src/ageAssurance/components/NoAccessScreen.tsx:161
 msgid "You must be at least 13 years old to use {0}."
-msgstr ""
+msgstr "Na používanie {0} musíš mať aspoň 13 rokov."
 
 #: src/features/profileLinks/components/LinkFormDialog.tsx:273
 msgid "You’ve already added this link."
-msgstr ""
+msgstr "Tento odkaz si už pridal/a."
 
 #: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:95
 msgid "Your ability to submit reports was restricted"
-msgstr ""
+msgstr "Tvoja možnosť odosielať nahlásenia bola obmedzená"
 
 #: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:99
 msgid "Your account credentials were revoked"
-msgstr ""
+msgstr "Prihlasovacie údaje tvojho účtu boli zrušené"
 
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:219
 msgid "Your account doesn’t have any records yet."
-msgstr ""
+msgstr "Tvoj účet zatiaľ nemá žiadne záznamy."
 
 #: src/screens/ModerationInbox/components/AccountStatus.tsx:34
 msgid "Your account has strikes against it"
-msgstr ""
+msgstr "Tvoj účet má tresty"
 
 #: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:67 src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:91 src/screens/ModerationInbox/components/util/noticeLabels.ts:73
 msgid "Your account was suspended"
-msgstr ""
+msgstr "Tvoj účet bol pozastavený"
 
 #: src/screens/ModerationInbox/components/util/noticeLabels.ts:65
 msgid "Your account was temporarily suspended for {hours, plural, one {# hour} other {# hours}}"
-msgstr ""
+msgstr "Tvoj účet bol dočasne pozastavený na {hours, plural, one {# hodinu} few {# hodiny} many {# hodiny} other {# hodín}}"
 
 #: src/screens/ModerationInbox/Notice.tsx:237
 msgid "Your appeal has been submitted and is awaiting review."
-msgstr ""
+msgstr "Tvoje odvolanie bolo odoslané a čaká na posúdenie."
 
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:116
 msgid "Your Atmosphere account holds data for every app you’ve used with it. Deactivating hides all of this in every app until you sign back in. Nothing is deleted."
-msgstr ""
+msgstr "Tvoj účet Atmosphere obsahuje údaje zo všetkých aplikácií, ktoré si s ním použil/a. Deaktivácia ich všetky skryje vo všetkých aplikáciách, kým sa znova neprihlásiš. Nič sa neodstráni."
 
 #: src/screens/Settings/components/AccountFootprintDialog/index.tsx:111
 msgid "Your Atmosphere account holds data for every app you’ve used with it. Deleting it permanently removes all of this."
-msgstr ""
+msgstr "Tvoj účet Atmosphere obsahuje údaje zo všetkých aplikácií, ktoré si s ním použil/a. Odstránením sa všetky natrvalo odstránia."
 
 #: src/screens/Atmosphere/ActivityTab.tsx:25
 msgid "Your Atmosphere is quiet"
-msgstr ""
+msgstr "Tvoj Atmosphere je tichý"
 
 #: src/screens/Notifications/components/NotificationItem/kinds/profile.tsx:355
 msgid "Your contact <0/> is on Bluesky"
-msgstr ""
+msgstr "Tvoj kontakt <0/> je na Tatrasky"
 
 #: src/screens/ModerationInbox/components/util/noticeLabels.ts:95
 msgid "Your content"
-msgstr ""
+msgstr "Tvoj obsah"
 
 #: src/features/newsFeed/components/interests/NewsInterestsSetup.tsx:174
 msgid "Your content languages"
-msgstr ""
+msgstr "Jazyky tvojho obsahu"
 
 #: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:49 src/screens/ModerationInbox/components/util/noticeLabels.ts:75
 msgid "Your content was removed"
-msgstr ""
+msgstr "Tvoj obsah bol odstránený"
 
 #. placeholder {0}: BRAND.name
 #: src/ageAssurance/components/NoAccessScreen.tsx:170
 msgid "Your declared age is below the minimum required to use {0} in your region."
-msgstr ""
+msgstr "Tvoj uvedený vek je nižší ako minimálny vek potrebný na používanie {0} vo tvojom regióne."
 
 #: src/features/profileLinks/components/ProfileLinksEditor.tsx:152
 msgid "Your existing link is kept, but it’s blocked by the link safety service. Edit or remove it to update your links."
@@ -18990,7 +18990,7 @@ msgstr "Tvoj existujúci link zostáva, ale je blokovaný bezpečnostnou službo
 
 #: src/features/profileLinks/components/ProfileLinksEditor.tsx:160
 msgid "Your existing link is kept. Update it to a supported secure link, or remove another link if your list is full."
-msgstr ""
+msgstr "Tvoj existujúci odkaz zostáva zachovaný. Aktualizuj ho na podporovaný zabezpečený odkaz alebo odstráň iný odkaz, ak je tvoj zoznam plný."
 
 #: src/features/profileLinks/components/ProfileLinks.tsx:197
 msgid "Your links changed in another app. Please try again."
@@ -19002,44 +19002,44 @@ msgstr "Tvoje linky sa zmenili v inej aplikácii. Najprv obnov svoje linky a mô
 
 #: src/features/muForYouFeed/index.tsx:71
 msgid "Your other feeds will stay as they are. This change syncs with your account, and you can unpin or reorder the feed anytime."
-msgstr ""
+msgstr "Tvoje ostatné kanály zostanú nezmenené. Táto zmena sa synchronizuje s tvojím účtom a kanál môžeš kedykoľvek odpnúť alebo zmeniť jeho poradie."
 
 #: src/screens/Profile/Header/EditProfileDialog.tsx:547
 msgid "Your other profile changes will be kept."
-msgstr ""
+msgstr "Ostatné zmeny v tvojom profile zostanú zachované."
 
 #: src/features/newsFeed/components/NewsFeedRightRail.tsx:81
 msgid "Your outlets"
-msgstr ""
+msgstr "Tvoje médiá"
 
 #: src/screens/ModerationInbox/components/util/noticeLabels.ts:94
 msgid "Your post"
-msgstr ""
+msgstr "Tvoj príspevok"
 
 #: src/screens/ModerationInbox/components/hooks/useActionedSubjectLabels.ts:49 src/screens/ModerationInbox/components/util/noticeLabels.ts:75
 msgid "Your post was removed"
-msgstr ""
+msgstr "Tvoj príspevok bol odstránený"
 
 #: src/features/frontpages/editorial/FillMenu.tsx:64 src/features/frontpages/editorial/FillMenu.tsx:97
 msgid "Your posts"
-msgstr ""
+msgstr "Tvoje príspevky"
 
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:117
 msgid "Your profile, posts, and everything else in your Atmosphere account will be hidden in every app. You can reactivate your account at any time by logging in."
-msgstr ""
+msgstr "Tvoj profil, príspevky a všetko ostatné v tvojom účte Atmosphere bude skryté vo všetkých aplikáciách. Účet môžeš kedykoľvek znova aktivovať prihlásením."
 
 #: src/screens/ModerationInbox/components/ReportActionSummary.tsx:144
 msgid "Your report has been resolved. Read our <0>Community Guidelines</0>."
-msgstr ""
+msgstr "Tvoje nahlásenie bolo vyriešené. Prečítaj si naše <0>Pravidlá komunity</0>."
 
 #: src/features/newsFeed/components/SetupDone.tsx:22
 msgid "Your selections are saved privately to your account. Only you can see them."
-msgstr ""
+msgstr "Tvoje výbery sa ukladajú súkromne k tvojmu účtu. Vidíš ich iba ty."
 
 #: src/screens/ModerationInbox/components/AccountStatus.tsx:56
 msgid "Your standing doesn’t restrict your account right now, and strikes come off your record over time."
-msgstr ""
+msgstr "Tvoj aktuálny stav neobmedzuje tvoj účet a tresty sa z tvojho záznamu časom odstraňujú."
 
 #: src/screens/ModerationInbox/components/AccountStatus.tsx:51
 msgid "Your standing may restrict certain features on your account. Strikes come off your record over time."
-msgstr ""
+msgstr "Tvoj stav môže obmedzovať niektoré funkcie tvojho účtu. Tresty sa z tvojho záznamu časom odstraňujú."
