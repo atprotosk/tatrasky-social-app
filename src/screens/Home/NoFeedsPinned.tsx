@@ -5,7 +5,7 @@ import {msg} from '@lingui/core/macro'
 import {useLingui} from '@lingui/react'
 import {Trans} from '@lingui/react/macro'
 
-import {DISCOVER_SAVED_FEED, TIMELINE_SAVED_FEED} from '#/lib/constants'
+import {DEFAULT_SAVED_FEED, TIMELINE_SAVED_FEED} from '#/lib/constants'
 import {useOverwriteSavedFeedsMutation} from '#/state/queries/preferences'
 import {type UsePreferencesQueryResponse} from '#/state/queries/preferences'
 import {CenteredView} from '#/view/com/util/Views'
@@ -37,7 +37,7 @@ export function NoFeedsPinned({
       if (savedFeed.type === 'timeline' && !skippedTimeline) {
         skippedTimeline = true
       } else if (
-        savedFeed.value === DISCOVER_SAVED_FEED.value &&
+        savedFeed.value === DEFAULT_SAVED_FEED.value &&
         !skippedDiscover
       ) {
         skippedDiscover = true
@@ -48,7 +48,7 @@ export function NoFeedsPinned({
 
     const toSave = [
       {
-        ...DISCOVER_SAVED_FEED,
+        ...DEFAULT_SAVED_FEED,
         pinned: true,
         id: TID.nextStr(),
       },

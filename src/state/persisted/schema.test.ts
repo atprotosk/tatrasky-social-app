@@ -1,11 +1,6 @@
 import {defaults, tryParse, tryStringify} from './schema'
 
 jest.mock('#/logger', () => ({logger: {error: jest.fn()}}))
-jest.mock('#/locale/deviceLocales', () => ({
-  deviceLanguageCodes: ['en'],
-  deviceLocales: [{languageTag: 'en'}],
-}))
-jest.mock('#/locale/helpers', () => ({findSupportedAppLanguage: () => 'en'}))
 
 it('accepts obsolete seasonal data without discarding sessions or preferences', () => {
   const account = {

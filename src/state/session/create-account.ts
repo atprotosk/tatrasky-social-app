@@ -6,7 +6,7 @@ import {overwriteSavedFeeds, setPersonalDetails, upsertProfile} from '@bsky/sdk'
 
 import {networkRetry} from '#/lib/async/retry'
 import {
-  DISCOVER_SAVED_FEED,
+  DEFAULT_SAVED_FEED,
   IS_PROD_SERVICE,
   TIMELINE_SAVED_FEED,
 } from '#/lib/constants'
@@ -199,7 +199,7 @@ function initializeProfile(
 function initializeSavedFeeds(client: Client) {
   return retryPostSignupTask('set initial feeds', 1, () =>
     client.call(overwriteSavedFeeds, [
-      {...DISCOVER_SAVED_FEED, id: TID.nextStr()},
+      {...DEFAULT_SAVED_FEED, id: TID.nextStr()},
       {...TIMELINE_SAVED_FEED, id: TID.nextStr()},
     ]),
   )

@@ -2,8 +2,7 @@ import {isDidString} from '@atproto/lex'
 import {PlatformInfo} from '@bsky.app/expo-bluesky-swiss-army'
 import {z} from 'zod'
 
-import {deviceLanguageCodes, deviceLocales} from '#/locale/deviceLocales'
-import {findSupportedAppLanguage} from '#/locale/helpers'
+import {AppLanguage} from '#/locale/languages'
 import {logger} from '#/logger'
 
 const externalEmbedOptions = ['show', 'hide'] as const
@@ -196,18 +195,16 @@ export const defaults: Schema = {
   reminders: {
     lastEmailConfirm: undefined,
   },
+  /*
+   * Tatrasky fork: Slovak-first. Defaults ignore the device locale so every
+   * new install starts in Slovak; users can still change these in settings.
+   */
   languagePrefs: {
-    primaryLanguage: deviceLanguageCodes[0] || 'en',
-    contentLanguages: deviceLanguageCodes || [],
-    postLanguage: deviceLanguageCodes[0] || 'en',
-    postLanguageHistory: (deviceLanguageCodes || [])
-      .concat(['en', 'ja', 'pt', 'de'])
-      .slice(0, 6),
-    // try full language tag first, then fallback to language code
-    appLanguage: findSupportedAppLanguage([
-      deviceLocales.at(0)?.languageTag,
-      deviceLanguageCodes[0],
-    ]),
+    primaryLanguage: 'sk',
+    contentLanguages: ['sk'],
+    postLanguage: 'sk',
+    postLanguageHistory: ['sk', 'cs', 'en', 'de', 'hu', 'uk'],
+    appLanguage: AppLanguage.sk,
   },
   requireAltTextEnabled: false,
   largeAltBadgeEnabled: false,

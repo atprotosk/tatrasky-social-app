@@ -13,7 +13,7 @@ import {
   useQueryClient,
 } from '@tanstack/react-query'
 
-import {DISCOVER_FEED_URI, DISCOVER_SAVED_FEED} from '#/lib/constants'
+import {DEFAULT_FEED_URI, DEFAULT_SAVED_FEED} from '#/lib/constants'
 import {sanitizeDisplayName} from '#/lib/strings/display-names'
 import {sanitizeHandle} from '#/lib/strings/handles'
 import {GCTIME, STALE} from '#/state/queries'
@@ -432,8 +432,8 @@ export type SavedFeedSourceInfo = FeedSourceInfo & {
 const PWI_DISCOVER_FEED_STUB: SavedFeedSourceInfo = {
   type: 'feed',
   displayName: 'Discover',
-  uri: DISCOVER_FEED_URI,
-  feedDescriptor: `feedgen|${DISCOVER_FEED_URI}`,
+  uri: DEFAULT_FEED_URI,
+  feedDescriptor: `feedgen|${DEFAULT_FEED_URI}`,
   route: {
     href: '/',
     name: 'Home',
@@ -449,7 +449,7 @@ const PWI_DISCOVER_FEED_STUB: SavedFeedSourceInfo = {
   // ---
   savedFeed: {
     id: 'pwi-discover',
-    ...DISCOVER_SAVED_FEED,
+    ...DEFAULT_SAVED_FEED,
   },
   contentMode: undefined,
 }

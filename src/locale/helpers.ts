@@ -189,7 +189,7 @@ export function sanitizeAppLanguageSetting(appLanguage: string): AppLanguage {
   const langs = appLanguage
     .split(',')
     .filter(Boolean)
-    // Tatrasky fork: disabled app languages fall through to English
+    // Tatrasky fork: disabled app languages fall through to Slovak
     .filter(lang =>
       ENABLED_APP_LANGUAGES.has(fixLegacyLanguageCode(lang) as AppLanguage),
     )
@@ -286,7 +286,7 @@ export function sanitizeAppLanguageSetting(appLanguage: string): AppLanguage {
         continue
     }
   }
-  return AppLanguage.en
+  return AppLanguage.sk
 }
 
 /**
@@ -315,7 +315,7 @@ export function fixLegacyLanguageCode(code: string | null): string | null {
  * Find the first language supported by our translation infra. Values should be
  * in order of preference, and match the values of {@link AppLanguage}.
  *
- * If no match, returns `en`.
+ * If no match, returns `sk` (Tatrasky fork: Slovak-first).
  */
 export function findSupportedAppLanguage(languageTags: (string | undefined)[]) {
   for (const tag of languageTags) {
@@ -324,7 +324,7 @@ export function findSupportedAppLanguage(languageTags: (string | undefined)[]) {
       return tag
     }
   }
-  return AppLanguage.en
+  return AppLanguage.sk
 }
 
 /**

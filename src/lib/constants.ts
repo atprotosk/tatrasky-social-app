@@ -177,6 +177,15 @@ export const TRENDING_HANDLE = 'trending.bsky.app'
 
 export const DISCOVER_FEED_URI =
   'at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.generator/whats-hot'
+/**
+ * Tatrasky fork: Slovak-first default feed, shown logged out and pinned for new
+ * accounts. Distinct from {@link DISCOVER_FEED_URI}, which stays for
+ * Bluesky-specific behavior (feed headers, interaction tracking).
+ */
+export const DEFAULT_FEED_URI =
+  'at://did:plc:eb3icswdf3wkjo5h2a5zfgv3/app.bsky.feed.generator/aaaitknfhjkmk'
+export const DEFAULT_FEED_HREF =
+  '/profile/did:plc:eb3icswdf3wkjo5h2a5zfgv3/feed/aaaitknfhjkmk'
 export const VIDEO_FEED_URI =
   'at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.generator/thevids'
 export const STAGING_VIDEO_FEED_URI =
@@ -185,6 +194,11 @@ export const VIDEO_FEED_URIS = [VIDEO_FEED_URI, STAGING_VIDEO_FEED_URI]
 export const DISCOVER_SAVED_FEED = {
   type: 'feed',
   value: DISCOVER_FEED_URI,
+  pinned: true,
+}
+export const DEFAULT_SAVED_FEED = {
+  type: 'feed',
+  value: DEFAULT_FEED_URI,
   pinned: true,
 }
 export const TIMELINE_SAVED_FEED = {
