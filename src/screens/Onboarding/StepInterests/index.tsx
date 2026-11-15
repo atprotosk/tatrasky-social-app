@@ -2,11 +2,7 @@ import {useCallback, useState} from 'react'
 import {Pressable, View} from 'react-native'
 import {Trans, useLingui} from '@lingui/react/macro'
 
-import {
-  interests,
-  MIN_ONBOARDING_INTERESTS,
-  useInterestsDisplayNames,
-} from '#/lib/interests'
+import {interests, useInterestsDisplayNames} from '#/lib/interests'
 import {capitalize} from '#/lib/strings/capitalize'
 import {logger} from '#/logger'
 import {
@@ -35,8 +31,15 @@ export function StepInterests() {
   const [selectedInterests, setSelectedInterests] = useState<string[]>(
     state.interestsStepResults.selectedInterests.map(i => i),
   )
+  /*
+   * Behind this gate, users must choose at least one interest before they can
+   * continue.
+   */
+  const interestRequired = ax.features.enabled(
+    ax.features.OnboardingInterestsRequiredEnable,
+  )
   const missingRequiredInterest =
-    selectedInterests.length < MIN_ONBOARDING_INTERESTS
+    interestRequired && selectedInterests.length === 0
 
   const showMissingInterestTooltip = () => {
     ax.metric('onboarding:interests:disabledNextPressed', {})
@@ -73,13 +76,13 @@ export function StepInterests() {
       size="large"
       label={
         missingRequiredInterest
-          ? l`Choose at least ${MIN_ONBOARDING_INTERESTS} interests`
+          ? l`Choose an interest`
           : l`Continue to next step`
       }
       onPress={() => void saveInterests()}>
       <ButtonText style={{pointerEvents: 'none'}}>
         {missingRequiredInterest ? (
-          <Trans>Choose at least {MIN_ONBOARDING_INTERESTS}</Trans>
+          <Trans>Choose an interest</Trans>
         ) : (
           <Trans>Continue</Trans>
         )}
@@ -95,10 +98,14 @@ export function StepInterests() {
         <Trans>What are your interests?</Trans>
       </OnboardingTitleText>
       <OnboardingDescriptionText>
-        <Trans>
-          Choose at least {MIN_ONBOARDING_INTERESTS} to help personalize your
-          feed. You can change these anytime.
-        </Trans>
+        {interestRequired ? (
+          <Trans>
+            Choose at least one. We'll use this to customize your experience.
+            You can change these anytime.
+          </Trans>
+        ) : (
+          <Trans>We'll use this to help customize your experience.</Trans>
+        )}
       </OnboardingDescriptionText>
 
       <View style={[a.w_full, a.pt_lg]}>
@@ -129,8 +136,8 @@ export function StepInterests() {
               <Tooltip.Target>
                 <Pressable
                   accessibilityRole="button"
-                  accessibilityLabel={l`Choose at least ${MIN_ONBOARDING_INTERESTS} interests`}
-                  accessibilityHint={l`Choose at least ${MIN_ONBOARDING_INTERESTS} interests to continue`}
+                  accessibilityLabel={l`Choose an interest`}
+                  accessibilityHint={l`Choose at least one interest to continue`}
                   onPress={showMissingInterestTooltip}>
                   <View
                     pointerEvents="none"
@@ -140,11 +147,8 @@ export function StepInterests() {
                   </View>
                 </Pressable>
               </Tooltip.Target>
-              <Tooltip.BubbleText
-                label={l`Choose at least ${MIN_ONBOARDING_INTERESTS} interests.`}>
-                <Trans>
-                  Choose at least {MIN_ONBOARDING_INTERESTS} interests.
-                </Trans>
+              <Tooltip.BubbleText label={l`Choose at least one interest.`}>
+                <Trans>Choose at least one interest.</Trans>
               </Tooltip.BubbleText>
             </Tooltip.Outer>
           ) : (
