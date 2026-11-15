@@ -20305,3 +20305,91 @@ msgstr "Your username and password will be shared with <0>{host}</0>. If you don
 #: src/components/verification/VerificationsDialog.tsx:68
 msgid "Your verifications"
 msgstr ""
+
+#: src/screens/Live/index.tsx
+msgid "Nobody is live right now"
+msgstr ""
+
+#: src/screens/Live/index.tsx
+msgid "Check back later to see who is streaming on Streamplace."
+msgstr ""
+
+#: src/screens/Live/index.tsx
+msgid "Streams from Streamplace"
+msgstr ""
+
+#: src/screens/Live/components/LiveStreamCard.tsx
+msgid "{name} is live"
+msgstr ""
+
+#: src/screens/Live/components/LiveStreamCard.tsx
+msgid "Watch {title} by {name}, {viewers, plural, one {# viewer} other {# viewers}}"
+msgstr ""
+
+#: src/screens/Live/components/LiveStreamCard.tsx
+msgid "Watch {title} by {name}"
+msgstr ""
+
+#: src/screens/LiveWatch/index.tsx
+msgid "Streamplace media is turned off. You can turn it on in Settings → Content and media → External media."
+msgstr ""
+
+#: src/screens/LiveWatch/index.tsx
+msgid "This livestream is hosted by Streamplace. Watch it right here in {0}."
+msgstr ""
+
+#: src/screens/LiveWatch/index.tsx
+msgid "Open on stream.place"
+msgstr ""
+
+#: src/screens/LiveWatch/index.tsx
+msgid "Watch livestream"
+msgstr ""
+
+#: src/screens/LiveWatch/index.tsx
+msgid "Live chat"
+msgstr ""
+
+#: src/screens/LiveWatch/index.tsx
+msgid "{0, plural, one {# watching} other {# watching}}"
+msgstr ""
+
+#: src/features/streamplace/components/ChatComposer.tsx
+msgid "Sign in to chat"
+msgstr ""
+
+#: src/features/streamplace/components/ChatComposer.tsx
+msgid "Send a message…"
+msgstr ""
+
+#: src/features/streamplace/components/ChatComposer.tsx
+msgid "Chat message"
+msgstr ""
+
+#: src/features/streamplace/components/ChatComposer.tsx
+msgid "Press return to send"
+msgstr ""
+
+#: src/features/streamplace/components/ChatComposer.tsx
+msgid "Send"
+msgstr ""
+
+#: src/features/streamplace/components/ChatList.tsx
+msgid "Retry sending message"
+msgstr ""
+
+#: src/features/streamplace/components/ChatList.tsx
+msgid "Not delivered – tap to retry"
+msgstr ""
+
+#: src/features/streamplace/components/ChatList.tsx
+msgid "Sending…"
+msgstr ""
+
+#: src/features/streamplace/components/ChatList.tsx
+msgid "Long press to report this account"
+msgstr ""
+
+#: src/features/streamplace/components/LiveOffline.tsx
+msgid "This stream is offline"
+msgstr ""

@@ -66,6 +66,7 @@ import {
 } from '#/components/icons/Message'
 import {Newspaper_Stroke2_Corner2_Rounded as Newspaper} from '#/components/icons/Newspaper'
 import {SettingsGear2_Stroke2_Corner0_Rounded as SettingsIcon} from '#/components/icons/Settings'
+import {StreamingLive_Stroke2_Corner0_Rounded as StreamingLiveIcon} from '#/components/icons/StreamingLive'
 import {
   UserCircle_Filled_Corner0_Rounded as UserCircleFilledIcon,
   UserCircle_Stroke2_Corner0_Rounded as UserCircleIcon,
@@ -83,12 +84,18 @@ import {NEWS_ENABLED, NEWS_V2_ENABLED} from '#/features/newsFeed/config'
 
 const iconWidth = 26
 type SecondarySidebarTab =
-  'Atmosphere' | 'Feeds' | 'Lists' | 'Bookmarks' | 'Settings'
+  'Atmosphere' | 'Live' | 'Feeds' | 'Lists' | 'Bookmarks' | 'Settings'
 const SECONDARY_TAB_ROUTES: Record<
   SecondarySidebarTab,
-  'AtmosphereTab' | 'FeedsTab' | 'ListsTab' | 'BookmarksTab' | 'SettingsTab'
+  | 'AtmosphereTab'
+  | 'LiveTab'
+  | 'FeedsTab'
+  | 'ListsTab'
+  | 'BookmarksTab'
+  | 'SettingsTab'
 > = {
   Atmosphere: 'AtmosphereTab',
+  Live: 'LiveTab',
   Feeds: 'FeedsTab',
   Lists: 'ListsTab',
   Bookmarks: 'BookmarksTab',
@@ -212,6 +219,7 @@ let DrawerContent = ({}: React.PropsWithoutRef<{}>): React.ReactNode => {
     isAtHome,
     isAtSearch,
     isAtAtmosphere,
+    isAtLive,
     isAtFeeds,
     isAtBookmarks,
     isAtNotifications,
@@ -325,6 +333,13 @@ let DrawerContent = ({}: React.PropsWithoutRef<{}>): React.ReactNode => {
     if (IS_WEB) setDrawerOpen(false)
   }, [navigation, navigateToSecondaryTab, setDrawerOpen, ax])
 
+  const onPressLive = useCallback(() => {
+    ax.metric('nav:click', {item: 'live', surface: 'drawer'})
+    if (IS_WEB) navigation.dispatch(getTabNavigationAction('Live'))
+    else navigateToSecondaryTab('Live')
+    if (IS_WEB) setDrawerOpen(false)
+  }, [navigation, navigateToSecondaryTab, setDrawerOpen, ax])
+
   const onPressLists = useCallback(() => {
     ax.metric('nav:click', {item: 'lists', surface: 'drawer'})
     if (IS_WEB) navigation.dispatch(getTabNavigationAction('Lists'))
@@ -424,6 +439,9 @@ let DrawerContent = ({}: React.PropsWithoutRef<{}>): React.ReactNode => {
                 onPress={onPressAtmosphere}
               />
             )}
+            {BRAND.live.enabled && (
+              <LiveMenuItem isActive={isAtLive} onPress={onPressLive} />
+            )}
             <FeedsMenuItem isActive={isAtFeeds} onPress={onPressMyFeeds} />
             <ListsMenuItem onPress={onPressLists} />
             <BookmarksMenuItem
@@ -441,6 +459,9 @@ let DrawerContent = ({}: React.PropsWithoutRef<{}>): React.ReactNode => {
             <HomeMenuItem isActive={isAtHome} onPress={onPressHome} />
             <FeedsMenuItem isActive={isAtFeeds} onPress={onPressMyFeeds} />
             <SearchMenuItem isActive={isAtSearch} onPress={onPressSearch} />
+            {BRAND.live.enabled && (
+              <LiveMenuItem isActive={isAtLive} onPress={onPressLive} />
+            )}
           </>
         )}
 
@@ -569,6 +590,26 @@ function AtmosphereMenuItem({
     <MenuItem
       icon={<EarthIcon style={[t.atoms.text]} width={iconWidth} />}
       label={l`Atmosphere`}
+      bold={isActive}
+      onPress={onPress}
+    />
+  )
+}
+
+function LiveMenuItem({
+  isActive,
+  onPress,
+}: {
+  isActive: boolean
+  onPress: () => void
+}) {
+  const {t: l} = useLingui()
+  const t = useTheme()
+
+  return (
+    <MenuItem
+      icon={<StreamingLiveIcon style={[t.atoms.text]} width={iconWidth} />}
+      label={l`Live`}
       bold={isActive}
       onPress={onPress}
     />

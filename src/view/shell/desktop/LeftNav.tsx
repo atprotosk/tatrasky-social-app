@@ -96,6 +96,7 @@ import {
   SettingsGear2_Filled_Corner0_Rounded as SettingsFilledIcon,
   SettingsGear2_Stroke2_Corner0_Rounded as SettingsIcon,
 } from '#/components/icons/Settings'
+import {StreamingLive_Stroke2_Corner0_Rounded as StreamingLiveIcon} from '#/components/icons/StreamingLive'
 import {
   UserCircle_Filled_Corner0_Rounded as UserCircleFilledIcon,
   UserCircle_Stroke2_Corner0_Rounded as UserCircleIcon,
@@ -110,6 +111,7 @@ import {Text} from '#/components/Typography'
 import {useAgeAssurance} from '#/ageAssurance'
 import {useAnalytics} from '#/analytics'
 import {type Events} from '#/analytics/metrics/types'
+import {BRAND} from '#/config/brand'
 import {IS_IOS, IS_NATIVE, IS_WEB} from '#/env'
 import {isFollowingV2HomeDotEnabled} from '#/features/followingV2/eligibility'
 import {useActorStatus} from '#/features/liveNow'
@@ -129,6 +131,7 @@ const NAV_ITEM_TO_TAB: Partial<
   notifications: 'Notifications',
   profile: 'MyProfile',
   atmosphere: 'Atmosphere',
+  live: 'Live',
   feeds: 'Feeds',
   lists: 'Lists',
   saved: 'Bookmarks',
@@ -795,6 +798,19 @@ export function DesktopLeftNav({
               icons={{
                 inactive: EarthIcon,
                 active: EarthIcon,
+              }}
+            />
+          )}
+          {BRAND.live.enabled && (
+            <NavItem
+              label={l`Live`}
+              href="/live"
+              navItem="live"
+              onNavigateTab={onNavigateTab}
+              minimal={leftNavMinimal}
+              icons={{
+                inactive: StreamingLiveIcon,
+                active: StreamingLiveIcon,
               }}
             />
           )}

@@ -128,6 +128,21 @@
           "description": "Web settings URL opened from native builds to purchase or manage the subscription."
         }
       }
+    },
+    "live": {
+      "type": "object",
+      "description": "In-app Streamplace livestreams (Live tab).",
+      "properties": {
+        "$comment": {"type": "string"},
+        "enabled": {
+          "type": "boolean",
+          "description": "Master switch. False hides the Live tab and opens stream.place links externally."
+        },
+        "serviceUrl": {
+          "type": "string",
+          "description": "Streamplace node origin, e.g. https://stream.place."
+        }
+      }
     }
   },
   "$defs": {

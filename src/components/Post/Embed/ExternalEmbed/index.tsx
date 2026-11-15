@@ -18,7 +18,9 @@ import {Divider} from '#/components/Divider'
 import {Earth_Stroke2_Corner0_Rounded as Globe} from '#/components/icons/Globe'
 import {Link} from '#/components/Link'
 import {Text} from '#/components/Typography'
+import {BRAND} from '#/config/brand'
 import {IS_NATIVE} from '#/env'
+import {parseStreamplaceActor} from '#/features/streamplace/url'
 import {type app} from '#/lexicons'
 import {ExternalGif} from './ExternalGif'
 import {ExternalPlayer} from './ExternalPlayer'
@@ -52,6 +54,10 @@ export const ExternalEmbed = ({
     }
   }, [link.uri, externalEmbedPrefs])
   const hasMedia = Boolean(imageUri || embedPlayerParams)
+  // stream.place links open in the in-app Live screen.
+  const streamplaceActor = BRAND.live.enabled
+    ? parseStreamplaceActor(link.uri)
+    : undefined
 
   const onPress = () => {
     haptics.tap()
@@ -88,8 +94,8 @@ export const ExternalEmbed = ({
   return (
     <Link
       label={link.title || _(msg`Open link to ${niceUrl}`)}
-      to={link.uri}
-      shouldProxy={true}
+      to={streamplaceActor ? `/live/${streamplaceActor}` : link.uri}
+      shouldProxy={!streamplaceActor}
       peek
       style={[a.rounded_md]}
       onPress={onPress}

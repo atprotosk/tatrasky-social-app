@@ -19,6 +19,7 @@ describe('native tab navigation state', () => {
     ['NotificationsTab', 'Notifications'],
     ['MyProfileTab', 'MyProfile'],
     ['AtmosphereTab', 'Atmosphere'],
+    ['LiveTab', 'Live'],
     ['FeedsTab', 'Feeds'],
     ['ListsTab', 'Lists'],
     ['BookmarksTab', 'Bookmarks'],
@@ -63,6 +64,7 @@ describe('native tab navigation state', () => {
     ['NotificationsTab', 'Notifications'],
     ['MyProfileTab', 'MyProfile'],
     ['AtmosphereTab', 'Atmosphere'],
+    ['LiveTab', 'Live'],
     ['FeedsTab', 'Feeds'],
     ['ListsTab', 'Lists'],
     ['BookmarksTab', 'Bookmarks'],
@@ -82,6 +84,7 @@ describe('native tab navigation state', () => {
   it('builds deep links directly into the matching sidebar tab', () => {
     for (const screen of [
       'Atmosphere',
+      'Live',
       'Feeds',
       'Lists',
       'Bookmarks',
@@ -102,7 +105,7 @@ describe('native tab navigation state', () => {
     expect(getTabState(state, 'MyProfile')).toBe(TabState.Outside)
   })
 
-  it.each(['Atmosphere', 'Feeds', 'Lists', 'Bookmarks', 'Settings'])(
+  it.each(['Atmosphere', 'Live', 'Feeds', 'Lists', 'Bookmarks', 'Settings'])(
     'does not treat the legacy %s common screen inside HomeTab as a tab root',
     screen => {
       const state = asState(buildStateObject('HomeTab', screen, {}))

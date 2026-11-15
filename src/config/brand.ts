@@ -16,6 +16,7 @@
  *             self-host. Staging/dev variants + wrappers live in lib/constants.ts.
  * `verification` - trusted-verifier lists (members + creators are honored).
  * `ageAssurance` - the mu age-assurance backend (serviceDid is the JWT audience).
+ * `live` - the Streamplace node behind the in-app Live tab.
  */
 import brand from '#/config/brand.json'
 
@@ -27,6 +28,10 @@ const decorationEnabledOverride = process.env.EXPO_PUBLIC_DECO_ENABLED as
   string | undefined
 const decorationListUrisOverride = process.env
   .EXPO_PUBLIC_DECO_SUBSCRIBER_LIST_URIS as string | undefined
+const liveEnabledOverride = process.env.EXPO_PUBLIC_LIVE_ENABLED as
+  string | undefined
+const liveServiceUrlOverride = process.env.EXPO_PUBLIC_LIVE_SERVICE_URL as
+  string | undefined
 
 export const BRAND = {
   /** Display name used in page/tab titles and in-app brand text. */
@@ -75,5 +80,16 @@ export const BRAND = {
       process.env.EXPO_PUBLIC_AGE_SERVICE_URL || brand.ageAssurance.serviceUrl,
     serviceDid:
       process.env.EXPO_PUBLIC_AGE_SERVICE_DID || brand.ageAssurance.serviceDid,
+  },
+  live: {
+    enabled:
+      liveEnabledOverride === undefined
+        ? brand.live.enabled
+        : liveEnabledOverride === 'true',
+    /** Streamplace node origin, without a trailing slash. */
+    serviceUrl: (liveServiceUrlOverride || brand.live.serviceUrl).replace(
+      /\/+$/,
+      '',
+    ),
   },
 } as const

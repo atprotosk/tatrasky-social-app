@@ -92,6 +92,8 @@ import {CustomFeedLikedByScreen} from '#/screens/CustomFeed/CustomFeedLikedBy'
 import {SharedPreferencesTesterScreen} from '#/screens/E2E/SharedPreferencesTesterScreen'
 import {FindContactsFlowScreen} from '#/screens/FindContactsFlowScreen'
 import HashtagScreen from '#/screens/Hashtag'
+import {LiveScreen} from '#/screens/Live'
+import {LiveWatchScreen} from '#/screens/LiveWatch'
 import {LogScreen} from '#/screens/Log'
 import {MessagesScreen} from '#/screens/Messages/ChatList'
 import {renderMessagesSplitViewLayout} from '#/screens/Messages/components/splitView/MessagesSplitViewLayout'
@@ -207,6 +209,16 @@ function commonScreens(Stack: typeof Flat, unreadCountLabel?: string) {
         name="Atmosphere"
         getComponent={() => AtmosphereScreen}
         options={{title: title(msg`Atmosphere`)}}
+      />
+      <Stack.Screen
+        name="Live"
+        getComponent={() => LiveScreen}
+        options={{title: title(msg`Live`)}}
+      />
+      <Stack.Screen
+        name="LiveWatch"
+        getComponent={() => LiveWatchScreen}
+        options={{title: title(msg`Live`)}}
       />
       <Stack.Screen
         name="Lists"
@@ -785,6 +797,7 @@ function TabsNavigator({
         name="AtmosphereTab"
         getComponent={() => AtmosphereTabNavigator}
       />
+      <Tab.Screen name="LiveTab" getComponent={() => LiveTabNavigator} />
       <Tab.Screen name="FeedsTab" getComponent={() => FeedsTabNavigator} />
       <Tab.Screen name="ListsTab" getComponent={() => ListsTabNavigator} />
       <Tab.Screen
@@ -816,6 +829,10 @@ function SecondaryTabNavigator({
 
 function AtmosphereTabNavigator() {
   return <SecondaryTabNavigator initialRouteName="Atmosphere" />
+}
+
+function LiveTabNavigator() {
+  return <SecondaryTabNavigator initialRouteName="Live" />
 }
 
 function FeedsTabNavigator() {

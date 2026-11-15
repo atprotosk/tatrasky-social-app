@@ -10,6 +10,7 @@ import {useOpenLink} from '#/lib/hooks/useOpenLink'
 import {type NavigationProp} from '#/lib/routes/types'
 import {sanitizeHandle} from '#/lib/strings/handles'
 import {toNiceDomain} from '#/lib/strings/url-helpers'
+import {useExternalEmbedsPrefs} from '#/state/preferences'
 import {useModerationOpts} from '#/state/preferences/moderation-opts'
 import {unstableCacheProfileView} from '#/state/queries/profile'
 import {android, atoms as a, platform, tokens, useTheme, web} from '#/alf'
@@ -25,7 +26,9 @@ import {useGlobalReportDialogControl} from '#/components/moderation/ReportDialog
 import * as ProfileCard from '#/components/ProfileCard'
 import {Text} from '#/components/Typography'
 import {useAnalytics} from '#/analytics'
+import {BRAND} from '#/config/brand'
 import {LiveIndicator} from '#/features/liveNow/components/LiveIndicator'
+import {parseStreamplaceActor} from '#/features/streamplace/url'
 import {type app} from '#/lexicons'
 import type * as bsky from '#/types/bsky'
 
@@ -76,6 +79,12 @@ function DialogInner({
     })
   }, [navigation, profile.handle, control])
 
+  const onPressWatch = (actor: string) => {
+    control.close(() => {
+      navigation.push('LiveWatch', {actor})
+    })
+  }
+
   return (
     <Dialog.ScrollableInner
       label={l`${sanitizeHandle(profile.handle)} is live`}
@@ -86,6 +95,7 @@ function DialogInner({
         profile={profile}
         embed={embed}
         onPressOpenProfile={onPressOpenProfile}
+        onPressWatch={onPressWatch}
       />
       <Dialog.Close />
     </Dialog.ScrollableInner>
@@ -98,12 +108,18 @@ export function LiveStatus({
   embed,
   padding = 'xl',
   onPressOpenProfile,
+  onPressWatch,
 }: {
   status: app.bsky.actor.defs.StatusView
   profile: bsky.profile.AnyProfileView
   embed: app.bsky.embed.external.View
   padding?: 'lg' | 'xl'
   onPressOpenProfile: () => void
+  /**
+   * Opens a Streamplace stream in the in-app Live screen. When omitted, or
+   * the link isn't a Streamplace stream, the link opens externally.
+   */
+  onPressWatch?: (actor: string) => void
 }) {
   const ax = useAnalytics()
   const {t: l} = useLingui()
@@ -113,6 +129,13 @@ export function LiveStatus({
   const moderationOpts = useModerationOpts()
   const reportDialogControl = useGlobalReportDialogControl()
   const dialogContext = Dialog.useDialogContext()
+  const externalEmbedsPrefs = useExternalEmbedsPrefs()
+  const streamplaceActor =
+    onPressWatch &&
+    BRAND.live.enabled &&
+    externalEmbedsPrefs?.streamplace !== 'hide'
+      ? parseStreamplaceActor(embed.external.uri)
+      : undefined
   const moderation = useMemo(() => {
     if (!moderationOpts) return undefined
     return moderateStatus(profile, moderationOpts)
@@ -190,12 +213,16 @@ export function LiveStatus({
           variant="solid"
           onPress={() => {
             ax.metric('live:card:watch', {subject: profile.did})
-            openLink(embed.external.uri, false)
+            if (streamplaceActor && onPressWatch) {
+              onPressWatch(streamplaceActor)
+            } else {
+              openLink(embed.external.uri, false)
+            }
           }}>
           <ButtonText>
             <Trans>Watch now</Trans>
           </ButtonText>
-          <ButtonIcon icon={SquareArrowTopRightIcon} />
+          {!streamplaceActor && <ButtonIcon icon={SquareArrowTopRightIcon} />}
         </Button>
         <View style={[t.atoms.border_contrast_low, a.border_t, a.w_full]} />
         {moderationOpts && (
