@@ -5613,7 +5613,7 @@ msgstr ""
 msgid "Disconnect Germ DM"
 msgstr ""
 
-#: src/lib/strings/feed-names.ts:16
+#: src/lib/strings/feed-names.ts:20
 msgctxt "feed-name"
 msgid "Discover"
 msgstr "Discover"
@@ -7456,7 +7456,7 @@ msgstr ""
 msgid "Following"
 msgstr ""
 
-#: src/lib/strings/feed-names.ts:13
+#: src/lib/strings/feed-names.ts:17
 #: src/screens/SavedFeeds.tsx:618
 #: src/view/screens/Feeds.tsx:597
 msgctxt "feed-name"
@@ -18867,7 +18867,7 @@ msgstr ""
 msgid "We only suggest follows if both people consent"
 msgstr ""
 
-#: src/view/com/posts/DiscoverFallbackHeader.tsx:29
+#: src/view/com/posts/DiscoverFallbackHeader.tsx:30
 msgid "We ran out of posts from your follows. Here's the latest from <0/>."
 msgstr ""
 
