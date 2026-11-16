@@ -1937,11 +1937,6 @@ msgstr ""
 msgid "Add App Password"
 msgstr ""
 
-#: src/features/muForYouFeed/index.tsx:85
-#: src/features/muForYouFeed/index.tsx:91
-msgid "Add as first feed"
-msgstr "Add as first feed"
-
 #: src/screens/Settings/AutomationLabelSettings.tsx:171
 msgid "Add automation label to account"
 msgstr "Add automation label to account"
@@ -2516,7 +2511,7 @@ msgstr ""
 msgid "Animal welfare"
 msgstr ""
 
-#: src/lib/interests.ts:59
+#: src/lib/interests.ts:52
 msgid "Animals"
 msgstr ""
 
@@ -2823,7 +2818,7 @@ msgstr "Are you the person depicted, or an authorized representative acting on b
 msgid "Are you writing in <0>{suggestedLanguageName}</0>?"
 msgstr ""
 
-#: src/lib/interests.ts:60
+#: src/lib/interests.ts:53
 msgid "Art"
 msgstr ""
 
@@ -3283,7 +3278,7 @@ msgstr ""
 msgid "Bookmarks"
 msgstr "Bookmarks"
 
-#: src/lib/interests.ts:61
+#: src/lib/interests.ts:54
 msgid "Books"
 msgstr ""
 
@@ -3906,30 +3901,24 @@ msgstr "Choose a location"
 
 #: src/features/news/explore/components/ExploreInterestPicker.tsx:39
 #: src/features/news/explore/components/ExploreInterestPicker.tsx:45
+#: src/screens/Onboarding/StepInterests/index.tsx:79
+#: src/screens/Onboarding/StepInterests/index.tsx:85
+#: src/screens/Onboarding/StepInterests/index.tsx:139
 msgid "Choose an interest"
 msgstr "Choose an interest"
 
-#: src/screens/Onboarding/StepInterests/index.tsx:82
-msgid "Choose at least {MIN_ONBOARDING_INTERESTS}"
-msgstr "Choose at least {MIN_ONBOARDING_INTERESTS}"
+#: src/screens/Onboarding/StepInterests/index.tsx:140
+msgid "Choose at least one interest to continue"
+msgstr "Choose at least one interest to continue"
 
-#: src/screens/Onboarding/StepInterests/index.tsx:76
-#: src/screens/Onboarding/StepInterests/index.tsx:132
-msgid "Choose at least {MIN_ONBOARDING_INTERESTS} interests"
-msgstr "Choose at least {MIN_ONBOARDING_INTERESTS} interests"
+#: src/screens/Onboarding/StepInterests/index.tsx:150
+#: src/screens/Onboarding/StepInterests/index.tsx:151
+msgid "Choose at least one interest."
+msgstr "Choose at least one interest."
 
-#: src/screens/Onboarding/StepInterests/index.tsx:133
-msgid "Choose at least {MIN_ONBOARDING_INTERESTS} interests to continue"
-msgstr "Choose at least {MIN_ONBOARDING_INTERESTS} interests to continue"
-
-#: src/screens/Onboarding/StepInterests/index.tsx:144
-#: src/screens/Onboarding/StepInterests/index.tsx:145
-msgid "Choose at least {MIN_ONBOARDING_INTERESTS} interests."
-msgstr "Choose at least {MIN_ONBOARDING_INTERESTS} interests."
-
-#: src/screens/Onboarding/StepInterests/index.tsx:98
-msgid "Choose at least {MIN_ONBOARDING_INTERESTS} to help personalize your feed. You can change these anytime."
-msgstr "Choose at least {MIN_ONBOARDING_INTERESTS} to help personalize your feed. You can change these anytime."
+#: src/screens/Onboarding/StepInterests/index.tsx:102
+msgid "Choose at least one. We'll use this to customize your experience. You can change these anytime."
+msgstr "Choose at least one. We'll use this to customize your experience. You can change these anytime."
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:518
 msgid "Choose domain verification method"
@@ -4288,11 +4277,11 @@ msgstr ""
 msgid "Color theme"
 msgstr ""
 
-#: src/lib/interests.ts:62
+#: src/lib/interests.ts:55
 msgid "Comedy"
 msgstr ""
 
-#: src/lib/interests.ts:63
+#: src/lib/interests.ts:56
 msgid "Comics"
 msgstr ""
 
@@ -4318,7 +4307,7 @@ msgstr "Companion"
 msgid "Complete"
 msgstr "Complete"
 
-#: src/screens/Onboarding/StepFinished/index.tsx:322
+#: src/screens/Onboarding/StepFinished/index.tsx:308
 msgid "Complete onboarding and start using your account"
 msgstr ""
 
@@ -4539,7 +4528,7 @@ msgstr ""
 #: src/features/newsFeed/legacy/SetupTopics.tsx:139
 #: src/screens/Login/components/ConfirmHostingProviderDialog.tsx:149
 #: src/screens/Login/components/ConfirmHostingProviderDialog.tsx:152
-#: src/screens/Onboarding/StepInterests/index.tsx:84
+#: src/screens/Onboarding/StepInterests/index.tsx:87
 #: src/screens/Onboarding/StepProfile/index.tsx:301
 #: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:310
 #: src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:124
@@ -4571,7 +4560,7 @@ msgstr ""
 msgid "Continue to group name"
 msgstr "Continue to group name"
 
-#: src/screens/Onboarding/StepInterests/index.tsx:77
+#: src/screens/Onboarding/StepInterests/index.tsx:80
 #: src/screens/Onboarding/StepProfile/index.tsx:298
 #: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:307
 #: src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:121
@@ -4766,10 +4755,6 @@ msgstr "Copying…"
 #: src/view/screens/CopyrightPolicy.tsx:26
 msgid "Copyright Policy"
 msgstr ""
-
-#: src/features/muForYouFeed/index.tsx:79
-msgid "Could not add the feed. Please try again."
-msgstr "Could not add the feed. Please try again."
 
 #: src/screens/Settings/DecorationsSettings.tsx:257
 msgid "Could not cancel. Try again."
@@ -5144,7 +5129,7 @@ msgid "Credentials revoked"
 msgstr "Credentials revoked"
 
 #: src/features/news/explore/sections.ts:124
-#: src/lib/interests.ts:64
+#: src/lib/interests.ts:57
 msgid "Culture"
 msgstr ""
 
@@ -5632,10 +5617,6 @@ msgstr ""
 #: src/view/screens/Feeds.tsx:727
 msgid "Discover New Feeds"
 msgstr ""
-
-#: src/features/muForYouFeed/index.tsx:65
-msgid "Discover posts picked for you based on your interests. Add Mu’s personalized feed as your first pinned feed?"
-msgstr "Discover posts picked for you based on your interests. Add Mu’s personalized feed as your first pinned feed?"
 
 #: src/screens/Atmosphere/components/AtmosphereNux.tsx:57
 msgid "Discover the Atmosphere"
@@ -6135,7 +6116,7 @@ msgstr ""
 msgid "Edit your Starter Pack"
 msgstr "Edit your Starter Pack"
 
-#: src/lib/interests.ts:66
+#: src/lib/interests.ts:59
 msgid "Education"
 msgstr ""
 
@@ -7196,7 +7177,7 @@ msgstr "Filters"
 msgid "Final"
 msgstr "Final"
 
-#: src/screens/Onboarding/StepFinished/index.tsx:328
+#: src/screens/Onboarding/StepFinished/index.tsx:314
 msgid "Finalizing"
 msgstr ""
 
@@ -7208,7 +7189,7 @@ msgstr ""
 msgid "Finally! Keep track of posts that matter to you. Save them to revisit anytime."
 msgstr ""
 
-#: src/lib/interests.ts:67
+#: src/lib/interests.ts:60
 msgid "Finance"
 msgstr ""
 
@@ -7518,7 +7499,7 @@ msgstr ""
 msgid "Font size"
 msgstr ""
 
-#: src/lib/interests.ts:68
+#: src/lib/interests.ts:61
 msgid "Food"
 msgstr ""
 
@@ -8968,7 +8949,7 @@ msgstr ""
 msgid "Joined {createdAt}"
 msgstr "Joined {createdAt}"
 
-#: src/lib/interests.ts:70
+#: src/lib/interests.ts:63
 msgid "Journalism"
 msgstr ""
 
@@ -9277,7 +9258,7 @@ msgstr ""
 msgid "Let's get your password reset!"
 msgstr ""
 
-#: src/screens/Onboarding/StepFinished/index.tsx:330
+#: src/screens/Onboarding/StepFinished/index.tsx:316
 msgid "Let's go!"
 msgstr ""
 
@@ -10186,7 +10167,7 @@ msgstr "Move later"
 msgid "Moved {title}."
 msgstr "Moved {title}."
 
-#: src/lib/interests.ts:71
+#: src/lib/interests.ts:64
 msgid "Movies"
 msgstr ""
 
@@ -10202,7 +10183,7 @@ msgstr "Mu splash artwork"
 msgid "mu Terms of Service"
 msgstr "mu Terms of Service"
 
-#: src/lib/interests.ts:72
+#: src/lib/interests.ts:65
 msgid "Music"
 msgstr ""
 
@@ -10359,7 +10340,7 @@ msgstr ""
 msgid "Narrow {name} down"
 msgstr "Narrow {name} down"
 
-#: src/lib/interests.ts:73
+#: src/lib/interests.ts:66
 msgid "Nature"
 msgstr ""
 
@@ -10614,7 +10595,7 @@ msgstr ""
 #: src/features/newsFeed/components/SetupHeader.tsx:34
 #: src/features/newsFeed/legacy/NewsFeedTab.tsx:38
 #: src/features/newsFeed/legacy/SetupHeader.tsx:30
-#: src/lib/interests.ts:74
+#: src/lib/interests.ts:67
 #: src/Navigation.tsx:221
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:269
 #: src/view/shell/desktop/LeftNav.tsx:757
@@ -10653,8 +10634,8 @@ msgstr "Newsrooms from the sources in your news feed"
 #: src/screens/Login/ForgotPasswordForm.tsx:154
 #: src/screens/Login/SetNewPasswordForm.tsx:150
 #: src/screens/Login/SetNewPasswordForm.tsx:156
-#: src/screens/Onboarding/StepFinished/index.tsx:323
-#: src/screens/Onboarding/StepFinished/index.tsx:332
+#: src/screens/Onboarding/StepFinished/index.tsx:309
+#: src/screens/Onboarding/StepFinished/index.tsx:318
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:158
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:166
 #: src/screens/Signup/BackNextButtons.tsx:68
@@ -11009,8 +10990,6 @@ msgstr "No stories yet."
 
 #: src/components/dialogs/EmbedConsent.tsx:100
 #: src/components/dialogs/EmbedConsent.tsx:107
-#: src/features/muForYouFeed/index.tsx:97
-#: src/features/muForYouFeed/index.tsx:103
 msgid "No thanks"
 msgstr ""
 
@@ -12163,7 +12142,7 @@ msgstr ""
 msgid "Pet your companion"
 msgstr "Pet your companion"
 
-#: src/lib/interests.ts:75
+#: src/lib/interests.ts:68
 msgid "Pets"
 msgstr ""
 
@@ -12184,7 +12163,7 @@ msgstr ""
 msgid "Photo"
 msgstr "Photo"
 
-#: src/lib/interests.ts:76
+#: src/lib/interests.ts:69
 msgid "Photography"
 msgstr ""
 
@@ -12494,7 +12473,7 @@ msgid "Please verify your email"
 msgstr ""
 
 #: src/features/news/explore/sections.ts:43
-#: src/lib/interests.ts:77
+#: src/lib/interests.ts:70
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:263
 msgid "Politics"
 msgstr ""
@@ -14346,7 +14325,7 @@ msgid "Scan QR code"
 msgstr "Scan QR code"
 
 #: src/features/news/explore/sections.ts:111
-#: src/lib/interests.ts:78
+#: src/lib/interests.ts:71
 msgid "Science"
 msgstr ""
 
@@ -14811,7 +14790,7 @@ msgstr ""
 msgid "Select your date of birth"
 msgstr ""
 
-#: src/screens/Onboarding/StepInterests/index.tsx:108
+#: src/screens/Onboarding/StepInterests/index.tsx:115
 #: src/screens/Settings/InterestsSettings.tsx:191
 msgid "Select your interests from the options below"
 msgstr ""
@@ -15540,8 +15519,8 @@ msgstr "Sizes: 100×80, 220×160, 140×240, 180×120, and a wide card of {wideCa
 #: src/components/contacts/screens/VerifyNumber.tsx:208
 #: src/screens/Onboarding/StepFindContactsIntro/index.tsx:86
 #: src/screens/Onboarding/StepFindContactsIntro/index.tsx:90
-#: src/screens/Onboarding/StepFinished/index.tsx:288
-#: src/screens/Onboarding/StepFinished/index.tsx:310
+#: src/screens/Onboarding/StepFinished/index.tsx:274
+#: src/screens/Onboarding/StepFinished/index.tsx:296
 #: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:286
 #: src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:112
 #: src/screens/StarterPack/Wizard/index.tsx:201
@@ -15557,8 +15536,8 @@ msgstr ""
 msgid "Skip empty posts?"
 msgstr "Skip empty posts?"
 
-#: src/screens/Onboarding/StepFinished/index.tsx:281
-#: src/screens/Onboarding/StepFinished/index.tsx:307
+#: src/screens/Onboarding/StepFinished/index.tsx:267
+#: src/screens/Onboarding/StepFinished/index.tsx:293
 msgid "Skip introduction and start using your account"
 msgstr ""
 
@@ -15610,7 +15589,7 @@ msgstr "Social"
 msgid "Social media you control."
 msgstr ""
 
-#: src/lib/interests.ts:65
+#: src/lib/interests.ts:58
 msgid "Software Dev"
 msgstr ""
 
@@ -15775,7 +15754,7 @@ msgstr "Split into new section"
 msgid "Sport"
 msgstr "Sport"
 
-#: src/lib/interests.ts:79
+#: src/lib/interests.ts:72
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:261
 msgid "Sports"
 msgstr ""
@@ -16317,7 +16296,7 @@ msgstr "Teal"
 msgid "Team"
 msgstr "Team"
 
-#: src/lib/interests.ts:80
+#: src/lib/interests.ts:73
 msgid "Tech"
 msgstr ""
 
@@ -17592,12 +17571,7 @@ msgstr "Try Google Translate"
 msgid "Try it"
 msgstr "Try it"
 
-#: src/features/muForYouFeed/index.tsx:57
-#: src/features/muForYouFeed/index.tsx:62
-msgid "Try Mu’s For You feed"
-msgstr "Try Mu’s For You feed"
-
-#: src/lib/interests.ts:81
+#: src/lib/interests.ts:74
 msgid "TV"
 msgstr ""
 
@@ -18385,7 +18359,7 @@ msgstr ""
 msgid "Video from {0}. Tap to play or pause the video"
 msgstr ""
 
-#: src/lib/interests.ts:69
+#: src/lib/interests.ts:62
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:265
 msgid "Video Games"
 msgstr ""
@@ -18934,6 +18908,10 @@ msgstr ""
 msgid "We'll send an email to <0>{0}</0> containing a link. Please click on it to complete the email verification process."
 msgstr ""
 
+#: src/screens/Onboarding/StepInterests/index.tsx:107
+msgid "We'll use this to help customize your experience."
+msgstr "We'll use this to help customize your experience."
+
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:141
 msgid "We're also updating our <0>Community Guidelines</0>, and we want your input! These new guidelines will take effect on October 15th, 2025."
 msgstr ""
@@ -19055,7 +19033,7 @@ msgstr ""
 msgid "Welcome, friend!"
 msgstr ""
 
-#: src/screens/Onboarding/StepInterests/index.tsx:95
+#: src/screens/Onboarding/StepInterests/index.tsx:98
 msgid "What are your interests?"
 msgstr ""
 
@@ -19244,7 +19222,7 @@ msgstr ""
 msgid "Write your reply"
 msgstr ""
 
-#: src/lib/interests.ts:82
+#: src/lib/interests.ts:75
 msgid "Writers"
 msgstr ""
 
@@ -20166,10 +20144,6 @@ msgstr "Your next billing date is {paidUntil}."
 #: src/screens/ModerationInbox/Report.tsx:208
 msgid "Your note:"
 msgstr "Your note:"
-
-#: src/features/muForYouFeed/index.tsx:71
-msgid "Your other feeds will stay as they are. This change syncs with your account, and you can unpin or reorder the feed anytime."
-msgstr "Your other feeds will stay as they are. This change syncs with your account, and you can unpin or reorder the feed anytime."
 
 #: src/screens/Profile/Header/EditProfileDialog.tsx:547
 msgid "Your other profile changes will be kept."
