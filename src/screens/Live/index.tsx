@@ -80,17 +80,31 @@ function LiveList() {
     )
   }
 
+  // List has no numColumns support on web, so lay the grid out as rows of two.
+  const rows: LiveUser[][] = []
+  for (let i = 0; i < streams.length; i += 2) {
+    rows.push(streams.slice(i, i + 2))
+  }
+
   return (
     <List
-      data={streams}
-      keyExtractor={(item: LiveUser) => item.stream.uri}
-      renderItem={({item}: {item: LiveUser}) => (
-        <View style={[a.px_lg, a.py_md]}>
-          <LiveStreamCard liveUser={item} moderationOpts={moderationOpts} />
+      data={rows}
+      keyExtractor={(row: LiveUser[]) => row[0].stream.uri}
+      renderItem={({item: row}: {item: LiveUser[]}) => (
+        <View style={[a.flex_row, a.gap_md, a.px_md, a.py_sm]}>
+          {row.map(liveUser => (
+            <View key={liveUser.stream.uri} style={[a.flex_1]}>
+              <LiveStreamCard
+                liveUser={liveUser}
+                moderationOpts={moderationOpts}
+              />
+            </View>
+          ))}
+          {row.length === 1 && <View style={[a.flex_1]} />}
         </View>
       )}
       ListHeaderComponent={
-        <View style={[a.px_lg, a.pt_md]}>
+        <View style={[a.px_md, a.pt_md, a.pb_xs]}>
           <Text style={[a.text_sm, t.atoms.text_contrast_medium]}>
             <Trans>Streams from Streamplace</Trans>
           </Text>

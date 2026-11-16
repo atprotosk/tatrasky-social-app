@@ -82,7 +82,7 @@ export function LiveStreamCard({
             a.flex_row,
             a.align_center,
             a.gap_xs,
-            {top: 8, left: 8},
+            {top: 6, left: 6},
           ]}>
           <View
             style={[
@@ -130,10 +130,10 @@ export function LiveStreamCard({
           ) : null}
         </View>
       </View>
-      <View style={[a.flex_row, a.align_start, a.gap_sm, a.w_full]}>
+      <View style={[a.flex_row, a.align_start, a.gap_xs, a.w_full]}>
         <UserAvatar
           type="user"
-          size={32}
+          size={24}
           avatar={profile?.avatar}
           moderation={moderation?.ui('avatar')}
         />
@@ -141,13 +141,13 @@ export function LiveStreamCard({
           <Text
             emoji
             numberOfLines={2}
-            style={[a.text_md, a.font_semi_bold, a.leading_snug]}>
+            style={[a.text_sm, a.font_semi_bold, a.leading_snug]}>
             {title}
           </Text>
           <Text
             emoji
             numberOfLines={1}
-            style={[a.text_sm, t.atoms.text_contrast_medium]}>
+            style={[a.text_xs, t.atoms.text_contrast_medium]}>
             {name}
           </Text>
         </View>
