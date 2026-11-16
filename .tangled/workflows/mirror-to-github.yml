@@ -15,8 +15,8 @@ steps:
   - name: "Mirror everything to GitHub"
     command: |
       TOKEN="${GITHUB_PAT//[[:space:]]/}"
-      echo "token length: ${#TOKEN}"
       [ -n "$TOKEN" ] || { echo "GITHUB_PAT is empty"; exit 1; }
+      if [ "$(git rev-parse --is-shallow-repository)" = "true" ]; then git fetch --unshallow origin; fi
       git remote add github "https://x-access-token:${TOKEN}@github.com/atprotosk/tatrasky-social-app.git"
       git fetch origin '+refs/heads/*:refs/mirror/heads/*' '+refs/tags/*:refs/mirror/tags/*'
       git push --prune github '+refs/mirror/heads/*:refs/heads/*' '+refs/mirror/tags/*:refs/tags/*'
