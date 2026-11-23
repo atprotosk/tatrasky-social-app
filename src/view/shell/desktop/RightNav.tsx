@@ -192,6 +192,13 @@ export function DesktopRightNav({routeName}: {routeName: string}) {
           label={_(msg`Terms`)}>
           {_(msg`Terms`)}
         </InlineLinkText>
+        <Text style={[t.atoms.text_contrast_low]}>{' ∙ '}</Text>
+        <InlineLinkText
+          to={BRAND.links.sourceCode}
+          style={[t.atoms.text_contrast_medium]}
+          label={_(msg`Source code`)}>
+          {_(msg`Source code`)}
+        </InlineLinkText>
       </Text>
 
       {!hasSession && leftNavMinimal && (

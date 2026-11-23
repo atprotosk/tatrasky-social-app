@@ -19671,3 +19671,7 @@ msgstr "Tvoje úpravy tejto udalosti sa stratia."
 msgctxt "Event page"
 msgid "About"
 msgstr "O udalosti"
+
+#: src/view/shell/desktop/RightNav.tsx:200 src/view/shell/desktop/RightNav.tsx:201
+msgid "Source code"
+msgstr "Zdrojový kód"

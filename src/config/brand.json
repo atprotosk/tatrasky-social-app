@@ -204,7 +204,8 @@
     "download": "https://bsky.app/download",
     "statusPage": "https://status.bsky.app/",
     "donate": "",
-    "feedback": "https://tally.so/r/jebAd9"
+    "feedback": "https://tally.so/r/jebAd9",
+    "sourceCode": "https://github.com/atprotosk/tatrasky-social-app"
   },
   "services": {
     "pds": "https://bsky.social",
