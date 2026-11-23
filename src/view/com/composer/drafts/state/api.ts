@@ -6,6 +6,7 @@ import {AtUri} from '@atproto/syntax'
 import {RichText} from '@bsky/sdk/richtext'
 import {nanoid} from 'nanoid/non-secure'
 
+import {decodeEventDraft} from '#/lib/api/event'
 import {decodePollDraft} from '#/lib/api/poll'
 import {type LinkResolvers, resolveLink} from '#/lib/api/resolve'
 import {getDeviceName} from '#/lib/deviceName'
@@ -31,18 +32,24 @@ import {type DraftPostDisplay, type DraftSummary} from './schema'
 import * as storage from './storage'
 
 /*
- * app.bsky.draft.defs has no poll, so a poll travels as an extra property on
- * the draft post, which the draft service keeps as is. The key matches
- * Witchsky's, so a draft started in either app keeps its poll in the other.
+ * app.bsky.draft.defs has no poll or event, so they travel as extra
+ * properties on the draft post, which the draft service keeps as is. The keys
+ * match Witchsky's, so a draft started in either app keeps them in the other.
  */
 const DRAFT_POLL_KEY = 'communityBlackskyPoll'
+const DRAFT_EVENT_KEY = 'witchskyEvent'
 
 type DraftPostWithPoll = app.bsky.draft.defs.DraftPost & {
   [DRAFT_POLL_KEY]?: unknown
+  [DRAFT_EVENT_KEY]?: unknown
 }
 
 function readDraftPoll(post: app.bsky.draft.defs.DraftPost) {
   return decodePollDraft((post as DraftPostWithPoll)[DRAFT_POLL_KEY])
+}
+
+function readDraftEvent(post: app.bsky.draft.defs.DraftPost) {
+  return decodeEventDraft((post as DraftPostWithPoll)[DRAFT_EVENT_KEY])
 }
 
 const TENOR_HOSTNAME = 'media.tenor.com'
@@ -195,6 +202,16 @@ async function postDraftToServerPost(
       duration,
       ...(endsAt ? {endsAt} : {}),
     }
+  }
+
+  if (post.embed.event) {
+    /*
+     * The picked cover is a local file (a blob: URL on web) that may be gone
+     * later, so it isn't saved; the record ref is, so posting a restored draft
+     * overwrites the event an earlier attempt already wrote.
+     */
+    const {cover: _cover, uploadedCover: _uploaded, ...event} = post.embed.event
+    ;(draftPost as DraftPostWithPoll)[DRAFT_EVENT_KEY] = event
   }
 
   return draftPost
@@ -466,6 +483,7 @@ export function draftViewToSummary({
       video: videos[0], // Only one video per post
       gif,
       poll: readDraftPoll(post),
+      event: readDraftEvent(post),
     }
   })
 
@@ -665,6 +683,17 @@ export async function draftToComposerPosts(
         !restoredVideos.has(index)
       ) {
         embed.poll = poll
+      }
+      const event = readDraftEvent(post)
+      if (
+        event &&
+        !embed.media &&
+        !embed.link &&
+        !embed.quote &&
+        !embed.poll &&
+        !restoredVideos.has(index)
+      ) {
+        embed.event = event
       }
 
       // Parse labels

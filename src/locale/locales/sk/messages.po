@@ -19282,3 +19282,392 @@ msgstr "Dlhým stlačením nahlásiš tento účet"
 #: src/features/streamplace/components/LiveOffline.tsx
 msgid "This stream is offline"
 msgstr "Toto vysielanie je offline"
+
+#. How many people are going to an event
+#. placeholder {0}: event.goingCount
+#: src/features/events/components/EventMeta.tsx:77
+#: src/features/events/format.ts:115
+#: src/screens/Event/EventHeader.tsx:175
+msgid "{0, plural, one {# going} other {# going}}"
+msgstr "{0, plural, one {# osoba ide} few {# osoby idú} many {# osoby ide} other {# osôb ide}}"
+
+#. How many people are interested in an event
+#. placeholder {0}: event.interestedCount
+#: src/features/events/components/EventMeta.tsx:89
+#: src/features/events/format.ts:122
+#: src/screens/Event/EventHeader.tsx:182
+msgid "{0, plural, one {# interested} other {# interested}}"
+msgstr "{0, plural, one {# osoba má záujem} few {# osoby majú záujem} many {# osoby má záujem} other {# osôb má záujem}}"
+
+#: src/screens/Event/EventScreen.tsx:274
+msgid "{count, plural, one {# muted or blocked account} other {# muted or blocked accounts}}"
+msgstr "{count, plural, one {# stlmený alebo zablokovaný účet} few {# stlmené alebo zablokované účty} many {# stlmeného alebo zablokovaného účtu} other {# stlmených alebo zablokovaných účtov}}"
+
+#: src/lib/api/index.ts:94
+msgid "A thread can only have one event."
+msgstr "Vlákno môže mať iba jednu udalosť."
+
+#: src/view/com/composer/event/EventEditor.tsx:240
+msgid "Add a link or address people can join from"
+msgstr "Pridaj odkaz alebo adresu, kde sa ľudia môžu pripojiť"
+
+#: src/view/com/composer/event/EventCoverPicker.tsx:118
+msgid "Add cover image"
+msgstr "Pridať titulný obrázok"
+
+#. Accessibility label for the button in the post composer that creates an event attached to the post.
+#: src/view/com/composer/event/SelectEventBtn.tsx:21
+msgid "Add event"
+msgstr "Pridať udalosť"
+
+#: src/lib/api/index.ts:86
+msgid "An event cannot be combined with media, a link card, a quote or a poll."
+msgstr "Udalosť nemožno kombinovať s médiami, náhľadom odkazu, citáciou ani anketou."
+
+#: src/features/events/components/EventOptionsMenu.tsx:106
+#: src/features/events/components/EventOptionsMenu.tsx:109
+#: src/features/events/components/EventOptionsMenu.tsx:133
+msgid "Cancel event"
+msgstr "Zrušiť udalosť"
+
+#: src/features/events/components/EventOptionsMenu.tsx:131
+msgid "Cancel this event?"
+msgstr "Zrušiť túto udalosť?"
+
+#: src/view/com/composer/event/EventCoverPicker.tsx:118
+msgid "Change cover image"
+msgstr "Zmeniť titulný obrázok"
+
+#: src/view/com/composer/event/EventEditor.tsx:120
+msgid "Community meetup"
+msgstr "Komunitné stretnutie"
+
+#: src/screens/Event/EventScreen.tsx:68
+msgid "Copy link to event"
+msgstr "Kopírovať odkaz na udalosť"
+
+#: src/features/events/components/useDeleteEvent.tsx:53
+msgid "Couldn't delete the event"
+msgstr "Udalosť sa nepodarilo vymazať"
+
+#: src/features/events/components/ProfileEvents.tsx:164
+msgid "Couldn't load more events."
+msgstr "Ďalšie udalosti sa nepodarilo načítať."
+
+#: src/screens/Event/EventScreen.tsx:227
+msgid "Couldn't load the guest list."
+msgstr "Zoznam hostí sa nepodarilo načítať."
+
+#: src/screens/Event/EventScreen.tsx:102
+msgid "Couldn't load this event. Try again in a moment."
+msgstr "Túto udalosť sa nepodarilo načítať. Skús to o chvíľu znova."
+
+#: src/features/events/components/ProfileEvents.tsx:142
+msgid "Couldn't load your events."
+msgstr "Tvoje udalosti sa nepodarilo načítať."
+
+#: src/features/events/components/EditEventDialog.tsx:87
+msgid "Couldn't save the event"
+msgstr "Udalosť sa nepodarilo uložiť"
+
+#: src/features/events/components/EventOptionsMenu.tsx:61
+msgid "Couldn't update the event"
+msgstr "Udalosť sa nepodarilo aktualizovať"
+
+#: src/view/com/composer/event/EventCoverPicker.tsx:152
+msgid "Cover image"
+msgstr "Titulný obrázok"
+
+#. placeholder {0}: parsed.name
+#: src/features/events/components/Poster.tsx:33
+msgid "Cover image for {0}"
+msgstr "Titulný obrázok udalosti {0}"
+
+#. Accessibility hint announced after the event button label, describing what activating it will do.
+#: src/view/com/composer/event/SelectEventBtn.tsx:26
+msgid "Creates an event attached to this post"
+msgstr "Vytvorí udalosť pripojenú k tomuto príspevku"
+
+#: src/lib/api/index.ts:185
+msgid "Creating event..."
+msgstr "Vytvára sa udalosť…"
+
+#: src/features/events/components/EventOptionsMenu.tsx:116
+#: src/features/events/components/EventOptionsMenu.tsx:120
+msgid "Delete event"
+msgstr "Vymazať udalosť"
+
+#: src/features/events/components/useDeleteEvent.tsx:60
+msgid "Delete this event?"
+msgstr "Vymazať túto udalosť?"
+
+#. Placeholder for the event description field in the composer
+#: src/view/com/composer/event/EventEditor.tsx:251
+msgid "Describe your event"
+msgstr "Opíš svoju udalosť"
+
+#: src/features/events/components/EditEventDialog.tsx:96
+#: src/features/events/components/EditEventDialog.tsx:112
+#: src/features/events/components/EventOptionsMenu.tsx:86
+#: src/features/events/components/EventOptionsMenu.tsx:89
+msgid "Edit event"
+msgstr "Upraviť udalosť"
+
+#: src/view/com/composer/event/EventEditor.tsx:173
+msgid "Ends"
+msgstr "Koniec"
+
+#. Heading of the event editor card in the post composer
+#. Label on a draft preview showing the draft has an event
+#: src/Navigation.tsx:238
+#: src/screens/Event/EventScreen.tsx:59
+#: src/view/com/composer/drafts/DraftItem.tsx:413
+#: src/view/com/composer/event/EventEditor.tsx:88
+msgid "Event"
+msgstr "Udalosť"
+
+#: src/features/events/components/EventOptionsMenu.tsx:55
+msgid "Event cancelled"
+msgstr "Udalosť bola zrušená"
+
+#: src/features/events/components/useDeleteEvent.tsx:41
+msgid "Event deleted"
+msgstr "Udalosť bola vymazaná"
+
+#: src/view/com/composer/event/EventEditor.tsx:193
+msgid "Event end"
+msgstr "Koniec udalosti"
+
+#: src/view/com/composer/event/EventEditor.tsx:114
+#: src/view/com/composer/event/EventEditor.tsx:119
+msgid "Event name"
+msgstr "Názov udalosti"
+
+#: src/screens/Event/EventScreen.tsx:97
+msgid "Event not found"
+msgstr "Udalosť sa nenašla"
+
+#: src/features/events/components/EventOptionsMenu.tsx:69
+msgid "Event options"
+msgstr "Možnosti udalosti"
+
+#: src/features/events/components/EventOptionsMenu.tsx:55
+msgid "Event restored"
+msgstr "Udalosť bola obnovená"
+
+#: src/view/com/composer/event/EventEditor.tsx:147
+msgid "Event start"
+msgstr "Začiatok udalosti"
+
+#: src/view/com/composer/event/EventEditor.tsx:212
+msgid "Event type"
+msgstr "Typ udalosti"
+
+#: src/features/events/components/EditEventDialog.tsx:81
+msgid "Event updated"
+msgstr "Udalosť bola aktualizovaná"
+
+#: src/features/events/components/ProfileEvents.tsx:153
+msgid "Events you host or RSVP to show up here. Only you can see this tab."
+msgstr "Tu sa zobrazujú udalosti, ktoré organizuješ alebo na ktoré si odpovedal/a. Túto kartu vidíš iba ty."
+
+#: src/features/events/components/RsvpButtons.tsx:57
+msgid "Going, tap to remove"
+msgstr "Idem, ťuknutím zrušíš"
+
+#: src/features/events/components/EventOptionsMenu.tsx:132
+msgid "Guests will see that it's cancelled. Their responses stay, and you can restore it later."
+msgstr "Hostia uvidia, že je zrušená. Ich odpovede zostanú a neskôr ju môžeš obnoviť."
+
+#: src/screens/Event/EventScreen.tsx:265
+msgid "Hide muted or blocked accounts"
+msgstr "Skryť stlmené alebo zablokované účty"
+
+#. placeholder {0}: event.creator.displayName || `@${event.creator.handle}`
+#: src/screens/Event/EventHeader.tsx:103
+msgid "Hosted by <0>{0}</0>"
+msgstr "Organizuje <0>{0}</0>"
+
+#: src/features/events/components/ProfileEvents.tsx:103
+msgid "Hosting"
+msgstr "Organizujem"
+
+#: src/view/com/composer/event/EventEditor.tsx:225
+#: src/view/com/composer/event/EventEditor.tsx:227
+msgid "Hybrid"
+msgstr "Hybridná"
+
+#: src/view/com/composer/event/EventEditor.tsx:215
+#: src/view/com/composer/event/EventEditor.tsx:217
+msgid "In person"
+msgstr "Osobne"
+
+#: src/features/events/components/RsvpButtons.tsx:61
+msgid "Interested, tap to remove"
+msgstr "Mám záujem, ťuknutím zrušíš"
+
+#. placeholder {0}: toNiceDomain(parsed.joinUrl)
+#: src/features/events/components/EventEmbed.tsx:108
+#: src/screens/Event/EventHeader.tsx:96
+msgid "Join · {0}"
+msgstr "Pripojiť sa · {0}"
+
+#. placeholder {0}: toNiceDomain(parsed.joinUrl)
+#: src/features/events/components/EventEmbed.tsx:103
+#: src/screens/Event/EventHeader.tsx:91
+msgid "Join online at {0}"
+msgstr "Pripoj sa online na {0}"
+
+#: src/features/events/components/EventOptionsMenu.tsx:134
+msgid "Keep event"
+msgstr "Ponechať udalosť"
+
+#. Button on an event whose livestream is on air right now
+#: src/features/events/components/LiveWatchButton.tsx:39
+msgid "LIVE · Watch"
+msgstr "NAŽIVO · Pozrieť"
+
+#: src/features/events/components/LiveWatchButton.tsx:26
+msgid "Live now, watch the stream"
+msgstr "Práve naživo, pozri si vysielanie"
+
+#: src/view/com/composer/event/EventEditor.tsx:236
+msgid "Location"
+msgstr "Miesto"
+
+#: src/view/com/composer/event/EventEditor.tsx:236
+msgid "Location or link"
+msgstr "Miesto alebo odkaz"
+
+#: src/screens/Event/EventScreen.tsx:211
+msgid "No one has marked themselves interested yet."
+msgstr "Zatiaľ nikto neprejavil záujem."
+
+#: src/screens/Event/EventScreen.tsx:213
+msgid "No one is going yet."
+msgstr "Zatiaľ nikto nejde."
+
+#: src/view/com/composer/event/EventEditor.tsx:195
+msgid "Optional"
+msgstr "Nepovinné"
+
+#: src/features/events/components/EventCard.tsx:109
+#: src/features/events/format.ts:107
+msgid "Past"
+msgstr "Minulé"
+
+#: src/view/com/composer/event/EventCoverPicker.tsx:205
+msgid "Remove cover"
+msgstr "Odstrániť obrázok"
+
+#: src/view/com/composer/event/EventCoverPicker.tsx:199
+msgid "Remove cover image"
+msgstr "Odstrániť titulný obrázok"
+
+#: src/view/com/composer/event/EventEditor.tsx:178
+msgid "Remove end time"
+msgstr "Odstrániť čas konca"
+
+#: src/view/com/composer/event/EventEditor.tsx:95
+msgid "Remove event"
+msgstr "Odstrániť udalosť"
+
+#: src/view/com/composer/event/EventEditor.tsx:97
+msgid "Remove event?"
+msgstr "Odstrániť udalosť?"
+
+#: src/view/com/composer/Composer.tsx:1751
+msgid "Remove the event to add media"
+msgstr "Ak chceš pridať médiá, odstráň udalosť"
+
+#: src/features/events/components/EventOptionsMenu.tsx:96
+#: src/features/events/components/EventOptionsMenu.tsx:99
+msgid "Restore event"
+msgstr "Obnoviť udalosť"
+
+#: src/screens/Event/EventScreen.tsx:68
+msgid "Share event"
+msgstr "Zdieľať udalosť"
+
+#: src/screens/Event/EventScreen.tsx:266
+msgid "Show muted or blocked accounts"
+msgstr "Zobraziť stlmené alebo zablokované účty"
+
+#: src/screens/Event/EventHeader.tsx:297
+msgid "Shows the full description"
+msgstr "Zobrazí celý popis"
+
+#: src/screens/Event/EventHeader.tsx:176
+msgid "Shows who is going"
+msgstr "Zobrazí, kto ide"
+
+#: src/screens/Event/EventHeader.tsx:186
+msgid "Shows who is interested"
+msgstr "Zobrazí, kto má záujem"
+
+#: src/view/com/composer/event/EventEditor.tsx:142
+msgid "Starts"
+msgstr "Začiatok"
+
+#: src/view/com/composer/event/EventEditor.tsx:98
+msgid "The details you've entered will be lost."
+msgstr "Zadané údaje sa stratia."
+
+#: src/lib/api/index.ts:602
+msgid "The event record was not created."
+msgstr "Záznam udalosti sa nevytvoril."
+
+#: src/features/events/components/useDeleteEvent.tsx:61
+msgid "This can't be undone. Posts that link to it will stay up."
+msgstr "Toto sa nedá vrátiť späť. Príspevky, ktoré na ňu odkazujú, zostanú zverejnené."
+
+#: src/features/events/components/EditEventDialog.tsx:150
+msgid "This event has no start time, so it can't be edited here."
+msgstr "Táto udalosť nemá čas začiatku, preto ju tu nemožno upraviť."
+
+#: src/screens/Event/EventScreen.tsx:103
+msgid "This event may have been deleted or isn't available."
+msgstr "Táto udalosť mohla byť vymazaná alebo nie je dostupná."
+
+#: src/view/com/composer/event/EventEditor.tsx:130
+msgid "This name contains characters that cannot be saved"
+msgstr "Tento názov obsahuje znaky, ktoré nemožno uložiť"
+
+#: src/view/com/composer/event/EventEditor.tsx:132
+msgid "This name is too long"
+msgstr "Tento názov je príliš dlhý"
+
+#: src/features/events/components/EventCard.tsx:105
+msgid "Upcoming"
+msgstr "Nadchádzajúce"
+
+#: src/lib/api/index.ts:182
+msgid "Uploading event image..."
+msgstr "Nahráva sa obrázok udalosti…"
+
+#: src/view/com/composer/event/EventEditor.tsx:239
+msgid "Venue or address"
+msgstr "Miesto konania alebo adresa"
+
+#. placeholder {0}: parsed.name
+#: src/features/events/format.ts:110
+msgid "View event {0}"
+msgstr "Zobraziť udalosť {0}"
+
+#: src/screens/Event/EventHeader.tsx:106
+msgid "View host's profile"
+msgstr "Zobraziť profil organizátora"
+
+#: src/view/com/composer/event/EventEditor.tsx:207
+msgid "Where"
+msgstr "Kde"
+
+#: src/features/events/components/EditEventDialog.tsx:160
+msgid "Your edits to this event will be lost."
+msgstr "Tvoje úpravy tejto udalosti sa stratia."
+
+#. Heading above an event's description, i.e. about the event
+#: src/screens/Event/EventHeader.tsx:265
+msgctxt "Event page"
+msgid "About"
+msgstr "O udalosti"

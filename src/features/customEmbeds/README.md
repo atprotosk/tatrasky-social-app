@@ -24,22 +24,33 @@ clearly-marked block minimizes merge conflicts when syncing with upstream.
    (usually a URL host check) and a `Component` rendering the card.
 3. Register it in `registry.ts`. First match in the list wins.
 
-## atmoRsvp
+## events
 
-Renders [atmo.rsvp](https://atmo.rsvp) calendar events
-(`community.lexicon.calendar.event`) with in-app RSVP.
+Renders calendar events (`community.lexicon.calendar.event`) as one card,
+whichever app created them, with in-app RSVP and an event page at
+`/profile/:actor/event/:rkey`. The feature lives in `src/features/events/`;
+only its handler is registered here. Ported from
+[Witchsky](https://tangled.org/jollywhoppers.com/witchsky.app); it replaced
+the earlier atmo.rsvp-only card.
 
-- **Detect**: `https://atmo.rsvp/p/{handle}/e/{rkey}` (`detect.ts`).
-- **Read**: atmo's public XRPC for event details + aggregate counts + attendee
-  faces (`rsvp.atmo.event.getRecord`). Images are built as `cdn.bsky.app` URLs,
-  matching how atmo serves them. The viewer's own RSVP status comes from atmo's
-  `subjectUri`-filtered `rsvp.atmo.rsvp.listRecords` (a targeted lookup). The
-  mutation writes the result into cache without invalidating, so the button
-  stays correct during atmo's brief post-write indexing lag.
-- **Write**: RSVPs are `community.lexicon.calendar.rsvp` records written
-  directly to the user's repo via their agent. atmo indexes them off the
-  firehose, so the aggregate going-count is updated optimistically and
-  reconciles on the next refetch.
+- **Detect**: a link card whose `associatedRefs` names an event record, or an
+  event link from Tatrasky or Witchsky (`/profile/:actor/event/:rkey`),
+  Blacksky, atmo.rsvp (`/p/:actor/e/:rkey`) or Smoke Signal (`url.ts`). An
+  event that can't be loaded falls back to the ordinary link card.
+- **Read**: Blacksky's AppView (`community.blacksky.calendar.getEvents`,
+  `getEventRsvps`, `getMyEvents`). Signed in, reads are proxied through the
+  account's PDS so the response carries the viewer's RSVP; logged out, they
+  go to `api.blacksky.community` directly (`queries.ts`).
+- **Write**: RSVPs (`community.lexicon.calendar.rsvp`), edits, cancelling and
+  deleting are records written to the user's own repo. The AppView lags the
+  write, so results are written into the query cache rather than refetched.
+- **Create**: the composer's event editor (`view/com/composer/event/`). On
+  publish, `lib/api/index.ts` writes the event record first, posts a link card
+  to the event page pointing back at it through `associatedRefs`, then adds
+  the post to the event and RSVPs the author as going
+  (`lib/api/event-publish.ts`).
+- **Live**: when an event links a Streamplace channel that is live around the
+  event's time, a "LIVE" button opens it in the in-app player.
 
 ## tangledString
 

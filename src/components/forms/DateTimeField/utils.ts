@@ -19,3 +19,14 @@ export function fromDateTimeLocal(value: string): Date | undefined {
   const date = new Date(y, mo - 1, d, h, mi, 0, 0)
   return isNaN(date.getTime()) ? undefined : date
 }
+
+/** Splits a `YYYY-MM-DDTHH:mm` value into an event draft's date and time. */
+export function toEventParts(value: string): {date: string; time: string} {
+  const [date = '', time = ''] = value.split('T')
+  return {date, time}
+}
+
+/** Builds a `YYYY-MM-DDTHH:mm` value from separate date and time strings. */
+export function fromEventParts(date: string, time: string): string {
+  return date && time ? `${date}T${time}` : ''
+}

@@ -376,6 +376,7 @@ func serve(cctx *cli.Context) error {
 	e.GET("/profile/:handleOrDID/followers", server.WebGeneric)
 	e.GET("/profile/:handleOrDID/known-followers", server.WebGeneric)
 	e.GET("/profile/:handleOrDID/search", server.WebGeneric)
+	e.GET("/profile/:handleOrDID/event/:rkey", server.WebGeneric)
 	e.GET("/profile/:handleOrDID/lists/:rkey", server.WebGeneric)
 	e.GET("/profile/:handleOrDID/feed/:rkey", server.WebFeed)
 	e.GET("/profile/:handleOrDID/feed/:rkey/liked-by", server.WebGeneric)

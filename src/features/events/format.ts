@@ -1,0 +1,134 @@
+import {type I18n} from '@lingui/core'
+import {msg, plural} from '@lingui/core/macro'
+
+import {type ParsedEvent} from './record'
+import {type EventView} from './types'
+
+const format = (i18n: I18n, date: Date, options: Intl.DateTimeFormatOptions) =>
+  i18n.date(date, {
+    weekday: 'short',
+    month: 'short',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
+    timeZoneName: 'short',
+    ...options,
+  })
+
+/**
+ * The start time in the viewer's own timezone. The event's `timezone` is not
+ * shown: one time is easier to read than the host's time next to ours.
+ */
+export function formatEventTime(
+  i18n: I18n,
+  event: ParsedEvent,
+): string | undefined {
+  if (!event.startsAt) return
+  return format(i18n, event.startsAt, {})
+}
+
+export type EventPhase = 'upcoming' | 'current' | 'past'
+
+// Most events don't publish an end time; treat them as running this long.
+const ASSUMED_DURATION_MS = 4 * 60 * 60 * 1000
+
+export function eventPhase(
+  event: ParsedEvent,
+  now: Date,
+): EventPhase | undefined {
+  if (!event.startsAt) return
+  if (now < event.startsAt) return 'upcoming'
+  const end =
+    event.endsAt ?? new Date(event.startsAt.getTime() + ASSUMED_DURATION_MS)
+  return now < end ? 'current' : 'past'
+}
+
+export type EventDateParts = {
+  month: string
+  day: string
+  longDate: string
+  timeRange: string
+}
+
+/** Date pieces for large date displays, in the viewer's own timezone. */
+export function eventDateParts(
+  i18n: I18n,
+  event: ParsedEvent,
+): EventDateParts | undefined {
+  if (!event.startsAt) return
+  const part = (options: Intl.DateTimeFormatOptions, date: Date) =>
+    i18n.date(date, options)
+  const time = {hour: 'numeric', minute: '2-digit'} as const
+  const start = part(time, event.startsAt)
+  const zone = part({timeZoneName: 'short'}, event.startsAt).split(' ').pop()
+  const dayKey = (date: Date) =>
+    part({year: 'numeric', month: 'numeric', day: 'numeric'}, date)
+  const end = !event.endsAt
+    ? undefined
+    : dayKey(event.endsAt) === dayKey(event.startsAt)
+      ? part(time, event.endsAt)
+      : part(
+          {weekday: 'short', month: 'short', day: 'numeric', ...time},
+          event.endsAt,
+        )
+  return {
+    month: part({month: 'short'}, event.startsAt).toUpperCase(),
+    day: part({day: 'numeric'}, event.startsAt),
+    longDate: part(
+      {weekday: 'long', month: 'long', day: 'numeric'},
+      event.startsAt,
+    ),
+    timeRange: `${end ? `${start} – ${end}` : start} ${zone ?? ''}`.trim(),
+  }
+}
+
+export function eventPlace(_: I18n['_'], parsed: ParsedEvent) {
+  return (
+    parsed.location ??
+    (parsed.mode === 'virtual' || parsed.streamplaceUrl
+      ? _(msg`Online`)
+      : undefined)
+  )
+}
+
+// Cards wrap their details in one link, so screen readers only hear its label.
+export function eventLinkLabel(
+  i18n: I18n,
+  event: EventView,
+  parsed: ParsedEvent,
+  phase?: EventPhase,
+) {
+  const _ = i18n._.bind(i18n)
+  const status = parsed.cancelled
+    ? _(msg`Cancelled`)
+    : phase === 'current'
+      ? _(msg`Happening now`)
+      : phase === 'past'
+        ? _(msg`Past`)
+        : undefined
+  return [
+    _(msg`View event ${parsed.name}`),
+    status,
+    formatEventTime(i18n, parsed),
+    eventPlace(_, parsed),
+    _(
+      msg({
+        message: plural(event.goingCount, {one: '# going', other: '# going'}),
+        comment: 'How many people are going to an event',
+      }),
+    ),
+    event.interestedCount > 0
+      ? _(
+          msg({
+            message: plural(event.interestedCount, {
+              one: '# interested',
+              other: '# interested',
+            }),
+            comment: 'How many people are interested in an event',
+          }),
+        )
+      : undefined,
+  ]
+    .filter(Boolean)
+    .join(', ')
+}

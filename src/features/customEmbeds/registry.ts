@@ -1,6 +1,6 @@
-import {atmoRsvpHandler} from '#/features/customEmbeds/atmoRsvp'
 import {tangledStringHandler} from '#/features/customEmbeds/tangledString'
 import {type CustomEmbedHandler} from '#/features/customEmbeds/types'
+import {eventsHandler} from '#/features/events'
 import {tokimekiPollHandler} from '#/features/tokimeki'
 import {type app} from '#/lexicons'
 
@@ -11,7 +11,7 @@ import {type app} from '#/lexicons'
  * rendering takes over.
  */
 const handlers: CustomEmbedHandler[] = [
-  atmoRsvpHandler,
+  eventsHandler,
   tangledStringHandler,
   tokimekiPollHandler,
 ]

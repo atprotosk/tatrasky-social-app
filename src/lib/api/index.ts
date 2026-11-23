@@ -10,6 +10,14 @@ import {RichText} from '@bsky/sdk/richtext'
 import {t} from '@lingui/core/macro'
 import {type QueryClient} from '@tanstack/react-query'
 
+import {type EventDraft, type EventRecordRef} from '#/lib/api/event'
+import {
+  deleteEvent,
+  ensureEvent,
+  finalizeEvent,
+  rsvpSelfGoing,
+  uploadEventCover,
+} from '#/lib/api/event-publish'
 import {type PollDraft} from '#/lib/api/poll'
 import {createPoll, deletePoll, tokimekiPollUrl} from '#/lib/api/poll-publish'
 import {type LinkResolvers} from '#/lib/api/resolve'
@@ -35,6 +43,7 @@ import {
   type PostDraft,
   type ThreadDraft,
 } from '#/view/com/composer/state/composer'
+import {makeEventUrl} from '#/features/events/url'
 import {app, chat, com} from '#/lexicons'
 import * as bsky from '#/types/bsky'
 import {createGIFDescription} from '../gif-alt-text'
@@ -65,6 +74,31 @@ function findPollPost(thread: ThreadDraft): PostDraft | undefined {
   return pollPost
 }
 
+function refuseEventWithAttachments(draft: PostDraft) {
+  if (
+    draft.embed.event &&
+    (draft.embed.media ||
+      draft.embed.link ||
+      draft.embed.quote ||
+      draft.embed.poll)
+  ) {
+    throw new Error(
+      t`An event cannot be combined with media, a link card, a quote or a poll.`,
+    )
+  }
+}
+
+function findEventPost(thread: ThreadDraft): PostDraft | undefined {
+  const [eventPost, ...others] = thread.posts.filter(p => p.embed.event)
+  if (others.length) {
+    throw new Error(t`A thread can only have one event.`)
+  }
+  if (eventPost) {
+    refuseEventWithAttachments(eventPost)
+  }
+  return eventPost
+}
+
 interface PostOpts {
   thread: ThreadDraft
   replyTo?: string
@@ -74,6 +108,11 @@ interface PostOpts {
    * keep it and a retry overwrites the same poll record instead of adding one.
    */
   onPollRkey?: (postId: string, rkey: string) => void
+  /**
+   * Called with the event record written for a post, so the composer keeps it
+   * and a retry overwrites that record instead of creating another.
+   */
+  onEvent?: (postId: string, record: {uri: string; cid: string}) => void
   langs?: string[]
   /*
    * Facet/mention resolution and reply-root lookup are appview jobs - they
@@ -99,6 +138,7 @@ export async function post(queryClient: QueryClient, opts: PostOpts) {
   opts.onStateChange?.(t`Processing...`)
 
   const pollPost = findPollPost(thread)
+  const eventPost = findEventPost(thread)
 
   let replyPromise:
     | Promise<app.bsky.feed.post.Main['reply']>
@@ -128,6 +168,35 @@ export async function post(queryClient: QueryClient, opts: PostOpts) {
     await replyPromise
   }
 
+  /*
+   * The event record has to exist before the post so the link card can point
+   * at it; it is finalized (with the post ref) only if the post write lands.
+   */
+  let eventDraft = eventPost?.embed.event
+  let eventRef: EventRecordRef | undefined
+  let createdEvent = false
+  if (eventPost && eventDraft) {
+    // A reply whose parent is gone should fail before an event is created.
+    await replyPromise
+    if (eventDraft.cover && !eventDraft.uploadedCover) {
+      opts.onStateChange?.(t`Uploading event image...`)
+      eventDraft = await uploadEventCover(opts.pdsClient, eventDraft)
+    }
+    opts.onStateChange?.(t`Creating event...`)
+    createdEvent = !eventDraft.record
+    const written = eventDraft
+    eventRef = await ensureEvent(opts.pdsClient, written)
+    opts.onEvent?.(eventPost.id, {uri: eventRef.uri, cid: eventRef.cid})
+    thread = {
+      ...thread,
+      posts: thread.posts.map(p =>
+        p === eventPost
+          ? {...p, embed: {...p.embed, event: {...written, record: eventRef}}}
+          : p,
+      ),
+    }
+  }
+
   // add top 3 languages from user preferences if langs is provided
   let langs = opts.langs
   if (opts.langs) {
@@ -142,6 +211,7 @@ export async function post(queryClient: QueryClient, opts: PostOpts) {
   let tid: TID | undefined
   /** The rkey of a poll record this attempt wrote, to clean up on failure. */
   let createdPollRkey: string | undefined
+  let eventPostRef: {uri: string; cid: string} | undefined
 
   for (let i = 0; i < thread.posts.length; i++) {
     const draft = thread.posts[i]
@@ -271,6 +341,9 @@ export async function post(queryClient: QueryClient, opts: PostOpts) {
       cid: await computeCid(record),
       uri,
     }
+    if (draft.embed.event) {
+      eventPostRef = ref
+    }
     replyPromise = {
       root: reply?.root ?? ref,
       parent: ref,
@@ -295,6 +368,10 @@ export async function post(queryClient: QueryClient, opts: PostOpts) {
     if (createdPollRkey && !isNetworkError(e)) {
       await deletePoll(opts.pdsClient, createdPollRkey)
     }
+    // Same for an event created by this attempt.
+    if (createdEvent && eventRef && !isNetworkError(e)) {
+      await deleteEvent(opts.pdsClient, eventRef)
+    }
     if (isNetworkError(e)) {
       throw new Error(
         t`Post failed to upload. Please check your Internet connection and try again.`,
@@ -304,7 +381,21 @@ export async function post(queryClient: QueryClient, opts: PostOpts) {
     }
   }
 
-  return {uris}
+  /*
+   * Attach the post to the event and RSVP the author. Both are best effort;
+   * the RSVP uses the finalized CID, since it is the event's current one.
+   */
+  if (eventRef && eventDraft && eventPostRef) {
+    eventRef = await finalizeEvent(
+      opts.pdsClient,
+      eventRef,
+      eventPostRef,
+      eventDraft,
+    )
+    await rsvpSelfGoing(opts.pdsClient, eventRef)
+  }
+
+  return {uris, ...(eventRef ? {event: eventRef} : {})}
 }
 
 export class AlreadyEditedError extends Error {
@@ -422,7 +513,7 @@ async function resolveReply(appviewClient: Client, replyTo: string) {
   }
 }
 
-async function resolveEmbed(
+export async function resolveEmbed(
   appviewClient: Client,
   chatClient: Client,
   pdsClient: Client,
@@ -430,6 +521,9 @@ async function resolveEmbed(
   draft: PostDraft,
   onStateChange: ((state: string) => void) | undefined,
 ): Promise<app.bsky.feed.post.Main['embed']> {
+  if (draft.embed.event) {
+    return resolveEvent(pdsClient, draft, draft.embed.event)
+  }
   if (draft.embed.quote) {
     const [resolvedMedia, resolvedQuote] = await Promise.all([
       resolveMedia(
@@ -486,6 +580,42 @@ async function resolveEmbed(
     }
   }
   return undefined
+}
+
+/**
+ * The post's link card for an event it created. The event record itself is
+ * written earlier in `post()`, so its URI is already known; the card links to
+ * the event's page here, which `parseEventUrl` recognises.
+ *
+ * `associatedRefs` names the event record the card was built from. Its CID is
+ * the version written before the post: `finalizeEvent` then adds the post's
+ * own ref, and the two records cannot hold each other's final CIDs.
+ */
+function resolveEvent(
+  pdsClient: Client,
+  draft: PostDraft,
+  event: EventDraft,
+): $Typed<app.bsky.embed.external.Main> {
+  refuseEventWithAttachments(draft)
+  const ref = event.record
+  if (!ref) {
+    throw new Error(t`The event record was not created.`)
+  }
+  const rkey = new AtUri(ref.uri).rkey
+  const description = [event.description?.trim(), event.place?.trim()]
+    .filter(Boolean)
+    .join('\n\n')
+  return {
+    $type: 'app.bsky.embed.external',
+    external: {
+      uri: makeEventUrl({did: pdsClient.assertDid}, rkey) as UriString,
+      title: event.name.trim(),
+      description,
+      // The cover doubles as the card image, for apps that don't know events.
+      ...(event.uploadedCover ? {thumb: event.uploadedCover.blob} : {}),
+      associatedRefs: [{uri: ref.uri as AtUriString, cid: ref.cid}],
+    },
+  }
 }
 
 /**

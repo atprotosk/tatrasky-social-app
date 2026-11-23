@@ -58,6 +58,7 @@ export const router = new Router<AllNavigatableRoutes>({
   ProfileFollows: '/profile/:name/follows',
   ProfileKnownFollowers: '/profile/:name/known-followers',
   ProfileSearch: '/profile/:name/search',
+  Event: '/profile/:name/event/:rkey',
   ProfileList: '/profile/:name/lists/:rkey',
   PostThread: '/profile/:name/post/:rkey',
   PostLikedBy: '/profile/:name/post/:rkey/liked-by',

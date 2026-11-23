@@ -1,0 +1,39 @@
+import {useLingui} from '@lingui/react/macro'
+
+import {atoms as a, useTheme} from '#/alf'
+import {Button} from '#/components/Button'
+import {CalendarDays_Stroke2_Corner0_Rounded as CalendarIcon} from '#/components/icons/CalendarDays'
+
+export function SelectEventBtn({
+  onPress,
+  disabled = false,
+}: {
+  onPress: () => void
+  disabled?: boolean
+}) {
+  const {t: l} = useLingui()
+  const t = useTheme()
+
+  return (
+    <Button
+      testID="openEventBtn"
+      onPress={onPress}
+      label={l({
+        message: 'Add event',
+        comment:
+          'Accessibility label for the button in the post composer that creates an event attached to the post.',
+      })}
+      accessibilityHint={l({
+        message: 'Creates an event attached to this post',
+        comment:
+          'Accessibility hint announced after the event button label, describing what activating it will do.',
+      })}
+      style={a.p_sm}
+      variant="ghost"
+      shape="round"
+      color="primary"
+      disabled={disabled}>
+      <CalendarIcon size="lg" style={disabled && t.atoms.text_contrast_low} />
+    </Button>
+  )
+}

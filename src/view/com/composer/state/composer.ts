@@ -5,6 +5,11 @@ import {RichText} from '@bsky/sdk/richtext'
 import {nanoid} from 'nanoid/non-secure'
 
 import {
+  deviceTimezone,
+  type EventDraft,
+  isEventDraftPublishable,
+} from '#/lib/api/event'
+import {
   DEFAULT_POLL_DURATION,
   isPollDraftPublishable,
   type PollDraft,
@@ -81,6 +86,8 @@ export type EmbedDraft = {
   link: Link | undefined
   /** A TOKIMEKI poll; it can't be combined with media, a link or a quote. */
   poll?: PollDraft
+  /** A calendar event; like a poll, it stands alone. */
+  event?: EventDraft
 }
 
 export type PostDraft = {
@@ -118,10 +125,18 @@ export type PostAction =
   /** A custom closing time (local `YYYY-MM-DDTHH:mm`), or undefined to clear it. */
   | {type: 'embed_set_poll_end'; endsAt: string | undefined}
   | {type: 'embed_set_poll_rkey'; rkey: string}
+  | {type: 'embed_add_event'}
+  | {type: 'embed_update_event'; patch: Partial<EventDraft>}
+  | {type: 'embed_set_event_record'; record: {uri: string; cid: string}}
+  | {type: 'embed_remove_event'}
 
 export function postHasAttachment(post: PostDraft): boolean {
   return Boolean(
-    post.embed.media || post.embed.link || post.embed.quote || post.embed.poll,
+    post.embed.media ||
+    post.embed.link ||
+    post.embed.quote ||
+    post.embed.poll ||
+    post.embed.event,
   )
 }
 
@@ -137,8 +152,29 @@ export function isPollPostable(post: PostDraft): boolean {
     isPollDraftPublishable(poll) &&
     !post.embed.media &&
     !post.embed.link &&
-    !post.embed.quote
+    !post.embed.quote &&
+    !post.embed.event
   )
+}
+
+/**
+ * Whether a post's event, if it has one, can be posted: it needs a name and a
+ * valid start, and nothing else may be attached.
+ */
+export function isEventPostable(post: PostDraft): boolean {
+  const event = post.embed.event
+  if (!event) return true
+  return (
+    isEventDraftPublishable(event) &&
+    !post.embed.media &&
+    !post.embed.link &&
+    !post.embed.quote &&
+    !post.embed.poll
+  )
+}
+
+export function threadHasEvent(thread: ThreadDraft): boolean {
+  return thread.posts.some(post => post.embed.event)
 }
 
 export function threadHasPoll(thread: ThreadDraft): boolean {
@@ -260,10 +296,12 @@ export function composerReducer(
       }
     }
     case 'update_post': {
-      // A thread carries at most one poll.
+      // A thread carries at most one poll and one event.
       if (
-        action.postAction.type === 'embed_add_poll' &&
-        threadHasPoll(state.thread)
+        (action.postAction.type === 'embed_add_poll' &&
+          threadHasPoll(state.thread)) ||
+        (action.postAction.type === 'embed_add_event' &&
+          threadHasEvent(state.thread))
       ) {
         return state
       }
@@ -370,7 +408,7 @@ export function composerReducer(
         loadedMediaMap: loadedMedia,
         originalLocalRefs,
         thread: {
-          posts: keepFirstPoll(posts),
+          posts: keepFirstEvent(keepFirstPoll(posts)),
           postgate: createPostgateRecord({
             post: '',
             embeddingRules: postgateEmbeddingRules,
@@ -421,7 +459,7 @@ function postReducer(state: PostDraft, action: PostAction): PostDraft {
       }
     }
     case 'embed_add_images': {
-      if (action.images.length === 0 || state.embed.poll) {
+      if (action.images.length === 0 || state.embed.poll || state.embed.event) {
         return state
       }
       const prevMedia = state.embed.media
@@ -512,7 +550,7 @@ function postReducer(state: PostDraft, action: PostAction): PostDraft {
       return state
     }
     case 'embed_add_video': {
-      if (state.embed.poll) {
+      if (state.embed.poll || state.embed.event) {
         return state
       }
       const prevMedia = state.embed.media
@@ -574,7 +612,7 @@ function postReducer(state: PostDraft, action: PostAction): PostDraft {
       }
     }
     case 'embed_add_uri': {
-      if (state.embed.poll) {
+      if (state.embed.poll || state.embed.event) {
         return state
       }
       const prevQuote = state.embed.quote
@@ -629,7 +667,7 @@ function postReducer(state: PostDraft, action: PostAction): PostDraft {
       }
     }
     case 'embed_add_gif': {
-      if (state.embed.poll) {
+      if (state.embed.poll || state.embed.event) {
         return state
       }
       const prevMedia = state.embed.media
@@ -761,7 +799,67 @@ function postReducer(state: PostDraft, action: PostAction): PostDraft {
         },
       }
     }
+    case 'embed_add_event': {
+      if (postHasAttachment(state)) {
+        return state
+      }
+      const now = new Date()
+      return {
+        ...state,
+        embed: {
+          ...state.embed,
+          event: {
+            name: '',
+            date: `${now.getFullYear()}-${pad2(now.getMonth() + 1)}-${pad2(now.getDate())}`,
+            time: '18:00',
+            timezone: deviceTimezone(),
+            mode: 'inperson',
+          },
+        },
+      }
+    }
+    case 'embed_update_event': {
+      if (!state.embed.event) return state
+      return {
+        ...state,
+        embed: {
+          ...state.embed,
+          event: {...state.embed.event, ...action.patch},
+        },
+      }
+    }
+    case 'embed_set_event_record': {
+      if (!state.embed.event) return state
+      return {
+        ...state,
+        embed: {
+          ...state.embed,
+          event: {...state.embed.event, record: action.record},
+        },
+      }
+    }
+    case 'embed_remove_event': {
+      return {
+        ...state,
+        embed: {
+          ...state.embed,
+          event: undefined,
+        },
+      }
+    }
   }
+}
+
+const pad2 = (n: number) => String(n).padStart(2, '0')
+
+/** Drops every event after the first, which a restored draft could carry. */
+function keepFirstEvent(posts: PostDraft[]): PostDraft[] {
+  const first = posts.findIndex(post => post.embed.event)
+  return posts.map((post, index) =>
+    post.embed.event && index !== first
+      ? postReducer(post, {type: 'embed_remove_event'})
+      : post,
+  )
 }
 
 /** Drops every poll after the first, which a restored draft could carry. */

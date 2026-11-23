@@ -331,6 +331,16 @@ export const CONSTELLATION_SERVICE = 'https://constellation.microcosm.blue'
  * https://slingshot.microcosm.blue/
  */
 export const SLINGSHOT_SERVICE = 'https://slingshot.microcosm.blue'
+
+/**
+ * Blacksky's AppView, which indexes community calendar events and RSVPs
+ * (`community.blacksky.calendar.*`). Signed in, reads are proxied to it
+ * through the account's PDS so the response carries the viewer's own RSVP;
+ * logged out, they go straight to its public URL.
+ */
+export const BLACKSKY_APPVIEW: Service =
+  'did:web:api.blacksky.community#bsky_appview'
+export const BLACKSKY_APPVIEW_URL = 'https://api.blacksky.community'
 export const PUBLIC_STAGING_APPVIEW_DID = 'did:web:api.staging.bsky.dev'
 
 export const DEV_ENV_APPVIEW =

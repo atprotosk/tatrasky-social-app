@@ -52,6 +52,7 @@ import {Trans, useLingui} from '@lingui/react/macro'
 import {useNavigation} from '@react-navigation/native'
 import {useQueries, useQueryClient} from '@tanstack/react-query'
 
+import {eventHasContent} from '#/lib/api/event'
 import * as apilib from '#/lib/api/index'
 import {pollHasContent} from '#/lib/api/poll'
 import {EmbeddingDisabledError} from '#/lib/api/resolve'
@@ -103,6 +104,8 @@ import {type ComposerOpts, type OnPostSuccessData} from '#/state/shell/composer'
 import {CharProgress} from '#/view/com/composer/char-progress/CharProgress'
 import {ComposerReplyTo} from '#/view/com/composer/ComposerReplyTo'
 import {DraftsButton} from '#/view/com/composer/drafts/DraftsButton'
+import {EventEditor} from '#/view/com/composer/event/EventEditor'
+import {SelectEventBtn} from '#/view/com/composer/event/SelectEventBtn'
 import {
   ExternalEmbedGif,
   ExternalEmbedLink,
@@ -173,12 +176,14 @@ import {
   composerReducer,
   createComposerState,
   type EmbedDraft,
+  isEventPostable,
   isPollPostable,
   MAX_GALLERY_IMAGES,
   type PostAction,
   type PostDraft,
   postHasAttachment,
   type ThreadDraft,
+  threadHasEvent,
   threadHasPoll,
 } from './state/composer'
 import {
@@ -875,6 +880,10 @@ export const ComposePost = ({
     if (firstPost.embed.poll && pollHasContent(firstPost.embed.poll)) {
       return false
     }
+    // Has an event with details entered
+    if (firstPost.embed.event && eventHasContent(firstPost.embed.event)) {
+      return false
+    }
 
     return true
   }, [thread.posts])
@@ -906,7 +915,8 @@ export const ComposePost = ({
         post.shortenedGraphemeLength > 0 ||
         post.embed.media ||
         post.embed.link ||
-        (post.embed.poll && pollHasContent(post.embed.poll)),
+        (post.embed.poll && pollHasContent(post.embed.poll)) ||
+        (post.embed.event && eventHasContent(post.embed.event)),
     )
 
     // Show discard prompt if there's content AND either:
@@ -1004,6 +1014,7 @@ export const ComposePost = ({
         isEmptyPost(post) ||
         (post.shortenedGraphemeLength <= MAX_GRAPHEME_LENGTH &&
           isPollPostable(post) &&
+          isEventPostable(post) &&
           !(
             post.embed.media?.type === 'video' &&
             post.embed.media.video.status === 'error'
@@ -1118,6 +1129,13 @@ export const ComposePost = ({
               type: 'update_post',
               postId,
               postAction: {type: 'embed_set_poll_rkey', rkey},
+            })
+          },
+          onEvent: (postId, record) => {
+            composerDispatch({
+              type: 'update_post',
+              postId,
+              postAction: {type: 'embed_set_event_record', record},
             })
           },
         })
@@ -1465,6 +1483,7 @@ export const ComposePost = ({
         dispatch={dispatch}
         isEditMode={isEditMode}
         canAddPoll={!threadHasPoll(thread)}
+        canAddEvent={!threadHasEvent(thread)}
         showAddButton={
           !isEditMode &&
           !isEmptyPost(activePost) &&
@@ -1722,10 +1741,16 @@ let ComposerPost = memo(function ComposerPost({
   )
 
   const hasPoll = !!post.embed.poll
+  const hasEvent = !!post.embed.event
   const onPhotoPasted = useCallback(
     async (uri: string) => {
-      if (hasPoll) {
-        Toast.show(l`Remove the poll to add media`, {type: 'warning'})
+      if (hasPoll || hasEvent) {
+        Toast.show(
+          hasPoll
+            ? l`Remove the poll to add media`
+            : l`Remove the event to add media`,
+          {type: 'warning'},
+        )
         return
       }
       if (
@@ -1750,7 +1775,7 @@ let ComposerPost = memo(function ComposerPost({
         onImageAdd([res])
       }
     },
-    [post.id, hasPoll, onSelectVideo, onImageAdd, l],
+    [post.id, hasPoll, hasEvent, onSelectVideo, onImageAdd, l],
   )
 
   useHideKeyboardOnBackground()
@@ -2053,6 +2078,7 @@ function ComposerEmbeds({
       )}
 
       {embed.poll && <PollEditor poll={embed.poll} dispatch={dispatch} />}
+      {embed.event && <EventEditor event={embed.event} dispatch={dispatch} />}
 
       {!embed.media && embed.link && (
         <View style={[a.relative, a.mt_lg]} key={embed.link.uri}>
@@ -2210,6 +2236,7 @@ function ComposerFooter({
   dispatch,
   isEditMode,
   canAddPoll,
+  canAddEvent,
   showAddButton,
   onSelectVideo,
   onAddPost,
@@ -2224,6 +2251,8 @@ function ComposerFooter({
   isEditMode: boolean
   /** False once any post in the thread has a poll; a thread carries one. */
   canAddPoll: boolean
+  /** False once any post in the thread has an event; a thread carries one. */
+  canAddEvent: boolean
   showAddButton: boolean
   onError: (error: string) => void
   onSelectVideo: (
@@ -2250,6 +2279,9 @@ function ComposerFooter({
 
   const media = post.embed.media
   const hasPoll = !!post.embed.poll
+  const hasEvent = !!post.embed.event
+  /* A poll or an event stands alone, so no media can join it. */
+  const hasStandalone = hasPoll || hasEvent
   const images =
     media?.type === 'images' || media?.type === 'gallery' ? media.images : []
   const video = media?.type === 'video' ? media.video : null
@@ -2347,7 +2379,7 @@ function ComposerFooter({
               {!isEditMode && (
                 <>
                   <SelectMediaButton
-                    disabled={isMediaSelectionDisabled || hasPoll}
+                    disabled={isMediaSelectionDisabled || hasStandalone}
                     allowedAssetTypes={selectedAssetsType}
                     selectedAssetsCount={selectedAssetsCount}
                     onSelectAssets={onSelectAssets}
@@ -2355,7 +2387,7 @@ function ComposerFooter({
                   />
                   <OpenCameraBtn
                     disabled={
-                      hasPoll ||
+                      hasStandalone ||
                       (media?.type === 'images' || media?.type === 'gallery'
                         ? isMaxImages
                         : !!media)
@@ -2364,11 +2396,15 @@ function ComposerFooter({
                   />
                   <SelectGifBtn
                     onSelectGif={onSelectGif}
-                    disabled={!!media || hasPoll}
+                    disabled={!!media || hasStandalone}
                   />
                   <SelectPollBtn
                     onPress={() => dispatch({type: 'embed_add_poll'})}
                     disabled={!canAddPoll || postHasAttachment(post)}
+                  />
+                  <SelectEventBtn
+                    onPress={() => dispatch({type: 'embed_add_event'})}
+                    disabled={!canAddEvent || postHasAttachment(post)}
                   />
                 </>
               )}
@@ -2614,7 +2650,8 @@ function isEmptyPost(post: PostDraft) {
     !post.embed.media &&
     !post.embed.link &&
     !post.embed.quote &&
-    !post.embed.poll
+    !post.embed.poll &&
+    !post.embed.event
   )
 }
 

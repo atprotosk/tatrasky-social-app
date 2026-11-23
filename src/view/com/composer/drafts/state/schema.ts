@@ -1,3 +1,4 @@
+import {type EventDraft} from '#/lib/api/event'
 import {type PollDraft} from '#/lib/api/poll'
 import {type app} from '#/lexicons'
 /**
@@ -46,6 +47,8 @@ export type DraftPostDisplay = {
   gif?: GifDisplay
   /** A poll saved with the post */
   poll?: PollDraft
+  /** An event saved with the post */
+  event?: EventDraft
 }
 
 /**
