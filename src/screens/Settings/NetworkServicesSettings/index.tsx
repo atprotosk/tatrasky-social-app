@@ -5,7 +5,9 @@ import {type CommonNavigatorParams} from '#/lib/routes/types'
 import * as SettingsList from '#/screens/Settings/components/SettingsList'
 import {Download_Stroke2_Corner0_Rounded as DownloadIcon} from '#/components/icons/Download'
 import {Earth_Stroke2_Corner2_Rounded as EarthIcon} from '#/components/icons/Globe'
+import {Image_Stroke2_Corner2_Rounded as ImageIcon} from '#/components/icons/Image'
 import * as Layout from '#/components/Layout'
+import {ENABLE_IMAGE_CDN_SETTINGS} from '#/env'
 
 type Props = NativeStackScreenProps<
   CommonNavigatorParams,
@@ -36,6 +38,16 @@ export function NetworkServicesSettingsScreen({}: Props) {
               <Trans>Content service</Trans>
             </SettingsList.ItemText>
           </SettingsList.LinkItem>
+          {ENABLE_IMAGE_CDN_SETTINGS && (
+            <SettingsList.LinkItem
+              to="/settings/network-services/image-cdn"
+              label={l`Image CDN`}>
+              <SettingsList.ItemIcon icon={ImageIcon} />
+              <SettingsList.ItemText>
+                <Trans>Image CDN</Trans>
+              </SettingsList.ItemText>
+            </SettingsList.LinkItem>
+          )}
           <SettingsList.LinkItem
             to="/settings/network-services/transfer-app-data"
             label={l`Transfer app data`}>

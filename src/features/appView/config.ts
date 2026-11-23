@@ -1,5 +1,11 @@
+import {type Service} from '@atproto/lex'
 import {type DidString, isValidDid} from '@atproto/syntax'
 
+import {
+  BLUESKY_APPVIEW,
+  BLUESKY_APPVIEW_DID,
+  DEV_ENV_APPVIEW,
+} from '#/lib/constants'
 import {BRAND} from '#/config/brand'
 import {BLUESKY_PROXY_DID} from '#/env'
 import {device} from '#/storage'
@@ -179,20 +185,66 @@ export function readAppViewOverride(): AppViewPreference | undefined {
   return asValidPreference(device.get(['appViewOverride']))
 }
 
+/**
+ * The temporary failover this process runs on, if any. Read once at load:
+ * clients and cached queries are built for one AppView, so a failover that is
+ * set or cleared later only takes effect on the next start.
+ */
+const activeFailover = asValidPreference(device.get(['appViewFailover']))
+
+export function getActiveAppViewFailover(): AppViewPreference | undefined {
+  return activeFailover
+}
+
+/** The AppView the user chose, ignoring any temporary failover. */
+export function getPreferredAppView(): AppViewPreference {
+  return readAppViewOverride() ?? getConfiguredAppView()
+}
+
+/** The failover if one is active, otherwise the saved override. */
+function readEffectiveOverride(): AppViewPreference | undefined {
+  return activeFailover ?? readAppViewOverride()
+}
+
 /** Resolve the PDS proxy service while preserving test/build defaults. */
 export function getAppViewProxyService(defaultService: string): string {
-  const override = readAppViewOverride()
+  const override = readEffectiveOverride()
   return override ? `${override.did}#bsky_appview` : defaultService
 }
 
 /** Resolve the direct URL used by the unauthenticated AppView client. */
 export function getPublicAppViewUrl(defaultUrl: string): string {
-  return readAppViewOverride()?.url ?? defaultUrl
+  return readEffectiveOverride()?.url ?? defaultUrl
 }
 
 /** Resolve the AppView DID for flows that authenticate directly to it. */
 export function getAppViewDid(defaultDid: string): DidString {
-  return (readAppViewOverride()?.did ?? defaultDid) as DidString
+  return (readEffectiveOverride()?.did ?? defaultDid) as DidString
+}
+
+/**
+ * Resolve the AppView for KWS age assurance. Unlike the helpers above, this
+ * ignores the AppView preference: KWS results only exist on Bluesky's AppView,
+ * and only it implements `app.bsky.ageassurance.begin`, so other AppViews (e.g.
+ * Eurosky) would report verified users as unverified and fail to start KWS. A
+ * local dev env (BLUESKY_PROXY_DID overridden) keeps targeting the local
+ * AppView.
+ */
+export function getAgeAssuranceAppView(): {
+  url: string
+  did: DidString
+  service: Service
+  /** True in a local dev env, where KWS traffic is not pinned to Bluesky. */
+  isDevEnv: boolean
+} {
+  const isDevEnv = BLUESKY_PROXY_DID !== BRAND.services.appViewDid
+  const did = isDevEnv ? BLUESKY_PROXY_DID : BLUESKY_APPVIEW_DID
+  return {
+    url: isDevEnv ? DEV_ENV_APPVIEW : BLUESKY_APPVIEW,
+    did,
+    service: `${did}#bsky_appview`,
+    isDevEnv,
+  }
 }
 
 export function getAppViewOptionId(

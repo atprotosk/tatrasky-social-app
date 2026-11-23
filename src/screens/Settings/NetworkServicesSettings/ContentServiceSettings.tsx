@@ -1,5 +1,5 @@
 import {useRef, useState} from 'react'
-import {Pressable, View} from 'react-native'
+import {View} from 'react-native'
 import {Trans, useLingui} from '@lingui/react/macro'
 import {type NativeStackScreenProps} from '@react-navigation/native-stack'
 
@@ -11,15 +11,14 @@ import {useDialogControl} from '#/components/Dialog'
 import {FormError} from '#/components/forms/FormError'
 import * as TextField from '#/components/forms/TextField'
 import * as Toggle from '#/components/forms/Toggle'
-import {CircleInfo_Stroke2_Corner0_Rounded as CircleInfoIcon} from '#/components/icons/CircleInfo'
 import {Earth_Stroke2_Corner2_Rounded as EarthIcon} from '#/components/icons/Globe'
 import * as Layout from '#/components/Layout'
-import * as Tooltip from '#/components/Tooltip'
 import {Text} from '#/components/Typography'
 import {
   APP_VIEW_PRESETS,
   type AppViewOptionId,
   AppViewValidationError,
+  getActiveAppViewFailover,
   getAppViewOptionId,
   getConfiguredAppView,
   isConfiguredAppView,
@@ -29,6 +28,7 @@ import {
 import {type AppViewPreference} from '#/features/appView/types'
 import {device, useStorage} from '#/storage'
 import {NetworkServicesRestartRequiredPrompt} from './RestartRequiredPrompt'
+import {ServiceAddressInfo} from './ServiceAddressInfo'
 
 type Props = NativeStackScreenProps<
   CommonNavigatorParams,
@@ -40,7 +40,9 @@ export function ContentServiceSettingsScreen({}: Props) {
   const t = useTheme()
   const [override, setOverride] = useStorage(device, ['appViewOverride'])
   const configured = getConfiguredAppView()
-  const current = override ?? configured
+  const failover = getActiveAppViewFailover()
+  const preferred = override ?? configured
+  const current = failover ?? preferred
   const currentOption = getAppViewOptionId(current)
   const [selected, setSelected] = useState<AppViewOptionId>(currentOption)
   const [customUrl, setCustomUrl] = useState(
@@ -61,7 +63,9 @@ export function ContentServiceSettingsScreen({}: Props) {
   try {
     normalizedCustomUrl = normalizeAppViewUrl(customUrl)
   } catch {}
+  /* During a failover, saving either keeps the fallback or goes back. */
   const hasChanges =
+    !!failover ||
     selected !== currentOption ||
     (selected === 'custom' && normalizedCustomUrl !== current.url)
   const canSave =
@@ -106,6 +110,7 @@ export function ContentServiceSettingsScreen({}: Props) {
 
       /* No override means future builds can continue choosing the default. */
       setOverride(isConfiguredAppView(next) ? undefined : next)
+      device.set(['appViewFailover'], undefined)
       restartControl.open()
     } catch (cause) {
       setError(validationError(cause))
@@ -147,6 +152,14 @@ export function ContentServiceSettingsScreen({}: Props) {
                   AppView. This setting applies to every account on this device.
                 </Trans>
               </Text>
+              {failover && (
+                <Text style={[a.text_sm, a.leading_snug, a.font_semi_bold]}>
+                  <Trans>
+                    Your content service isn’t responding, so the app is
+                    temporarily using another one.
+                  </Trans>
+                </Text>
+              )}
               <Text
                 style={[
                   a.text_sm,
@@ -287,31 +300,5 @@ export function ContentServiceSettingsScreen({}: Props) {
 
       <NetworkServicesRestartRequiredPrompt control={restartControl} />
     </Layout.Screen>
-  )
-}
-
-function ServiceAddressInfo({name, url}: {name: string; url: string}) {
-  const {t: l} = useLingui()
-  const t = useTheme()
-  const [visible, setVisible] = useState(false)
-  const label = l`Show service address for ${name}`
-
-  return (
-    <Tooltip.Outer visible={visible} onVisibleChange={setVisible}>
-      <Tooltip.Target>
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel={label}
-          accessibilityHint={l`Shows the service address`}
-          hitSlop={8}
-          onHoverIn={() => setVisible(true)}
-          onHoverOut={() => setVisible(false)}
-          onPress={() => setVisible(value => !value)}
-          style={[a.rounded_full, a.p_xs]}>
-          <CircleInfoIcon size="sm" fill={t.atoms.text_contrast_medium.color} />
-        </Pressable>
-      </Tooltip.Target>
-      <Tooltip.BubbleText label={label}>{url}</Tooltip.BubbleText>
-    </Tooltip.Outer>
   )
 }

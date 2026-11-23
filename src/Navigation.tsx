@@ -139,6 +139,7 @@ import {LegacyNotificationSettingsScreen} from '#/screens/Settings/LegacyNotific
 import {NetworkServicesSettingsScreen} from '#/screens/Settings/NetworkServicesSettings'
 import {AppViewTransferSettingsScreen} from '#/screens/Settings/NetworkServicesSettings/AppViewTransfer'
 import {ContentServiceSettingsScreen} from '#/screens/Settings/NetworkServicesSettings/ContentServiceSettings'
+import {ImageCdnSettingsScreen} from '#/screens/Settings/NetworkServicesSettings/ImageCdnSettings'
 import {NotificationSettingsScreen} from '#/screens/Settings/NotificationSettings'
 import {ActivityNotificationSettingsScreen} from '#/screens/Settings/NotificationSettings/ActivityNotificationSettings'
 import {PetCompanionSettingsScreen} from '#/screens/Settings/PetCompanionSettings'
@@ -160,7 +161,12 @@ import {
 import {useAnalytics} from '#/analytics'
 import {setNavigationMetadata} from '#/analytics/metadata'
 import {BRAND} from '#/config/brand'
-import {IS_LIQUID_GLASS, IS_NATIVE, IS_WEB} from '#/env'
+import {
+  ENABLE_IMAGE_CDN_SETTINGS,
+  IS_LIQUID_GLASS,
+  IS_NATIVE,
+  IS_WEB,
+} from '#/env'
 import {HomeScreen} from '#/features/followingV2/home'
 import {OutletDirectoryScreen} from '#/features/frontpages/directory'
 import {FrontpageScreen} from '#/features/frontpages/FrontpageScreen'
@@ -532,6 +538,16 @@ function commonScreens(Stack: typeof Flat, unreadCountLabel?: string) {
           requireAuth: true,
         }}
       />
+      {ENABLE_IMAGE_CDN_SETTINGS && (
+        <Stack.Screen
+          name="ImageCdnSettings"
+          getComponent={() => ImageCdnSettingsScreen}
+          options={{
+            title: title(msg`Image CDN`),
+            requireAuth: true,
+          }}
+        />
+      )}
       <Stack.Screen
         name="AppViewTransferSettings"
         getComponent={() => AppViewTransferSettingsScreen}
