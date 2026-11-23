@@ -19194,3 +19194,91 @@ msgstr "Kým je anketa otvorená, môžeš hlasovať znova."
 #: src/features/tokimeki/components/TokimekiPollEmbed.tsx:301
 msgid "You voted for “{0}”. You can vote again while the poll is open."
 msgstr "Hlasoval/a si za „{0}“. Kým je anketa otvorená, môžeš hlasovať znova."
+
+#: src/screens/Live/index.tsx
+msgid "Nobody is live right now"
+msgstr "Práve nikto nevysiela"
+
+#: src/screens/Live/index.tsx
+msgid "Check back later to see who is streaming on Streamplace."
+msgstr "Skús to neskôr a pozri sa, kto vysiela na Streamplace."
+
+#: src/screens/Live/index.tsx
+msgid "Streams from Streamplace"
+msgstr "Vysielania zo Streamplace"
+
+#: src/screens/Live/components/LiveStreamCard.tsx
+msgid "{name} is live"
+msgstr "{name} vysiela naživo"
+
+#: src/screens/Live/components/LiveStreamCard.tsx
+msgid "Watch {title} by {name}, {viewers, plural, one {# viewer} other {# viewers}}"
+msgstr "Pozrieť {title} od {name}, {viewers, plural, one {# divák} few {# diváci} many {# diváka} other {# divákov}}"
+
+#: src/screens/Live/components/LiveStreamCard.tsx
+msgid "Watch {title} by {name}"
+msgstr "Pozrieť {title} od {name}"
+
+#: src/screens/LiveWatch/index.tsx
+msgid "Streamplace media is turned off. You can turn it on in Settings → Content and media → External media."
+msgstr "Médiá zo Streamplace sú vypnuté. Zapnúť ich môžeš v Nastavenia → Obsah a médiá → Externé médiá."
+
+#: src/screens/LiveWatch/index.tsx
+msgid "This livestream is hosted by Streamplace. Watch it right here in {0}."
+msgstr "Toto živé vysielanie poskytuje Streamplace. Pozri si ho priamo v {0}."
+
+#: src/screens/LiveWatch/index.tsx
+msgid "Open on stream.place"
+msgstr "Otvoriť na stream.place"
+
+#: src/screens/LiveWatch/index.tsx
+msgid "Watch livestream"
+msgstr "Pozrieť živé vysielanie"
+
+#: src/screens/LiveWatch/index.tsx
+msgid "Live chat"
+msgstr "Živý čet"
+
+#: src/screens/LiveWatch/index.tsx
+msgid "{0, plural, one {# watching} other {# watching}}"
+msgstr "{0, plural, one {# divák} few {# diváci} many {# diváka} other {# divákov}}"
+
+#: src/features/streamplace/components/ChatComposer.tsx
+msgid "Sign in to chat"
+msgstr "Prihlás sa a četuj"
+
+#: src/features/streamplace/components/ChatComposer.tsx
+msgid "Send a message…"
+msgstr "Napíš správu…"
+
+#: src/features/streamplace/components/ChatComposer.tsx
+msgid "Chat message"
+msgstr "Správa do četu"
+
+#: src/features/streamplace/components/ChatComposer.tsx
+msgid "Press return to send"
+msgstr "Stlač Enter na odoslanie"
+
+#: src/features/streamplace/components/ChatComposer.tsx
+msgid "Send"
+msgstr "Odoslať"
+
+#: src/features/streamplace/components/ChatList.tsx
+msgid "Retry sending message"
+msgstr "Skúsiť znova odoslať správu"
+
+#: src/features/streamplace/components/ChatList.tsx
+msgid "Not delivered – tap to retry"
+msgstr "Nedoručené – ťukni a skús znova"
+
+#: src/features/streamplace/components/ChatList.tsx
+msgid "Sending…"
+msgstr "Odosiela sa…"
+
+#: src/features/streamplace/components/ChatList.tsx
+msgid "Long press to report this account"
+msgstr "Dlhým stlačením nahlásiš tento účet"
+
+#: src/features/streamplace/components/LiveOffline.tsx
+msgid "This stream is offline"
+msgstr "Toto vysielanie je offline"

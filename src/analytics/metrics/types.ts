@@ -163,6 +163,7 @@ export type Events = {
       | 'home'
       | 'search'
       | 'atmosphere'
+      | 'live'
       | 'chat'
       | 'notifications'
       | 'profile'

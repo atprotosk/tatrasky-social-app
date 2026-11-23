@@ -8,6 +8,7 @@ export function useNavigationTabState() {
       isAtHome: getTabState(state, 'Home') !== TabState.Outside,
       isAtSearch: getTabState(state, 'Search') !== TabState.Outside,
       isAtAtmosphere: getTabState(state, 'Atmosphere') !== TabState.Outside,
+      isAtLive: getTabState(state, 'Live') !== TabState.Outside,
       isAtFeeds: getTabState(state, 'Feeds') !== TabState.Outside,
       isAtLists: getTabState(state, 'Lists') !== TabState.Outside,
       isAtBookmarks: getTabState(state, 'Bookmarks') !== TabState.Outside,
@@ -22,6 +23,7 @@ export function useNavigationTabState() {
       !res.isAtHome &&
       !res.isAtSearch &&
       !res.isAtAtmosphere &&
+      !res.isAtLive &&
       !res.isAtFeeds &&
       !res.isAtLists &&
       !res.isAtNotifications &&

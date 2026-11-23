@@ -380,6 +380,11 @@ let Card = ({
     })
   }, [hide, navigation, status, data])
 
+  const onPressWatch = (actor: string) => {
+    hide()
+    navigation.push('LiveWatch', {actor})
+  }
+
   return (
     <View
       style={[
@@ -401,6 +406,7 @@ let Card = ({
             embed={status.embed}
             padding="lg"
             onPressOpenProfile={onPressOpenProfile}
+            onPressWatch={onPressWatch}
           />
         ) : (
           <Inner profile={data} moderationOpts={moderationOpts} hide={hide} />

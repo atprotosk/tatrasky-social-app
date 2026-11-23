@@ -28,6 +28,7 @@ export const embedPlayerSources = [
   'bandcamp',
   'plyr',
   'freemix',
+  'streamplace',
 ] as const
 
 export type EmbedPlayerSource = (typeof embedPlayerSources)[number]
@@ -93,6 +94,7 @@ export const externalEmbedLabels: Record<EmbedPlayerSource, string> = {
   bandcamp: 'Bandcamp',
   plyr: 'plyr.fm',
   freemix: 'FreeMix',
+  streamplace: 'Streamplace',
 }
 
 /**

@@ -4,7 +4,13 @@ export type SharedNavTab =
   'Home' | 'Search' | 'Messages' | 'Notifications' | 'MyProfile'
 
 export type SidebarTab =
-  SharedNavTab | 'Atmosphere' | 'Feeds' | 'Lists' | 'Bookmarks' | 'Settings'
+  | SharedNavTab
+  | 'Atmosphere'
+  | 'Live'
+  | 'Feeds'
+  | 'Lists'
+  | 'Bookmarks'
+  | 'Settings'
 
 export const TAB_TO_NAV_ITEM: Record<
   SharedNavTab,

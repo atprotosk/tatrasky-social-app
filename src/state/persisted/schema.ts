@@ -131,6 +131,7 @@ const schema = z.object({
       bandcamp: z.enum(externalEmbedOptions).optional(),
       plyr: z.enum(externalEmbedOptions).optional(),
       freemix: z.enum(externalEmbedOptions).optional(),
+      streamplace: z.enum(externalEmbedOptions).optional(),
     })
     .optional(),
   invites: z.object({

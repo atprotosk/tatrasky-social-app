@@ -32,6 +32,8 @@ export type ModerationInboxTab = 'reports' | 'account'
 export type CommonNavigatorParams = {
   NotFound: undefined
   Atmosphere: undefined
+  Live: undefined
+  LiveWatch: {actor: string}
   Lists: undefined
   NewsFeed: undefined
   NewsSettings: undefined
@@ -151,6 +153,7 @@ export type BottomTabNavigatorParams = {
   MyProfileTab: NavigatorScreenParams<MyProfileTabNavigatorParams> | undefined
   MessagesTab: NavigatorScreenParams<MessagesTabNavigatorParams> | undefined
   AtmosphereTab: NavigatorScreenParams<CommonNavigatorParams> | undefined
+  LiveTab: NavigatorScreenParams<CommonNavigatorParams> | undefined
   FeedsTab: NavigatorScreenParams<CommonNavigatorParams> | undefined
   ListsTab: NavigatorScreenParams<CommonNavigatorParams> | undefined
   BookmarksTab: NavigatorScreenParams<CommonNavigatorParams> | undefined

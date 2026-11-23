@@ -11,6 +11,8 @@ export const router = new Router<AllNavigatableRoutes>({
   Home: ['/', '/download'],
   Search: '/search',
   Atmosphere: '/atmosphere',
+  Live: '/live',
+  LiveWatch: '/live/:actor',
   Feeds: '/feeds',
   Notifications: '/notifications',
   NotificationsActivityList: '/notifications/activity',

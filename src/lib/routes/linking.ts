@@ -88,6 +88,7 @@ export const LINKING = {
       }
       if (
         name === 'Atmosphere' ||
+        name === 'Live' ||
         name === 'Feeds' ||
         name === 'Lists' ||
         name === 'Bookmarks' ||

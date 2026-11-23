@@ -238,5 +238,10 @@
     "serviceUrl": "https://deco.mu.social",
     "serviceDid": "did:web:deco.mu.social",
     "manageUrl": "https://mu.social/settings/decorations"
+  },
+  "live": {
+    "$comment": "In-app Streamplace livestreams (Live tab). serviceUrl is the Streamplace node used for discovery, playback and chat. Test builds override these values with EXPO_PUBLIC_LIVE_* variables.",
+    "enabled": true,
+    "serviceUrl": "https://stream.place"
   }
 }
