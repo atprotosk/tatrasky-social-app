@@ -3,6 +3,7 @@ import {View} from 'react-native'
 import * as VideoThumbnails from 'expo-video-thumbnails'
 import {msg, plural} from '@lingui/core/macro'
 import {useLingui} from '@lingui/react'
+import {Trans} from '@lingui/react/macro'
 
 import * as device from '#/lib/deviceName'
 import {logger} from '#/view/com/composer/drafts/state/logger'
@@ -12,6 +13,7 @@ import {Button} from '#/components/Button'
 import {CirclePlus_Stroke2_Corner0_Rounded as CirclePlusIcon} from '#/components/icons/CirclePlus'
 import {type Props as SVGIconProps} from '#/components/icons/common'
 import {DotGrid3x1_Stroke2_Corner0_Rounded as DotsIcon} from '#/components/icons/DotGrid'
+import {Poll_Stroke2_Corner0_Rounded as PollIcon} from '#/components/icons/Poll'
 import {CloseQuote_Stroke2_Corner0_Rounded as CloseQuoteIcon} from '#/components/icons/Quote'
 import {Warning_Stroke2_Corner0_Rounded as WarningIcon} from '#/components/icons/Warning'
 import * as MediaPreview from '#/components/MediaPreview'
@@ -107,6 +109,8 @@ export function DraftItem({
             )}
 
             {!mediaExistsOnOtherDevice && <DraftMediaPreview post={post} />}
+
+            {post.poll && <DraftPollPreview poll={post.poll} />}
 
             {hasMetadata && (
               <View style={[a.gap_xs]}>
@@ -347,6 +351,39 @@ function DraftMediaPreview({post}: {post: DraftPostDisplay}) {
           alt={post.video.altText}
         />
       )}
+    </View>
+  )
+}
+
+function DraftPollPreview({poll}: {poll: {options: string[]}}) {
+  const t = useTheme()
+  const choices = poll.options.filter(option => option.trim().length > 0)
+  return (
+    <View
+      style={[
+        a.p_sm,
+        a.gap_xs,
+        a.rounded_sm,
+        a.border,
+        t.atoms.border_contrast_low,
+      ]}>
+      <View style={[a.flex_row, a.align_center, a.gap_xs]}>
+        <PollIcon size="xs" fill={t.palette.primary_500} />
+        <Text style={[a.text_xs, a.font_bold, {color: t.palette.primary_500}]}>
+          <Trans comment="Label on a draft preview showing the draft has a poll">
+            Poll
+          </Trans>
+        </Text>
+      </View>
+      {choices.map((choice, index) => (
+        <Text
+          emoji
+          key={index}
+          style={[a.text_sm, a.leading_snug, t.atoms.text_contrast_high]}
+          numberOfLines={2}>
+          {choice}
+        </Text>
+      ))}
     </View>
   )
 }

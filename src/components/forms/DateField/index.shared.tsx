@@ -18,6 +18,7 @@ export function DateFieldButton({
   onPress,
   isInvalid,
   accessibilityHint,
+  format,
 }: {
   label: string
   value: string | Date
@@ -25,6 +26,11 @@ export function DateFieldButton({
   onPress: () => void
   isInvalid?: boolean
   accessibilityHint?: string
+  /**
+   * How a set value is shown. Defaults to the date alone, read as UTC since a
+   * plain `YYYY-MM-DD` value parses as UTC midnight.
+   */
+  format?: (value: string | Date) => string
 }) {
   const {i18n} = useLingui()
   const t = useTheme()
@@ -91,7 +97,11 @@ export function DateFieldButton({
             value === '' ? t.atoms.text_contrast_low : t.atoms.text,
             {lineHeight: a.text_md.fontSize * 1.1875},
           ]}>
-          {value === '' ? placeholder : i18n.date(value, {timeZone: 'UTC'})}
+          {value === ''
+            ? placeholder
+            : format
+              ? format(value)
+              : i18n.date(value, {timeZone: 'UTC'})}
         </Text>
       </Pressable>
     </View>

@@ -53,6 +53,7 @@ import {useNavigation} from '@react-navigation/native'
 import {useQueries, useQueryClient} from '@tanstack/react-query'
 
 import * as apilib from '#/lib/api/index'
+import {pollHasContent} from '#/lib/api/poll'
 import {EmbeddingDisabledError} from '#/lib/api/resolve'
 import {useAppState} from '#/lib/appState'
 import {retry} from '#/lib/async/retry'
@@ -112,6 +113,8 @@ import {LabelsBtn} from '#/view/com/composer/labels/LabelsBtn'
 import {Gallery} from '#/view/com/composer/photos/Gallery'
 import {OpenCameraBtn} from '#/view/com/composer/photos/OpenCameraBtn'
 import {SelectGifBtn} from '#/view/com/composer/photos/SelectGifBtn'
+import {PollEditor} from '#/view/com/composer/poll/PollEditor'
+import {SelectPollBtn} from '#/view/com/composer/poll/SelectPollBtn'
 import {SuggestedLanguage} from '#/view/com/composer/select-language/SuggestedLanguage'
 // TODO: Prevent naming components that coincide with RN primitives
 // due to linting false positives
@@ -170,10 +173,13 @@ import {
   composerReducer,
   createComposerState,
   type EmbedDraft,
+  isPollPostable,
   MAX_GALLERY_IMAGES,
   type PostAction,
   type PostDraft,
+  postHasAttachment,
   type ThreadDraft,
+  threadHasPoll,
 } from './state/composer'
 import {
   NO_VIDEO,
@@ -865,6 +871,10 @@ export const ComposePost = ({
     if (firstPost.embed.quote) return false
     // Has link
     if (firstPost.embed.link) return false
+    // Has a poll with choices written
+    if (firstPost.embed.poll && pollHasContent(firstPost.embed.poll)) {
+      return false
+    }
 
     return true
   }, [thread.posts])
@@ -893,7 +903,10 @@ export const ComposePost = ({
 
     const hasContent = thread.posts.some(
       post =>
-        post.shortenedGraphemeLength > 0 || post.embed.media || post.embed.link,
+        post.shortenedGraphemeLength > 0 ||
+        post.embed.media ||
+        post.embed.link ||
+        (post.embed.poll && pollHasContent(post.embed.poll)),
     )
 
     // Show discard prompt if there's content AND either:
@@ -990,6 +1003,7 @@ export const ComposePost = ({
       post =>
         isEmptyPost(post) ||
         (post.shortenedGraphemeLength <= MAX_GRAPHEME_LENGTH &&
+          isPollPostable(post) &&
           !(
             post.embed.media?.type === 'video' &&
             post.embed.media.video.status === 'error'
@@ -1099,6 +1113,13 @@ export const ComposePost = ({
           appviewClient: client,
           chatClient,
           pdsClient,
+          onPollRkey: (postId, rkey) => {
+            composerDispatch({
+              type: 'update_post',
+              postId,
+              postAction: {type: 'embed_set_poll_rkey', rkey},
+            })
+          },
         })
       ).uris[0]
 
@@ -1443,6 +1464,7 @@ export const ComposePost = ({
         post={activePost}
         dispatch={dispatch}
         isEditMode={isEditMode}
+        canAddPoll={!threadHasPoll(thread)}
         showAddButton={
           !isEditMode &&
           !isEmptyPost(activePost) &&
@@ -1699,8 +1721,13 @@ let ComposerPost = memo(function ComposerPost({
     [dispatchPost],
   )
 
+  const hasPoll = !!post.embed.poll
   const onPhotoPasted = useCallback(
     async (uri: string) => {
+      if (hasPoll) {
+        Toast.show(l`Remove the poll to add media`, {type: 'warning'})
+        return
+      }
       if (
         uri.startsWith('data:video/') ||
         (IS_WEB && uri.startsWith('data:image/gif'))
@@ -1723,7 +1750,7 @@ let ComposerPost = memo(function ComposerPost({
         onImageAdd([res])
       }
     },
-    [post.id, onSelectVideo, onImageAdd, l],
+    [post.id, hasPoll, onSelectVideo, onImageAdd, l],
   )
 
   useHideKeyboardOnBackground()
@@ -2025,6 +2052,8 @@ function ComposerEmbeds({
         </View>
       )}
 
+      {embed.poll && <PollEditor poll={embed.poll} dispatch={dispatch} />}
+
       {!embed.media && embed.link && (
         <View style={[a.relative, a.mt_lg]} key={embed.link.uri}>
           <ExternalEmbedLink
@@ -2180,6 +2209,7 @@ function ComposerFooter({
   post,
   dispatch,
   isEditMode,
+  canAddPoll,
   showAddButton,
   onSelectVideo,
   onAddPost,
@@ -2192,6 +2222,8 @@ function ComposerFooter({
   post: PostDraft
   dispatch: (action: PostAction) => void
   isEditMode: boolean
+  /** False once any post in the thread has a poll; a thread carries one. */
+  canAddPoll: boolean
   showAddButton: boolean
   onError: (error: string) => void
   onSelectVideo: (
@@ -2217,6 +2249,7 @@ function ComposerFooter({
   >(undefined)
 
   const media = post.embed.media
+  const hasPoll = !!post.embed.poll
   const images =
     media?.type === 'images' || media?.type === 'gallery' ? media.images : []
   const video = media?.type === 'video' ? media.video : null
@@ -2314,7 +2347,7 @@ function ComposerFooter({
               {!isEditMode && (
                 <>
                   <SelectMediaButton
-                    disabled={isMediaSelectionDisabled}
+                    disabled={isMediaSelectionDisabled || hasPoll}
                     allowedAssetTypes={selectedAssetsType}
                     selectedAssetsCount={selectedAssetsCount}
                     onSelectAssets={onSelectAssets}
@@ -2322,13 +2355,21 @@ function ComposerFooter({
                   />
                   <OpenCameraBtn
                     disabled={
-                      media?.type === 'images' || media?.type === 'gallery'
+                      hasPoll ||
+                      (media?.type === 'images' || media?.type === 'gallery'
                         ? isMaxImages
-                        : !!media
+                        : !!media)
                     }
                     onAdd={onImageAdd}
                   />
-                  <SelectGifBtn onSelectGif={onSelectGif} disabled={!!media} />
+                  <SelectGifBtn
+                    onSelectGif={onSelectGif}
+                    disabled={!!media || hasPoll}
+                  />
+                  <SelectPollBtn
+                    onPress={() => dispatch({type: 'embed_add_poll'})}
+                    disabled={!canAddPoll || postHasAttachment(post)}
+                  />
                 </>
               )}
               {IS_WEB && gtPhone ? (
@@ -2572,7 +2613,8 @@ function isEmptyPost(post: PostDraft) {
     post.richtext.text.trim().length === 0 &&
     !post.embed.media &&
     !post.embed.link &&
-    !post.embed.quote
+    !post.embed.quote &&
+    !post.embed.poll
   )
 }
 

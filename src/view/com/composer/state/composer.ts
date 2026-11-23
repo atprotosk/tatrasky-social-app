@@ -4,6 +4,13 @@ import {type AtUriString, toDatetimeString} from '@atproto/syntax'
 import {RichText} from '@bsky/sdk/richtext'
 import {nanoid} from 'nanoid/non-secure'
 
+import {
+  DEFAULT_POLL_DURATION,
+  isPollDraftPublishable,
+  type PollDraft,
+  type PollDuration,
+  withSpareOption,
+} from '#/lib/api/poll'
 import {type VideoTelemetry} from '#/lib/media/video/telemetry'
 import {type SelfLabel} from '#/lib/moderation'
 import {insertMentionAt} from '#/lib/strings/mention-manip'
@@ -72,6 +79,8 @@ export type EmbedDraft = {
   media: ImagesMedia | GalleryMedia | VideoMedia | GifMedia | undefined
   // This field may end up ignored if we have more important things to display than a link card:
   link: Link | undefined
+  /** A TOKIMEKI poll; it can't be combined with media, a link or a quote. */
+  poll?: PollDraft
 }
 
 export type PostDraft = {
@@ -102,6 +111,39 @@ export type PostAction =
   | {type: 'embed_add_gif'; gif: Gif}
   | {type: 'embed_update_gif'; alt: string}
   | {type: 'embed_remove_gif'}
+  | {type: 'embed_add_poll'}
+  | {type: 'embed_remove_poll'}
+  | {type: 'embed_update_poll_option'; index: number; text: string}
+  | {type: 'embed_set_poll_duration'; duration: PollDuration}
+  /** A custom closing time (local `YYYY-MM-DDTHH:mm`), or undefined to clear it. */
+  | {type: 'embed_set_poll_end'; endsAt: string | undefined}
+  | {type: 'embed_set_poll_rkey'; rkey: string}
+
+export function postHasAttachment(post: PostDraft): boolean {
+  return Boolean(
+    post.embed.media || post.embed.link || post.embed.quote || post.embed.poll,
+  )
+}
+
+/**
+ * Whether a post's poll, if it has one, can be posted: the post text is the
+ * question, the choices must be valid, and nothing else may be attached.
+ */
+export function isPollPostable(post: PostDraft): boolean {
+  const poll = post.embed.poll
+  if (!poll) return true
+  return (
+    post.richtext.text.trim().length > 0 &&
+    isPollDraftPublishable(poll) &&
+    !post.embed.media &&
+    !post.embed.link &&
+    !post.embed.quote
+  )
+}
+
+export function threadHasPoll(thread: ThreadDraft): boolean {
+  return thread.posts.some(post => post.embed.poll)
+}
 
 export type ThreadDraft = {
   posts: PostDraft[]
@@ -218,6 +260,13 @@ export function composerReducer(
       }
     }
     case 'update_post': {
+      // A thread carries at most one poll.
+      if (
+        action.postAction.type === 'embed_add_poll' &&
+        threadHasPoll(state.thread)
+      ) {
+        return state
+      }
       let nextPosts = state.thread.posts
       const postIndex = state.thread.posts.findIndex(
         p => p.id === action.postId,
@@ -321,7 +370,7 @@ export function composerReducer(
         loadedMediaMap: loadedMedia,
         originalLocalRefs,
         thread: {
-          posts,
+          posts: keepFirstPoll(posts),
           postgate: createPostgateRecord({
             post: '',
             embeddingRules: postgateEmbeddingRules,
@@ -372,7 +421,7 @@ function postReducer(state: PostDraft, action: PostAction): PostDraft {
       }
     }
     case 'embed_add_images': {
-      if (action.images.length === 0) {
+      if (action.images.length === 0 || state.embed.poll) {
         return state
       }
       const prevMedia = state.embed.media
@@ -463,6 +512,9 @@ function postReducer(state: PostDraft, action: PostAction): PostDraft {
       return state
     }
     case 'embed_add_video': {
+      if (state.embed.poll) {
+        return state
+      }
       const prevMedia = state.embed.media
       let nextMedia = prevMedia
       if (!prevMedia) {
@@ -522,6 +574,9 @@ function postReducer(state: PostDraft, action: PostAction): PostDraft {
       }
     }
     case 'embed_add_uri': {
+      if (state.embed.poll) {
+        return state
+      }
       const prevQuote = state.embed.quote
       const prevLink = state.embed.link
       let nextQuote = prevQuote
@@ -574,6 +629,9 @@ function postReducer(state: PostDraft, action: PostAction): PostDraft {
       }
     }
     case 'embed_add_gif': {
+      if (state.embed.poll) {
+        return state
+      }
       const prevMedia = state.embed.media
       let nextMedia = prevMedia
       if (!prevMedia) {
@@ -622,7 +680,98 @@ function postReducer(state: PostDraft, action: PostAction): PostDraft {
         },
       }
     }
+    case 'embed_add_poll': {
+      if (postHasAttachment(state)) {
+        return state
+      }
+      return {
+        ...state,
+        embed: {
+          ...state.embed,
+          poll: {options: ['', ''], duration: DEFAULT_POLL_DURATION},
+        },
+      }
+    }
+    case 'embed_update_poll_option': {
+      const poll = state.embed.poll
+      if (!poll || action.index < 0 || action.index >= poll.options.length) {
+        return state
+      }
+      return {
+        ...state,
+        embed: {
+          ...state.embed,
+          poll: {
+            ...poll,
+            options: withSpareOption(
+              poll.options.map((text, i) =>
+                i === action.index ? action.text : text,
+              ),
+            ),
+          },
+        },
+      }
+    }
+    case 'embed_set_poll_duration': {
+      const poll = state.embed.poll
+      if (!poll) {
+        return state
+      }
+      return {
+        ...state,
+        embed: {
+          ...state.embed,
+          // Picking a preset replaces a custom closing time.
+          poll: {...poll, duration: action.duration, endsAt: undefined},
+        },
+      }
+    }
+    case 'embed_set_poll_end': {
+      const poll = state.embed.poll
+      if (!poll) {
+        return state
+      }
+      return {
+        ...state,
+        embed: {
+          ...state.embed,
+          poll: {...poll, endsAt: action.endsAt},
+        },
+      }
+    }
+    case 'embed_set_poll_rkey': {
+      const poll = state.embed.poll
+      if (!poll) {
+        return state
+      }
+      return {
+        ...state,
+        embed: {
+          ...state.embed,
+          poll: {...poll, rkey: action.rkey},
+        },
+      }
+    }
+    case 'embed_remove_poll': {
+      return {
+        ...state,
+        embed: {
+          ...state.embed,
+          poll: undefined,
+        },
+      }
+    }
   }
+}
+
+/** Drops every poll after the first, which a restored draft could carry. */
+function keepFirstPoll(posts: PostDraft[]): PostDraft[] {
+  const first = posts.findIndex(post => post.embed.poll)
+  return posts.map((post, index) =>
+    post.embed.poll && index !== first
+      ? postReducer(post, {type: 'embed_remove_poll'})
+      : post,
+  )
 }
 
 export function createComposerState({

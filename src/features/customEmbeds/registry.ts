@@ -1,6 +1,7 @@
 import {atmoRsvpHandler} from '#/features/customEmbeds/atmoRsvp'
 import {tangledStringHandler} from '#/features/customEmbeds/tangledString'
 import {type CustomEmbedHandler} from '#/features/customEmbeds/types'
+import {tokimekiPollHandler} from '#/features/tokimeki'
 import {type app} from '#/lexicons'
 
 /**
@@ -9,7 +10,11 @@ import {type app} from '#/lexicons'
  * `match` returns true is used; otherwise upstream's default external embed
  * rendering takes over.
  */
-const handlers: CustomEmbedHandler[] = [atmoRsvpHandler, tangledStringHandler]
+const handlers: CustomEmbedHandler[] = [
+  atmoRsvpHandler,
+  tangledStringHandler,
+  tokimekiPollHandler,
+]
 
 export function matchCustomEmbed(
   view: app.bsky.embed.external.ViewExternal,

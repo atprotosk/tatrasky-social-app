@@ -18997,3 +18997,200 @@ msgstr "Tvoj aktuálny stav neobmedzuje tvoj účet a napomenutia sa z tvojho z�
 #: src/screens/ModerationInbox/components/AccountStatus.tsx:51
 msgid "Your standing may restrict certain features on your account. Strikes come off your record over time."
 msgstr "Tvoj stav môže obmedzovať niektoré funkcie tvojho účtu. Tresty sa z tvojho záznamu časom odstraňujú."
+
+#. Time until a poll closes, e.g. “· 3 hours left”
+#. placeholder {0}: timeUntil(now, poll.endsAt, {format: 'long'})
+#: src/features/tokimeki/components/TokimekiPollEmbed.tsx:244
+msgid "· {0} left"
+msgstr "· ešte {0}"
+
+#. After a poll's vote count, e.g. “3 votes · Ended”
+#: src/features/tokimeki/components/TokimekiPollEmbed.tsx:237
+msgid "· Ended"
+msgstr "· Skončená"
+
+#: src/features/tokimeki/components/TokimekiPollEmbed.tsx:230
+msgid "{total, plural, one {# vote} other {# votes}}"
+msgstr "{total, plural, one {# hlas} few {# hlasy} many {# hlasu} other {# hlasov}}"
+
+#: src/view/com/composer/poll/PollEditor.tsx:49
+msgid "1 day"
+msgstr "1 deň"
+
+#: src/view/com/composer/poll/PollEditor.tsx:46
+msgid "1 hour"
+msgstr "1 hodina"
+
+#: src/view/com/composer/poll/PollEditor.tsx:48
+msgid "12 hours"
+msgstr "12 hodín"
+
+#: src/view/com/composer/poll/PollEditor.tsx:50
+msgid "3 days"
+msgstr "3 dni"
+
+#: src/view/com/composer/poll/PollEditor.tsx:47
+msgid "6 hours"
+msgstr "6 hodín"
+
+#: src/lib/api/index.ts:52
+msgid "A poll cannot be combined with media, a link card or a quote."
+msgstr "Anketu nemožno kombinovať s médiami, náhľadom odkazu ani citáciou."
+
+#: src/lib/api/index.ts:60
+msgid "A thread can only have one poll."
+msgstr "Vlákno môže mať iba jednu anketu."
+
+#. Accessibility label for the button in the post composer that attaches a poll to the post.
+#: src/view/com/composer/poll/SelectPollBtn.tsx:21
+msgid "Add poll"
+msgstr "Pridať anketu"
+
+#. Accessibility hint announced after the poll button label, describing what activating it will do.
+#: src/view/com/composer/poll/SelectPollBtn.tsx:26
+msgid "Attaches a poll to this post"
+msgstr "Pripojí k príspevku anketu"
+
+#. Placeholder for a poll choice text field in the composer
+#: src/view/com/composer/poll/PollEditor.tsx:121
+msgid "Choice"
+msgstr "Možnosť"
+
+#. Placeholder for an extra, optional poll choice text field in the composer
+#: src/view/com/composer/poll/PollEditor.tsx:116
+msgid "Choice (optional)"
+msgstr "Možnosť (nepovinné)"
+
+#. Accessibility label for a poll choice text field in the composer. The number is the position of the choice.
+#. placeholder {0}: index + 1
+#: src/view/com/composer/poll/PollEditor.tsx:109
+msgid "Choice {0}"
+msgstr "Možnosť {0}"
+
+#: src/view/com/composer/poll/PollEditor.tsx:150
+msgid "Choices can be up to {POLL_OPTION_MAX_GRAPHEMES} characters"
+msgstr "Možnosť môže mať najviac {POLL_OPTION_MAX_GRAPHEMES} znakov"
+
+#. Before the poll's duration, e.g. “Closes after 1 day”
+#. placeholder {0}: durationLabel(duration)
+#: src/view/com/composer/poll/PollEditor.tsx:199
+msgid "Closes after <0>{0}</0>"
+msgstr "Trvanie: <0>{0}</0>"
+
+#. The poll closes at a date and time the author picked
+#: src/view/com/composer/poll/PollEditor.tsx:187
+msgid "Closes at a <0>set time</0>"
+msgstr "Skončí vo <0>zvolenom čase</0>"
+
+#: src/lib/api/index.ts:528
+msgid "Could not load the poll link preview. Please try again."
+msgstr "Nepodarilo sa načítať náhľad ankety. Skús to znova."
+
+#: src/features/tokimeki/mutations.ts:77
+msgid "Could not record your vote"
+msgstr "Nepodarilo sa zaznamenať tvoj hlas"
+
+#: src/features/tokimeki/mutations.ts:157
+msgid "Could not remove your vote"
+msgstr "Nepodarilo sa zrušiť tvoj hlas"
+
+#: src/lib/api/index.ts:200
+msgid "Creating poll..."
+msgstr "Vytvára sa anketa…"
+
+#. Menu item to pick a poll's closing date and time
+#: src/view/com/composer/poll/PollEditor.tsx:249
+msgid "Custom…"
+msgstr "Vlastné…"
+
+#: src/features/tokimeki/components/TokimekiPollEmbed.tsx:152
+msgid "Loading poll…"
+msgstr "Načítava sa anketa…"
+
+#: src/features/tokimeki/components/TokimekiPollEmbed.tsx:260
+msgid "Open poll on TOKIMEKI"
+msgstr "Otvoriť anketu v TOKIMEKI"
+
+#: src/view/com/composer/poll/PollEditor.tsx:273
+msgid "Pick a time at least 5 minutes from now"
+msgstr "Vyber čas aspoň 5 minút od teraz"
+
+#: src/view/com/composer/poll/PollEditor.tsx:239
+msgid "Pick when the poll closes"
+msgstr "Vyber, kedy anketa skončí"
+
+#. Heading of the poll editor card in the post composer
+#. Label on a draft preview showing the draft has a poll
+#: src/view/com/composer/drafts/DraftItem.tsx:373
+#: src/view/com/composer/poll/PollEditor.tsx:80
+msgid "Poll"
+msgstr "Anketa"
+
+#. placeholder {0}: durationLabel(value)
+#: src/view/com/composer/poll/PollEditor.tsx:222
+msgid "Poll closes after {0}"
+msgstr "Trvanie ankety: {0}"
+
+#. placeholder {0}: durationLabel(duration)
+#: src/view/com/composer/poll/PollEditor.tsx:165
+msgid "Poll closes after {0}, change"
+msgstr "Trvanie ankety: {0}, zmeniť"
+
+#: src/view/com/composer/poll/PollEditor.tsx:164
+msgid "Poll closes at a set time, change"
+msgstr "Anketa skončí vo zvolenom čase, zmeniť"
+
+#: src/view/com/composer/poll/PollEditor.tsx:261
+msgid "Poll closing time"
+msgstr "Čas skončenia ankety"
+
+#: src/view/com/composer/poll/PollEditor.tsx:87
+msgid "Remove poll"
+msgstr "Odstrániť anketu"
+
+#: src/view/com/composer/poll/PollEditor.tsx:89
+msgid "Remove poll?"
+msgstr "Odstrániť anketu?"
+
+#: src/view/com/composer/Composer.tsx:1728
+msgid "Remove the poll to add media"
+msgstr "Ak chceš pridať médiá, odstráň anketu"
+
+#: src/features/tokimeki/components/TokimekiPollEmbed.tsx:290
+#: src/features/tokimeki/components/TokimekiPollEmbed.tsx:304
+msgid "Remove vote"
+msgstr "Zrušiť hlas"
+
+#: src/features/tokimeki/components/TokimekiPollEmbed.tsx:283
+msgid "Remove your vote"
+msgstr "Zrušiť tvoj hlas"
+
+#: src/features/tokimeki/components/TokimekiPollEmbed.tsx:298
+msgid "Remove your vote?"
+msgstr "Zrušiť tvoj hlas?"
+
+#: src/view/com/composer/poll/PollEditor.tsx:90
+msgid "The choices you've written will be lost."
+msgstr "Napísané možnosti sa stratia."
+
+#: src/view/com/composer/poll/PollEditor.tsx:146
+msgid "This choice contains characters that cannot be saved"
+msgstr "Táto možnosť obsahuje znaky, ktoré nemožno uložiť"
+
+#. Link to the poll on TOKIMEKI, the poll service
+#: src/features/tokimeki/components/TokimekiPollEmbed.tsx:263
+msgid "TOKIMEKI Poll"
+msgstr "TOKIMEKI Poll"
+
+#: src/view/com/composer/poll/PollEditor.tsx:280
+msgid "Votes are public and handled by TOKIMEKI Poll"
+msgstr "Hlasy sú verejné a spracúva ich TOKIMEKI Poll"
+
+#: src/features/tokimeki/components/TokimekiPollEmbed.tsx:302
+msgid "You can vote again while the poll is open."
+msgstr "Kým je anketa otvorená, môžeš hlasovať znova."
+
+#. placeholder {0}: poll.options[poll.myVote]
+#: src/features/tokimeki/components/TokimekiPollEmbed.tsx:301
+msgid "You voted for “{0}”. You can vote again while the poll is open."
+msgstr "Hlasoval/a si za „{0}“. Kým je anketa otvorená, môžeš hlasovať znova."

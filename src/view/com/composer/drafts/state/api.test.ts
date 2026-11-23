@@ -49,3 +49,34 @@ it('restores legacy seasonal drafts as ordinary posts without losing their text'
   expect(posts[0]).not.toHaveProperty('halloweenCostumeNumber')
   expect(posts[1]).not.toHaveProperty('halloweenCostumeNumber')
 })
+
+it('keeps a poll, with its custom closing time, through a saved draft', async () => {
+  let state = createComposerState({
+    initText: 'Tea or coffee?',
+    initExternalUri: undefined,
+    initEditPost: undefined,
+    initMention: undefined,
+    initImageUris: undefined,
+    initQuoteUri: undefined,
+    initInteractionSettings: undefined,
+  })
+  const postId = state.thread.posts[0].id
+  for (const postAction of [
+    {type: 'embed_add_poll'},
+    {type: 'embed_update_poll_option', index: 0, text: 'Tea'},
+    {type: 'embed_update_poll_option', index: 1, text: 'Coffee'},
+    {type: 'embed_set_poll_end', endsAt: '2030-01-01T12:00'},
+    {type: 'embed_set_poll_rkey', rkey: '3abc'},
+  ] as const) {
+    state = composerReducer(state, {type: 'update_post', postId, postAction})
+  }
+  const {draft} = await composerStateToDraft({} as LinkResolvers, state)
+  const parsed = app.bsky.draft.defs.draft.parse(draft)
+  const {posts} = await draftToComposerPosts(parsed, new Map())
+  // The record key belongs to one publish attempt and is not saved.
+  expect(posts[0].embed.poll).toEqual({
+    options: ['Tea', 'Coffee', ''],
+    duration: '1d',
+    endsAt: '2030-01-01T12:00',
+  })
+})

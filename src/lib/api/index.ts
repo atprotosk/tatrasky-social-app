@@ -10,7 +10,10 @@ import {RichText} from '@bsky/sdk/richtext'
 import {t} from '@lingui/core/macro'
 import {type QueryClient} from '@tanstack/react-query'
 
+import {type PollDraft} from '#/lib/api/poll'
+import {createPoll, deletePoll, tokimekiPollUrl} from '#/lib/api/poll-publish'
 import {type LinkResolvers} from '#/lib/api/resolve'
+import {retry} from '#/lib/async/retry'
 import {withCreator} from '#/lib/at-card'
 import {IMAGE_SIZE_CONFIG_POSTS} from '#/lib/constants'
 import {type EditedPostRecord} from '#/lib/edit-post'
@@ -21,6 +24,7 @@ import {compressImage} from '#/state/gallery'
 import {
   fetchResolveGifQuery,
   fetchResolveLinkQuery,
+  RQKEY_LINK,
 } from '#/state/queries/resolve-link'
 import {
   createThreadgateRecord,
@@ -39,10 +43,37 @@ import {uploadBlob} from './upload-blob'
 
 export {uploadBlob}
 
+function refusePollWithAttachments(draft: PostDraft) {
+  if (
+    draft.embed.poll &&
+    (draft.embed.media || draft.embed.link || draft.embed.quote)
+  ) {
+    throw new Error(
+      t`A poll cannot be combined with media, a link card or a quote.`,
+    )
+  }
+}
+
+function findPollPost(thread: ThreadDraft): PostDraft | undefined {
+  const [pollPost, ...others] = thread.posts.filter(p => p.embed.poll)
+  if (others.length) {
+    throw new Error(t`A thread can only have one poll.`)
+  }
+  if (pollPost) {
+    refusePollWithAttachments(pollPost)
+  }
+  return pollPost
+}
+
 interface PostOpts {
   thread: ThreadDraft
   replyTo?: string
   onStateChange?: (state: string) => void
+  /**
+   * Called with the record key picked for a post's poll, so the composer can
+   * keep it and a retry overwrites the same poll record instead of adding one.
+   */
+  onPollRkey?: (postId: string, rkey: string) => void
   langs?: string[]
   /*
    * Facet/mention resolution and reply-root lookup are appview jobs - they
@@ -64,8 +95,10 @@ interface PostOpts {
 }
 
 export async function post(queryClient: QueryClient, opts: PostOpts) {
-  const thread = opts.thread
+  let thread = opts.thread
   opts.onStateChange?.(t`Processing...`)
+
+  const pollPost = findPollPost(thread)
 
   let replyPromise:
     | Promise<app.bsky.feed.post.Main['reply']>
@@ -74,6 +107,25 @@ export async function post(queryClient: QueryClient, opts: PostOpts) {
   if (opts.replyTo) {
     // Not awaited to avoid waterfalls.
     replyPromise = resolveReply(opts.appviewClient, opts.replyTo)
+  }
+
+  const pollDraft = pollPost?.embed.poll
+  if (pollPost && pollDraft) {
+    // Keep the poll key on the draft so failed publishing attempts reuse it.
+    if (!pollDraft.rkey) {
+      const rkey = TID.nextStr()
+      opts.onPollRkey?.(pollPost.id, rkey)
+      thread = {
+        ...thread,
+        posts: thread.posts.map(p =>
+          p === pollPost
+            ? {...p, embed: {...p.embed, poll: {...pollDraft, rkey}}}
+            : p,
+        ),
+      }
+    }
+    // A reply whose parent is gone should fail before a poll is created.
+    await replyPromise
   }
 
   // add top 3 languages from user preferences if langs is provided
@@ -88,20 +140,25 @@ export async function post(queryClient: QueryClient, opts: PostOpts) {
 
   let now = new Date()
   let tid: TID | undefined
+  /** The rkey of a poll record this attempt wrote, to clean up on failure. */
+  let createdPollRkey: string | undefined
 
   for (let i = 0; i < thread.posts.length; i++) {
     const draft = thread.posts[i]
 
     // Not awaited to avoid waterfalls.
     const rtPromise = resolveRT(opts.appviewClient, draft.richtext)
-    const embedPromise = resolveEmbed(
-      opts.appviewClient,
-      opts.chatClient,
-      opts.pdsClient,
-      queryClient,
-      draft,
-      opts.onStateChange,
-    )
+    // A poll's card is resolved below, once its record exists.
+    const embedPromise = draft.embed.poll
+      ? Promise.resolve(undefined)
+      : resolveEmbed(
+          opts.appviewClient,
+          opts.chatClient,
+          opts.pdsClient,
+          queryClient,
+          draft,
+          opts.onStateChange,
+        )
     let labels: $Typed<com.atproto.label.defs.SelfLabels> | undefined
     if (draft.labels.length) {
       labels = {
@@ -132,6 +189,45 @@ export async function post(queryClient: QueryClient, opts: PostOpts) {
       embed,
       langs,
       labels,
+    }
+    if (draft.embed.poll) {
+      /*
+       * The poll is written first: TOKIMEKI only serves the card image for a
+       * poll it has indexed. It names the post by URI alone, so the post's
+       * card can then point back at the poll's exact version through
+       * `associatedRefs`.
+       */
+      opts.onStateChange?.(t`Creating poll...`)
+      const pollRef = await createPoll(
+        opts.pdsClient,
+        draft.embed.poll,
+        {uri},
+        new Date(now),
+      )
+      createdPollRkey = pollRef.rkey
+      try {
+        const card = await resolvePoll(
+          opts.appviewClient,
+          opts.chatClient,
+          opts.pdsClient,
+          queryClient,
+          draft,
+          draft.embed.poll,
+          opts.onStateChange,
+        )
+        record.embed = {
+          ...card,
+          external: {
+            ...card.external,
+            associatedRefs: [
+              {uri: pollRef.uri as AtUriString, cid: pollRef.cid},
+            ],
+          },
+        }
+      } catch (err) {
+        await deletePoll(opts.pdsClient, pollRef.rkey)
+        throw err
+      }
     }
     writes.push({
       $type: 'com.atproto.repo.applyWrites#create',
@@ -192,6 +288,13 @@ export async function post(queryClient: QueryClient, opts: PostOpts) {
     logger.error(`Failed to create post`, {
       safeMessage: e.message,
     })
+    /*
+     * Never remove the poll after an ambiguous failure: a network error may
+     * mean the post did land, and it would lose its poll for good.
+     */
+    if (createdPollRkey && !isNetworkError(e)) {
+      await deletePoll(opts.pdsClient, createdPollRkey)
+    }
     if (isNetworkError(e)) {
       throw new Error(
         t`Post failed to upload. Please check your Internet connection and try again.`,
@@ -383,6 +486,52 @@ async function resolveEmbed(
     }
   }
   return undefined
+}
+
+/**
+ * The link card for a published poll, built through the same preview and
+ * upload path as any link, from the poll's page on TOKIMEKI.
+ */
+async function resolvePoll(
+  appviewClient: Client,
+  chatClient: Client,
+  pdsClient: Client,
+  queryClient: QueryClient,
+  draft: PostDraft,
+  poll: PollDraft,
+  onStateChange: ((state: string) => void) | undefined,
+): Promise<$Typed<app.bsky.embed.external.Main>> {
+  refusePollWithAttachments(draft)
+  if (!poll.rkey) {
+    throw new Error('A poll cannot be posted without its record key')
+  }
+  const uri = tokimekiPollUrl(pdsClient.assertDid, poll.rkey) as UriString
+  // Give TOKIMEKI time to index the new record, without caching an empty card.
+  return retry(
+    3,
+    () => true,
+    async () => {
+      await queryClient.invalidateQueries({
+        queryKey: RQKEY_LINK(uri),
+        refetchType: 'none',
+      })
+      const embed = await resolveMedia(
+        appviewClient,
+        chatClient,
+        pdsClient,
+        queryClient,
+        {quote: undefined, media: undefined, link: {type: 'link', uri}},
+        onStateChange,
+      )
+      if (embed?.$type !== 'app.bsky.embed.external' || !embed.external.thumb) {
+        throw new Error(
+          t`Could not load the poll link preview. Please try again.`,
+        )
+      }
+      return embed
+    },
+    1000,
+  )
 }
 
 async function resolveMedia(

@@ -6,6 +6,7 @@ import {AtUri} from '@atproto/syntax'
 import {RichText} from '@bsky/sdk/richtext'
 import {nanoid} from 'nanoid/non-secure'
 
+import {decodePollDraft} from '#/lib/api/poll'
 import {type LinkResolvers, resolveLink} from '#/lib/api/resolve'
 import {getDeviceName} from '#/lib/deviceName'
 import {getImageDim} from '#/lib/media/manip'
@@ -28,6 +29,21 @@ import * as bsky from '#/types/bsky'
 import {logger} from './logger'
 import {type DraftPostDisplay, type DraftSummary} from './schema'
 import * as storage from './storage'
+
+/*
+ * app.bsky.draft.defs has no poll, so a poll travels as an extra property on
+ * the draft post, which the draft service keeps as is. The key matches
+ * Witchsky's, so a draft started in either app keeps its poll in the other.
+ */
+const DRAFT_POLL_KEY = 'communityBlackskyPoll'
+
+type DraftPostWithPoll = app.bsky.draft.defs.DraftPost & {
+  [DRAFT_POLL_KEY]?: unknown
+}
+
+function readDraftPoll(post: app.bsky.draft.defs.DraftPost) {
+  return decodePollDraft((post as DraftPostWithPoll)[DRAFT_POLL_KEY])
+}
 
 const TENOR_HOSTNAME = 'media.tenor.com'
 const KLIPY_HOSTNAME = 'static.klipy.com'
@@ -166,6 +182,19 @@ async function postDraftToServerPost(
         uri: post.embed.link.uri,
       },
     ]
+  }
+
+  if (post.embed.poll) {
+    /*
+     * The record key is assigned per publish attempt; a saved draft starts
+     * fresh so a stale record is never mistaken for this one.
+     */
+    const {options, duration, endsAt} = post.embed.poll
+    ;(draftPost as DraftPostWithPoll)[DRAFT_POLL_KEY] = {
+      options,
+      duration,
+      ...(endsAt ? {endsAt} : {}),
+    }
   }
 
   return draftPost
@@ -436,6 +465,7 @@ export function draftViewToSummary({
       images: images.length > 0 ? images : undefined,
       video: videos[0], // Only one video per post
       gif,
+      poll: readDraftPoll(post),
     }
   })
 
@@ -620,6 +650,21 @@ export async function draftToComposerPosts(
             break
           }
         }
+      }
+
+      /*
+       * Restoring installs embeds directly, bypassing the reducer's rule that
+       * a poll stands alone, and a video is only attached after this returns.
+       */
+      const poll = readDraftPoll(post)
+      if (
+        poll &&
+        !embed.media &&
+        !embed.link &&
+        !embed.quote &&
+        !restoredVideos.has(index)
+      ) {
+        embed.poll = poll
       }
 
       // Parse labels

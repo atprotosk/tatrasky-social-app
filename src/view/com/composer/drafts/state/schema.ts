@@ -1,3 +1,4 @@
+import {type PollDraft} from '#/lib/api/poll'
 import {type app} from '#/lexicons'
 /**
  * Types for draft display and local media tracking.
@@ -43,6 +44,8 @@ export type DraftPostDisplay = {
   video?: LocalMediaDisplay
   /** GIF data (from URL) */
   gif?: GifDisplay
+  /** A poll saved with the post */
+  poll?: PollDraft
 }
 
 /**

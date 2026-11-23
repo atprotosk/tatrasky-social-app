@@ -60,3 +60,26 @@ code snippets/pastes - as a syntax-highlighted code card.
 
 > `lowlight` and its `devlop` dependency are ESM-only, so both are added to
 > `transformIgnorePatterns` in `package.json` for Jest.
+
+## tokimekiPoll
+
+Renders [TOKIMEKI](https://poll.tokimeki.tech) polls (`tech.tokimeki.poll.poll`)
+inline with the post, with in-app voting. The feature lives in
+`src/features/tokimeki/`; only its handler is registered here. Ported from
+[Witchsky](https://tangled.org/jollywhoppers.com/witchsky.app).
+
+- **Detect**: a link card whose `associatedRefs` names a poll record, or a
+  `https://poll.tokimeki.tech/p/{did}/{rkey}` URL (`parse.ts`). A poll that
+  can't be read falls back to the ordinary link card.
+- **Read**: TOKIMEKI's own AppView (`tech.tokimeki.poll.getPoll`) for the
+  counts. If it can't answer, the poll record is read from its author's PDS
+  and the votes are counted from Constellation backlinks, each vote verified
+  against the voter's repo (`api.ts`). The viewer's own vote always comes from
+  their repo.
+- **Write**: votes are `tech.tokimeki.poll.vote` records in the voter's repo;
+  removing a vote deletes them (`mutations.ts`). Indexers lag the write, so a
+  recent vote is laid over refetched data for a while (`recent-votes.ts`).
+- **Create**: the composer's poll editor (`view/com/composer/poll/`). On
+  publish, `lib/api/index.ts` writes the poll record first, then posts a link
+  card to the poll's TOKIMEKI page that points back at the record through
+  `associatedRefs` (`lib/api/poll-publish.ts`). Other apps see a link card.
