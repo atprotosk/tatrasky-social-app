@@ -8,6 +8,7 @@ import Animated, {
   SlideInRight,
   SlideOutLeft,
 } from 'react-native-reanimated'
+import {type Client} from '@atproto/lex'
 import {msg} from '@lingui/core/macro'
 import {useLingui} from '@lingui/react'
 import {Trans} from '@lingui/react/macro'
@@ -29,20 +30,29 @@ import {CopyButton} from './CopyButton'
 
 export function AddAppPasswordDialog({
   control,
+  client,
   passwords,
 }: {
   control: Dialog.DialogControlProps
+  /** Passed in because dialogs are portaled. */
+  client: Client | undefined
   passwords: string[]
 }) {
   return (
     <Dialog.Outer control={control} nativeOptions={{fullHeight: true}}>
       <Dialog.Handle />
-      <CreateDialogInner passwords={passwords} />
+      <CreateDialogInner client={client} passwords={passwords} />
     </Dialog.Outer>
   )
 }
 
-function CreateDialogInner({passwords}: {passwords: string[]}) {
+function CreateDialogInner({
+  client,
+  passwords,
+}: {
+  client: Client | undefined
+  passwords: string[]
+}) {
   const control = Dialog.useDialogContext()
   const t = useTheme()
   const {_} = useLingui()
@@ -53,7 +63,7 @@ function CreateDialogInner({passwords}: {passwords: string[]}) {
     mutateAsync: actuallyCreateAppPassword,
     error: apiError,
     data,
-  } = useAppPasswordCreateMutation()
+  } = useAppPasswordCreateMutation({client})
 
   const regexFailError = useMemo(
     () =>
@@ -167,16 +177,16 @@ function CreateDialogInner({passwords}: {passwords: string[]}) {
                   </ButtonText>
                   <ButtonIcon icon={ChevronRight} />
                 </Button>
-                {!!apiError ||
-                  (error && !(error instanceof DisplayableError) && (
-                    <Animated.View entering={FadeIn} exiting={FadeOut}>
-                      <Admonition type="error">
-                        <Trans>
-                          Failed to create app password. Please try again.
-                        </Trans>
-                      </Admonition>
-                    </Animated.View>
-                  ))}
+                {(!!apiError ||
+                  (!!error && !(error instanceof DisplayableError))) && (
+                  <Animated.View entering={FadeIn} exiting={FadeOut}>
+                    <Admonition type="error">
+                      <Trans>
+                        Failed to create app password. Please try again.
+                      </Trans>
+                    </Admonition>
+                  </Animated.View>
+                )}
               </Animated.View>
             </Animated.View>
           ) : (

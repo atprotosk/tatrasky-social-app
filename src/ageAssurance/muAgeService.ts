@@ -1,9 +1,10 @@
 import {type Client} from '@atproto/lex'
 import {type NsidString} from '@atproto/syntax'
 
+import {getAge} from '#/lib/strings/time'
 import {logger} from '#/ageAssurance/logger'
 import {BRAND} from '#/config/brand'
-import {com} from '#/lexicons'
+import {app, com} from '#/lexicons'
 
 /**
  * Client for the mu age-assurance backend (`mu-age-service`).
@@ -36,6 +37,63 @@ export function birthdateFromFlags(flags: MuAgeFlags): string {
     today.getMonth(),
     today.getDate() - 1, // day before, so the age is definitely reached
   ).toISOString()
+}
+
+export function flagsFromBirthDate(birthDate: Date): MuAgeFlags {
+  const age = getAge(birthDate)
+  return {over13: age >= 13, over16: age >= 16, over18: age >= 18}
+}
+
+/**
+ * The flags the PDS derives from the birthdate it holds. Unlike the birthdate
+ * itself they are readable over OAuth. Undefined if no birthdate was declared.
+ */
+async function getPdsDeclaredAgeFlags(
+  client: Client,
+): Promise<MuAgeFlags | undefined> {
+  const {preferences} = await client.call(app.bsky.actor.getPreferences, {})
+  const pref = preferences.find(p =>
+    app.bsky.actor.defs.declaredAgePref.$isTypeOf(p),
+  )
+  if (!pref) return undefined
+  return {
+    over13: !!pref.isOverAge13,
+    over16: !!pref.isOverAge16,
+    over18: !!pref.isOverAge18,
+  }
+}
+
+/**
+ * Age status from our service. An account that has nothing there yet, but did
+ * declare a birthdate on its PDS, is copied over silently instead of being asked
+ * again.
+ */
+export async function getMuAgeStatusSeeded(
+  client: Client,
+): Promise<MuAgeStatus> {
+  const status = await getMuAgeStatus(client)
+  if (status.declared) return status
+
+  let flags: MuAgeFlags | undefined
+  try {
+    flags = await getPdsDeclaredAgeFlags(client)
+  } catch (e) {
+    /* The user can still declare by hand, so this must not fail the gate. */
+    logger.warn('getMuAgeStatusSeeded: could not read the PDS declaration', {
+      safeMessage: String(e),
+    })
+  }
+  if (!flags) return status
+
+  try {
+    await setMuAgeStatus(client, flags)
+  } catch (e) {
+    /* Still honour the PDS declaration; seeding is retried on the next read. */
+    logger.warn('getMuAgeStatusSeeded: could not save flags', {
+      safeMessage: String(e),
+    })
+  }
+  return {declared: true, ...flags}
 }
 
 /**

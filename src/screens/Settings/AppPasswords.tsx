@@ -1,4 +1,4 @@
-import {useCallback} from 'react'
+import {useCallback, useEffect} from 'react'
 import {View} from 'react-native'
 import Animated, {
   FadeIn,
@@ -6,18 +6,24 @@ import Animated, {
   LayoutAnimationConfig,
   LinearTransition,
 } from 'react-native-reanimated'
+import {type Client} from '@atproto/lex'
 import {msg} from '@lingui/core/macro'
 import {useLingui} from '@lingui/react'
 import {Trans} from '@lingui/react/macro'
+import {useFocusEffect} from '@react-navigation/native'
 import {type NativeStackScreenProps} from '@react-navigation/native-stack'
+import {useQueryClient} from '@tanstack/react-query'
 
 import {type CommonNavigatorParams} from '#/lib/routes/types'
 import {cleanError} from '#/lib/strings/errors'
 import {formatDateTime} from '#/lib/strings/time'
+import {logger} from '#/logger'
 import {
+  RQKEY,
   useAppPasswordDeleteMutation,
   useAppPasswordsQuery,
 } from '#/state/queries/app-passwords'
+import {usePdsClient, useSession} from '#/state/session'
 import {EmptyState} from '#/view/com/util/EmptyState'
 import {ErrorScreen} from '#/view/com/util/error/ErrorScreen'
 import {atoms as a, useTheme} from '#/alf'
@@ -33,6 +39,8 @@ import {Loader} from '#/components/Loader'
 import * as Prompt from '#/components/Prompt'
 import * as Toast from '#/components/Toast'
 import {Text} from '#/components/Typography'
+import {ConfirmPasswordForm} from '#/features/passwordConfirmation/ConfirmPasswordForm'
+import {useConfirmedSession} from '#/features/passwordConfirmation/useConfirmedSession'
 import {type com} from '#/lexicons'
 import {AddAppPasswordDialog} from './components/AddAppPasswordDialog'
 import * as SettingsList from './components/SettingsList'
@@ -40,8 +48,24 @@ import * as SettingsList from './components/SettingsList'
 type Props = NativeStackScreenProps<CommonNavigatorParams, 'AppPasswords'>
 export function AppPasswordsScreen({}: Props) {
   const {_} = useLingui()
-  const {data: appPasswords, error} = useAppPasswordsQuery()
+  const {currentAccount} = useSession()
+  const isOauth = currentAccount?.isOauthSession === true
+  const pdsClient = usePdsClient()
+  const {client: confirmedClient, confirm, release} = useConfirmedSession()
+  const client = isOauth ? confirmedClient : pdsClient
+  const {data: appPasswords, error} = useAppPasswordsQuery({client})
   const createAppPasswordControl = useDialogControl()
+  const queryClient = useQueryClient()
+  const did = currentAccount?.did
+
+  /* Leaving the screen ends the confirmation. */
+  useFocusEffect(useCallback(() => release, [release]))
+
+  /* What was read with a confirmed session does not outlive it. */
+  useEffect(() => {
+    if (!confirmedClient) return
+    return () => queryClient.removeQueries({queryKey: RQKEY(did)})
+  }, [confirmedClient, did, queryClient])
 
   return (
     <Layout.Screen testID="AppPasswordsScreen">
@@ -55,7 +79,11 @@ export function AppPasswordsScreen({}: Props) {
         <Layout.Header.Slot />
       </Layout.Header.Outer>
       <Layout.Content>
-        {error ? (
+        {!client ? (
+          <View style={[a.p_xl]}>
+            <ConfirmPasswordForm onConfirm={confirm} />
+          </View>
+        ) : error ? (
           <ErrorScreen
             title={_(msg`Oops!`)}
             message={_(msg`There was an issue fetching your app passwords`)}
@@ -98,7 +126,10 @@ export function AppPasswordsScreen({}: Props) {
                         exiting={FadeOut}
                         layout={LinearTransition.delay(150)}>
                         <SettingsList.Item>
-                          <AppPasswordCard appPassword={appPassword} />
+                          <AppPasswordCard
+                            appPassword={appPassword}
+                            client={client}
+                          />
                         </SettingsList.Item>
                       </Animated.View>
                     ))}
@@ -127,6 +158,7 @@ export function AppPasswordsScreen({}: Props) {
 
       <AddAppPasswordDialog
         control={createAppPasswordControl}
+        client={client}
         passwords={appPasswords?.map(p => p.name) || []}
       />
     </Layout.Screen>
@@ -135,17 +167,26 @@ export function AppPasswordsScreen({}: Props) {
 
 function AppPasswordCard({
   appPassword,
+  client,
 }: {
   appPassword: com.atproto.server.listAppPasswords.AppPassword
+  client: Client
 }) {
   const t = useTheme()
   const {i18n, _} = useLingui()
   const deleteControl = Prompt.usePromptControl()
-  const {mutateAsync: deleteMutation} = useAppPasswordDeleteMutation()
+  const {mutateAsync: deleteMutation} = useAppPasswordDeleteMutation({client})
 
   const onDelete = useCallback(async () => {
-    await deleteMutation({name: appPassword.name})
-    Toast.show(_(msg({message: 'App password deleted', context: 'toast'})))
+    try {
+      await deleteMutation({name: appPassword.name})
+      Toast.show(_(msg({message: 'App password deleted', context: 'toast'})))
+    } catch (e) {
+      logger.error('Failed to delete app password', {safeMessage: String(e)})
+      Toast.show(_(msg`Failed to delete app password. Please try again.`), {
+        type: 'error',
+      })
+    }
   }, [deleteMutation, appPassword.name, _])
 
   return (

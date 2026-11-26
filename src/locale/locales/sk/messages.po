@@ -19675,3 +19675,35 @@ msgstr "O udalosti"
 #: src/view/shell/desktop/RightNav.tsx:200 src/view/shell/desktop/RightNav.tsx:201
 msgid "Source code"
 msgstr "Zdrojový kód"
+
+#: src/features/passwordConfirmation/ConfirmPasswordForm.tsx
+msgid "Confirm your password"
+msgstr "Potvrď svoje heslo"
+
+#: src/screens/Settings/AppPasswords.tsx
+msgid "Failed to delete app password. Please try again."
+msgstr "Nepodarilo sa odstrániť aplikačné heslo. Skús to znova."
+
+#: src/features/passwordConfirmation/ConfirmPasswordForm.tsx
+msgid "For your security, confirm your password to continue."
+msgstr "V záujme bezpečnosti potvrď pred pokračovaním svoje heslo."
+
+#: src/features/passwordConfirmation/ConfirmPasswordForm.tsx
+msgid "Incorrect password"
+msgstr "Nesprávne heslo"
+
+#: src/features/passwordConfirmation/ConfirmPasswordForm.tsx
+msgid "That’s an app password. Enter your account password instead."
+msgstr "Toto je aplikačné heslo. Zadaj namiesto neho heslo k účtu."
+
+#: src/features/passwordConfirmation/ConfirmPasswordForm.tsx
+msgid "Too many attempts. Wait a few minutes and try again."
+msgstr "Príliš veľa pokusov. Počkaj pár minút a skús to znova."
+
+#: src/features/passwordConfirmation/ConfirmPasswordForm.tsx
+msgid "We couldn’t verify your account with your hosting provider."
+msgstr "Nepodarilo sa overiť tvoj účet u tvojho poskytovateľa hostingu."
+
+#: src/features/passwordConfirmation/ConfirmPasswordForm.tsx
+msgid "Your password is sent only to {host} and is not saved."
+msgstr "Tvoje heslo sa odošle iba na {host} a neukladá sa."

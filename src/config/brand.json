@@ -229,8 +229,8 @@
     "includeBlueskyVerifications": true
   },
   "ageAssurance": {
-    "serviceUrl": "https://age.mu.social",
-    "serviceDid": "did:web:age.mu.social"
+    "serviceUrl": "https://age.tatrasky.sk",
+    "serviceDid": "did:web:age.tatrasky.sk"
   },
   "decorations": {
     "$comment": "Eurosky+ profile decorations. Set enabled=false to remove the UI and read path completely. subscriberListUris are exact app.bsky.graph.list records whose members get access. Test builds override these values with EXPO_PUBLIC_DECO_* variables.",

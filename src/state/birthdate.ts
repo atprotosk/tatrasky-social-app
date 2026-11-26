@@ -1,4 +1,5 @@
 import {useMemo} from 'react'
+import {type Client} from '@atproto/lex'
 import {setPersonalDetails} from '@bsky/sdk'
 import {useMutation, useQueryClient} from '@tanstack/react-query'
 
@@ -6,7 +7,12 @@ import {restrictChatSettings} from '#/state/queries/messages/restrictChatSetting
 import {preferencesQueryKey} from '#/state/queries/preferences'
 import {usePdsClient, useSession} from '#/state/session'
 import {usePatchAgeAssuranceOtherRequiredData} from '#/ageAssurance'
-import {isUnderAge} from '#/ageAssurance/util'
+import {setBirthdateForDid} from '#/ageAssurance/data'
+import {
+  birthdateFromFlags,
+  flagsFromBirthDate,
+  setMuAgeStatus,
+} from '#/ageAssurance/muAgeService'
 import {IS_DEV} from '#/env'
 import {account} from '#/storage'
 
@@ -59,16 +65,31 @@ export function useBirthdateMutation() {
   const pdsClient = usePdsClient()
   const patchOtherRequiredData = usePatchAgeAssuranceOtherRequiredData()
 
-  return useMutation<void, unknown, {birthDate: Date}>({
-    mutationFn: async ({birthDate}: {birthDate: Date}) => {
-      const bday = birthDate.toISOString()
-      await pdsClient.call(setPersonalDetails, {birthDate})
-      // triggers a refetch
-      await queryClient.invalidateQueries({
-        queryKey: preferencesQueryKey,
+  return useMutation<
+    void,
+    unknown,
+    {birthDate: Date; confirmedClient?: Client}
+  >({
+    /**
+     * `confirmedClient` is the password-confirmed session an OAuth account
+     * needs for the PDS write. Everything else uses the normal session.
+     *
+     * Safe to run again with the same date, which is how a save that failed
+     * halfway is repaired.
+     */
+    mutationFn: async ({birthDate, confirmedClient}) => {
+      await (confirmedClient ?? pdsClient).call(setPersonalDetails, {
+        birthDate,
       })
 
-      if (isUnderAge(birthDate.toISOString(), 18)) {
+      /*
+       * Age assurance reads our age service, not the PDS, so without this the
+       * change would be undone by the next refetch.
+       */
+      const flags = flagsFromBirthDate(birthDate)
+      await setMuAgeStatus(pdsClient, flags)
+
+      if (!flags.over18) {
         await restrictChatSettings({
           client: pdsClient,
           restrictIncoming: true,
@@ -76,14 +97,23 @@ export function useBirthdateMutation() {
         })
       }
 
-      /**
-       * Also patch the age assurance other required data with the new
-       * birthdate, which may change the user's age assurance access level.
+      /*
+       * Patch the age assurance data, which may change the access level. Only
+       * a date derived from the thresholds, as this cache is persisted.
        */
-      void patchOtherRequiredData({birthdate: bday})
+      const birthdate = birthdateFromFlags(flags)
+      if (currentAccount) {
+        setBirthdateForDid({did: currentAccount.did, birthdate})
+      }
+      void patchOtherRequiredData({birthdate})
       if (currentAccount) {
         snoozeBirthdateUpdateAllowedForDid(currentAccount.did)
       }
+
+      // triggers a refetch
+      await queryClient.invalidateQueries({
+        queryKey: preferencesQueryKey,
+      })
     },
   })
 }

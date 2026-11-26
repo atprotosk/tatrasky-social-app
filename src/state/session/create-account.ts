@@ -19,6 +19,12 @@ import {
   setBirthdateForDid,
   setCreatedAtForDid,
 } from '#/ageAssurance/data'
+import {
+  birthdateFromFlags,
+  flagsFromBirthDate,
+  type MuAgeFlags,
+  setMuAgeStatus,
+} from '#/ageAssurance/muAgeService'
 import {unsafeGetAndComputeAgeAssurance} from '#/ageAssurance/state'
 import {type app} from '#/lexicons'
 import {configureModerationForAccount} from './moderation'
@@ -86,7 +92,9 @@ export async function createSessionBundleAndCreateAccount(
   configureModerationForAccount(bundle, earlyAccount)
 
   const createdAt = toDatetimeString(new Date())
-  const birthdate = birthDate.toISOString()
+  /* Only the thresholds leave this function: caches never see the real date. */
+  const ageFlags = flagsFromBirthDate(birthDate)
+  const birthdate = birthdateFromFlags(ageFlags)
 
   /*
    * Since we have a race with account creation, profile creation, and AA
@@ -108,6 +116,7 @@ export async function createSessionBundleAndCreateAccount(
   const isProd = Boolean(IS_PROD_SERVICE(service))
   const postSignupTasks: Promise<unknown>[] = [
     savePersonalDetails(pdsClient, birthDate),
+    saveAgeStatus(pdsClient, ageFlags),
     initializeProfile(pdsClient, {handle, createdAt, isProd}),
   ]
   if (isProd) {
@@ -167,6 +176,12 @@ function snapshotNewAccount(
 function savePersonalDetails(client: Client, birthDate: Date) {
   return retryPostSignupTask('set birthDate', 3, () =>
     client.call(setPersonalDetails, {birthDate}),
+  )
+}
+
+function saveAgeStatus(client: Client, flags: MuAgeFlags) {
+  return retryPostSignupTask('set age status', 3, () =>
+    setMuAgeStatus(client, flags),
   )
 }
 

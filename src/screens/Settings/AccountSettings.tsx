@@ -49,8 +49,8 @@ export function AccountSettingsScreen({}: Props) {
   const deactivateAccountControl = useDialogControl()
   const deleteAccountControl = useDialogControl()
   /*
-   * OAuth sessions can't perform privileged operations like changing the
-   * email or birthdate, so send them to their hosting provider's account page.
+   * OAuth sessions can't change the email, so send them to their hosting
+   * provider's account page.
    */
   const isOauth = currentAccount?.isOauthSession === true
   const pdsAccountPage = useOpenPdsAccountPage()
@@ -172,9 +172,7 @@ export function AccountSettingsScreen({}: Props) {
             </SettingsList.ItemText>
             <SettingsList.BadgeButton
               label={l`Edit`}
-              onPress={() =>
-                isOauth ? pdsAccountPage.open() : birthdayControl.open()
-              }
+              onPress={() => birthdayControl.open()}
             />
           </SettingsList.Item>
           <AgeAssuranceAccountCard style={[a.px_xl, a.pt_xs, a.pb_md]} />

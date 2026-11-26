@@ -1,0 +1,19 @@
+{
+  // Self-declared age flags for OAuth and password sessions. See README.md.
+  "name": "tatrasky-age",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-06-01",
+  "routes": [{"pattern": "age.tatrasky.sk", "custom_domain": true}],
+  "vars": {
+    // Must match `ageAssurance.serviceDid` in src/config/brand.json.
+    "SERVICE_DID": "did:web:age.tatrasky.sk"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "tatrasky-age",
+      "database_id": "c6fb5a40-eae0-4b04-8659-d3b8ce314fb9",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

@@ -18,7 +18,10 @@ import {
 import {DEVICE_SIGNALS_SUPPORTED} from '#/ageAssurance/const'
 import * as debug from '#/ageAssurance/debug'
 import {logger} from '#/ageAssurance/logger'
-import {birthdateFromFlags, getMuAgeStatus} from '#/ageAssurance/muAgeService'
+import {
+  birthdateFromFlags,
+  getMuAgeStatusSeeded,
+} from '#/ageAssurance/muAgeService'
 import {
   type AgeAssuranceDeviceSignals,
   type AgeAssuranceMetadata,
@@ -380,7 +383,7 @@ async function getOtherRequiredData({
    * prompt.
    */
   const [status, actorDeclaration] = await Promise.all([
-    getMuAgeStatus(accountClient),
+    getMuAgeStatusSeeded(accountClient),
     fetchActorDeclarationRecord({did, client: accountClient}),
   ])
   const data: OtherRequiredData = {

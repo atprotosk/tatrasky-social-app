@@ -1,0 +1,26 @@
+{
+  "name": "tatrasky-age-service",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "migrate": "wrangler d1 migrations apply tatrasky-age --remote",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@atcute/identity": "^2.0.2",
+    "@atcute/identity-resolver": "2.0.1",
+    "@atcute/lexicons": "^2.1.1",
+    "@atcute/xrpc-server": "2.0.2"
+  },
+  "devDependencies": {
+    "@atcute/crypto": "^2.4.4",
+    "@cloudflare/workers-types": "^5.20261125.1",
+    "@types/node": "^26.6.10",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.1",
+    "wrangler": "^4.168.0"
+  }
+}

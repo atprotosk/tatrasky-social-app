@@ -1,0 +1,6 @@
+# Own workspace root so `pnpm` here never touches the app's lockfile.
+packages:
+  - '.'
+allowBuilds:
+  esbuild: true
+  workerd: true
