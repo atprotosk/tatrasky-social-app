@@ -270,6 +270,7 @@
     "com.atproto.sync.requestCrawl",
     "com.atproto.sync.subscribeRepos",
     "com.germnetwork.declaration",
+    "community.lexicon.preference.ai",
     "tools.ozone.inbox.appealActionedSubject",
     "tools.ozone.inbox.defs",
     "tools.ozone.inbox.getAccountStatus",
@@ -1361,6 +1362,10 @@
     "com.germnetwork.declaration": {
       "uri": "at://did:plc:qyqmmncrm6qx33kpy7vqndik/com.atproto.lexicon.schema/com.germnetwork.declaration",
       "cid": "bafyreickqsspgkujwucg3low5or64ywjryf44eua6xtszd6zsl2yteumoi"
+    },
+    "community.lexicon.preference.ai": {
+      "uri": "at://did:plc:mtr7qrqtcyseedx3jyr5o7db/com.atproto.lexicon.schema/community.lexicon.preference.ai",
+      "cid": "bafyreier5aqvanugzga4lwmc42q45fxhsrjkltqw4p5strgcmmfahxndja"
     },
     "tools.ozone.inbox.appealActionedSubject": {
       "uri": "at://did:plc:33dt5kftu3jq2h5h4jjlqezt/com.atproto.lexicon.schema/tools.ozone.inbox.appealActionedSubject",

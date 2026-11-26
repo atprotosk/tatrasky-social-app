@@ -26,6 +26,7 @@ const RECORD_LABELS: Record<string, MessageDescriptor> = {
   'app.bsky.labeler.service': msg`Labeler`,
   'app.bsky.notification.declaration': msg`Notification settings`,
   'chat.bsky.actor.declaration': msg`Chat settings`,
+  'community.lexicon.preference.ai': msg`AI preferences`,
   'social.mu.newsFeedPrefs': msg`News feed settings`,
   'social.mu.deco.settings': msg`Decoration settings`,
 }

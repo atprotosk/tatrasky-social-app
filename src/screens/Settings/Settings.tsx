@@ -223,6 +223,14 @@ export function SettingsScreen({}: Props) {
             <SettingsList.BadgeCount count={unreadCount} />
           </SettingsList.LinkItem>
           <SettingsList.LinkItem
+            to="/settings/ai-preferences"
+            label={l`AI preferences`}>
+            <SettingsList.ItemIcon icon={SparkleIcon} />
+            <SettingsList.ItemText>
+              <Trans>AI preferences</Trans>
+            </SettingsList.ItemText>
+          </SettingsList.LinkItem>
+          <SettingsList.LinkItem
             to="/settings/notifications"
             label={l`Notifications`}>
             <SettingsList.ItemIcon icon={NotificationIcon} />

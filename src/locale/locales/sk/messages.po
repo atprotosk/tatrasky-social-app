@@ -994,8 +994,8 @@ msgstr "Moderátor posúdil tvoje odvolanie a zmenil pôvodné rozhodnutie. Tvoj
 msgid "A network error occurred. Please check your internet connection"
 msgstr "Nastala chyba siete. Skontroluj si pripojenie na internet"
 
-#: src/components/contacts/screens/VerifyNumber.tsx:100 src/components/contacts/screens/VerifyNumber.tsx:159 src/components/dms/dialogs/NewChatDialog.tsx:54 src/components/dms/dialogs/NewChatDialog.tsx:89 src/components/dms/dialogs/ShareViaChatDialog.tsx:69
-#: src/components/dms/dialogs/ShareViaChatDialog.tsx:105 src/components/dms/LeaveConvoPrompt.tsx:39 src/components/moderation/BlockDialog.tsx:281 src/components/moderation/BlockDialog.tsx:310 src/screens/Messages/JoinRequests.tsx:189 src/screens/Messages/JoinRequests.tsx:221
+#: src/components/contacts/screens/VerifyNumber.tsx:100 src/components/contacts/screens/VerifyNumber.tsx:159 src/components/dms/dialogs/NewChatDialog.tsx:54 src/components/dms/dialogs/NewChatDialog.tsx:89 src/components/dms/dialogs/ShareViaChatDialog.tsx:69 src/components/dms/dialogs/ShareViaChatDialog.tsx:105 src/components/dms/LeaveConvoPrompt.tsx:39
+#: src/components/moderation/BlockDialog.tsx:281 src/components/moderation/BlockDialog.tsx:310 src/screens/Messages/JoinRequests.tsx:189 src/screens/Messages/JoinRequests.tsx:221
 msgid "A network error occurred. Please check your internet connection."
 msgstr "Nastala chyba siete. Skontroluj si pripojenie na internet."
 
@@ -1163,8 +1163,7 @@ msgstr "Aktivita iných"
 msgid "Activity notifications"
 msgstr "Upozornenia na aktivitu"
 
-#: src/components/dialogs/lists/ListAddRemoveUsersDialog.tsx:192 src/components/dialogs/lists/UserAddRemoveListsDialog.tsx:319 src/components/dialogs/lists/UserAddRemoveListsDialog.tsx:326 src/components/dialogs/MutedWords.tsx:339 src/components/dialogs/StarterPackDialog.tsx:364
-#: src/components/dialogs/StarterPackDialog.tsx:376 src/components/dms/AddMembersFlow.tsx:410
+#: src/components/dialogs/lists/ListAddRemoveUsersDialog.tsx:192 src/components/dialogs/lists/UserAddRemoveListsDialog.tsx:319 src/components/dialogs/lists/UserAddRemoveListsDialog.tsx:326 src/components/dialogs/MutedWords.tsx:339 src/components/dialogs/StarterPackDialog.tsx:364 src/components/dialogs/StarterPackDialog.tsx:376 src/components/dms/AddMembersFlow.tsx:410
 msgid "Add"
 msgstr "Pridať"
 
@@ -1194,8 +1193,7 @@ msgstr "Pridať používateľa do tohto zoznamu"
 msgid "Add account"
 msgstr "Pridať účet"
 
-#: src/view/com/composer/GifAltText.tsx:77 src/view/com/composer/GifAltText.tsx:151 src/view/com/composer/GifAltText.tsx:217 src/view/com/composer/photos/Gallery.tsx:201 src/view/com/composer/photos/Gallery.tsx:236 src/view/com/composer/photos/ImageAltTextDialog.tsx:95
-#: src/view/com/composer/photos/ImageAltTextDialog.tsx:103
+#: src/view/com/composer/GifAltText.tsx:77 src/view/com/composer/GifAltText.tsx:151 src/view/com/composer/GifAltText.tsx:217 src/view/com/composer/photos/Gallery.tsx:201 src/view/com/composer/photos/Gallery.tsx:236 src/view/com/composer/photos/ImageAltTextDialog.tsx:95 src/view/com/composer/photos/ImageAltTextDialog.tsx:103
 msgid "Add alt text"
 msgstr "Pridať alternatívny text"
 
@@ -1526,8 +1524,7 @@ msgstr "Už si prihlásený/á ako @{0}"
 msgid "ALT"
 msgstr "ALT"
 
-#: src/screens/Settings/AccessibilitySettings.tsx:55 src/view/com/composer/GifAltText.tsx:161 src/view/com/composer/photos/ImageAltTextDialog.tsx:128 src/view/com/composer/videos/SubtitleDialog.tsx:41 src/view/com/composer/videos/SubtitleDialog.tsx:59
-#: src/view/com/composer/videos/SubtitleDialog.tsx:110 src/view/com/composer/videos/SubtitleDialog.tsx:114
+#: src/screens/Settings/AccessibilitySettings.tsx:55 src/view/com/composer/GifAltText.tsx:161 src/view/com/composer/photos/ImageAltTextDialog.tsx:128 src/view/com/composer/videos/SubtitleDialog.tsx:41 src/view/com/composer/videos/SubtitleDialog.tsx:59 src/view/com/composer/videos/SubtitleDialog.tsx:110 src/view/com/composer/videos/SubtitleDialog.tsx:114
 msgid "Alt text"
 msgstr "Alternatívny text"
 
@@ -1975,10 +1972,9 @@ msgstr "Nástroj na tvorbu profilových obrázkov"
 msgid "Awaiting review"
 msgstr "Čaká sa na posúdenie"
 
-#: src/components/dms/AddMembersFlow.tsx:359 src/components/dms/AddMembersFlow.tsx:527 src/components/dms/AddMembersFlow.tsx:533 src/components/dms/InitiateChatFlow.tsx:645 src/components/dms/InitiateChatFlow.tsx:863 src/components/dms/InitiateChatFlow.tsx:870
-#: src/components/moderation/AppealForm.tsx:156 src/components/moderation/AppealForm.tsx:157 src/screens/Login/ChooseAccountForm.tsx:95 src/screens/Login/ChooseAccountForm.tsx:99 src/screens/Login/ForgotPasswordForm.tsx:123 src/screens/Login/ForgotPasswordForm.tsx:128
-#: src/screens/Login/LoginForm.tsx:512 src/screens/Login/LoginForm.tsx:517 src/screens/Login/SetNewPasswordForm.tsx:162 src/screens/Login/SetNewPasswordForm.tsx:168 src/screens/Messages/components/ChatDisabled.tsx:162 src/screens/Messages/components/ChatDisabled.tsx:164
-#: src/screens/Messages/components/InviteLinkDialog.tsx:274 src/screens/Messages/components/InviteLinkDialog.tsx:302 src/screens/Messages/Inbox.tsx:232 src/screens/Profile/Header/Shell.tsx:175 src/screens/Settings/components/ChangePasswordDialog.tsx:275
+#: src/components/dms/AddMembersFlow.tsx:359 src/components/dms/AddMembersFlow.tsx:527 src/components/dms/AddMembersFlow.tsx:533 src/components/dms/InitiateChatFlow.tsx:645 src/components/dms/InitiateChatFlow.tsx:863 src/components/dms/InitiateChatFlow.tsx:870 src/components/moderation/AppealForm.tsx:156 src/components/moderation/AppealForm.tsx:157
+#: src/screens/Login/ChooseAccountForm.tsx:95 src/screens/Login/ChooseAccountForm.tsx:99 src/screens/Login/ForgotPasswordForm.tsx:123 src/screens/Login/ForgotPasswordForm.tsx:128 src/screens/Login/LoginForm.tsx:512 src/screens/Login/LoginForm.tsx:517 src/screens/Login/SetNewPasswordForm.tsx:162 src/screens/Login/SetNewPasswordForm.tsx:168
+#: src/screens/Messages/components/ChatDisabled.tsx:162 src/screens/Messages/components/ChatDisabled.tsx:164 src/screens/Messages/components/InviteLinkDialog.tsx:274 src/screens/Messages/components/InviteLinkDialog.tsx:302 src/screens/Messages/Inbox.tsx:232 src/screens/Profile/Header/Shell.tsx:175 src/screens/Settings/components/ChangePasswordDialog.tsx:275
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:284 src/screens/Signup/BackNextButtons.tsx:42 src/screens/StarterPack/Wizard/index.tsx:309 src/view/com/composer/drafts/DraftsListDialog.tsx:87 src/view/com/composer/drafts/DraftsListDialog.tsx:93
 msgid "Back"
 msgstr "Späť"
@@ -2035,8 +2031,7 @@ msgstr "Skôr než prijmeš túto žiadosť o čet, musíš najprv overiť svoj 
 msgid "Before you can get notifications for {name}'s posts, you must first verify your email."
 msgstr "Skôr než budeš môcť dostávať upozornenia na príspevky používateľa {name}, musíš najprv overiť svoj e-mail."
 
-#: src/components/dms/dialogs/NewChatDialog.tsx:148 src/components/dms/MessageProfileButton.tsx:60 src/screens/Messages/ChatList.tsx:168 src/screens/Messages/ChatList.tsx:186 src/screens/Messages/ChatList.tsx:287 src/screens/Messages/ChatList.tsx:543 src/screens/Messages/Conversation.tsx:206
-#: src/screens/Messages/ConversationSettings/MemberMenu.tsx:99
+#: src/components/dms/dialogs/NewChatDialog.tsx:148 src/components/dms/MessageProfileButton.tsx:60 src/screens/Messages/ChatList.tsx:168 src/screens/Messages/ChatList.tsx:186 src/screens/Messages/ChatList.tsx:287 src/screens/Messages/ChatList.tsx:543 src/screens/Messages/Conversation.tsx:206 src/screens/Messages/ConversationSettings/MemberMenu.tsx:99
 msgid "Before you can message another user, you must first verify your email."
 msgstr "Skôr než budeš môcť poslať správu inému používateľovi, musíš najprv overiť svoj e-mail."
 
@@ -2090,8 +2085,7 @@ msgstr "Zablokovať"
 msgid "Block {displayName}"
 msgstr "Zablokovať {displayName}"
 
-#: src/components/dms/ConvoMenu.tsx:284 src/components/dms/ConvoMenu.tsx:288 src/components/PostControls/PostMenu/PostMenuItems.tsx:765 src/components/PostControls/PostMenu/PostMenuItems.tsx:767 src/screens/Messages/components/RequestButtons.tsx:154
-#: src/screens/Messages/components/RequestButtons.tsx:156 src/view/com/profile/ProfileMenu.tsx:495 src/view/com/profile/ProfileMenu.tsx:502
+#: src/components/dms/ConvoMenu.tsx:284 src/components/dms/ConvoMenu.tsx:288 src/components/PostControls/PostMenu/PostMenuItems.tsx:765 src/components/PostControls/PostMenu/PostMenuItems.tsx:767 src/screens/Messages/components/RequestButtons.tsx:154 src/screens/Messages/components/RequestButtons.tsx:156 src/view/com/profile/ProfileMenu.tsx:495 src/view/com/profile/ProfileMenu.tsx:502
 msgid "Block account"
 msgstr "Zablokovať účet"
 
@@ -2400,17 +2394,14 @@ msgstr "Kamera"
 msgid "Camera access needed"
 msgstr "Potrebný prístup k kamere"
 
-#: src/components/activity-notifications/SubscribeProfileDialog.tsx:210 src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:135 src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:141 src/components/contacts/screens/GetContacts.tsx:294 src/components/contacts/screens/GetContacts.tsx:299
-#: src/components/dialogs/DeviceLocationRequestDialog.tsx:140 src/components/dialogs/DeviceLocationRequestDialog.tsx:145 src/components/dialogs/EmailDialog/screens/Manage2FA/Enable.tsx:122 src/components/dialogs/EmailDialog/screens/Manage2FA/Enable.tsx:128
-#: src/components/dialogs/InAppBrowserConsent.tsx:99 src/components/dialogs/InAppBrowserConsent.tsx:105 src/components/dialogs/lists/CreateListFromStarterPackDialog.tsx:190 src/components/dialogs/lists/CreateListFromStarterPackDialog.tsx:198 src/components/dialogs/lists/CreateOrEditListDialog.tsx:301
-#: src/components/dialogs/lists/CreateOrEditListDialog.tsx:309 src/components/dialogs/nuxs/InviteFriendsAnnouncement.tsx:175 src/components/dialogs/nuxs/InviteFriendsAnnouncement.tsx:181 src/components/Menu/index.tsx:373 src/components/moderation/BlockDialog.tsx:201
-#: src/components/PostControls/RepostButton.tsx:210 src/components/Prompt.tsx:152 src/components/Prompt.tsx:154 src/components/SendErrorReportDialog.tsx:98 src/components/SendErrorReportDialog.tsx:102 src/features/liveNow/components/GoLiveDialog.tsx:258
-#: src/features/liveNow/components/GoLiveDialog.tsx:264 src/lib/media/picker.tsx:38 src/screens/Deactivated.tsx:154 src/screens/Messages/components/InviteLinkDialog.tsx:498 src/screens/Messages/components/InviteLinkDialog.tsx:502 src/screens/Messages/ConversationSettings/prompts.tsx:108
-#: src/screens/Messages/ConversationSettings/prompts.tsx:132 src/screens/Messages/ConversationSettings/prompts.tsx:156 src/screens/Messages/ConversationSettings/prompts.tsx:180 src/screens/Profile/Header/EditProfileDialog.tsx:215 src/screens/Profile/Header/EditProfileDialog.tsx:223
-#: src/screens/Search/components/AdvancedSearchDialog/index.tsx:202 src/screens/Search/components/AdvancedSearchDialog/index.tsx:209 src/screens/Settings/AppIconSettings/index.tsx:42 src/screens/Settings/AppIconSettings/index.tsx:228 src/screens/Settings/components/BetaFeaturesFeedbackDialog.tsx:143
-#: src/screens/Settings/components/BetaFeaturesFeedbackDialog.tsx:152 src/screens/Settings/components/ChangeHandleDialog.tsx:80 src/screens/Settings/components/ChangeHandleDialog.tsx:87 src/screens/Settings/components/ChangePasswordDialog.tsx:250
-#: src/screens/Settings/components/ChangePasswordDialog.tsx:256 src/screens/Settings/Settings.tsx:312 src/screens/Takendown.tsx:100 src/screens/Takendown.tsx:103 src/view/com/composer/Composer.tsx:1841 src/view/com/composer/Composer.tsx:1851 src/view/com/composer/photos/EditImageDialog.web.tsx:44
-#: src/view/com/composer/photos/EditImageDialog.web.tsx:53 src/view/shell/desktop/LeftNav.tsx:228
+#: src/components/activity-notifications/SubscribeProfileDialog.tsx:210 src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:135 src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:141 src/components/contacts/screens/GetContacts.tsx:294 src/components/contacts/screens/GetContacts.tsx:299 src/components/dialogs/DeviceLocationRequestDialog.tsx:140
+#: src/components/dialogs/DeviceLocationRequestDialog.tsx:145 src/components/dialogs/EmailDialog/screens/Manage2FA/Enable.tsx:122 src/components/dialogs/EmailDialog/screens/Manage2FA/Enable.tsx:128 src/components/dialogs/InAppBrowserConsent.tsx:99 src/components/dialogs/InAppBrowserConsent.tsx:105 src/components/dialogs/lists/CreateListFromStarterPackDialog.tsx:190
+#: src/components/dialogs/lists/CreateListFromStarterPackDialog.tsx:198 src/components/dialogs/lists/CreateOrEditListDialog.tsx:301 src/components/dialogs/lists/CreateOrEditListDialog.tsx:309 src/components/dialogs/nuxs/InviteFriendsAnnouncement.tsx:175 src/components/dialogs/nuxs/InviteFriendsAnnouncement.tsx:181 src/components/Menu/index.tsx:373
+#: src/components/moderation/BlockDialog.tsx:201 src/components/PostControls/RepostButton.tsx:210 src/components/Prompt.tsx:152 src/components/Prompt.tsx:154 src/components/SendErrorReportDialog.tsx:98 src/components/SendErrorReportDialog.tsx:102 src/features/liveNow/components/GoLiveDialog.tsx:258 src/features/liveNow/components/GoLiveDialog.tsx:264 src/lib/media/picker.tsx:38
+#: src/screens/Deactivated.tsx:154 src/screens/Messages/components/InviteLinkDialog.tsx:498 src/screens/Messages/components/InviteLinkDialog.tsx:502 src/screens/Messages/ConversationSettings/prompts.tsx:108 src/screens/Messages/ConversationSettings/prompts.tsx:132 src/screens/Messages/ConversationSettings/prompts.tsx:156 src/screens/Messages/ConversationSettings/prompts.tsx:180
+#: src/screens/Profile/Header/EditProfileDialog.tsx:215 src/screens/Profile/Header/EditProfileDialog.tsx:223 src/screens/Search/components/AdvancedSearchDialog/index.tsx:202 src/screens/Search/components/AdvancedSearchDialog/index.tsx:209 src/screens/Settings/AppIconSettings/index.tsx:42 src/screens/Settings/AppIconSettings/index.tsx:228
+#: src/screens/Settings/components/BetaFeaturesFeedbackDialog.tsx:143 src/screens/Settings/components/BetaFeaturesFeedbackDialog.tsx:152 src/screens/Settings/components/ChangeHandleDialog.tsx:80 src/screens/Settings/components/ChangeHandleDialog.tsx:87 src/screens/Settings/components/ChangePasswordDialog.tsx:250 src/screens/Settings/components/ChangePasswordDialog.tsx:256
+#: src/screens/Settings/Settings.tsx:312 src/screens/Takendown.tsx:100 src/screens/Takendown.tsx:103 src/view/com/composer/Composer.tsx:1841 src/view/com/composer/Composer.tsx:1851 src/view/com/composer/photos/EditImageDialog.web.tsx:44 src/view/com/composer/photos/EditImageDialog.web.tsx:53 src/view/shell/desktop/LeftNav.tsx:228
 msgid "Cancel"
 msgstr "Zrušiť"
 
@@ -2795,17 +2786,14 @@ msgid "Click to retry failed message"
 msgstr "Kliknutím skúsiš odoslať neúspešnú správu znova"
 
 #. Visible label of the button that dismisses the GIF picker error dialog.
-#: src/ageAssurance/components/RedirectOverlay.tsx:264 src/ageAssurance/components/RedirectOverlay.tsx:270 src/ageAssurance/components/RedirectOverlay.tsx:320 src/ageAssurance/components/RedirectOverlay.tsx:326 src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:174
-#: src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:180 src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:233 src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:239 src/components/AltBadgeWithDialog.tsx:88 src/components/dialogs/LanguageSelectDialog.tsx:359
-#: src/components/dialogs/lists/UserAddRemoveListsDialog.tsx:147 src/components/dialogs/nuxs/ActivitySubscriptions.tsx:160 src/components/dialogs/nuxs/ActivitySubscriptions.tsx:169 src/components/dialogs/nuxs/BookmarksAnnouncement.tsx:165 src/components/dialogs/nuxs/BookmarksAnnouncement.tsx:173
-#: src/components/dialogs/nuxs/DraftsAnnouncement.tsx:140 src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:179 src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:188 src/components/dialogs/nuxs/LiveNowBetaDialog.tsx:192 src/components/dialogs/nuxs/LiveNowBetaDialog.tsx:200
-#: src/components/dialogs/SearchablePeopleList.tsx:336 src/components/dialogs/StarterPackDialog.tsx:181 src/components/dms/AddMembersFlow.tsx:384 src/components/dms/AfterReportConversationDialog.tsx:91 src/components/dms/AfterReportConversationDialog.tsx:96
-#: src/components/dms/AfterReportConversationDialog.tsx:247 src/components/dms/AfterReportConversationDialog.tsx:252 src/components/dms/AfterReportDialog.tsx:94 src/components/dms/AfterReportDialog.tsx:99 src/components/dms/AfterReportDialog.tsx:212 src/components/dms/AfterReportDialog.tsx:217
-#: src/components/dms/EmojiPopup.android.tsx:59 src/components/dms/InitiateChatFlow.tsx:670 src/components/intents/GroupChatJoinDialog.tsx:251 src/components/intents/GroupChatJoinDialog.tsx:286 src/components/NewskieDialog.tsx:170 src/components/NewskieDialog.tsx:176
-#: src/components/ProgressGuide/FollowDialog.tsx:456 src/components/StarterPack/Wizard/WizardEditListDialog.tsx:119 src/components/StarterPack/Wizard/WizardEditListDialog.tsx:125 src/components/TrendingTopics.tsx:55 src/components/verification/VerificationsDialog.tsx:147
-#: src/components/verification/VerifierDialog.tsx:148 src/components/WhoCanReply.tsx:218 src/components/WhoCanReply.tsx:225 src/features/gifPicker/components/GifPickerErrorBoundary.tsx:45 src/features/liveNow/components/EditLiveDialog.tsx:212 src/features/liveNow/components/EditLiveDialog.tsx:218
-#: src/screens/Messages/components/InviteLinkDialog.tsx:522 src/screens/Messages/components/InviteLinkDialog.tsx:527 src/screens/Settings/components/ChangePasswordDialog.tsx:290 src/screens/Settings/components/ChangePasswordDialog.tsx:295 src/view/com/feeds/MissingFeed.tsx:211
-#: src/view/com/feeds/MissingFeed.tsx:218
+#: src/ageAssurance/components/RedirectOverlay.tsx:264 src/ageAssurance/components/RedirectOverlay.tsx:270 src/ageAssurance/components/RedirectOverlay.tsx:320 src/ageAssurance/components/RedirectOverlay.tsx:326 src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:174 src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:180
+#: src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:233 src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:239 src/components/AltBadgeWithDialog.tsx:88 src/components/dialogs/LanguageSelectDialog.tsx:359 src/components/dialogs/lists/UserAddRemoveListsDialog.tsx:147 src/components/dialogs/nuxs/ActivitySubscriptions.tsx:160
+#: src/components/dialogs/nuxs/ActivitySubscriptions.tsx:169 src/components/dialogs/nuxs/BookmarksAnnouncement.tsx:165 src/components/dialogs/nuxs/BookmarksAnnouncement.tsx:173 src/components/dialogs/nuxs/DraftsAnnouncement.tsx:140 src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:179 src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:188
+#: src/components/dialogs/nuxs/LiveNowBetaDialog.tsx:192 src/components/dialogs/nuxs/LiveNowBetaDialog.tsx:200 src/components/dialogs/SearchablePeopleList.tsx:336 src/components/dialogs/StarterPackDialog.tsx:181 src/components/dms/AddMembersFlow.tsx:384 src/components/dms/AfterReportConversationDialog.tsx:91 src/components/dms/AfterReportConversationDialog.tsx:96
+#: src/components/dms/AfterReportConversationDialog.tsx:247 src/components/dms/AfterReportConversationDialog.tsx:252 src/components/dms/AfterReportDialog.tsx:94 src/components/dms/AfterReportDialog.tsx:99 src/components/dms/AfterReportDialog.tsx:212 src/components/dms/AfterReportDialog.tsx:217 src/components/dms/EmojiPopup.android.tsx:59 src/components/dms/InitiateChatFlow.tsx:670
+#: src/components/intents/GroupChatJoinDialog.tsx:251 src/components/intents/GroupChatJoinDialog.tsx:286 src/components/NewskieDialog.tsx:170 src/components/NewskieDialog.tsx:176 src/components/ProgressGuide/FollowDialog.tsx:456 src/components/StarterPack/Wizard/WizardEditListDialog.tsx:119 src/components/StarterPack/Wizard/WizardEditListDialog.tsx:125
+#: src/components/TrendingTopics.tsx:55 src/components/verification/VerificationsDialog.tsx:147 src/components/verification/VerifierDialog.tsx:148 src/components/WhoCanReply.tsx:218 src/components/WhoCanReply.tsx:225 src/features/gifPicker/components/GifPickerErrorBoundary.tsx:45 src/features/liveNow/components/EditLiveDialog.tsx:212
+#: src/features/liveNow/components/EditLiveDialog.tsx:218 src/screens/Messages/components/InviteLinkDialog.tsx:522 src/screens/Messages/components/InviteLinkDialog.tsx:527 src/screens/Settings/components/ChangePasswordDialog.tsx:290 src/screens/Settings/components/ChangePasswordDialog.tsx:295 src/view/com/feeds/MissingFeed.tsx:211 src/view/com/feeds/MissingFeed.tsx:218
 msgid "Close"
 msgstr "Zavrieť"
 
@@ -2823,8 +2811,8 @@ msgstr "Zavrieť banner"
 
 #. Accessibility label for the button that dismisses the GIF picker error
 #. dialog.
-#: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:232 src/components/ageAssurance/AgeAssuranceInitDialog.tsx:238 src/components/dialogs/LanguageSelectDialog.tsx:221 src/components/dialogs/LanguageSelectDialog.tsx:322 src/components/dialogs/LanguageSelectDialog.tsx:354
-#: src/components/dialogs/NotificationSettingsDialog.tsx:102 src/components/moderation/BlockDialog.tsx:198 src/components/verification/VerificationsDialog.tsx:139 src/components/verification/VerifierDialog.tsx:141 src/features/gifPicker/components/GifPickerErrorBoundary.tsx:36
+#: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:232 src/components/ageAssurance/AgeAssuranceInitDialog.tsx:238 src/components/dialogs/LanguageSelectDialog.tsx:221 src/components/dialogs/LanguageSelectDialog.tsx:322 src/components/dialogs/LanguageSelectDialog.tsx:354 src/components/dialogs/NotificationSettingsDialog.tsx:102 src/components/moderation/BlockDialog.tsx:198
+#: src/components/verification/VerificationsDialog.tsx:139 src/components/verification/VerifierDialog.tsx:141 src/features/gifPicker/components/GifPickerErrorBoundary.tsx:36
 msgid "Close dialog"
 msgstr "Zavrieť dialóg"
 
@@ -2945,8 +2933,8 @@ msgstr "Nastavené v <0>nastaveniach moderácie</0>."
 msgid "Confirm"
 msgstr "Potvrdiť"
 
-#: src/components/dialogs/EmailDialog/components/TokenField.tsx:37 src/screens/Login/LoginForm.tsx:443 src/screens/Settings/components/ChangePasswordDialog.tsx:189 src/screens/Settings/components/ChangePasswordDialog.tsx:193 src/screens/Settings/components/DeleteAccountDialog.tsx:250
-#: src/screens/Settings/components/DisableEmail2FADialog.tsx:151 src/screens/Settings/components/DisableEmail2FADialog.tsx:157
+#: src/components/dialogs/EmailDialog/components/TokenField.tsx:37 src/screens/Login/LoginForm.tsx:443 src/screens/Settings/components/ChangePasswordDialog.tsx:189 src/screens/Settings/components/ChangePasswordDialog.tsx:193 src/screens/Settings/components/DeleteAccountDialog.tsx:250 src/screens/Settings/components/DisableEmail2FADialog.tsx:151
+#: src/screens/Settings/components/DisableEmail2FADialog.tsx:157
 msgid "Confirmation code"
 msgstr "Potvrdzovací kód"
 
@@ -3039,8 +3027,8 @@ msgstr "Upozornenia na obsah"
 msgid "Context menu backdrop, click to close the menu."
 msgstr "Pozadie kontextovej ponuky; kliknutím ponuku zatvoríte."
 
-#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:163 src/components/PolicyUpdateOverlay/updates/202508/index.tsx:171 src/screens/Login/components/ConfirmHostingProviderDialog.tsx:149 src/screens/Login/components/ConfirmHostingProviderDialog.tsx:152
-#: src/screens/Onboarding/StepInterests/index.tsx:87 src/screens/Onboarding/StepProfile/index.tsx:302 src/screens/Onboarding/StepSuggestedAccounts/index.tsx:309 src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:117
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:163 src/components/PolicyUpdateOverlay/updates/202508/index.tsx:171 src/screens/Login/components/ConfirmHostingProviderDialog.tsx:149 src/screens/Login/components/ConfirmHostingProviderDialog.tsx:152 src/screens/Onboarding/StepInterests/index.tsx:87 src/screens/Onboarding/StepProfile/index.tsx:302
+#: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:309 src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:117
 msgid "Continue"
 msgstr "Pokračovať"
 
@@ -3099,8 +3087,7 @@ msgstr "Verzia skopírovaná do schránky"
 msgid "Copied link to clipboard"
 msgstr "Odkaz skopírovaný do schránky"
 
-#: src/components/dms/ChatInvite/Root.tsx:100 src/components/dms/MessageContextMenu.tsx:96 src/components/PostControls/DiscoverDebug.tsx:36 src/components/PostControls/PostMenu/PostMenuItems.tsx:269 src/components/PostControls/ShareMenu/ShareMenuItems.tsx:75 src/lib/sharing.ts:24
-#: src/lib/sharing.ts:42
+#: src/components/dms/ChatInvite/Root.tsx:100 src/components/dms/MessageContextMenu.tsx:96 src/components/PostControls/DiscoverDebug.tsx:36 src/components/PostControls/PostMenu/PostMenuItems.tsx:269 src/components/PostControls/ShareMenu/ShareMenuItems.tsx:75 src/lib/sharing.ts:24 src/lib/sharing.ts:42
 msgid "Copied to clipboard"
 msgstr "Skopírované do schránky"
 
@@ -3324,8 +3311,8 @@ msgstr "Vytvoriť štartovací balíček"
 msgid "Create a Starter Pack for me"
 msgstr "Vytvoriť štartovací balíček pre mňa"
 
-#: src/components/WelcomeModal.tsx:156 src/components/WelcomeModal.tsx:164 src/screens/Messages/JoinRequest.tsx:318 src/screens/Signup/index.tsx:139 src/view/com/auth/SplashScreen.tsx:108 src/view/com/auth/SplashScreen.web.tsx:117 src/view/shell/bottom-bar/BottomBar.tsx:351
-#: src/view/shell/bottom-bar/BottomBar.tsx:355 src/view/shell/bottom-bar/BottomBarWeb.tsx:240 src/view/shell/bottom-bar/BottomBarWeb.tsx:245 src/view/shell/NavSignupCard.tsx:48 src/view/shell/NavSignupCard.tsx:53
+#: src/components/WelcomeModal.tsx:156 src/components/WelcomeModal.tsx:164 src/screens/Messages/JoinRequest.tsx:318 src/screens/Signup/index.tsx:139 src/view/com/auth/SplashScreen.tsx:108 src/view/com/auth/SplashScreen.web.tsx:117 src/view/shell/bottom-bar/BottomBar.tsx:351 src/view/shell/bottom-bar/BottomBar.tsx:355 src/view/shell/bottom-bar/BottomBarWeb.tsx:240
+#: src/view/shell/bottom-bar/BottomBarWeb.tsx:245 src/view/shell/NavSignupCard.tsx:48 src/view/shell/NavSignupCard.tsx:53
 msgid "Create account"
 msgstr "Vytvoriť účet"
 
@@ -3484,8 +3471,7 @@ msgstr "Štandardné"
 msgid "Default icons"
 msgstr "Štandardné ikony"
 
-#: src/components/dms/MessageOverlays.tsx:184 src/components/PostControls/PostMenu/PostMenuItems.tsx:821 src/screens/ProfileList/components/MoreOptionsMenu.tsx:320 src/screens/Settings/AppPasswords.tsx:214 src/screens/StarterPack/StarterPackScreen.tsx:628
-#: src/screens/StarterPack/StarterPackScreen.tsx:742 src/screens/StarterPack/StarterPackScreen.tsx:871
+#: src/components/dms/MessageOverlays.tsx:184 src/components/PostControls/PostMenu/PostMenuItems.tsx:821 src/screens/ProfileList/components/MoreOptionsMenu.tsx:320 src/screens/Settings/AppPasswords.tsx:214 src/screens/StarterPack/StarterPackScreen.tsx:628 src/screens/StarterPack/StarterPackScreen.tsx:742 src/screens/StarterPack/StarterPackScreen.tsx:871
 msgid "Delete"
 msgstr "Odstrániť"
 
@@ -3676,8 +3662,7 @@ msgstr "Vypnúť tento pozvánkový odkaz?"
 msgid "Disabled"
 msgstr "Vypnuté"
 
-#: src/components/dialogs/lists/CreateOrEditListDialog.tsx:102 src/screens/Profile/Header/EditProfileDialog.tsx:79 src/view/com/composer/Composer.tsx:1515 src/view/com/composer/Composer.tsx:1560 src/view/com/composer/Composer.tsx:1770 src/view/com/composer/drafts/DraftItem.tsx:243
-#: src/view/com/composer/drafts/DraftsButton.tsx:128
+#: src/components/dialogs/lists/CreateOrEditListDialog.tsx:102 src/screens/Profile/Header/EditProfileDialog.tsx:79 src/view/com/composer/Composer.tsx:1515 src/view/com/composer/Composer.tsx:1560 src/view/com/composer/Composer.tsx:1770 src/view/com/composer/drafts/DraftItem.tsx:243 src/view/com/composer/drafts/DraftsButton.tsx:128
 msgid "Discard"
 msgstr "Zahodiť"
 
@@ -3798,12 +3783,11 @@ msgstr "Už nezobrazovať"
 msgid "Don't worry! All existing messages and settings are saved and will be available after you verify you're an adult."
 msgstr "Bez obáv! Všetky existujúce správy a nastavenia sú uložené a budú k dispozícii po tom, ako potvrdíš, že si dospelý/á."
 
-#: src/components/contacts/components/InviteInfo.tsx:73 src/components/contacts/components/InviteInfo.tsx:79 src/components/contacts/screens/ViewMatches.tsx:403 src/components/contacts/screens/ViewMatches.tsx:420 src/components/dialogs/BirthDateSettings.tsx:193
-#: src/components/dialogs/BirthDateSettings.tsx:200 src/components/dialogs/EmailDialog/screens/Verify.tsx:195 src/components/dialogs/EmailDialog/screens/Verify.tsx:200 src/components/dialogs/LanguageSelectDialog.tsx:327 src/components/dialogs/NotificationSettingsDialog.tsx:106
-#: src/components/dialogs/ServerInput.tsx:237 src/components/dialogs/ServerInput.tsx:239 src/components/dms/AfterReportConversationDialog.tsx:164 src/components/dms/AfterReportDialog.tsx:145 src/components/forms/DateField/index.tsx:128 src/components/forms/DateField/index.tsx:145
-#: src/features/inviteFriends/InviteFriendsDialogInner.tsx:148 src/features/inviteFriends/InviteFriendsDialogInner.tsx:154 src/lib/media/picker.tsx:37 src/screens/Login/components/HostingProviderDialog.tsx:253 src/screens/Login/components/HostingProviderDialog.tsx:255
-#: src/screens/ModerationInbox/components/AccountStatus.tsx:74 src/screens/Onboarding/StepProfile/index.tsx:355 src/screens/Onboarding/StepProfile/index.tsx:358 src/screens/Settings/components/AddAppPasswordDialog.tsx:214 src/screens/Settings/components/AddAppPasswordDialog.tsx:221
-#: src/view/com/composer/labels/LabelsBtn.tsx:219 src/view/com/composer/labels/LabelsBtn.tsx:226 src/view/com/composer/videos/SubtitleDialog.tsx:192 src/view/com/composer/videos/SubtitleDialog.tsx:203
+#: src/components/contacts/components/InviteInfo.tsx:73 src/components/contacts/components/InviteInfo.tsx:79 src/components/contacts/screens/ViewMatches.tsx:403 src/components/contacts/screens/ViewMatches.tsx:420 src/components/dialogs/BirthDateSettings.tsx:193 src/components/dialogs/BirthDateSettings.tsx:200 src/components/dialogs/EmailDialog/screens/Verify.tsx:195
+#: src/components/dialogs/EmailDialog/screens/Verify.tsx:200 src/components/dialogs/LanguageSelectDialog.tsx:327 src/components/dialogs/NotificationSettingsDialog.tsx:106 src/components/dialogs/ServerInput.tsx:237 src/components/dialogs/ServerInput.tsx:239 src/components/dms/AfterReportConversationDialog.tsx:164 src/components/dms/AfterReportDialog.tsx:145
+#: src/components/forms/DateField/index.tsx:128 src/components/forms/DateField/index.tsx:145 src/features/inviteFriends/InviteFriendsDialogInner.tsx:148 src/features/inviteFriends/InviteFriendsDialogInner.tsx:154 src/lib/media/picker.tsx:37 src/screens/Login/components/HostingProviderDialog.tsx:253 src/screens/Login/components/HostingProviderDialog.tsx:255
+#: src/screens/ModerationInbox/components/AccountStatus.tsx:74 src/screens/Onboarding/StepProfile/index.tsx:355 src/screens/Onboarding/StepProfile/index.tsx:358 src/screens/Settings/components/AddAppPasswordDialog.tsx:214 src/screens/Settings/components/AddAppPasswordDialog.tsx:221 src/view/com/composer/labels/LabelsBtn.tsx:219 src/view/com/composer/labels/LabelsBtn.tsx:226
+#: src/view/com/composer/videos/SubtitleDialog.tsx:192 src/view/com/composer/videos/SubtitleDialog.tsx:203
 msgid "Done"
 msgstr "Hotovo"
 
@@ -3913,8 +3897,7 @@ msgstr "napr. používatelia, ktorí opakovane odpovedajú reklamami."
 msgid "Eating disorders"
 msgstr "Poruchy príjmu potravy"
 
-#: src/screens/Messages/components/EditTextButton.tsx:52 src/screens/Settings/AccountSettings.tsx:148 src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:250 src/screens/StarterPack/StarterPackScreen.tsx:617 src/screens/StarterPack/Wizard/index.tsx:325
-#: src/screens/StarterPack/Wizard/index.tsx:330
+#: src/screens/Messages/components/EditTextButton.tsx:52 src/screens/Settings/AccountSettings.tsx:148 src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:250 src/screens/StarterPack/StarterPackScreen.tsx:617 src/screens/StarterPack/Wizard/index.tsx:325 src/screens/StarterPack/Wizard/index.tsx:330
 msgid "Edit"
 msgstr "Upraviť"
 
@@ -4516,8 +4499,7 @@ msgstr "Nepodarilo sa načítať kanály"
 msgid "Failed to load feeds preferences"
 msgstr "Nepodarilo sa načítať nastavenia kanálov"
 
-#: src/components/dialogs/NotificationSettingsDialog.tsx:85 src/screens/Messages/Settings.tsx:369 src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:112 src/screens/Settings/NotificationSettings/index.tsx:148 src/screens/Settings/NotificationSettings/index.tsx:267
-#: src/screens/Settings/NotificationSettings/index.tsx:284
+#: src/components/dialogs/NotificationSettingsDialog.tsx:85 src/screens/Messages/Settings.tsx:369 src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:112 src/screens/Settings/NotificationSettings/index.tsx:148 src/screens/Settings/NotificationSettings/index.tsx:267 src/screens/Settings/NotificationSettings/index.tsx:284
 msgid "Failed to load notification settings."
 msgstr "Nepodarilo sa načítať nastavenia upozornení."
 
@@ -4737,8 +4719,7 @@ msgctxt "toast"
 msgid "Feedback sent to feed operator"
 msgstr "Spätná väzba zaslaná prevádzkovateľovi kanálu"
 
-#: src/Navigation.tsx:569 src/screens/SavedFeeds.tsx:112 src/screens/SavedFeeds.tsx:303 src/screens/Search/SearchResults.tsx:108 src/screens/StarterPack/StarterPackScreen.tsx:193 src/view/screens/Feeds.tsx:505 src/view/screens/Profile.tsx:240 src/view/shell/desktop/LeftNav.tsx:711
-#: src/view/shell/Drawer.tsx:592
+#: src/Navigation.tsx:569 src/screens/SavedFeeds.tsx:112 src/screens/SavedFeeds.tsx:303 src/screens/Search/SearchResults.tsx:108 src/screens/StarterPack/StarterPackScreen.tsx:193 src/view/screens/Feeds.tsx:505 src/view/screens/Profile.tsx:240 src/view/shell/desktop/LeftNav.tsx:711 src/view/shell/Drawer.tsx:592
 msgid "Feeds"
 msgstr "Kanály"
 
@@ -4890,8 +4871,8 @@ msgid "Focus the search field"
 msgstr "Zamerať vyhľadávacie pole"
 
 #. User is not following this account, click to follow
-#: src/components/ProfileCard.tsx:553 src/components/ProfileHoverCard/index.web.tsx:503 src/components/ProfileHoverCard/index.web.tsx:514 src/screens/Messages/ConversationSettings/Member.tsx:170 src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:157
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:415 src/screens/VideoFeed/index.tsx:994 src/view/com/notifications/NotificationFeedItem.tsx:890 src/view/com/notifications/NotificationFeedItem.tsx:897
+#: src/components/ProfileCard.tsx:553 src/components/ProfileHoverCard/index.web.tsx:503 src/components/ProfileHoverCard/index.web.tsx:514 src/screens/Messages/ConversationSettings/Member.tsx:170 src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:157 src/screens/Profile/Header/ProfileHeaderStandard.tsx:415 src/screens/VideoFeed/index.tsx:994
+#: src/view/com/notifications/NotificationFeedItem.tsx:890 src/view/com/notifications/NotificationFeedItem.tsx:897
 msgid "Follow"
 msgstr "Sledovať"
 
@@ -4924,8 +4905,8 @@ msgstr "Sledovať 7 účtov"
 msgid "Follow account"
 msgstr "Sledovať účet"
 
-#: src/components/contacts/screens/ViewMatches.tsx:284 src/components/contacts/screens/ViewMatches.tsx:299 src/screens/Onboarding/StepSuggestedAccounts/index.tsx:298 src/screens/Onboarding/StepSuggestedStarterpacks/StarterPackCard.tsx:158
-#: src/screens/Onboarding/StepSuggestedStarterpacks/StarterPackCard.tsx:165 src/screens/Settings/FindContactsSettings.tsx:474 src/screens/Settings/FindContactsSettings.tsx:484 src/screens/StarterPack/StarterPackScreen.tsx:440 src/screens/StarterPack/StarterPackScreen.tsx:448
+#: src/components/contacts/screens/ViewMatches.tsx:284 src/components/contacts/screens/ViewMatches.tsx:299 src/screens/Onboarding/StepSuggestedAccounts/index.tsx:298 src/screens/Onboarding/StepSuggestedStarterpacks/StarterPackCard.tsx:158 src/screens/Onboarding/StepSuggestedStarterpacks/StarterPackCard.tsx:165 src/screens/Settings/FindContactsSettings.tsx:474
+#: src/screens/Settings/FindContactsSettings.tsx:484 src/screens/StarterPack/StarterPackScreen.tsx:440 src/screens/StarterPack/StarterPackScreen.tsx:448
 msgid "Follow all"
 msgstr "Sledovať všetkých"
 
@@ -4985,8 +4966,8 @@ msgstr "Sledovatelia, ktorých poznáš"
 
 #. User is following this account, click to unfollow
 #. User is following this account, click to unfollow
-#: src/components/ProfileCard.tsx:544 src/components/ProfileHoverCard/index.web.tsx:502 src/components/ProfileHoverCard/index.web.tsx:513 src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:160 src/screens/Profile/Header/ProfileHeaderStandard.tsx:411 src/screens/VideoFeed/index.tsx:992
-#: src/view/com/notifications/NotificationFeedItem.tsx:869 src/view/com/notifications/NotificationFeedItem.tsx:885
+#: src/components/ProfileCard.tsx:544 src/components/ProfileHoverCard/index.web.tsx:502 src/components/ProfileHoverCard/index.web.tsx:513 src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:160 src/screens/Profile/Header/ProfileHeaderStandard.tsx:411 src/screens/VideoFeed/index.tsx:992 src/view/com/notifications/NotificationFeedItem.tsx:869
+#: src/view/com/notifications/NotificationFeedItem.tsx:885
 msgid "Following"
 msgstr "Sledované"
 
@@ -5250,10 +5231,9 @@ msgstr "Daj svojmu profilu tvár"
 msgid "Glorification of violence"
 msgstr "Glorifikácia násilia"
 
-#: src/components/dialogs/LinkWarning.tsx:127 src/components/dialogs/LinkWarning.tsx:133 src/components/Layout/Header/index.tsx:134 src/components/moderation/ScreenHider.tsx:157 src/components/moderation/ScreenHider.tsx:166 src/screens/Login/components/AuthLayout/Header/index.tsx:74
-#: src/screens/Login/components/ConfirmHostingProviderDialog.tsx:160 src/screens/Login/components/ConfirmHostingProviderDialog.tsx:163 src/screens/ProfileList/components/ErrorScreen.tsx:35 src/screens/ProfileList/components/ErrorScreen.tsx:41 src/screens/VideoFeed/components/Header.tsx:163
-#: src/screens/VideoFeed/index.tsx:1296 src/screens/VideoFeed/index.tsx:1300 src/view/com/auth/LoggedOut.tsx:127 src/view/com/profile/ProfileFollowers.tsx:225 src/view/com/profile/ProfileFollowers.tsx:226 src/view/screens/NotFound.tsx:51 src/view/screens/NotFound.tsx:52
-#: src/view/screens/NotFound.tsx:57
+#: src/components/dialogs/LinkWarning.tsx:127 src/components/dialogs/LinkWarning.tsx:133 src/components/Layout/Header/index.tsx:134 src/components/moderation/ScreenHider.tsx:157 src/components/moderation/ScreenHider.tsx:166 src/screens/Login/components/AuthLayout/Header/index.tsx:74 src/screens/Login/components/ConfirmHostingProviderDialog.tsx:160
+#: src/screens/Login/components/ConfirmHostingProviderDialog.tsx:163 src/screens/ProfileList/components/ErrorScreen.tsx:35 src/screens/ProfileList/components/ErrorScreen.tsx:41 src/screens/VideoFeed/components/Header.tsx:163 src/screens/VideoFeed/index.tsx:1296 src/screens/VideoFeed/index.tsx:1300 src/view/com/auth/LoggedOut.tsx:127 src/view/com/profile/ProfileFollowers.tsx:225
+#: src/view/com/profile/ProfileFollowers.tsx:226 src/view/screens/NotFound.tsx:51 src/view/screens/NotFound.tsx:52 src/view/screens/NotFound.tsx:57
 msgid "Go back"
 msgstr "Späť"
 
@@ -5541,8 +5521,8 @@ msgstr "Skryté na základe tvojich nastavení moderovania."
 msgid "Hidden list"
 msgstr "Skrytý zoznam"
 
-#: src/components/interstitials/TrendingVideos.tsx:140 src/components/moderation/ContentHider.tsx:208 src/components/moderation/LabelPreference.tsx:141 src/components/moderation/PostHider.tsx:137 src/components/PostControls/PostMenu/PostMenuItems.tsx:829
-#: src/lib/moderation/useLabelBehaviorDescription.ts:18 src/lib/moderation/useLabelBehaviorDescription.ts:23 src/lib/moderation/useLabelBehaviorDescription.ts:28 src/lib/moderation/useLabelBehaviorDescription.ts:33
+#: src/components/interstitials/TrendingVideos.tsx:140 src/components/moderation/ContentHider.tsx:208 src/components/moderation/LabelPreference.tsx:141 src/components/moderation/PostHider.tsx:137 src/components/PostControls/PostMenu/PostMenuItems.tsx:829 src/lib/moderation/useLabelBehaviorDescription.ts:18 src/lib/moderation/useLabelBehaviorDescription.ts:23
+#: src/lib/moderation/useLabelBehaviorDescription.ts:28 src/lib/moderation/useLabelBehaviorDescription.ts:33
 msgid "Hide"
 msgstr "Skryť"
 
@@ -6050,8 +6030,7 @@ msgstr "Pozvať Priateľov"
 msgid "Invite friends <0/>"
 msgstr "Pozvať priateľov <0/>"
 
-#: src/screens/Messages/components/InviteLinkDialog.tsx:191 src/screens/Messages/components/InviteLinkDialog.tsx:327 src/screens/Messages/components/InviteLinkDialog.tsx:333 src/screens/Messages/components/InviteLinkDialog.tsx:512 src/screens/Messages/components/MessagesListGroupInfoPanel.tsx:149
-#: src/screens/Messages/ConversationSettings/index.tsx:550
+#: src/screens/Messages/components/InviteLinkDialog.tsx:191 src/screens/Messages/components/InviteLinkDialog.tsx:327 src/screens/Messages/components/InviteLinkDialog.tsx:333 src/screens/Messages/components/InviteLinkDialog.tsx:512 src/screens/Messages/components/MessagesListGroupInfoPanel.tsx:149 src/screens/Messages/ConversationSettings/index.tsx:550
 msgid "Invite link"
 msgstr "Pozvánkový odkaz"
 
@@ -6226,8 +6205,7 @@ msgstr "Naposledy spustené práve teraz"
 msgid "Latest"
 msgstr "Najnovšie"
 
-#: src/components/verification/VerificationsDialog.tsx:169 src/components/verification/VerifierDialog.tsx:137 src/screens/Moderation/VerificationSettings.tsx:50 src/screens/Profile/Header/EditProfileDialog.tsx:346 src/screens/Settings/components/ChangeHandleDialog.tsx:215
-#: src/screens/Settings/components/ChangeHandleDialog.tsx:279
+#: src/components/verification/VerificationsDialog.tsx:169 src/components/verification/VerifierDialog.tsx:137 src/screens/Moderation/VerificationSettings.tsx:50 src/screens/Profile/Header/EditProfileDialog.tsx:346 src/screens/Settings/components/ChangeHandleDialog.tsx:215 src/screens/Settings/components/ChangeHandleDialog.tsx:279
 msgctxt "english-only-resource"
 msgid "Learn more"
 msgstr "Zistiť viac (v angličtine)"
@@ -6313,8 +6291,7 @@ msgstr "Odísť"
 msgid "Leave chat"
 msgstr "Opustiť čet"
 
-#: src/components/dms/AfterReportConversationDialog.tsx:229 src/components/dms/AfterReportConversationDialog.tsx:233 src/components/dms/ConvoMenu.tsx:236 src/components/dms/ConvoMenu.tsx:240 src/components/dms/ConvoMenu.tsx:308 src/components/dms/ConvoMenu.tsx:312
-#: src/components/dms/LeaveConvoPrompt.tsx:57
+#: src/components/dms/AfterReportConversationDialog.tsx:229 src/components/dms/AfterReportConversationDialog.tsx:233 src/components/dms/ConvoMenu.tsx:236 src/components/dms/ConvoMenu.tsx:240 src/components/dms/ConvoMenu.tsx:308 src/components/dms/ConvoMenu.tsx:312 src/components/dms/LeaveConvoPrompt.tsx:57
 msgid "Leave conversation"
 msgstr "Opustiť konverzáciu"
 
@@ -7265,9 +7242,9 @@ msgstr "Najnovšie odpovede ako prvé"
 msgid "News"
 msgstr "Správy"
 
-#: src/components/contacts/screens/ViewMatches.tsx:403 src/components/contacts/screens/ViewMatches.tsx:418 src/components/dms/AddMembersFlow.tsx:325 src/components/dms/InitiateChatFlow.tsx:599 src/screens/Login/ForgotPasswordForm.tsx:147 src/screens/Login/ForgotPasswordForm.tsx:154
-#: src/screens/Login/SetNewPasswordForm.tsx:176 src/screens/Login/SetNewPasswordForm.tsx:182 src/screens/Onboarding/StepFinished/index.tsx:336 src/screens/Onboarding/StepFinished/index.tsx:345 src/screens/Settings/components/AddAppPasswordDialog.tsx:157
-#: src/screens/Settings/components/AddAppPasswordDialog.tsx:165 src/screens/Signup/BackNextButtons.tsx:68 src/screens/StarterPack/Wizard/index.tsx:192 src/screens/StarterPack/Wizard/index.tsx:196 src/screens/StarterPack/Wizard/index.tsx:385 src/screens/StarterPack/Wizard/index.tsx:392
+#: src/components/contacts/screens/ViewMatches.tsx:403 src/components/contacts/screens/ViewMatches.tsx:418 src/components/dms/AddMembersFlow.tsx:325 src/components/dms/InitiateChatFlow.tsx:599 src/screens/Login/ForgotPasswordForm.tsx:147 src/screens/Login/ForgotPasswordForm.tsx:154 src/screens/Login/SetNewPasswordForm.tsx:176 src/screens/Login/SetNewPasswordForm.tsx:182
+#: src/screens/Onboarding/StepFinished/index.tsx:336 src/screens/Onboarding/StepFinished/index.tsx:345 src/screens/Settings/components/AddAppPasswordDialog.tsx:157 src/screens/Settings/components/AddAppPasswordDialog.tsx:165 src/screens/Signup/BackNextButtons.tsx:68 src/screens/StarterPack/Wizard/index.tsx:192 src/screens/StarterPack/Wizard/index.tsx:196
+#: src/screens/StarterPack/Wizard/index.tsx:385 src/screens/StarterPack/Wizard/index.tsx:392
 msgid "Next"
 msgstr "Ďalej"
 
@@ -7596,8 +7573,8 @@ msgstr "Nastavenia upozornení"
 msgid "Notification sounds"
 msgstr "Zvuky upozornení"
 
-#: src/Navigation.tsx:559 src/Navigation.tsx:798 src/screens/Messages/Settings.tsx:255 src/screens/Notifications/ActivityList.tsx:31 src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:93 src/screens/Settings/NotificationSettings/index.tsx:125
-#: src/screens/Settings/Settings.tsx:201 src/screens/Settings/Settings.tsx:204 src/view/screens/Notifications.tsx:128 src/view/shell/bottom-bar/BottomBar.tsx:279 src/view/shell/desktop/LeftNav.tsx:686 src/view/shell/Drawer.tsx:555
+#: src/Navigation.tsx:559 src/Navigation.tsx:798 src/screens/Messages/Settings.tsx:255 src/screens/Notifications/ActivityList.tsx:31 src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:93 src/screens/Settings/NotificationSettings/index.tsx:125 src/screens/Settings/Settings.tsx:201 src/screens/Settings/Settings.tsx:204 src/view/screens/Notifications.tsx:128
+#: src/view/shell/bottom-bar/BottomBar.tsx:279 src/view/shell/desktop/LeftNav.tsx:686 src/view/shell/Drawer.tsx:555
 msgid "Notifications"
 msgstr "Upozornenia"
 
@@ -8007,8 +7984,7 @@ msgstr "Otvorí tento profil"
 msgid "Opt out"
 msgstr "Odstúpiť"
 
-#: src/screens/ProfileList/components/MoreOptionsMenu.tsx:251 src/screens/ProfileList/components/MoreOptionsMenu.tsx:259 src/screens/ProfileList/components/MoreOptionsMenu.tsx:350 src/screens/StarterPack/StarterPackScreen.tsx:680 src/screens/StarterPack/StarterPackScreen.tsx:688
-#: src/screens/StarterPack/StarterPackScreen.tsx:779
+#: src/screens/ProfileList/components/MoreOptionsMenu.tsx:251 src/screens/ProfileList/components/MoreOptionsMenu.tsx:259 src/screens/ProfileList/components/MoreOptionsMenu.tsx:350 src/screens/StarterPack/StarterPackScreen.tsx:680 src/screens/StarterPack/StarterPackScreen.tsx:688 src/screens/StarterPack/StarterPackScreen.tsx:779
 msgid "Opt out of Starter Pack"
 msgstr "Odhlásiť sa zo štartovacieho balíčka"
 
@@ -8615,8 +8591,7 @@ msgstr "Príspevok odpripnutý"
 msgid "Posted {0}"
 msgstr "Zverejnené {0}"
 
-#: src/components/activity-notifications/SubscribeProfileDialog.tsx:254 src/components/activity-notifications/SubscribeProfileDialog.tsx:266 src/screens/ProfileList/index.tsx:164 src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:216
-#: src/screens/StarterPack/StarterPackScreen.tsx:194 src/view/screens/Profile.tsx:235
+#: src/components/activity-notifications/SubscribeProfileDialog.tsx:254 src/components/activity-notifications/SubscribeProfileDialog.tsx:266 src/screens/ProfileList/index.tsx:164 src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:216 src/screens/StarterPack/StarterPackScreen.tsx:194 src/view/screens/Profile.tsx:235
 msgid "Posts"
 msgstr "Príspevky"
 
@@ -8684,8 +8659,7 @@ msgstr "Súkromie a zabezpečenie"
 msgid "Privacy and Security settings"
 msgstr "Nastavenia súkromia a zabezpečenia"
 
-#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:36 src/components/PolicyUpdateOverlay/updates/202508/index.tsx:103 src/Navigation.tsx:362 src/screens/Settings/AboutSettings.tsx:102 src/screens/Settings/AboutSettings.tsx:105 src/view/screens/PrivacyPolicy.tsx:25
-#: src/view/shell/Drawer.tsx:766 src/view/shell/Drawer.tsx:767
+#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:36 src/components/PolicyUpdateOverlay/updates/202508/index.tsx:103 src/Navigation.tsx:362 src/screens/Settings/AboutSettings.tsx:102 src/screens/Settings/AboutSettings.tsx:105 src/view/screens/PrivacyPolicy.tsx:25 src/view/shell/Drawer.tsx:766 src/view/shell/Drawer.tsx:767
 msgid "Privacy Policy"
 msgstr "Zásady ochrany osobných údajov"
 
@@ -8953,9 +8927,9 @@ msgstr "Odmietnuť žiadosť o pripojenie"
 msgid "Reload conversations"
 msgstr "Znovu načítať konverzácie"
 
-#: src/components/dialogs/lists/ListAddRemoveUsersDialog.tsx:194 src/components/dialogs/lists/UserAddRemoveListsDialog.tsx:319 src/components/dialogs/lists/UserAddRemoveListsDialog.tsx:326 src/components/dialogs/MutedWords.tsx:459 src/components/dialogs/StarterPackDialog.tsx:364
-#: src/components/dialogs/StarterPackDialog.tsx:374 src/components/FeedCard.tsx:375 src/components/StarterPack/Main/ProfilesList.tsx:207 src/components/StarterPack/Wizard/WizardListCard.tsx:110 src/components/StarterPack/Wizard/WizardListCard.tsx:117 src/screens/Bookmarks.tsx:256
-#: src/screens/Messages/ConversationSettings/Member.tsx:162 src/screens/Messages/ConversationSettings/prompts.tsx:178 src/screens/Moderation/index.tsx:534 src/screens/Settings/Settings.tsx:695 src/view/com/posts/PostFeedErrorMessage.tsx:219
+#: src/components/dialogs/lists/ListAddRemoveUsersDialog.tsx:194 src/components/dialogs/lists/UserAddRemoveListsDialog.tsx:319 src/components/dialogs/lists/UserAddRemoveListsDialog.tsx:326 src/components/dialogs/MutedWords.tsx:459 src/components/dialogs/StarterPackDialog.tsx:364 src/components/dialogs/StarterPackDialog.tsx:374 src/components/FeedCard.tsx:375
+#: src/components/StarterPack/Main/ProfilesList.tsx:207 src/components/StarterPack/Wizard/WizardListCard.tsx:110 src/components/StarterPack/Wizard/WizardListCard.tsx:117 src/screens/Bookmarks.tsx:256 src/screens/Messages/ConversationSettings/Member.tsx:162 src/screens/Messages/ConversationSettings/prompts.tsx:178 src/screens/Moderation/index.tsx:534
+#: src/screens/Settings/Settings.tsx:695 src/view/com/posts/PostFeedErrorMessage.tsx:219
 msgid "Remove"
 msgstr "Odstrániť"
 
@@ -9180,8 +9154,8 @@ msgstr "Správa, na ktorú reaguješ, bola odoslaná predtým, ako si sa pripoji
 msgid "Replied-to message, tap to scroll to it"
 msgstr "Odpovedaná správa – ťuknutím prejdeš na ňu"
 
-#: src/components/activity-notifications/SubscribeProfileDialog.tsx:271 src/components/activity-notifications/SubscribeProfileDialog.tsx:283 src/lib/hooks/useNotificationHandler.ts:172 src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:218
-#: src/screens/Settings/NotificationSettings/index.tsx:181 src/screens/Settings/NotificationSettings/index.tsx:330 src/view/screens/Profile.tsx:236
+#: src/components/activity-notifications/SubscribeProfileDialog.tsx:271 src/components/activity-notifications/SubscribeProfileDialog.tsx:283 src/lib/hooks/useNotificationHandler.ts:172 src/screens/Settings/NotificationSettings/ActivityNotificationSettings.tsx:218 src/screens/Settings/NotificationSettings/index.tsx:181 src/screens/Settings/NotificationSettings/index.tsx:330
+#: src/view/screens/Profile.tsx:236
 msgid "Replies"
 msgstr "Odpovede"
 
@@ -9505,11 +9479,10 @@ msgstr "Opakuje pokus o prihlásenie"
 msgid "Retries the last action, which errored out"
 msgstr "Zopakuje poslednú akciu, ktorá skončila chybou"
 
-#: src/components/ageAssurance/AgeAssuranceErrors.tsx:28 src/components/ageAssurance/AgeAssuranceErrors.tsx:31 src/components/contacts/screens/VerifyNumber.tsx:353 src/components/contacts/screens/VerifyNumber.tsx:358 src/components/Error.tsx:74 src/components/Lists.tsx:115
-#: src/components/moderation/ReportDialog/index.tsx:369 src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoFallback.tsx:56 src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoFallback.tsx:59 src/components/StarterPack/ProfileStarterPacks.tsx:371 src/screens/Login/LoginForm.tsx:532
-#: src/screens/Login/LoginForm.tsx:538 src/screens/Messages/ChatList.tsx:429 src/screens/Messages/components/MessageListError.tsx:24 src/screens/Messages/Inbox.tsx:210 src/screens/Messages/JoinRequests.tsx:358 src/screens/Onboarding/StepSuggestedAccounts/index.tsx:272
-#: src/screens/Onboarding/StepSuggestedAccounts/index.tsx:275 src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:92 src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:95 src/screens/PostThread/components/ThreadError.tsx:81 src/screens/PostThread/components/ThreadError.tsx:87
-#: src/screens/Signup/BackNextButtons.tsx:54 src/view/com/util/error/ErrorMessage.tsx:55 src/view/com/util/error/ErrorScreen.tsx:91 src/view/screens/Storybook/Admonitions.tsx:64
+#: src/components/ageAssurance/AgeAssuranceErrors.tsx:28 src/components/ageAssurance/AgeAssuranceErrors.tsx:31 src/components/contacts/screens/VerifyNumber.tsx:353 src/components/contacts/screens/VerifyNumber.tsx:358 src/components/Error.tsx:74 src/components/Lists.tsx:115 src/components/moderation/ReportDialog/index.tsx:369
+#: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoFallback.tsx:56 src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoFallback.tsx:59 src/components/StarterPack/ProfileStarterPacks.tsx:371 src/screens/Login/LoginForm.tsx:532 src/screens/Login/LoginForm.tsx:538 src/screens/Messages/ChatList.tsx:429 src/screens/Messages/components/MessageListError.tsx:24
+#: src/screens/Messages/Inbox.tsx:210 src/screens/Messages/JoinRequests.tsx:358 src/screens/Onboarding/StepSuggestedAccounts/index.tsx:272 src/screens/Onboarding/StepSuggestedAccounts/index.tsx:275 src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:92 src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:95 src/screens/PostThread/components/ThreadError.tsx:81
+#: src/screens/PostThread/components/ThreadError.tsx:87 src/screens/Signup/BackNextButtons.tsx:54 src/view/com/util/error/ErrorMessage.tsx:55 src/view/com/util/error/ErrorScreen.tsx:91 src/view/screens/Storybook/Admonitions.tsx:64
 msgid "Retry"
 msgstr "Skúsiť znovu"
 
@@ -9547,10 +9520,9 @@ msgstr "Porušené pravidlo:"
 msgid "Sad GIFs"
 msgstr "Smutné GIFy"
 
-#: src/components/dialogs/BirthDateSettings.tsx:200 src/components/dialogs/lists/CreateOrEditListDialog.tsx:319 src/components/dialogs/lists/CreateOrEditListDialog.tsx:334 src/components/dialogs/PostInteractionSettingsDialog.tsx:670 src/components/dialogs/PostInteractionSettingsDialog.tsx:675
-#: src/components/StarterPack/QrCodeDialog.tsx:208 src/features/liveNow/components/EditLiveDialog.tsx:199 src/features/liveNow/components/EditLiveDialog.tsx:206 src/screens/Messages/ConversationSettings/prompts.tsx:82 src/screens/Profile/Header/EditProfileDialog.tsx:233
-#: src/screens/Profile/Header/EditProfileDialog.tsx:247 src/screens/SavedFeeds.tsx:124 src/screens/SavedFeeds.tsx:315 src/screens/Settings/components/ChangeHandleDialog.tsx:269 src/view/com/composer/GifAltText.tsx:199 src/view/com/composer/GifAltText.tsx:208
-#: src/view/com/composer/photos/EditImageDialog.web.tsx:63 src/view/com/composer/photos/EditImageDialog.web.tsx:76 src/view/com/composer/photos/ImageAltTextDialog.tsx:162 src/view/com/composer/photos/ImageAltTextDialog.tsx:172
+#: src/components/dialogs/BirthDateSettings.tsx:200 src/components/dialogs/lists/CreateOrEditListDialog.tsx:319 src/components/dialogs/lists/CreateOrEditListDialog.tsx:334 src/components/dialogs/PostInteractionSettingsDialog.tsx:670 src/components/dialogs/PostInteractionSettingsDialog.tsx:675 src/components/StarterPack/QrCodeDialog.tsx:208
+#: src/features/liveNow/components/EditLiveDialog.tsx:199 src/features/liveNow/components/EditLiveDialog.tsx:206 src/screens/Messages/ConversationSettings/prompts.tsx:82 src/screens/Profile/Header/EditProfileDialog.tsx:233 src/screens/Profile/Header/EditProfileDialog.tsx:247 src/screens/SavedFeeds.tsx:124 src/screens/SavedFeeds.tsx:315
+#: src/screens/Settings/components/ChangeHandleDialog.tsx:269 src/view/com/composer/GifAltText.tsx:199 src/view/com/composer/GifAltText.tsx:208 src/view/com/composer/photos/EditImageDialog.web.tsx:63 src/view/com/composer/photos/EditImageDialog.web.tsx:76 src/view/com/composer/photos/ImageAltTextDialog.tsx:162 src/view/com/composer/photos/ImageAltTextDialog.tsx:172
 msgid "Save"
 msgstr "Uložiť"
 
@@ -9558,8 +9530,7 @@ msgstr "Uložiť"
 msgid "Save birthdate"
 msgstr "Uložiť dátum narodenia"
 
-#: src/components/activity-notifications/SubscribeProfileDialog.tsx:195 src/components/activity-notifications/SubscribeProfileDialog.tsx:204 src/screens/SavedFeeds.tsx:120 src/screens/SavedFeeds.tsx:124 src/screens/SavedFeeds.tsx:311 src/screens/SavedFeeds.tsx:315
-#: src/view/com/composer/Composer.tsx:1553 src/view/com/composer/drafts/DraftsButton.tsx:121
+#: src/components/activity-notifications/SubscribeProfileDialog.tsx:195 src/components/activity-notifications/SubscribeProfileDialog.tsx:204 src/screens/SavedFeeds.tsx:120 src/screens/SavedFeeds.tsx:124 src/screens/SavedFeeds.tsx:311 src/screens/SavedFeeds.tsx:315 src/view/com/composer/Composer.tsx:1553 src/view/com/composer/drafts/DraftsButton.tsx:121
 msgid "Save changes"
 msgstr "Uložiť zmeny"
 
@@ -9652,8 +9623,8 @@ msgstr "Posunúť na správu, na ktorú odpovedáš"
 msgid "Scroll to top"
 msgstr "Posunúť sa hore"
 
-#: src/components/dialogs/SearchablePeopleList.tsx:663 src/components/forms/SearchInput.tsx:57 src/components/forms/SearchInput.tsx:59 src/screens/Search/components/AdvancedSearchDialog/index.tsx:218 src/screens/Search/components/AdvancedSearchDialog/index.tsx:224 src/screens/Search/Shell.tsx:549
-#: src/screens/Search/Shell.tsx:612 src/screens/Search/Shell.tsx:753 src/view/shell/bottom-bar/BottomBar.tsx:216
+#: src/components/dialogs/SearchablePeopleList.tsx:663 src/components/forms/SearchInput.tsx:57 src/components/forms/SearchInput.tsx:59 src/screens/Search/components/AdvancedSearchDialog/index.tsx:218 src/screens/Search/components/AdvancedSearchDialog/index.tsx:224 src/screens/Search/Shell.tsx:549 src/screens/Search/Shell.tsx:612 src/screens/Search/Shell.tsx:753
+#: src/view/shell/bottom-bar/BottomBar.tsx:216
 msgid "Search"
 msgstr "Hľadať"
 
@@ -10162,8 +10133,7 @@ msgstr "Sexuálna aktivita alebo erotická nahota."
 msgid "Sexually Suggestive"
 msgstr "Sexuálne sugestívne"
 
-#: src/components/Link.tsx:428 src/components/MediaPreview.tsx:243 src/components/Post/Embed/ImageContextMenu.tsx:74 src/components/StarterPack/QrCodeDialog.tsx:196 src/screens/Hashtag.tsx:132 src/screens/Messages/components/InviteLinkDialog.tsx:413
-#: src/screens/Messages/components/InviteLinkDialog.tsx:424 src/screens/StarterPack/StarterPackScreen.tsx:435 src/screens/Topic.tsx:91
+#: src/components/Link.tsx:428 src/components/MediaPreview.tsx:243 src/components/Post/Embed/ImageContextMenu.tsx:74 src/components/StarterPack/QrCodeDialog.tsx:196 src/screens/Hashtag.tsx:132 src/screens/Messages/components/InviteLinkDialog.tsx:413 src/screens/Messages/components/InviteLinkDialog.tsx:424 src/screens/StarterPack/StarterPackScreen.tsx:435 src/screens/Topic.tsx:91
 msgid "Share"
 msgstr "Zdieľať"
 
@@ -10231,8 +10201,8 @@ msgstr "Zdieľať tento štartovací balíček"
 msgid "Share this Starter Pack and help people join your community on Bluesky."
 msgstr "Zdieľaj tento štartovací balíček a pomôž ľuďom pridať sa k tvojej komunite na Tatrasky."
 
-#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:130 src/components/PostControls/ShareMenu/ShareMenuItems.tsx:133 src/screens/ProfileList/components/MoreOptionsMenu.tsx:184 src/screens/ProfileList/components/MoreOptionsMenu.tsx:190 src/screens/StarterPack/StarterPackScreen.tsx:649
-#: src/screens/StarterPack/StarterPackScreen.tsx:657 src/view/com/profile/ProfileMenu.tsx:305 src/view/com/profile/ProfileMenu.tsx:317
+#: src/components/PostControls/ShareMenu/ShareMenuItems.tsx:130 src/components/PostControls/ShareMenu/ShareMenuItems.tsx:133 src/screens/ProfileList/components/MoreOptionsMenu.tsx:184 src/screens/ProfileList/components/MoreOptionsMenu.tsx:190 src/screens/StarterPack/StarterPackScreen.tsx:649 src/screens/StarterPack/StarterPackScreen.tsx:657 src/view/com/profile/ProfileMenu.tsx:305
+#: src/view/com/profile/ProfileMenu.tsx:317
 msgid "Share via..."
 msgstr "Zdieľať cez…"
 
@@ -10253,21 +10223,21 @@ msgstr "Tester zdieľaných preferencií"
 #. is available. KWS is the name of a third-party verification partner.
 #: src/ageAssurance/components/DeviceSignalsNotice.tsx:25
 msgid ""
-"Sharing your age range reveals only the range associated with your Apple Account – for example, that you’re at least 18. <0>Your exact age and birthday are never shared,</0> and this data never leaves this device. Therefore, it only enables access on this device. Alternatively, <1>you can use our "
-"trusted partner, KWS</1>, to complete your verification and enable access on all platforms."
+"Sharing your age range reveals only the range associated with your Apple Account – for example, that you’re at least 18. <0>Your exact age and birthday are never shared,</0> and this data never leaves this device. Therefore, it only enables access on this device. Alternatively, <1>you can use our trusted partner, KWS</1>, to complete your verification and enable access on all "
+"platforms."
 msgstr ""
-"Zdieľanie informácie o tvojom vekovom rozmedzí odhalí len rozsah priradený k tvojmu účtu Apple – napríklad to, že máš aspoň 18 rokov. <0>Tvoj presný vek ani dátum narodenia sa nikdy nezdieľajú</0> a tieto údaje nikdy neopustia toto zariadenie. Vďaka tomu je prístup možný len na tomto zariadení. "
-"Prípadne <1>môžeš na dokončenie overenia a povolenie prístupu na všetkých platformách využiť služby nášho dôveryhodného partnera KWS</1>."
+"Zdieľanie informácie o tvojom vekovom rozmedzí odhalí len rozsah priradený k tvojmu účtu Apple – napríklad to, že máš aspoň 18 rokov. <0>Tvoj presný vek ani dátum narodenia sa nikdy nezdieľajú</0> a tieto údaje nikdy neopustia toto zariadenie. Vďaka tomu je prístup možný len na tomto zariadení. Prípadne <1>môžeš na dokončenie overenia a povolenie prístupu na všetkých platformách "
+"využiť služby nášho dôveryhodného partnera KWS</1>."
 
 #. Shown next to the 'Share age range' button when on-device age verification
 #. is available. KWS is the name of a third-party verification partner.
 #: src/ageAssurance/components/DeviceSignalsNotice.tsx:43
 msgid ""
-"Sharing your age range reveals only the range associated with your Google Account – for example, that you’re at least 18. <0>Your exact age and birthday are never shared,</0> and this data never leaves this device. Therefore, it only enables access on this device. Alternatively, <1>you can use our "
-"trusted partner, KWS</1>, to complete your verification and enable access on all platforms."
+"Sharing your age range reveals only the range associated with your Google Account – for example, that you’re at least 18. <0>Your exact age and birthday are never shared,</0> and this data never leaves this device. Therefore, it only enables access on this device. Alternatively, <1>you can use our trusted partner, KWS</1>, to complete your verification and enable access on all "
+"platforms."
 msgstr ""
-"Zdieľanie informácie o tvojom vekovom rozmedzí odhalí len rozsah priradený k tvojmu Google účtu – napríklad to, že máš aspoň 18 rokov. <0>Tvoj presný vek ani dátum narodenia sa nikdy nezdieľajú</0> a tieto údaje nikdy neopustia toto zariadenie. Vďaka tomu je prístup možný len na tomto zariadení. "
-"Prípadne <1>môžeš na dokončenie overenia a povolenie prístupu na všetkých platformách využiť služby nášho dôveryhodného partnera KWS</1>."
+"Zdieľanie informácie o tvojom vekovom rozmedzí odhalí len rozsah priradený k tvojmu Google účtu – napríklad to, že máš aspoň 18 rokov. <0>Tvoj presný vek ani dátum narodenia sa nikdy nezdieľajú</0> a tieto údaje nikdy neopustia toto zariadenie. Vďaka tomu je prístup možný len na tomto zariadení. Prípadne <1>môžeš na dokončenie overenia a povolenie prístupu na všetkých platformách "
+"využiť služby nášho dôveryhodného partnera KWS</1>."
 
 #: src/components/moderation/ContentHider.tsx:208 src/components/moderation/LabelPreference.tsx:143 src/components/moderation/PostHider.tsx:137
 msgid "Show"
@@ -10281,8 +10251,7 @@ msgstr "Zobraziť stav účtu"
 msgid "Show alt text"
 msgstr "Zobraziť alternatívny text"
 
-#: src/components/moderation/ScreenHider.tsx:175 src/components/moderation/ScreenHider.tsx:178 src/features/liveNow/components/LiveStatusDialog.tsx:315 src/features/liveNow/components/LiveStatusDialog.tsx:319 src/screens/List/ListHiddenScreen.tsx:193 src/screens/VideoFeed/index.tsx:777
-#: src/screens/VideoFeed/index.tsx:783
+#: src/components/moderation/ScreenHider.tsx:175 src/components/moderation/ScreenHider.tsx:178 src/features/liveNow/components/LiveStatusDialog.tsx:315 src/features/liveNow/components/LiveStatusDialog.tsx:319 src/screens/List/ListHiddenScreen.tsx:193 src/screens/VideoFeed/index.tsx:777 src/screens/VideoFeed/index.tsx:783
 msgid "Show anyway"
 msgstr "Zobraziť aj tak"
 
@@ -10386,10 +10355,9 @@ msgstr "Zobrazuje ďalšie účty, na ktoré môžeš prepnúť"
 msgid "Shows the content"
 msgstr "Zobrazí obsah"
 
-#: src/components/dialogs/Signin.tsx:98 src/components/dialogs/Signin.tsx:100 src/components/WelcomeModal.tsx:196 src/components/WelcomeModal.tsx:207 src/screens/Hashtag.tsx:233 src/screens/Login/index.tsx:143 src/screens/Login/index.tsx:165 src/screens/Login/LoginForm.tsx:275
-#: src/screens/Login/LoginForm.tsx:555 src/screens/Login/LoginForm.tsx:561 src/screens/Messages/JoinRequest.tsx:298 src/screens/Messages/JoinRequest.tsx:304 src/screens/Search/SearchResults.tsx:399 src/view/com/auth/SplashScreen.tsx:118 src/view/com/auth/SplashScreen.tsx:125
-#: src/view/com/auth/SplashScreen.web.tsx:123 src/view/com/auth/SplashScreen.web.tsx:131 src/view/shell/bottom-bar/BottomBar.tsx:360 src/view/shell/bottom-bar/BottomBar.tsx:364 src/view/shell/bottom-bar/BottomBarWeb.tsx:250 src/view/shell/bottom-bar/BottomBarWeb.tsx:255
-#: src/view/shell/NavSignupCard.tsx:58 src/view/shell/NavSignupCard.tsx:63
+#: src/components/dialogs/Signin.tsx:98 src/components/dialogs/Signin.tsx:100 src/components/WelcomeModal.tsx:196 src/components/WelcomeModal.tsx:207 src/screens/Hashtag.tsx:233 src/screens/Login/index.tsx:143 src/screens/Login/index.tsx:165 src/screens/Login/LoginForm.tsx:275 src/screens/Login/LoginForm.tsx:555 src/screens/Login/LoginForm.tsx:561
+#: src/screens/Messages/JoinRequest.tsx:298 src/screens/Messages/JoinRequest.tsx:304 src/screens/Search/SearchResults.tsx:399 src/view/com/auth/SplashScreen.tsx:118 src/view/com/auth/SplashScreen.tsx:125 src/view/com/auth/SplashScreen.web.tsx:123 src/view/com/auth/SplashScreen.web.tsx:131 src/view/shell/bottom-bar/BottomBar.tsx:360 src/view/shell/bottom-bar/BottomBar.tsx:364
+#: src/view/shell/bottom-bar/BottomBarWeb.tsx:250 src/view/shell/bottom-bar/BottomBarWeb.tsx:255 src/view/shell/NavSignupCard.tsx:58 src/view/shell/NavSignupCard.tsx:63
 msgid "Sign in"
 msgstr "Prihlásiť sa"
 
@@ -10430,8 +10398,7 @@ msgstr "Prihlás sa a požiadaj o prístup k tomuto skupinovému četu."
 msgid "Sign in to view post"
 msgstr "Prihlás sa a zobraz príspevok"
 
-#: src/ageAssurance/components/DataUnavailableScreen.tsx:22 src/screens/Settings/Settings.tsx:277 src/screens/Settings/Settings.tsx:279 src/screens/Settings/Settings.tsx:311 src/screens/SignupQueued.tsx:100 src/screens/SignupQueued.tsx:103 src/screens/Takendown.tsx:86
-#: src/view/shell/desktop/LeftNav.tsx:227 src/view/shell/desktop/LeftNav.tsx:282 src/view/shell/desktop/LeftNav.tsx:285
+#: src/ageAssurance/components/DataUnavailableScreen.tsx:22 src/screens/Settings/Settings.tsx:277 src/screens/Settings/Settings.tsx:279 src/screens/Settings/Settings.tsx:311 src/screens/SignupQueued.tsx:100 src/screens/SignupQueued.tsx:103 src/screens/Takendown.tsx:86 src/view/shell/desktop/LeftNav.tsx:227 src/view/shell/desktop/LeftNav.tsx:282 src/view/shell/desktop/LeftNav.tsx:285
 msgid "Sign out"
 msgstr "Odhlásiť sa"
 
@@ -10460,8 +10427,8 @@ msgstr "Prihlásený ako @{0}"
 msgid "Since"
 msgstr "Od"
 
-#: src/components/contacts/screens/PhoneInput.tsx:163 src/components/contacts/screens/VerifyNumber.tsx:208 src/screens/Onboarding/StepFindContactsIntro/index.tsx:86 src/screens/Onboarding/StepFindContactsIntro/index.tsx:90 src/screens/Onboarding/StepFinished/index.tsx:301
-#: src/screens/Onboarding/StepFinished/index.tsx:323 src/screens/Onboarding/StepSuggestedAccounts/index.tsx:285 src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:105 src/screens/StarterPack/Wizard/index.tsx:200
+#: src/components/contacts/screens/PhoneInput.tsx:163 src/components/contacts/screens/VerifyNumber.tsx:208 src/screens/Onboarding/StepFindContactsIntro/index.tsx:86 src/screens/Onboarding/StepFindContactsIntro/index.tsx:90 src/screens/Onboarding/StepFinished/index.tsx:301 src/screens/Onboarding/StepFinished/index.tsx:323 src/screens/Onboarding/StepSuggestedAccounts/index.tsx:285
+#: src/screens/Onboarding/StepSuggestedStarterpacks/index.tsx:105 src/screens/StarterPack/Wizard/index.tsx:200
 msgid "Skip"
 msgstr "Preskočiť"
 
@@ -10741,9 +10708,8 @@ msgstr "Storybook"
 msgid "Streaming on Twitch? Set your live status on Bluesky to add a badge to your avatar. Tapping it takes people straight to your stream."
 msgstr "Streamuješ na Twitchi? Nastav si na Tatrasky stav „naživo“ a pridaj tak k svojmu avatarovi odznak. Po kliknutí naň sa ľudia dostanú priamo na tvoj stream."
 
-#: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:124 src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:130 src/components/moderation/AppealForm.tsx:165 src/components/moderation/AppealForm.tsx:166 src/components/SendErrorReportDialog.tsx:90
-#: src/components/SendErrorReportDialog.tsx:95 src/features/liveNow/components/GoLiveDisabledDialog.tsx:138 src/features/liveNow/components/GoLiveDisabledDialog.tsx:139 src/screens/Messages/components/ChatDisabled.tsx:173 src/screens/Messages/components/ChatDisabled.tsx:175
-#: src/screens/Settings/components/BetaFeaturesFeedbackDialog.tsx:133
+#: src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:124 src/components/ageAssurance/AgeAssuranceAppealDialog.tsx:130 src/components/moderation/AppealForm.tsx:165 src/components/moderation/AppealForm.tsx:166 src/components/SendErrorReportDialog.tsx:90 src/components/SendErrorReportDialog.tsx:95 src/features/liveNow/components/GoLiveDisabledDialog.tsx:138
+#: src/features/liveNow/components/GoLiveDisabledDialog.tsx:139 src/screens/Messages/components/ChatDisabled.tsx:173 src/screens/Messages/components/ChatDisabled.tsx:175 src/screens/Settings/components/BetaFeaturesFeedbackDialog.tsx:133
 msgid "Submit"
 msgstr "Odoslať"
 
@@ -11006,8 +10972,7 @@ msgstr "Dočasne deaktivuj svoj účet"
 msgid "Terms"
 msgstr "Podmienky"
 
-#: src/components/dialogs/BirthDateSettings.tsx:181 src/components/PolicyUpdateOverlay/updates/202508/index.tsx:31 src/components/PolicyUpdateOverlay/updates/202508/index.tsx:98 src/Navigation.tsx:367 src/screens/Settings/AboutSettings.tsx:94 src/screens/Settings/AboutSettings.tsx:97
-#: src/view/screens/TermsOfService.tsx:25 src/view/shell/Drawer.tsx:759 src/view/shell/Drawer.tsx:761
+#: src/components/dialogs/BirthDateSettings.tsx:181 src/components/PolicyUpdateOverlay/updates/202508/index.tsx:31 src/components/PolicyUpdateOverlay/updates/202508/index.tsx:98 src/Navigation.tsx:367 src/screens/Settings/AboutSettings.tsx:94 src/screens/Settings/AboutSettings.tsx:97 src/view/screens/TermsOfService.tsx:25 src/view/shell/Drawer.tsx:759 src/view/shell/Drawer.tsx:761
 msgid "Terms of Service"
 msgstr "Podmienky používania"
 
@@ -11270,15 +11235,14 @@ msgid "There was an issue updating your feeds, please check your internet connec
 msgstr "Pri aktualizácii tvojich kanálov sa vyskytol problém; skontroluj pripojenie na internet a skús to znova."
 
 #. placeholder {0}: e.toString()
-#: src/components/PostControls/PostMenu/PostMenuItems.tsx:428 src/components/PostControls/PostMenu/PostMenuItems.tsx:450 src/components/PostControls/PostMenu/PostMenuItems.tsx:469 src/screens/Messages/ConversationSettings/Member.tsx:71 src/screens/Messages/ConversationSettings/MemberMenu.tsx:114
-#: src/screens/Messages/ConversationSettings/MemberMenu.tsx:127 src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:117 src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:130 src/screens/Profile/Header/ProfileHeaderStandard.tsx:92
-#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:260 src/screens/Profile/Header/ProfileHeaderStandard.tsx:290 src/screens/Profile/Header/ProfileHeaderStandard.tsx:306 src/view/com/profile/ProfileMenu.tsx:139 src/view/com/profile/ProfileMenu.tsx:152 src/view/com/profile/ProfileMenu.tsx:171
-#: src/view/com/profile/ProfileMenu.tsx:186 src/view/com/profile/ProfileMenu.tsx:203 src/view/com/profile/ProfileMenu.tsx:216 src/view/com/profile/ProfileMenu.tsx:232 src/view/com/profile/ProfileMenu.tsx:247
+#: src/components/PostControls/PostMenu/PostMenuItems.tsx:428 src/components/PostControls/PostMenu/PostMenuItems.tsx:450 src/components/PostControls/PostMenu/PostMenuItems.tsx:469 src/screens/Messages/ConversationSettings/Member.tsx:71 src/screens/Messages/ConversationSettings/MemberMenu.tsx:114 src/screens/Messages/ConversationSettings/MemberMenu.tsx:127
+#: src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:117 src/screens/PostThread/components/ThreadItemAnchorFollowButton.tsx:130 src/screens/Profile/Header/ProfileHeaderStandard.tsx:92 src/screens/Profile/Header/ProfileHeaderStandard.tsx:260 src/screens/Profile/Header/ProfileHeaderStandard.tsx:290 src/screens/Profile/Header/ProfileHeaderStandard.tsx:306
+#: src/view/com/profile/ProfileMenu.tsx:139 src/view/com/profile/ProfileMenu.tsx:152 src/view/com/profile/ProfileMenu.tsx:171 src/view/com/profile/ProfileMenu.tsx:186 src/view/com/profile/ProfileMenu.tsx:203 src/view/com/profile/ProfileMenu.tsx:216 src/view/com/profile/ProfileMenu.tsx:232 src/view/com/profile/ProfileMenu.tsx:247
 msgid "There was an issue! {0}"
 msgstr "Vyskytol sa problém! {0}"
 
-#: src/components/dialogs/PostInteractionSettingsDialog.tsx:238 src/screens/List/ListHiddenScreen.tsx:67 src/screens/List/ListHiddenScreen.tsx:81 src/screens/List/ListHiddenScreen.tsx:103 src/screens/ProfileList/components/Header.tsx:111 src/screens/ProfileList/components/Header.tsx:125
-#: src/screens/ProfileList/components/MoreOptionsMenu.tsx:148 src/screens/ProfileList/components/MoreOptionsMenu.tsx:160 src/screens/ProfileList/components/SubscribeMenu.tsx:38 src/screens/ProfileList/components/SubscribeMenu.tsx:53
+#: src/components/dialogs/PostInteractionSettingsDialog.tsx:238 src/screens/List/ListHiddenScreen.tsx:67 src/screens/List/ListHiddenScreen.tsx:81 src/screens/List/ListHiddenScreen.tsx:103 src/screens/ProfileList/components/Header.tsx:111 src/screens/ProfileList/components/Header.tsx:125 src/screens/ProfileList/components/MoreOptionsMenu.tsx:148
+#: src/screens/ProfileList/components/MoreOptionsMenu.tsx:160 src/screens/ProfileList/components/SubscribeMenu.tsx:38 src/screens/ProfileList/components/SubscribeMenu.tsx:53
 msgid "There was an issue. Please check your internet connection and try again."
 msgstr "Vyskytol sa problém. Skontroluj si internetové pripojenie a skús to znova."
 
@@ -11783,8 +11747,7 @@ msgstr "Najprv najlepšie odpovede"
 msgid "Topic"
 msgstr "Téma"
 
-#: src/components/dms/MessageContextMenu.tsx:190 src/components/dms/MessageContextMenu.tsx:193 src/components/Post/Translated/index.tsx:147 src/components/Post/Translated/index.tsx:154 src/components/PostControls/PostMenu/PostMenuItems.tsx:557
-#: src/components/PostControls/PostMenu/PostMenuItems.tsx:563
+#: src/components/dms/MessageContextMenu.tsx:190 src/components/dms/MessageContextMenu.tsx:193 src/components/Post/Translated/index.tsx:147 src/components/Post/Translated/index.tsx:154 src/components/PostControls/PostMenu/PostMenuItems.tsx:557 src/components/PostControls/PostMenu/PostMenuItems.tsx:563
 msgid "Translate"
 msgstr "Preložiť"
 
@@ -11944,9 +11907,8 @@ msgstr "Nedostupné"
 msgid "Unavailable feed information"
 msgstr "Nedostupné informácie o kanáli"
 
-#: src/components/dms/MessageItem.tsx:762 src/components/dms/MessagesListBlockedFooter.tsx:97 src/components/dms/MessagesListBlockedFooter.tsx:104 src/components/moderation/BlockDialog.tsx:184 src/components/moderation/BlockDialog.tsx:188 src/components/moderation/BlockDialog.tsx:210
-#: src/screens/Messages/ConversationSettings/MemberMenu.tsx:227 src/screens/Profile/Header/ProfileHeaderStandard.tsx:190 src/screens/Profile/Header/ProfileHeaderStandard.tsx:371 src/screens/Profile/Header/ProfileHeaderStandard.tsx:433 src/screens/ProfileList/components/Header.tsx:171
-#: src/screens/ProfileList/components/Header.tsx:178
+#: src/components/dms/MessageItem.tsx:762 src/components/dms/MessagesListBlockedFooter.tsx:97 src/components/dms/MessagesListBlockedFooter.tsx:104 src/components/moderation/BlockDialog.tsx:184 src/components/moderation/BlockDialog.tsx:188 src/components/moderation/BlockDialog.tsx:210 src/screens/Messages/ConversationSettings/MemberMenu.tsx:227
+#: src/screens/Profile/Header/ProfileHeaderStandard.tsx:190 src/screens/Profile/Header/ProfileHeaderStandard.tsx:371 src/screens/Profile/Header/ProfileHeaderStandard.tsx:433 src/screens/ProfileList/components/Header.tsx:171 src/screens/ProfileList/components/Header.tsx:178
 msgid "Unblock"
 msgstr "Odblokovať"
 
@@ -11980,8 +11942,8 @@ msgctxt "moderation-report-filter"
 msgid "Under review"
 msgstr "Posudzuje sa"
 
-#: src/features/liveEvents/components/DiscoverFeedLiveEventFeedsAndTrendingBanner.tsx:50 src/features/liveEvents/components/DiscoverFeedLiveEventFeedsAndTrendingBanner.tsx:56 src/features/liveEvents/components/SidebarLiveEventFeedsBanner.tsx:40
-#: src/features/liveEvents/components/SidebarLiveEventFeedsBanner.tsx:46 src/screens/Profile/components/GermButton.tsx:191 src/screens/Profile/components/GermButton.tsx:192
+#: src/features/liveEvents/components/DiscoverFeedLiveEventFeedsAndTrendingBanner.tsx:50 src/features/liveEvents/components/DiscoverFeedLiveEventFeedsAndTrendingBanner.tsx:56 src/features/liveEvents/components/SidebarLiveEventFeedsBanner.tsx:40 src/features/liveEvents/components/SidebarLiveEventFeedsBanner.tsx:46 src/screens/Profile/components/GermButton.tsx:191
+#: src/screens/Profile/components/GermButton.tsx:192
 msgid "Undo"
 msgstr "Vrátiť späť"
 
@@ -12807,9 +12769,7 @@ msgid "We estimate {estimatedTime} until your account is ready."
 msgstr "Odhadujeme, že tvoj účet bude pripravený o {estimatedTime}."
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:206
-msgid ""
-"We have partnered with <0>KWS</0> to handle age verification. When you click \"Begin\" below, KWS will email you instructions to complete the verification process. If your email address has already been used to verify your age for another game or service that uses KWS, you won’t need to do it "
-"again. When you’re done, you'll be brought back to continue using Bluesky."
+msgid "We have partnered with <0>KWS</0> to handle age verification. When you click \"Begin\" below, KWS will email you instructions to complete the verification process. If your email address has already been used to verify your age for another game or service that uses KWS, you won’t need to do it again. When you’re done, you'll be brought back to continue using Bluesky."
 msgstr "Na overenie veku sme nadviazali spoluprácu so spoločnosťou <0>KWS</0>. Keď nižšie klikneš na tlačidlo „Začať“, KWS ti e-mailom zašle pokyny na dokončenie procesu overenia. Ak už bola tvoja e-mailová adresa použitá na overenie veku v inej hre alebo službe, ktorá využíva KWS, nebudeš to musieť robiť znova. Po dokončení sa vrátiš späť a budeš môcť pokračovať v používaní Tatrasky."
 
 #. placeholder {0}: currentAccount?.email
@@ -12969,12 +12929,10 @@ msgid "We’re updating our Terms of Service, Privacy Policy, and Copyright Poli
 msgstr "Aktualizujeme naše Podmienky používania, Zásady ochrany osobných údajov a Zásady týkajúce sa autorských práv, pričom zmeny nadobúdajú účinnosť 15. septembra 2025."
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:62
-msgid ""
-"We’re updating our Terms of Service, Privacy Policy, and Copyright Policy, effective September 15th, 2025. We're also updating our Community Guidelines, and we want your input! These new guidelines will take effect on October 15th, 2025. Learn more about these changes and how to share your "
-"thoughts with us by reading our blog post."
+msgid "We’re updating our Terms of Service, Privacy Policy, and Copyright Policy, effective September 15th, 2025. We're also updating our Community Guidelines, and we want your input! These new guidelines will take effect on October 15th, 2025. Learn more about these changes and how to share your thoughts with us by reading our blog post."
 msgstr ""
-"Aktualizujeme naše Podmienky používania, Zásady ochrany osobných údajov a Zásady týkajúce sa autorských práv, pričom zmeny nadobudnú účinnosť 15. septembra 2025. Aktualizujeme tiež naše Pravidlá komunity a zaujíma nás tvoj názor! Tieto nové pravidlá nadobudnú účinnosť 15. októbra 2025. Viac "
-"informácií o týchto zmenách a o tom, ako sa s nami môžeš podeliť o svoje postrehy, nájdeš v našom blogovom príspevku."
+"Aktualizujeme naše Podmienky používania, Zásady ochrany osobných údajov a Zásady týkajúce sa autorských práv, pričom zmeny nadobudnú účinnosť 15. septembra 2025. Aktualizujeme tiež naše Pravidlá komunity a zaujíma nás tvoj názor! Tieto nové pravidlá nadobudnú účinnosť 15. októbra 2025. Viac informácií o týchto zmenách a o tom, ako sa s nami môžeš podeliť o svoje postrehy, nájdeš v "
+"našom blogovom príspevku."
 
 #: src/ageAssurance/components/RedirectOverlay.tsx:256 src/components/ageAssurance/AgeAssuranceRedirectDialog.tsx:165
 msgid "We've confirmed your age assurance status. You can now close this dialog."
@@ -14315,8 +14273,7 @@ msgstr "Potvrď svoj vek"
 msgid "Confirming your payment…"
 msgstr "Potvrdzuje sa tvoja platba…"
 
-#: src/Navigation.tsx:432 src/screens/Settings/NetworkServicesSettings/ContentServiceSettings.tsx:124 src/screens/Settings/NetworkServicesSettings/ContentServiceSettings.tsx:134 src/screens/Settings/NetworkServicesSettings/ContentServiceSettings.tsx:166
-#: src/screens/Settings/NetworkServicesSettings/index.tsx:33 src/screens/Settings/NetworkServicesSettings/index.tsx:36
+#: src/Navigation.tsx:432 src/screens/Settings/NetworkServicesSettings/ContentServiceSettings.tsx:124 src/screens/Settings/NetworkServicesSettings/ContentServiceSettings.tsx:134 src/screens/Settings/NetworkServicesSettings/ContentServiceSettings.tsx:166 src/screens/Settings/NetworkServicesSettings/index.tsx:33 src/screens/Settings/NetworkServicesSettings/index.tsx:36
 msgid "Content service"
 msgstr "Obsahová služba"
 
@@ -14433,8 +14390,7 @@ msgstr "Aktuálne · {0}"
 msgid "Custom content service"
 msgstr "Vlastná obsahová služba"
 
-#: src/screens/Settings/NetworkServicesSettings/AppViewTransfer/AppViewSelector.tsx:65 src/screens/Settings/NetworkServicesSettings/AppViewTransfer/AppViewSelector.tsx:69 src/screens/Settings/NetworkServicesSettings/ContentServiceSettings.tsx:228
-#: src/screens/Settings/NetworkServicesSettings/ContentServiceSettings.tsx:232
+#: src/screens/Settings/NetworkServicesSettings/AppViewTransfer/AppViewSelector.tsx:65 src/screens/Settings/NetworkServicesSettings/AppViewTransfer/AppViewSelector.tsx:69 src/screens/Settings/NetworkServicesSettings/ContentServiceSettings.tsx:228 src/screens/Settings/NetworkServicesSettings/ContentServiceSettings.tsx:232
 msgid "Custom service URL"
 msgstr "URL vlastnej služby"
 
@@ -14747,8 +14703,7 @@ msgstr "URL inštancie LibreTranslate"
 msgid "Like or unlike the selected post"
 msgstr "Lajknúť vybraný príspevok alebo zrušiť lajk"
 
-#: src/components/dialogs/BirthDateSettings.tsx:104 src/components/dialogs/BirthDateSettings.tsx:111 src/components/dialogs/EmailDialog/screens/OAuthPasswordRequired.tsx:53 src/components/dialogs/EmailDialog/screens/OAuthPasswordRequired.tsx:62
-#: src/screens/Settings/components/OAuthAccountActionPasswordRequired.tsx:52
+#: src/components/dialogs/BirthDateSettings.tsx:104 src/components/dialogs/BirthDateSettings.tsx:111 src/components/dialogs/EmailDialog/screens/OAuthPasswordRequired.tsx:53 src/components/dialogs/EmailDialog/screens/OAuthPasswordRequired.tsx:62 src/screens/Settings/components/OAuthAccountActionPasswordRequired.tsx:52
 msgid "Log out"
 msgstr "Odhlásiť sa"
 
@@ -19121,8 +19076,7 @@ msgstr "Vyber, kedy anketa skončí"
 
 #. Heading of the poll editor card in the post composer
 #. Label on a draft preview showing the draft has a poll
-#: src/view/com/composer/drafts/DraftItem.tsx:373
-#: src/view/com/composer/poll/PollEditor.tsx:80
+#: src/view/com/composer/drafts/DraftItem.tsx:373 src/view/com/composer/poll/PollEditor.tsx:80
 msgid "Poll"
 msgstr "Anketa"
 
@@ -19156,8 +19110,7 @@ msgstr "Odstrániť anketu?"
 msgid "Remove the poll to add media"
 msgstr "Ak chceš pridať médiá, odstráň anketu"
 
-#: src/features/tokimeki/components/TokimekiPollEmbed.tsx:290
-#: src/features/tokimeki/components/TokimekiPollEmbed.tsx:304
+#: src/features/tokimeki/components/TokimekiPollEmbed.tsx:290 src/features/tokimeki/components/TokimekiPollEmbed.tsx:304
 msgid "Remove vote"
 msgstr "Zrušiť hlas"
 
@@ -19285,17 +19238,13 @@ msgstr "Toto vysielanie je offline"
 
 #. How many people are going to an event
 #. placeholder {0}: event.goingCount
-#: src/features/events/components/EventMeta.tsx:77
-#: src/features/events/format.ts:115
-#: src/screens/Event/EventHeader.tsx:175
+#: src/features/events/components/EventMeta.tsx:77 src/features/events/format.ts:115 src/screens/Event/EventHeader.tsx:175
 msgid "{0, plural, one {# going} other {# going}}"
 msgstr "{0, plural, one {# osoba ide} few {# osoby idú} many {# osoby ide} other {# osôb ide}}"
 
 #. How many people are interested in an event
 #. placeholder {0}: event.interestedCount
-#: src/features/events/components/EventMeta.tsx:89
-#: src/features/events/format.ts:122
-#: src/screens/Event/EventHeader.tsx:182
+#: src/features/events/components/EventMeta.tsx:89 src/features/events/format.ts:122 src/screens/Event/EventHeader.tsx:182
 msgid "{0, plural, one {# interested} other {# interested}}"
 msgstr "{0, plural, one {# osoba má záujem} few {# osoby majú záujem} many {# osoby má záujem} other {# osôb má záujem}}"
 
@@ -19324,9 +19273,7 @@ msgstr "Pridať udalosť"
 msgid "An event cannot be combined with media, a link card, a quote or a poll."
 msgstr "Udalosť nemožno kombinovať s médiami, náhľadom odkazu, citáciou ani anketou."
 
-#: src/features/events/components/EventOptionsMenu.tsx:106
-#: src/features/events/components/EventOptionsMenu.tsx:109
-#: src/features/events/components/EventOptionsMenu.tsx:133
+#: src/features/events/components/EventOptionsMenu.tsx:106 src/features/events/components/EventOptionsMenu.tsx:109 src/features/events/components/EventOptionsMenu.tsx:133
 msgid "Cancel event"
 msgstr "Zrušiť udalosť"
 
@@ -19392,8 +19339,7 @@ msgstr "Vytvorí udalosť pripojenú k tomuto príspevku"
 msgid "Creating event..."
 msgstr "Vytvára sa udalosť…"
 
-#: src/features/events/components/EventOptionsMenu.tsx:116
-#: src/features/events/components/EventOptionsMenu.tsx:120
+#: src/features/events/components/EventOptionsMenu.tsx:116 src/features/events/components/EventOptionsMenu.tsx:120
 msgid "Delete event"
 msgstr "Vymazať udalosť"
 
@@ -19406,10 +19352,7 @@ msgstr "Vymazať túto udalosť?"
 msgid "Describe your event"
 msgstr "Opíš svoju udalosť"
 
-#: src/features/events/components/EditEventDialog.tsx:96
-#: src/features/events/components/EditEventDialog.tsx:112
-#: src/features/events/components/EventOptionsMenu.tsx:86
-#: src/features/events/components/EventOptionsMenu.tsx:89
+#: src/features/events/components/EditEventDialog.tsx:96 src/features/events/components/EditEventDialog.tsx:112 src/features/events/components/EventOptionsMenu.tsx:86 src/features/events/components/EventOptionsMenu.tsx:89
 msgid "Edit event"
 msgstr "Upraviť udalosť"
 
@@ -19419,10 +19362,7 @@ msgstr "Koniec"
 
 #. Heading of the event editor card in the post composer
 #. Label on a draft preview showing the draft has an event
-#: src/Navigation.tsx:238
-#: src/screens/Event/EventScreen.tsx:59
-#: src/view/com/composer/drafts/DraftItem.tsx:413
-#: src/view/com/composer/event/EventEditor.tsx:88
+#: src/Navigation.tsx:238 src/screens/Event/EventScreen.tsx:59 src/view/com/composer/drafts/DraftItem.tsx:413 src/view/com/composer/event/EventEditor.tsx:88
 msgid "Event"
 msgstr "Udalosť"
 
@@ -19438,8 +19378,7 @@ msgstr "Udalosť bola vymazaná"
 msgid "Event end"
 msgstr "Koniec udalosti"
 
-#: src/view/com/composer/event/EventEditor.tsx:114
-#: src/view/com/composer/event/EventEditor.tsx:119
+#: src/view/com/composer/event/EventEditor.tsx:114 src/view/com/composer/event/EventEditor.tsx:119
 msgid "Event name"
 msgstr "Názov udalosti"
 
@@ -19492,13 +19431,11 @@ msgstr "Organizuje <0>{0}</0>"
 msgid "Hosting"
 msgstr "Organizujem"
 
-#: src/view/com/composer/event/EventEditor.tsx:225
-#: src/view/com/composer/event/EventEditor.tsx:227
+#: src/view/com/composer/event/EventEditor.tsx:225 src/view/com/composer/event/EventEditor.tsx:227
 msgid "Hybrid"
 msgstr "Hybridná"
 
-#: src/view/com/composer/event/EventEditor.tsx:215
-#: src/view/com/composer/event/EventEditor.tsx:217
+#: src/view/com/composer/event/EventEditor.tsx:215 src/view/com/composer/event/EventEditor.tsx:217
 msgid "In person"
 msgstr "Osobne"
 
@@ -19507,14 +19444,12 @@ msgid "Interested, tap to remove"
 msgstr "Mám záujem, ťuknutím zrušíš"
 
 #. placeholder {0}: toNiceDomain(parsed.joinUrl)
-#: src/features/events/components/EventEmbed.tsx:108
-#: src/screens/Event/EventHeader.tsx:96
+#: src/features/events/components/EventEmbed.tsx:108 src/screens/Event/EventHeader.tsx:96
 msgid "Join · {0}"
 msgstr "Pripojiť sa · {0}"
 
 #. placeholder {0}: toNiceDomain(parsed.joinUrl)
-#: src/features/events/components/EventEmbed.tsx:103
-#: src/screens/Event/EventHeader.tsx:91
+#: src/features/events/components/EventEmbed.tsx:103 src/screens/Event/EventHeader.tsx:91
 msgid "Join online at {0}"
 msgstr "Pripoj sa online na {0}"
 
@@ -19551,8 +19486,7 @@ msgstr "Zatiaľ nikto nejde."
 msgid "Optional"
 msgstr "Nepovinné"
 
-#: src/features/events/components/EventCard.tsx:109
-#: src/features/events/format.ts:107
+#: src/features/events/components/EventCard.tsx:109 src/features/events/format.ts:107
 msgid "Past"
 msgstr "Minulé"
 
@@ -19580,8 +19514,7 @@ msgstr "Odstrániť udalosť?"
 msgid "Remove the event to add media"
 msgstr "Ak chceš pridať médiá, odstráň udalosť"
 
-#: src/features/events/components/EventOptionsMenu.tsx:96
-#: src/features/events/components/EventOptionsMenu.tsx:99
+#: src/features/events/components/EventOptionsMenu.tsx:96 src/features/events/components/EventOptionsMenu.tsx:99
 msgid "Restore event"
 msgstr "Obnoviť udalosť"
 
@@ -19707,3 +19640,91 @@ msgstr "Nepodarilo sa overiť tvoj účet u tvojho poskytovateľa hostingu."
 #: src/features/passwordConfirmation/ConfirmPasswordForm.tsx
 msgid "Your password is sent only to {host} and is not saved."
 msgstr "Tvoje heslo sa odošle iba na {host} a neukladá sa."
+
+#: src/features/aiPreferences/index.tsx
+msgid "{appName} will respect the preferences you set here. They are saved as a public record in your account, so other AT Protocol services can read them and choose to respect them too. Bad actors may ignore these signals or work around them, which is outside the control of {appName}, your hosting provider, and other services on the network."
+msgstr "Aplikácia {appName} bude rešpektovať predvoľby, ktoré tu nastavíš. Ukladajú sa ako verejný záznam v tvojom účte, takže si ich môžu prečítať aj iné služby a rozhodnúť sa, že ich budú tiež rešpektovať. Kto má zlé úmysly, môže tieto signály ignorovať alebo obísť, čo nemôže ovplyvniť aplikácia {appName}, tvoj poskytovateľ hostingu ani iné služby v sieti."
+
+#. Accessibility label for a group of options. The name is a kind of AI usage, such as "Training".
+#: src/features/aiPreferences/index.tsx
+msgid "AI preference for: {name}"
+msgstr "Predvoľba pre AI: {name}"
+
+#: src/features/aiPreferences/index.tsx src/Navigation.tsx src/screens/Settings/components/AccountFootprintDialog/labels.ts src/screens/Settings/Settings.tsx
+msgid "AI preferences"
+msgstr "Predvoľby pre AI"
+
+#: src/features/aiPreferences/index.tsx
+msgctxt "AI preference"
+msgid "Allow"
+msgstr "Povoliť"
+
+#: src/features/aiPreferences/index.tsx
+msgid "Couldn’t load your AI preferences."
+msgstr "Tvoje predvoľby pre AI sa nepodarilo načítať."
+
+#: src/features/aiPreferences/index.tsx
+msgid "Couldn’t save your AI preference. Please try again."
+msgstr "Tvoju predvoľbu pre AI sa nepodarilo uložiť. Skús to znova."
+
+#: src/features/aiPreferences/index.tsx
+msgid "Decide how AI may use your data"
+msgstr "Rozhodni, ako môže AI používať tvoje údaje"
+
+#: src/features/aiPreferences/index.tsx
+msgctxt "AI preference"
+msgid "Deny"
+msgstr "Zakázať"
+
+#: src/features/aiPreferences/index.tsx
+msgctxt "AI preference"
+msgid "Embedding"
+msgstr "Vektorové reprezentácie"
+
+#: src/features/aiPreferences/index.tsx
+msgid "Generate new content or interactions modeled on your data. This includes AI imitations of your writing, AI-generated versions of your photos or audio, or bots designed to sound like you."
+msgstr "Vytváranie nového obsahu alebo interakcií podľa vzoru tvojich údajov. Patria sem napodobeniny tvojho písania od AI, verzie tvojich fotiek či zvukových nahrávok vytvorené pomocou AI alebo boty navrhnuté tak, aby zneli ako ty."
+
+#: src/features/aiPreferences/index.tsx
+msgctxt "AI preference"
+msgid "Inference"
+msgstr "Inferencia"
+
+#: src/features/aiPreferences/index.tsx
+msgid "Look up your data while AI is answering someone’s question. The AI doesn’t keep it, but it might quote or reference it in real time."
+msgstr "Vyhľadávanie v tvojich údajoch, keď AI niekomu odpovedá na otázku. AI si ich neponechá, ale môže ich v reálnom čase citovať alebo sa na ne odvolať."
+
+#: src/features/aiPreferences/index.tsx
+msgctxt "AI preference"
+msgid "No preference"
+msgstr "Neurčené"
+
+#: src/features/aiPreferences/index.tsx
+msgid "Safety tools like spam and bot detection aren’t affected. They stay on for everyone."
+msgstr "Na bezpečnostné nástroje, ako je odhaľovanie spamu a botov, to nemá vplyv. Zostávajú zapnuté pre všetkých."
+
+#: src/features/aiPreferences/index.tsx
+msgctxt "AI preference"
+msgid "Synthetic content"
+msgstr "Syntetický obsah"
+
+#: src/features/aiPreferences/index.tsx
+msgid "These preferences apply to your entire account."
+msgstr "Tieto predvoľby platia pre tvoj celý účet."
+
+#: src/features/aiPreferences/index.tsx
+msgctxt "AI preference"
+msgid "Training"
+msgstr "Trénovanie"
+
+#: src/features/aiPreferences/index.tsx
+msgid "Use these settings to say how AI systems across the AT Protocol network may use your data. This is an open network, so your public data stays public, but you can say how AI should handle it."
+msgstr "Týmito nastaveniami určíš, ako môže AI používať tvoje údaje. AT Protokol je otvorená sieť, takže tvoje verejné údaje zostávajú verejné, ale môžeš povedať, ako s nimi má AI zaobchádzať."
+
+#: src/features/aiPreferences/index.tsx
+msgid "Use your data in AI search and recommendation systems. This is how AI finds similar accounts, groups people by interests, and decides what to show in personalized feeds like “Discover” or “For You”."
+msgstr "Použitie tvojich údajov vo vyhľadávaní a odporúčacích systémoch založených na AI. Takto AI nachádza podobné účty, zoskupuje ľudí podľa záujmov a rozhoduje, čo zobraziť v personalizovaných kanáloch, ako sú „Objavovať“ alebo „For You“."
+
+#: src/features/aiPreferences/index.tsx
+msgid "Use your data to build or train new AI models. Once your work is in a model, it stays there, even if you later delete your account."
+msgstr "Použitie tvojich údajov na vytváranie alebo trénovanie nových AI modelov. Keď sa tvoj obsah raz dostane do modelu, zostane v ňom navždy, aj keď neskôr odstrániš svoj účet."

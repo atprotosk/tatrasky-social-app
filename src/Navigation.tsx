@@ -170,6 +170,7 @@ import {
   IS_NATIVE,
   IS_WEB,
 } from '#/env'
+import {AIPreferencesSettingsScreen} from '#/features/aiPreferences'
 import {HomeScreen} from '#/features/followingV2/home'
 import {OutletDirectoryScreen} from '#/features/frontpages/directory'
 import {FrontpageScreen} from '#/features/frontpages/FrontpageScreen'
@@ -521,6 +522,14 @@ function commonScreens(Stack: typeof Flat, unreadCountLabel?: string) {
         getComponent={() => ExternalMediaPreferencesScreen}
         options={{
           title: title(msg`External Media Preferences`),
+          requireAuth: true,
+        }}
+      />
+      <Stack.Screen
+        name="AIPreferencesSettings"
+        getComponent={() => AIPreferencesSettingsScreen}
+        options={{
+          title: title(msg`AI preferences`),
           requireAuth: true,
         }}
       />

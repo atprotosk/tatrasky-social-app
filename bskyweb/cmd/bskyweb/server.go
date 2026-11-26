@@ -343,6 +343,7 @@ func serve(cctx *cli.Context) error {
 	e.GET("/settings/threads", server.WebGenericNoindex)
 	e.GET("/settings/external-embeds", server.WebGenericNoindex)
 	e.GET("/settings/accessibility", server.WebGenericNoindex)
+	e.GET("/settings/ai-preferences", server.WebGenericNoindex)
 	e.GET("/settings/appearance", server.WebGenericNoindex)
 	e.GET("/settings/account", server.WebGenericNoindex)
 	e.GET("/settings/automation-label", server.WebGenericNoindex)

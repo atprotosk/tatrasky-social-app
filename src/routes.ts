@@ -80,6 +80,7 @@ export const router = new Router<AllNavigatableRoutes>({
   PreferencesThreads: '/settings/threads',
   PreferencesExternalEmbeds: '/settings/external-embeds',
   AccessibilitySettings: '/settings/accessibility',
+  AIPreferencesSettings: '/settings/ai-preferences',
   AppearanceSettings: '/settings/appearance',
   NetworkServicesSettings: '/settings/network-services',
   ContentServiceSettings: '/settings/network-services/content-service',
